@@ -132,7 +132,9 @@
     "choose": "Make Rem choose something for you, seperate the choices with `;`",
     "tickle": "Tickle Tickle Tickle",
     "define": "Get a definition of a term from Urbandictionary",
-    "kiss": "Give someone a kiss <3"
+    "kiss": "Give someone a kiss <3",
+    "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+    "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name."
   },
   "add": "Use this link to add me to your Server: {{- link}}",
   "bug": "Please join the support discord: {{- link}} to report a bug.",
@@ -349,12 +351,18 @@
     "nothing-found": "I did not find a message that matched the filter!"
   },
   "greeting": {
-    "no-greeting": "You did not add the greeting I should use!",
-    "no-add": "You can either set or reset the greeting."
+    "no-greeting": "You did not add the greeting which I should use!",
+    "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
+    "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
+    "reset-greeting": "I just reset the greeting, it will not appear anymore.",
+    "success": "Alright, I just set the greeting to:\n```{{- text}}```"
   },
   "farewell": {
-    "no-farewell": "You did not add the farewell I should use!",
-    "no-add": "You can either set or reset the farewell."
+    "no-farewell": "You did not add the farewell which I should use!",
+    "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
+    "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
+    "reset-farewell": "I just reset the farewell, it will not appear anymore.",
+    "success": "Alright, I just set the farewell to:\n```{{- text}}```"
   },
   "add-role": {
     "ok": "Ok I just gave {{- user}} the role {{- role}}"
