@@ -415,7 +415,7 @@
   "love": {
     "success": "You just gave **{{- target}}** **{{- rep}}** :heart: Love Point. Remaining uses **{{uses}}**.",
     "success-remove": "You just removed **{{- rep}}**:heart: Love Point from **{{- target}}** Remaining uses **{{uses}}**.",
-    "error-cd": "You can only give **2** :heart: Love Points per Day, next use {{- time}}.",
+    "error-cd": "You can only give **2** :heart: Love Points per day, next use {{- time}}.",
     "next": " Next use {{- time}}",
     "self": ":broken_heart: You can not give Love Points to yourself."
   },
