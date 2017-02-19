@@ -133,8 +133,8 @@
     "tickle": "Tickle Tickle Tickle",
     "define": "Get a definition of a term from Urbandictionary",
     "kiss": "Give someone a kiss <3",
-    "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-    "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name."
+    "setGreeting": "Sets a greeting in the channel where the command is executed.\nYou can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+    "setFarewell": "Sets a farewell in the channel where the command is executed.\nYou can use %USER% and %GUILD% which will get replaced with the user name and the guild name."
   },
   "add": "Use this link to add me to your Server: {{- link}}",
   "bug": "Please join the support discord: {{- link}} to report a bug.",
