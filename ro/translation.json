@@ -1,3 +1,509 @@
 {
-  "": ""
+    "generic": {
+        "error": ":x: A aparut o eroare!",
+        "no-pm": ":no_entry: Aceasta comanda nu merge pe canale private!",
+        "whole-num": ":no_entry_sign: Te rog foloseste un numar intreg!",
+        "nan": ":no_entry_sign: Orice ai trimis, te rog doar adauga un numar intreg. :) ",
+        "no-song-in-queue": ":no_entry_sign: Nu e nici o melodie in lista, poate vrei sa adaugi una :musical_note: ?",
+        "no-song-playing": ":musical_note: Nu este nici un cantec acum!",
+        "no-permission": ":no_entry_sign: Nu ai dreptul sa folosesti aceasta comanda, te rog adauga-ti dreptul pentru `{{- node}}` pentru a o folosi.",
+        "no-voice": ":no_entry_sign: Nu sunt conectata la nici un canal cu voce pe acest Server!",
+        "level-update": ":tada: Ai ajuns la **Nivelul  {{level}}** pe **{{- server}}** !",
+        "empty-search": ":no_entry_sign: Nu ai cautat nici un termen!",
+        "negative": ":no_entry_sign: Te rog nu folosi un numar negativ!",
+        "cancel": "anuleaza",
+        "version": "versiune",
+        "author": "autor",
+        "lib": "biblioteca folosita",
+        "more": "{{number}} mai mult",
+        "abort": ":x: anulat",
+        "cat-nope": ":no_entry_sign: Aceasta categorie nu exista!",
+        "mention": "Te rog mentioneaza un utilizator.",
+        "cancelled-command": "Comanda anulata.",
+        "donate": "Doneaza",
+        "support": "Suport",
+        "invite": "Invita",
+        "language-name-en": "Romanian",
+        "native-name": "Romana",
+        "empty-say": ":no_entry_sign: Nu ai introdus un mesaj!"
+    },
+    "help": {
+        "intro": "hai sa ne distram impreuna aici pe Discord (/^▽^)/ selecteaza o categorie de comenzi raspunzand cu {{pre}}numarul de ajutor al comenzii pentru a sti mai mult:",
+        "intro_2": "Salut, eu sunt",
+        "support": "[AJUTOR]",
+        "bug": "fa rost de link-ul pentru serverul discord de suport",
+        "help": "comanda de ajutor",
+        "add": "Fa rost de link pentru a ma adauga pe server",
+        "music": "[MUZICA]",
+        "voice": "Eu intru pe canalul cu voce in care esti tu acum (comenzi de muzica normale fac deasemenea bot-ul sa intre in canalul cu voce)",
+        "silent": "Eu ies din canalul cu voce in care sunt acum. (poate fi folosita cu ajutorul rolului WolkeBot)",
+        "play": "Cant ceva de pe /Youtube/Soundcloud/Osu/cauta",
+        "pause": "Intrerupe melodia actuala",
+        "resume": "Reia melodia intrerupta",
+        "volume": "Seteaza volumul Bot-ului, numere intre 1 si 200 (poate fi folosit de rolul WolkeBot)",
+        "forever": "Cant o melodie pe \"Repeta\" pana cand melodii noi sunt adaugate listei, poate fi folosita doar de rolul WolkeBot",
+        "search": "Cauta pentru o melodie in baza de date a botului si iti voi arata primele 5 rezultate",
+        "skip": "Incepe o votare pentru a sari peste melodia actuala, mai mult de 50% din canal trebuie sa voteze, apoi o sa sar peste melodie.",
+        "voteskip": "Incepe o votare pentru a sari peste melodia actuala, mai mult de 50% din canal trebuie sa voteze, apoi o sa sar peste melodie.",
+        "qa": "Agauga in lista o melodie de pe Youtube/Soundcloud/Osu/cautare",
+        "qra": "sterge toate melodiile inafara de cea care este redata acum sau un anumit numar de melodii",
+        "queue": "Arata lista de melodii",
+        "np": "Arata melodia redata acum",
+        "rq": "Adauga o melodie aleatoare/un numar de melodii in lista de redare",
+        "stream": "Transmite radioul de pe internet selectat, poti cauta radiouri sau le poti adauga prin adaugarea url-ului la comanda",
+        "youtube": "[YOUTUBE]",
+        "yts": "Cauta pe Youtube si primesti primul rezultat",
+        "ytq": "Cauta pe Youtube si adauga primul rezultat in lista de redare",
+        "mod": "Moderatorul cp",
+        "mod-info": "Aceste comenzi necesita ca utilizatorul sa aiba rolul numit WolkeBot",
+        "info": "primesti informatii despre serverul curent",
+        "ban": "Baneaza un utilizator si sterge mesajele lui/ei din ultimele 7 zile",
+        "kick": "Da afara un utilizator",
+        "rm": "sterge mesajele , poti sa filtrezi robotii , utilizatorii , comenzi/raspunsuri ale lui Rem sau doar sterge pana la 100 de mesaje.\nFiltre: -b -> bots| -r -> mesaje de la rem| -u @user -> mesajele de la un anumit utilizator| -c -> mesajele care incep cu prefixul rem",
+        "noLevelServer": "Dezactiveaza sistemul de nivel pentru intreg serverul, foloseste comanda din nou pentru a o reactiva",
+        "noPmServer": "Dezactiveaza notificarile de la mesajele private pentru intreg serverul, foloseste comanda din nou pentru a o reactiva",
+        "noChServer": "Dezactiveaza notificarile de la mesajele private pentru intreg serverul si activeaza notificarile canalului, foloseste comanda din nou pentru a reveni",
+        "setLewd": "Adauga Canalul curent ca un Canal NSFW",
+        "remLewd": "Sterge Canalul curent din lista Canalelor NSFW",
+        "setPrefix": "Seteaza prefixele pentru robot, fara spatii/mentiuni!",
+        "other": "[Altele]",
+        "r34": "Cauta etichetele pe Rule34 si returneaza 1 imagine, utilizabil doar cu Rolul WolkeBot sau intr-un Canal NSFW.",
+        "kona": "Cauta etichetele pe Konachan si returneaza 1 imagine, utilizabil doar intr-un Canal NSFW sau de catre un Administrator.",
+        "e621": "Cauta etichetele pe E621 si returneaza 1 imagine, utilizabil doar intr-un Canal NSFW sau de catre un Administrator.",
+        "yandere": "Cauta etichetele pe Yande.re si returneaza 1 imagine, utilizabil doar intr-un Canal NSFW sau de catre un Administrator.",
+        "level": "Nivelul si Experienta ta necesare pentru urmatorul nivel",
+        "rank": "Clasamentul pentru acest server",
+        "noLevel": "dezactiveaza sistemul de nivel pentru tine. Foloseste din nou pentru a o activa pentru tine ",
+        "noPm": "dezactiveaza notificarile mesajelor private pentru tine. Foloseste din nou pentru a o activa din nou pentru tine.",
+        "pp": "Calculeaza PP pentru beatmap cu acuratete optionala si moduri",
+        "cookie": "Da un biscuite utilizatorului mentionat sau iti arata prajiturile daca nimeni nu este mentionat",
+        "eatCookie": "Mananca un biscuite.",
+        "git": "Primesti link-ul de github al lui Rem",
+        "roll": "Invarte un numar intre zero si numarul ales, daca nu e nici un numar ales o sa fie 10",
+        "8ball": "Isi da opinia pentru intrebarea de la 8ball magic",
+        "garfield": "Primesti o banda desenata aleatoare cu Garfield",
+        "cat": "Primesti o imagine aleatoare cu  pisici",
+        "hug": "Primesti un GIF cu o imbratisare anime",
+        "slap": "Primesti un GIF cu o palma anime",
+        "setLang": "seteaza limba, limbile acceptate momentan sunt {{languages}}",
+        "report": "Daca esti prea timid sa vii pe Serverul Discord de suport, foloseste report pentru a raporta dezvoltatorului Wolke, dar nu abuza!",
+        "feedback": "Pentru pareri folositi suportul discord va rog ^^",
+        "talk": "Daca vrei sa vorbesti cu mine, @mentioneaza-ma cu mesaj :D",
+        "helpReply": "OK, ti-am trimis o lista a comenzilor intr-un mesaj.",
+        "moderation": "[MODERARE]",
+        "misc": "[DIVERSE]",
+        "stats": "[STATISTICI]",
+        "user": "[UTILIZATOR]",
+        "admin": "[ADMINISTRATOR]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[BONUS]",
+        "proxer": "[PROXER]",
+        "no-cat": "[FARA CATEGORIE]",
+        "ping": "Iti da tie pingul botului, ai grija deoarece acesta nu este pingul pentru voce.",
+        "lewd": "Asa indecent uwu",
+        "rem": "Primesti o imagine aleatoare cu Rem",
+        "wip": "[IN LUCRU]",
+        "gr": "Seteaza un mesaj de intampinare cu set greetingMessage, {{user}} o sa fie inlocuit cu numele utilizatorului ce tocmai a intrat pe server, iar {{guild}} o sa fie inlocuit cu numele serverului.\nMesajul va aparea in Canalul in care a fost executata comanda",
+        "fw": "Seteaza un mesaj de la revedere cu set farewellMessage, {{user}} o sa fie inlocuit cu numele utilizatorului ce tocmai a parasit serverul, iar {{guild}} o sa fie inlocuit cu numele serverului.\nMesajul va aparea in Canalul in care a fost executata comanda",
+        "s": "Comanda serverului; seteaza lucruri precum mesajele de intampinare si de la revedere",
+        "shrug": "¯\\_(ツ)_/¯",
+        "flip": "(╯°□°）╯︵ ┻━┻",
+        "eggplant": "doar o vanata",
+        "gtn": "Primesti o banda desenate Green Tea Neko; utilizabila doar intr-un canal NSFW sau ca Administrator.",
+        "cuddle": "Iti da un gif anime pentru imbratisare.",
+        "trig": "*TRIGGERED*",
+        "bot": "Iti da niste informatii despre Rem, timpul si niste linkuri folositoare.",
+        "top": "Iti arata top 10 bresele (sortate dupa utilizatori) prin care este conectat ciobul.",
+        "about": "Primesti informatii de baza despre mine, precum biblioteca in care am fost scrisa si creatorul meu.",
+        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lmg": "Lasa-ma sa caut pe Google pentru tine",
+        "fskip": "Sari peste melodia curenta/un numar de melodii/toate melodiile",
+        "leave": "Parasesc canalul vocal la care sunt conectata acum.",
+        "say": "Fa-o pe Rem sa spuna ceva",
+        "ar": "Adauga un rol tie sau unui utilizator",
+        "cr": "Creaza un rol sau adauga un rol botului, -d ->mod implicit , -l 2 ->iti da un rol utilizatorului cand ajunge la un nivelul 2, -s -> fa rolul auto alocabil, exemple -> cr -l 20 numeleroului , adauga un rol utilizatorului cand ajunge ca nivelul 20 numit de catre rol.",
+        "lr": "Afiseaza toate rolurile ce au legatura cu Rem in acest moment",
+        "rr": "Sterge un rol al tau, al unui user sau de pe server",
+        "roles": "[ROLURI]",
+        "repeat": "Reda melodia/lista de redate in mod repetat pana cand melodii noi sunt adaugate listei de redare.",
+        "sayd": "Fa-o pe Rem sa spuna ceva si sterge propria comanda",
+        "generic": "[GENERIC]",
+        "fun": "[AMUZAMENT]",
+        "coin": "Arunca cu banul pentru tine.",
+        "nyan": "Miau :3",
+        "uwu": "uwu",
+        "dere": "Cauta o definitie dere sau primeste una aleatoare",
+        "love": "Da-i utilizatorului mentionat un punct de dragoste, adauga - pentru a reduce punctele de dragoste ale utilizatorului cu 1",
+        "sinfo": "primesti cateva informatii despre serverul curent",
+        "uinfo": "primesti cateva informatii despre tine/utilizatorul mentionat",
+        "apq": "adauga un playlist la lista de redare; merge doar cu playlisturi Youtube si e nevoie doar de ID. NU LINK.",
+        "ap": "Comanda pentru a adauga drepturi; o explicatie detaliata se afla pe serverul de suport discord (!w.bug pentru a primi invitatie)",
+        "gp": "Comanda pentru a verifica drepturile; o explicatie detaliata se afla pe serverul de suport discord (!w.bug pentru a primi invitatie)",
+        "rp": "Comanda pentru a sterge drepturi; o explicatie detaliata se afla pe serverul de suport discord (!w.bug pentru a primi invitatie)",
+        "cry": "Esti trist? Aceasta este comanda perfecta pentru tine.",
+        "ibsafe": "Cauta pe ibsear.ch (doar imagini SFW)",
+        "iblewd": "Cauta pe ibsearch.xxx (la fel ca ibsafe dar si cu imagini NSFW)",
+        "qr": "Poti sa stergi o singura melodie cu IDmelodie, sau mai multe cu `qr IDinceput-IDsfarsit`, aceasta va sterge toate melodiile incepand cu IDinceput si terminand cu IDsfarsit, sau sterge mai multe ID-uri separandu-le cu virgula",
+        "shuffle": "Amesteca lista de redare. Trebuie sa fie cel putin 3 melodii in lista de redare pentru ca aceasta comanda sa functioneze.",
+        "owo": "Iti trimite la intamplare un OwO Ce sunt memeurile astea, care au fost culese cu mana de Wolke.",
+        "getNode": "Iti da nodul de permisiune, nodul de categorie si categoriza comenzii.",
+        "resetPerms": "Reseteaza toate drepturile setate pana acum; a se folosi cu atentie",
+        "pat": "Mangaie pe cap pe cineva pentru ca a fost baiat/fata/OZN bun",
+        "triggered": "*TRIGGERED*",
+        "stare": "ma holbeeeeeez......",
+        "nom": "Nom :>",
+        "potato": "Toata lumea vrea un cartof",
+        "choose": "Fa-o pe Rem sa alege ceva pentru tine, separeaza alegerile cu `;` ",
+        "tickle": " Gadilici Gadilici Gadilici",
+        "image": "[COMENZI DE IMAGINE]",
+        "define": "Primesti o definitie a unui termen din Urbandictionary"
+    },
+    "version": "In momentul de fata rulez versiunea {{version}}",
+    "add": "Foloseste acest lnk pentru a ma adauga serverului tau: {{-link}}",
+    "bug": "Te rog intra in supportul discord  {{- link}} pentru a raporta o problema",
+    "level": {
+        "result": "Tu esti **Level {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Total XP:**{{total}}**",
+        "disabled": "Sistemul XP este dezactivat pe acest server!"
+    },
+    "joinVoice": {
+        "join": "OK, intru pe canalul vocal acum",
+        "error": "O problema a aparut cand incercam sa intru in canalul tau cu voce!",
+        "permission": "Fara permisiune!Trebuie sa iti dai singur rolul WolkeBot pentru a folosi asta.",
+        "no-voice": "Nu esti intr-un canal cu voce!",
+        "already-voice": "Eu sunt deja intr-un canal cu voce, muta-ma pentru a schimba asta!"
+    },
+    "nsfw-images": {
+        "nothing-found": "Nicio imagine gasita cu etichetele: `{{tags}}`",
+        "no-nsfw-channel": "Te rog seteaza/adauga un Canal NSFW cu {{- prefix}}setLewd (inr-un Canal NSFW) pentru a folosi comenzi NSFW",
+        "error-body": "A fost o eroare la analiza raspunului apiului. Te rog incearca dinnou , daca problema persista contacteaza Wolke#6746"
+    },
+    "8ball": {
+        "answers": [
+            "Nu.",
+            "Da.",
+            "Nu prea cred.",
+            "Cu siguranta nu.",
+            "Doar fa-o.",
+            "Asta este o idee grozava.",
+            "Esti sigur de asta?"
+        ],
+        "no-message": "Nu ai intrebat nimic."
+    },
+    "ban": {
+        "success": "Utilizator banat {{user}}",
+        "privilege": "Rolul meu nu are dreptul de a bana pe {{user}} !",
+        "err": "A aparut o eroare la banarea lui {{user}} !",
+        "perms": "Nu poti bana Ownerul sau pe oricine are rolul WolkeBot.",
+        "self": "Nu ma poti bana cu propria comanda.",
+        "no-mention": "Te rog mentioneaza utilizatorul pe care vrei sa il banezi."
+    },
+    "kick": {
+        "success": "Am dat afara utilizatorul {{user}}",
+        "privilege": "Rolul meu nu are dreptul sa dea afara utilizatorul {{user}} !",
+        "err": "O problema a aparut cand incercam sa dau afara {{user}} !",
+        "perms": "Nu poti da afara proprietarul sau orcine cu rolul WolkeBot.",
+        "self": "Nu ma poti da afara cu propria mea comanda. ",
+        "no-mention": "Te rog mentioneaza un utilizator pe care vrei sa dai afara."
+    },
+    "roll": {
+        "whole-number": "Te rog adauga un numar intreg!",
+        "negative": "Nu pot invarti cu un {{number}} ",
+        "success": "Am invartit un {{first} din {{second}} "
+    },
+    "qa": {
+        "nothing-found": "Nici o melodie gasita cu termenul de cautare  `{{search}}`",
+        "empty-search": "Nu ai adaugat un link/termen de cautare.",
+        "started-download": "Incepe descararea  of `{{- url}}`",
+        "success": "Am pus la coada  **{{- song}}**"
+    },
+    "rq": {
+        "db-error": "O problema a aparut in baza de date!",
+        "success-multiple": "Am adaugat urmatoarele melodii : \n```{{- table}}``` ",
+        "too-big": "Am adaugat {{number}} melodii",
+        "no-songs-added": "Nu am putut adauga nicio melodie deoarece sunt deja in lista de redare, incearca din nou!",
+        "too-much": "Nu poti adauga mai mult de {{number}} melodii simultan!"
+    },
+    "qra": {
+        "to-small": "Nu poti sterge {{number}} melodii!",
+        "success": "Am sters `{{number}}` melodii",
+        "too-big": "Am sters {{number}}  melodii",
+        "one-song": "Foloseste  {{- prefix}}fskip pentru a sari peste melodia de acum!",
+        "no-number": "Nu ai spus cate melodii sa sterg din lista de redare!",
+        "removed": "Am sters `{{- title}}` din lista de redare."
+    },
+    "cookie": {
+        "give": "Am dat  **{{- user}}** **1** prajiturica!",
+        "new-server": "Incearca din nou, te rog.",
+        "arere": "Arere... ceva nu e bine...",
+        "perms": "Ai nevoie de rolul discord numit WolkeBot pentru a da prajiturele!",
+        "one-user": "Te rog mentioneaza **1 User**,nu mai mult , nu mai putin!",
+        "count": "Ai **{{number}} Cookies** acum."
+    },
+    "eastereggs": {
+        "jay": "Jay te iubeste~ :heart: ",
+        "magic": "xX_Cats_Xx a fost aici - 10.10.2016"
+    },
+    "set-lang": {
+        "no-lang": "Nu ai specificat limba! Poti folosi limbile {{languages}}.",
+        "success": "OK, am setat {{- language}} ca limba a acestui server.",
+        "unsupported": "Aceasta limba nu a fost implementata inca, dar poti ajuta adaugand o cerere cu limba ta pe github. Poti gasi limbile disponibile folosind comanda fara nimic altceva.",
+        "native-name": "Nume Nativ",
+        "english-name": "Nume Engelz",
+        "shortcode": "codscurt",
+        "available-languages": "Lista de limbi valabile\nTe rog tine minte ca setLang are nevoie de codscurt"
+    },
+    "np": {
+        "song-duration": "Redare curenta:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
+        "song": "Redare curenta: `{{-title}} {{repeat}}`",
+        "repeat-on": "repetare: activa",
+        "repeat-single": "repetare: melodie",
+        "repeat-queue": "repetare: lista de redare",
+        "emoji-repeat-single": ":repeat_one: Repetare: melodia curenta",
+        "emoji-repeat-queue": ":repeat: Repetare: lista de redare",
+        "emoji-repeat-off": ":heavy_check_mark: Repetare: oprita"
+    },
+    "queue": {
+        "queued": "Am pus la coada:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "Nu sunt Canale NSFW deocamdata.",
+        "success": "Canalul {{- channel}} a fost sters cu succes din lista Canalelor NSFW!"
+    },
+    "no-level-server": {
+        "success-disable": "Ok , eu tocmai am dezactivat sistemul de nivel pe acest server, scrie aceasta comada dinnou pentru a o activa.",
+        "success-enable": "Ok , eu tocmai am activat sistemul de nivel pentru acest server, scrie aceasta comanda dinnou pentru a o dezactiva."
+    },
+    "no-pm-server": {
+        "success-disable": "Ok tocmai am dezactivat notificarile pm pentru acest server, scrie comanda dinnou pentru a le activa.",
+        "success-enable": "Ok tocmai am activat notificarile pm pentru acest server, scrie aceasta comanda dinnou pentru a le dezactiva."
+    },
+    "no-channel-server": {
+        "success-disable": "Ok tocmai am dezactivat notificarile pm pentru acest server si am activat notificarile pentru acest canal, scrie aceasta comanda dinnou pentru a le activa/dezactiva.",
+        "success-enable": "Ok tocmai am activat notificarile pm pentru acest server si am dezactivat notificarile pentru acest canal, scrie aceasta comanda dinnou pentru a le activa/dezactiva."
+    },
+    "no-level": {
+        "success-disable": "Ok, eu am dezactivat sistemul de nivel pentru tine, scrie aceasta comanda dinnou pentru a il activa.",
+        "success-enable": "Ok, eu am activat sistemul de nivel pentru tine, scrie aceasta comanda dinnou pentru a il dezactiva."
+    },
+    "no-pm": {
+        "success-disable": "OK, am dezactivat notificarile prin mesaje private pentru tine; tasteaza aceasta comanda din nou pentru a le activa.",
+        "success-enable": "OK, am activat notificarile prin mesaje private pentru tine; tasteaza aceasta comanda din nou pentru a le dezactiva."
+    },
+    "eat-cookie": {
+        "success": "Tocmai ai mancat {{number}} prajituri!",
+        "failure": "Nu ai nici o prajitura pentru a manca!"
+    },
+    "bot-info": {
+        "uptime": "Timp rulare",
+        "users": "Utilizatori",
+        "channels": "Canale",
+        "guilds": "Servere",
+        "avg-channels": "Canale in medie per breasla.",
+        "avg-users": "Utilizatori in medie per breasla.",
+        "voice": "Conexiuni vocale",
+        "shard": "ciob",
+        "guilds-s": "Breslele (shard)",
+        "channels-s": "Canalele (shard)",
+        "users-s": "Utilizatori pe acest ciob.",
+        "made": "Creat de:",
+        "lib": "Biblioteca",
+        "voice_active": "AVC",
+        "voice_s": "VC(ciob)",
+        "voice_active_s": "AVC (ciov)"
+    },
+    "rank": "Poti gasi clasamentul acestui server aici: {{- link}}",
+    "pp": {
+        "err": {
+            "api-body": "Nu am putut analiza raspunsul api!",
+            "osu-api": "Api-ul osu! pare ca are o mica problema.",
+            "no-link": "Acesta nu este un link osu! valid!",
+            "unvalid-link": "Nu a fost furnizat linkul pentru mapa!"
+        },
+        "success": "PP pentru mapa  `{{- artist}} - {{- title}} [{{- version}}] cu acuratetea {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}` "
+    },
+    "server-info": {
+        "id": "ID",
+        "name": "Nume",
+        "member": "Membrii",
+        "text": "Canale de text",
+        "voice": "Canale vocale",
+        "roles": "Roluri",
+        "creation": "Data crearii",
+        "region": "Regiune",
+        "owner": "Detinator"
+    },
+    "leave": "OK, am parasit canalul vocal.",
+    "play": {
+        "no-result": "Nicio melodie gasita",
+        "playing": ":musical_note: Acum reda **{{- song}}**",
+        "success": ":musical_note: Acum cant **{{- song}}** ",
+        "next": ":musical_note: Voi canta urmatoarea **{{- song}}** "
+    },
+    "prefix": {
+        "success": "OK, am setat prefixul {{- prefix}}; incearca `{{- prefix}}ping` pentru a verifica",
+        "no-prefix": "Te rog adauga un prefix!"
+    },
+    "voice": {
+        "in-queue": "Melodia **{{- song}}** este deja in lista de redare.",
+        "error-volume": "Eroare la setarea volumului",
+        "success-volume": "Seteaza volumul la {{- volume}}",
+        "no-volume": "Volum nesetat!",
+        "repeat-start": "Repetare pentru melodia **{{- song}}**",
+        "already-playing": "Aceasta melodie se afla deja in curs de redare!",
+        "blocked": "Acest video nu este valabil pentru descarcare. Poate este prea lung sau a fost blocat/sters.",
+        "dl-start": ":hourglass: incarcare melodie!",
+        "use-proxy": "Incercand sa descarc peste proxy, s-ar putea sa dureze putin.",
+        "too-much": "Nu poti seta volumul mai mare de 200!"
+    },
+    "yts": {
+        "success": "Am gasit urmatoarea melodie: {{- link}}"
+    },
+    "skip": {
+        "success": ":track_next: Am schimbat melodia {{- title}}",
+        "stop": ":stop_button: Am oprit melodia curenta",
+        "all": ":stop_button: Toate melodiile sarite.",
+        "some": ":track_next: {{- amount}} melodii sarite"
+    },
+    "vskip": {
+        "user-no-voice": "Nu poti vota pentru a schimba melodia daca nu esti in acelasi canal vocal ca si mine!",
+        "same-voice": "Nu esti in acelasi canal vocal ca si mine",
+        "dup": "Deja ai votat!",
+        "success-add": "Am adaugat votul tau; procentajul este **{{current}}%/{{needed}}%**",
+        "success-skip": "Melodia sarita prin vot : **{{- title}}** ",
+        "vote": "Tasteaza {{- prefix}}yes pentru a sari melodia curenta. Procentajul actual este {{- perct}}%{{- needed}}\nUtilizatoii care au votat:\n```{{- table}}```",
+        "in-prog": "Deja este un vot in desfasurare; foloseste {{- prefix}}yes pentru a sari melodia curenta."
+    },
+    "rm": {
+        "less-2": "Nu poti sterge mai putin de 2 mesaje!",
+        "over-100": "Nu poti sterge mai mult de 100 mesaje simultan!",
+        "success": "{{nmber}} mesaje sterse cu succes.",
+        "error": "Eroare la stergerea mesajelor!",
+        "over-limit": "Nu poti sterge mai putin de 2 mesaje sau mai mult de 100 de mesaje deodata!",
+        "no-limit": "Nu ai specificat cat de multe mesaje sa sterg.",
+        "nothing-found": "Nu am gasit un mesaj care sa se potriveasca criteriului!"
+    },
+    "search": {
+        "success": "Am gasit urmatoarele melodii:"
+    },
+    "set-lewd": {
+        "success": "Canalul {{- channell}} a fost adaugat cu succes la Canalele NSFW!"
+    },
+    "report": "OK, am trimis raportul tau catre Wolke; te rog nu abuza de aceasta functie pentru ca ti-ar putea fi interzisa folosirea botului!",
+    "greeting": {
+        "no-greeting": "Nu ai adaugat mesajul de intampinare pe care ar trebui sa il folosesc!",
+        "no-add": "Poti seta sau reseta mesajul de intampinare"
+    },
+    "farewell": {
+        "no-farewell": "Nu ai adaugat mesajul de la revedere pe care ar trebui sa il folosesc!",
+        "no-add": "Poti seta sau reseta mesajul de la revedere."
+    },
+    "add-role": {
+        "ok": "OK, i-am dat lui {{- user}} rolul {{- role}}"
+    },
+    "create-role": {
+        "missing": "Numele rolului specificat de tine nu exista pe acest server.",
+        "new": "Sa creez acest rol pentru tine?",
+        "no-args": "Nu ai adaugat argumente comenzii",
+        "ok": "OK, am creat rolul {{- role}}",
+        "exists": "Rolul {{- role}} deja exista in baza de date"
+    },
+    "remove-role": {
+        "ok": "OK, am eliminat rolul {{- role}} utilizatorului {{- user}} !"
+    },
+    "list-roles": {
+        "nr": "nr",
+        "id": "id",
+        "name": "nume",
+        "self": "auto alocabil",
+        "lvl": "Disponibil la nivelul",
+        "default": "implicit"
+    },
+    "user-info": {
+        "id": "$t(server-info.id)",
+        "name": "$t(server-info.name)",
+        "discriminator": "discriminator",
+        "nick": "Porecla",
+        "join": "Intrat pe server",
+        "created": "Creat",
+        "playing": "Joaca",
+        "info": "Informatii utilizator",
+        "bot": "Bot",
+        "status": "Stare",
+        "role": "Roluri"
+    },
+    "flip": {
+        "head": "Banul a cazut pe cap {{- url}} ",
+        "tail": "Banul a cazut pe pajura {{- url}} "
+    },
+    "gp": {
+        "no-cat": "Nu am gasit niciun drept pentru categoria {{- cat}}",
+        "no-perms": "Nu ai adaugat niciun drept inca.",
+        "table": {
+            "id": "$t(server-info.id)",
+            "name": "Nume",
+            "type": "Tip",
+            "cat": "Categorie",
+            "perm": "Drept",
+            "use": "Permisiune"
+        }
+    },
+    "rp": {
+        "success": "Am sters cu succes dreptul pentru `{{- node}}` de la **{{- type}}** `{{- id}}`"
+    },
+    "love": {
+        "success": "I-ai dat lui **{{- target}}** **{{- rep}}** :heart: Punct de Dragoste. Disponibile **{{uses}}**.",
+        "error-cd": "Poti da doar **2** :heart: Puncte de Dragoste pe zi, urmatoarul disponibil {{- time}}.",
+        "next": " Urmatoarea folosire {{- time}}",
+        "self": ":broken_heart: Nu iti poti da singur Puncte de dragoste.",
+        "success-remove": "Tocmai ai sters **{{- rep}}**:heart: Punct de iubire de la **{{- target}}** Ramanand utilizari**{{uses}}**. "
+    },
+    "dere": {
+        "no-dere": "tipul dere cautat de tine nu exista. Uite o lista cu toate tipurile posbile:",
+        "dandere": "Dandere (だんデレ) se refera la tipul de caracter care este deobicei linistit.\nPoate fi din cauza timitidatii sau doar pentru ca sunt tipul linistit.\nTotusi,cand este singur cu persoana iubita, deobicei ies din carapace si devin mult mai iubitori.\nAcest cuvant este o abreviere de la Danmari care inseamna liniste si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "deredere": "Deredere (デレデレ) se refera la tipul de caractere care este foarte dragut, fericit si energetic.\nNu conteaza ce se intampla, ei se vor intoarce la partea lor fericita.\nAcesta este singurul tip de caracter care nu are nici o abreviere de la baza Deredere (デレデレ), totusi definitia nu este iubitor/indragostit ca la celelalte.",
+        "himedere": "Himedere  (ひめデレ) se refera la tipul de caracter care isi doreste sa fie tratat ca o printesa de persoana iubita, chiar daca nu sunt roiali defapt.\nAcest cuvant este o abreviere de la Hime (ひめ) care inseamna printesa si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "kamidere": "Kimedere (かみデレ) este tipul de caracter care se refera la un zeu complex.\nSunt foarte aroganti si mandri, nu le este frica sa vorbeasca ce le trece prin cap si le arata tuturor cata dreptate au.\nCuvantul este o abreviere de la Kami (かみ) care inseamna zeu si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "kuudere": "Kuudere (クーデレ), uneori scris ca si Coodere sau Kūdere, se refera la tipul de caracter care este de obicei rece, deschis si sarcastic.\nEi par fara emotii pe dinafara, dar in interior sunt foarte ingrijitori - macar cand vine vorba de cei care ii iubesc.\nAcest cuvant este o abreviere de la Cool (クール) si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "mayadere": "Mayadere (まやデレ) care se refera la tipul de caracter care este deobicei antagonistul periculos al seriei, dar isi schimba partea dupa ce se indragosteste de alt caracter.\nAcest caracter ramane mortal si de neprezis pentru protagonist sau alte caractere importante din Anime sau Manga.",
+        "oujidere": "Oujidere (おうじデレ) se refera la tipul de caracter care isi doreste sa fie tratat ca un print de persoana iubita, chiar daca ei nu sunt roiali defapt.\nAcest cuvant este o abreviere de la Ouji (おうじ) care inseamna print si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "tsundere": "Tsundere (ツンデレ) este probabil cel mai popular si cel mai folosit tip de caracter din mangauri si animeuri.\nAcest tip de caracter isi trateaza persoana iubita intr-un mod precar.\nUneori , pentru ca au inceput prin urandu-i si apoi iubindu-i pe parcursul seriei , si uneori este deoarece asa este singurul mod prin care ei stiu sa reactioneze.\nUn exemplu este daca caracterul principal numeste un caracter tsundere dragut.\nUn caracter tsundere va fi suparat si ametit, posibil sa cauzeze dauna psihica persoanei iubite, si le spune ca sunt stupizi.\nAcest cuvant este o abreviere de la Tsuntsun (ツンツン) care inseamna a te uita altundeva cu desgust si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "undere": "Undere (ウンデレ) se refera la tipul de caracter care spune \"da\" la aproape orice spune caracterul de care sunt indragostiti.\nEi agreaza cu cat mai mult posibil pentru a deveni foarte apropiati de persoana iubita.\nCuvantul este o abreviere de la Un (ウン) care este forma mai scurta la Japonezi de a spune da si Deredere (デレデレ) care inseamna iubitor/indragostit.",
+        "yandere": "Tipul Yandere (ヤンデレ) se refera la un caracter care incepe dragut, dar eventual devine obsesiv cu persoana pe care o iubeste.\nAcestia devin hartuitori si folosesc violenta, sau posibil crima, asupra oricarei persoane care se apropie de iubirea lor — chiar daca sunt prea timizi sa vorbeasca cu persoana de care sunt indragostiti.\nAcest cuvant este format din Yanderu (やんでる), care inseamna a fi bolnav mental sau emotional si, Deredere (デレデレ) care inseamna dragastos.",
+        "yangire": "Yangire (ヤンギレ) este tipul similar in cateva aspecte unui Yandere.\nEste caracterul care la inceput poate fi dragut si dulce dar devine foarte agresiv si psihotic.\nTotusi, fata de un Yandere, Yangire nu devine violent deoarece sunt indragaostit de un caracter.\nIn schimb, ei pot pocni deoarece sunt iritati cu un caracter care nu are nici o legatura cu persoana indragostita.\nAcest cuvant este o abreviere de la Yanderu (やんでる) care inseamna sa fii mental sau emotional bolnav si Kire (きれ) care inseamna a taia sau a rupe."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "Trebuie sa fie cel putin 3 melodii in lista de redare pentru a le amesteca.",
+        "success": "Lista de redare amestecata!"
+    },
+    "get-node": {
+        "success": "Nodul de permisiune : `{{- node}}` Nodul de categorie:`{{- category}}.*` Categoria:`{{- category}}`",
+        "not-found": "Aceasta comanda nu exista.",
+        "no-args": "Scrie un cmd fara prefix dupa aceasta pentru a primi un nod de permisiuni, un nod de categorie si o categorie."
+    },
+    "ap": {
+        "type": {
+            "user": "utilizator",
+            "guild": "server",
+            "role": "rol",
+            "channel": "canal"
+        },
+        "success": "Ok, Tocmai am adaugat permisiunea `{{- node}}` `{{- allowed}}` la `{{- type}}` `{{- name}}`",
+        "wrong-node": "Nodul de permisiunea `{{- node}}` nu va merge, deoarece nodul de permisiune nu este valid. Pentru a primi nodul de permisiune pentru tipul de comanda `{{- prefix}}getNode command` ",
+        "target-not-found": "Nu am putut gasit tinta  {{- target}} pentru aceasta comanda.",
+        "no-allowance-set": "Nu mi-ai spus daca dreptul este permis sau nu; adauga `true` (permis) sau `false` (nepermis) in functie de alegerea ta",
+        "missing-args": "Sintaxa corecta pentru aceasta comanda este `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nExemplu:\n```{{-prefix}}ap playlist.* true ->permite tuturor comenzilor din categoria playlist in acest server\n{{-prefix}}ap music.fskip -u @user true -> permite utilizatorului mentionat sa foloseasca {{-prefix}}fskip```"
+    },
+    "reset-perms": {
+        "nothing-found": "Nu ai setat niciun drept deocamdata.",
+        "confirmation": "Esti sigur ca vrei sa resetezi drepturile? Tasteaza `yes` pentru a le reseta sau `nu` pentru a renunta.",
+        "success": "Am resetat toate drepturile pe care le-ai setat."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: Nu pot sa aleg ceva daca nu adaugi nimic!",
+        "success": "Aleg **{{- choice}}**! "
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: Nu pot cauta o definitie daca nu ai adaugat nimic!",
+        "no-result": "Nu am putut sa gasesc nimic pentru termenul `{{- term}}` "
+    }
 }
