@@ -25,7 +25,7 @@
         "invite": "초대하기",
         "language-name-en": "Korean",
         "native-name": "한국어",
-        "empty-say": ":no_entry_sign: You did not enter a message!"
+        "empty-say": ":no_entry_sign: 아무런 말도 입력하시지 않으셨어요!"
     },
     "help": {
         "intro": "Discord에서 저랑 같이 신나게 놀자구요! (/^▽^)/ 명령어 카테고리를 하나 골라 {{pre}}help <카테고리 번호>를 입력하면 해당 카테고리의 명령어들을 알아볼 수 있어요. :",
@@ -40,7 +40,7 @@
         "play": "YouTube/SoundCloud/osu!에서 노래를 검색해서 재생합니다.",
         "pause": "현재 곡을 일시중지합니다.",
         "resume": "현재 곡을 다시 재생합니다.",
-        "volume": "Sets the Volume of the Bot, Values between 1-200 (only usable with WolkeBot Role)",
+        "volume": "봇의 볼륨을 정합니다, 1-200으로 선택 하실 수 있습니다. (WolkeBot 권한과 함께 사용 하실 수 있습니다.)",
         "forever": "Plays a song on Repeat until new ones are added to the queue, only usable with the WolkeBot Role",
         "search": "봇의 데이터베이스에서 곡을 검색하고 5개의 검색 결과를 가져와 드립니다.",
         "skip": "Starts a Voteskip for the current Song, more than 50% of the channel have to vote, then it is skipped.",
