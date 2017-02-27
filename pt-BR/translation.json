@@ -24,7 +24,9 @@
         "support": "Suporte",
         "invite": "Convite",
         "language-name-en": "Brazilian Portuguese",
-        "native-name": "Português brasileiro"
+        "native-name": "Português brasileiro",
+        "empty-say": ";no_entry_sign: Você não escreveu uma mensagem",
+        "page": "Page"
     },
     "help": {
         "intro": "vamos nos divertir juntos aqui no Discord (/^▽^)/ para escolher uma categoria de comando utilize {{pre}}help e o número do comando para saber mais:",
@@ -147,7 +149,21 @@
         "owo": "Manda um meme \" OwO What's this\" aleatório, que são escolhidos a mão por Wolke",
         "getNode": "Retorna o Node de permissão, Node de categoria e Categoria de um commando",
         "resetPerms": "Redefine todas permissões definidas até agora, use com cuidado!",
-        "pat": "Acaricie alguém que foi um bom garoto/garota/helicóptero"
+        "pat": "Acaricie alguém que foi um bom garoto/garota/helicóptero",
+        "triggered": "NERVOSO",
+        "stare": "stareeeee...",
+        "nom": "Nom :>",
+        "potato": "Todo mundo quer uma batata",
+        "choose": "Faça Rem escolher algo para você, separe as escolhas com `;`",
+        "tickle": "Tickle Tickle Tickle",
+        "image": "[COMANDO DE IMAGENS]",
+        "define": "Pega uma definição de um termo no Urbandictionary",
+        "dog": "Você gosta de cachorros mais do que de gatos? Esse é o comando certo para você",
+        "kiss": "Dê um beijo em alguém <3",
+        "setGreeting": "Define uma saudação no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
+        "setFarewell": "Define uma despedida no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "No momento estou rodando na versão {{version}} ",
     "add": "Use este link para me colocar no seu Servidor: {{- link}} ",
@@ -238,7 +254,11 @@
     "set-lang": {
         "no-lang": "Você não especificou um idioma! Os idiomas suportados até o momento são:  {{languages}}",
         "success": "Ok, acabei de definir o idioma deste Servidor como {{- language}}.",
-        "unsupported": "O idioma ainda não foi implementado, mas você pode ajudar adicionando um Pull Request com seu idioma no Github. No momento estão disponíveis {{languages}}."
+        "unsupported": "O idioma ainda não foi implementado, mas você pode ajudar adicionando um Pull Request com seu idioma no Github. No momento estão disponíveis {{languages}}.",
+        "native-name": "Nome Nativo",
+        "english-name": "Nome Inglês",
+        "shortcode": "shortcode",
+        "available-languages": "Lista de linguagens disponíveis\n"
     },
     "np": {
         "song-duration": "Tocando agora: ` {{- title}} {{current}}/{{duration}} {{repeat}} `",
@@ -294,7 +314,10 @@
         "channels-s": "Canais nesse shard",
         "users-s": "Usuários nesse shard",
         "made": "Feito por:",
-        "lib": "Biblioteca"
+        "lib": "Biblioteca",
+        "voice_active": "AVC",
+        "voice_s": "VC(shard)",
+        "voice_active_s": "AVC (shard)"
     },
     "rank": "Você pode conferir o placar para este Servidor aqui: {{- link}}",
     "pp": {
@@ -320,7 +343,9 @@
     "leave": "Ok, saí do Canal de Voz",
     "play": {
         "no-result": "Não encontrei nenhuma música!",
-        "playing": ":musical_note: Tocando agora: **{{- song}}** "
+        "playing": ":musical_note: Tocando agora: **{{- song}}** ",
+        "success": ":nota_musical: tocando agora **{{- song}}**\n",
+        "next": ":musical_note: Proxima música **{{- song}}** \n"
     },
     "prefix": {
         "success": "Ok, acabei de definir o prefixo como {{- prefix}}, use `{{- prefix}}ping` para testar.",
@@ -374,11 +399,19 @@
     "report": "Ok, mandei seu relatório para o Wolke, por favor não abuse ou você pode ser banido de usar o Bot.",
     "greeting": {
         "no-greeting": "Você não definiu a saudação que eu devo usar!",
-        "no-add": "Você pode ou definir ou resetar a saudação"
+        "no-add": "Você pode ou definir ou resetar a saudação",
+        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
+        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Você não definiu a despedida que eu devo usar!",
-        "no-add": "Você pode ou definir ou resetar a despedida"
+        "no-add": "Você pode ou definir ou resetar a despedida",
+        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
+        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok, acabei de dar para {{- user}} o cargo {{- role}} "
@@ -428,7 +461,8 @@
             "cat": "Categoria",
             "perm": "Permissão",
             "use": "Uso"
-        }
+        },
+        "page-does-not-exist": "This page does not exist. Try a lower page number!"
     },
     "rp": {
         "success": "Eu removi a permissão `{{- node}}` de **{{- type}}** `{{- id}}` "
@@ -480,5 +514,13 @@
         "nothing-found": "Você ainda não definiu nenhuma permissão",
         "confirmation": "Você tem certeza que quer resetar as permissões? Digite `yes` para resetar e `no` para cancelar este comando.",
         "success": "Acabei de resetar todas as permissões que você definiu."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: Eu não consigo escolher nada se você nao colocar nada!\n",
+        "success": "Eu escolho **{{- choice}}**! "
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: Eu não consigo encontrar uma definiçao se você não colocar nada!",
+        "no-result": "Eu nao consegui achar nada com o termo`{{- term}}` \n"
     }
 }
