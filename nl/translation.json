@@ -25,7 +25,8 @@
         "invite": "Inviteer",
         "language-name-en": "Dutch",
         "native-name": "Nederlands\n",
-        "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!"
+        "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!",
+        "page": "Page"
     },
     "help": {
         "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ selecteer een command categorie door te reageren met {{pre}}help nummer van command om meer te weten te komen:",
@@ -156,7 +157,13 @@
         "choose": "Laat Rem iets kiezen voor je, scheid keuzes met `;`",
         "tickle": "Kietel Kietel Kietel",
         "image": "[COMMANDS DIE BETREKKING HEBBEN OP AFBEELDINGEN]",
-        "define": "Haal de definitie van een term van Urbandictionary"
+        "define": "Haal de definitie van een term van Urbandictionary",
+        "dog": "You like dogs more than cats ? This command is the right one for you",
+        "kiss": "Give someone a kiss <3",
+        "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "Op het moment run ik op versie {{version}}",
     "add": "Gebruik deze link om me aan je server toe te voegen: {{- link}}",
@@ -392,11 +399,19 @@
     "report": "Oke, ik heb je melding naar Wolke gestuurd. Gelieve niet te misbruiken, je kunt worden geband van het gebruiken van de bot!",
     "greeting": {
         "no-greeting": "Je hebt geen groet geplaatst die ik moet gebruiken!",
-        "no-add": "Je kan of de groet zetten, of de groet terugzetten op de standaard."
+        "no-add": "Je kan of de groet zetten, of de groet terugzetten op de standaard.",
+        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
+        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Je hebt geen afscheidsgroet geplaatst die ik moet gebruiken!",
-        "no-add": "Je kunt de afscheidsbericht of instellen of resetten."
+        "no-add": "Je kunt de afscheidsbericht of instellen of resetten.",
+        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
+        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok, ik heb {{- user}} de rol {{- role}}  gegeven"
@@ -446,7 +461,8 @@
             "cat": "Categorie",
             "perm": "Permissie",
             "use": "Gebruik"
-        }
+        },
+        "page-does-not-exist": "This page does not exist. Try a lower page number!"
     },
     "rp": {
         "success": "Ik heb de permissie `{{- node}}` successvol verwijdert van de **{{- type}}** `{{- id}}` "
