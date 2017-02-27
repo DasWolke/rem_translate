@@ -25,7 +25,8 @@
         "invite": "Einladung",
         "language-name-en": "German",
         "native-name": "Deutsch",
-        "empty-say": ":no_entry_sign: Du hast keine Nachricht angegeben!"
+        "empty-say": ":no_entry_sign: Du hast keine Nachricht angegeben!",
+        "page": "Seite"
     },
     "help": {
         "intro": "lass uns zusammen viel Spass haben hier auf Discord (/^▽^)/ Hier ist eine Auflistung meiner Befehlskategorien, wähle eine von ihnen mit {{- pre}}help zahl aus.",
@@ -82,9 +83,9 @@
         "roll": "Würfelt eine zufällige Zahl zwischen 1 und 10 oder der gesendeteten Zahl",
         "8ball": "Der Magische Ball beantwortet dir eine Ja/Nein Frage",
         "garfield": "Sendet dir ein zufälliges Garfield Comic",
-        "cat": "Sendet ein zufälliges Bild einer Katze",
-        "hug": "Gibt dir ein Gif einer Umarmung",
-        "slap": "Gibt dir ein Gif einer Backpfeife",
+        "cat": "Sendet ein zufälliges Bild einer Katze. Jeder braucht Katzen!",
+        "hug": "Umarme jemanden :>",
+        "slap": "War jemand gemein zu dir ? Klatsch ihm eine!",
         "setLang": "stellt die Sprache ein, rufe !w.setLang ohne argumente auf, um eine Liste mit Sprachen zu erhalten.",
         "report": "Wenn du zu schüchtern bist um auf den Support Discord zu kommen, kannst du hiermit Wolke eine Nachricht schreiben.",
         "feedback": "Benutze für Feedback bitte den Support Discord ^^",
@@ -110,7 +111,7 @@
         "flip": "(╯°□°）╯︵ ┻━┻ ",
         "eggplant": "Einfach nur eine Aubergine",
         "gtn": "Schickt dir ein zufälliges Green Tea Neko Comic, nur benutzbar mit einem NSFW Kanal oder mit Admin Rechten.",
-        "cuddle": "Sendet dir ein Anime Knuddel gif",
+        "cuddle": "Knuddel jemanden :3",
         "trig": "TRIGGERED",
         "bot": "Gibt dir Informationen über Rem, die Laufdauer und einige praktische Links",
         "top": "Zeigt dir die Top 10 Server (nach Benutzern sortiert) an die diesen Bot benutzen",
@@ -142,7 +143,7 @@
         "rp": "Der Berechtigung entfernen Befehl, eine genaue Beschreibung kannst du auf dem Hilfe Server finden (!w.bug um den Link zu bekommen)",
         "cry": "Fühlst du dich traurig ? Das ist der richtige Befehl für dich.",
         "ibsafe": "Sucht auf ibsear.ch (nur SFW Bilder)",
-        "iblewd": "Sucht auf ibsearch.xxx ( auch NSFW Bilder)\n",
+        "iblewd": "Sucht auf ibsearch.xxx (das selbe wie iblewd, wobei auch NSFW Bilder erscheinen)",
         "qr": "Du kannst ein Lied aus der Liste entfernen mit der Song ID oder mehrere Lieder mit ` qr start ID - Stop ID` , das würde alle Lieder zwischen der Start ID und der Stop ID Entfernen.\nDu kannst auch spezifische Lieder entfernen mit der Song IDs getrennt von Kommas.",
         "shuffle": "Spielt Lieder aus der Wiedergabeliste züfallig ab (geht erst am 3 Liedern)",
         "owo": "Schickt ein zufälliges \"OwO What's this\" meme.\nAusgesucht von Wolke",
@@ -156,7 +157,13 @@
         "choose": "Rem wählt für dich etwas aus, deine Auswahlmöglichkeiten trennst du mit `;`",
         "tickle": "Kitzel Kitzel Kitzel",
         "image": "[BILDER]",
-        "define": "Hol dir die Definition eines Begriffes von Urbandictionary"
+        "define": "Hol dir die Definition eines Begriffes von Urbandictionary",
+        "dog": "Du magst Hunde mehr wie Katzen ? Dieser Befehl ist der richtige für dich.",
+        "kiss": "Küsse jemanden <3",
+        "setGreeting": "Setzt eine Begrüßung für den Channel wo der Command ausgeführt wird. Du kannst %USER% und %GUILD% benutzen damit rem die Stellen mit Benutzer und Serveramen ersetzt.",
+        "setFarewell": "Setzt eine Verabschiedung für den Channel wo der Command ausgeführt wird. Du kannst %USER% und %GUILD% benutzen damit rem die Stellen mit Benutzer und Serveramen ersetzt. ",
+        "pout": "Schmolle jemanden an hmmpf :<",
+        "smug": "Sende jemandem ein süffisantes Grinsen :^)"
     },
     "version": "Momentan verwende ich Version{{version}}",
     "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
@@ -208,7 +215,7 @@
     },
     "roll": {
         "whole-number": "Bitte sende eine ganze Zahl",
-        "negative": "Ich kann leider nicht mit einer {{- number}} würfeln!",
+        "negative": "Ich kann leider nicht mit einer {{- number}} würfeln!(._.)",
         "success": "Ich habe eine {{first}} aus {{second}} verschieden Möglichkeiten gewürfelt!"
     },
     "qa": {
@@ -392,11 +399,19 @@
     "report": "OK, Ich habe deinen Bug Report an Wolke gesendet. Bitte missbrauche diese Funktion nicht, da du gesperrt werden könntest!",
     "greeting": {
         "no-greeting": "Du hast keine Begrüßung angegeben!",
-        "no-add": "Du kannst entweder eine Begrüßung setzen oder diese resetten."
+        "no-add": "Du kannst entweder eine Begrüßung setzen oder diese resetten.",
+        "set-greeting": "```Begrüßung:{{- text}}\nChannel:{{- channel}} \nResete die Begrüßung mit {{- prefix}} setGreeting reset ```",
+        "no-set-greeting": "Es ist gerade keine Begrüßung eingestellt.\n\nDu kannst eine Begrüßung einrichten mit `{{- text}} setGreeting text` und sie resetten mit `{{- prefix}} setGreeting reset`.",
+        "reset-greeting": "Ich habe die Begrüßung resetet, sie wird nicht mehr auftauchen.",
+        "success": "OK ich Begrüßung heist jetzt:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Du hast keine Verabschiedung angegeben!",
-        "no-add": "Du kannst entweder eine Verabschiedung setzen oder diese resetten."
+        "no-add": "Du kannst entweder eine Verabschiedung setzen oder diese resetten.",
+        "set-farewell": "```Verabschiedung:{{- text}}\nChannel:{{- channel}} \nResete die Verabschiedung mit {{- prefix}}setFarewell reset ```",
+        "no-set-farewell": "Es ist gerade keine Verabschiedung eingestellt.\n\nDu kannst eine Verabschiedung einrichten mit `{{- text}} setFarewell text` und sie resetten mit `{{- prefix}} setFarewell reset`. \n",
+        "reset-farewell": "Ich habe die Verabschiedung resetet, sie wird nicht mehr auftauchen.",
+        "success": "OK die Verabschiedung lautet jetzt:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok ich habe gerade {{- user }} die Rolle {{- role}} gegeben"
@@ -446,7 +461,8 @@
             "cat": "Kategorie",
             "perm": "Berechtigungen",
             "use": "Erlaubt"
-        }
+        },
+        "page-does-not-exist": "Diese Seite existiert nicht, probiere eine niedrigere Seiten Nummer."
     },
     "rp": {
         "success": "Ich habe erfolgreich die Berechtigung `{{- node}}` von dem **{{- type}}** `{{- id}}` entfernt"
