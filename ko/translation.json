@@ -25,7 +25,8 @@
         "invite": "초대하기",
         "language-name-en": "Korean",
         "native-name": "한국어",
-        "empty-say": ":no_entry_sign: 아무런 말도 입력하시지 않으셨어요!"
+        "empty-say": ":no_entry_sign: 아무런 말도 입력하시지 않으셨어요!",
+        "page": "Page"
     },
     "help": {
         "intro": "Discord에서 저랑 같이 신나게 놀자구요! (/^▽^)/ 명령어 카테고리를 하나 골라 {{pre}}help <카테고리 이름>를 입력하면 해당 카테고리의 명령어들을 알아볼 수 있어요. :",
@@ -84,7 +85,7 @@
         "garfield": "무작위로 가필드 만화를 가져와 드립니다.",
         "cat": "무작위로 고양이 사진을 가져와 드립니다.",
         "hug": "무작위로 허그하는 애니메이션 움짤을 가져와 드립니다.",
-        "slap": "Gives you an anime slap gif",
+        "slap": "애니메이션에서 뺨을 때리는 GIF 이미지를 랜덤하게 하나 가져옵니다.",
         "setLang": "언어를 설정합니다. 현재 지원되는 언어는 다음과 같습니다. : {{languages}}",
         "report": "If you are too shy to come on the Support Discord, use report to send a report to the Developer Wolke, but dont abuse it!",
         "feedback": "피드백을 원하시면 렘봇 지원 Discord 서버에 들어와주세요! ㅎㅎ",
@@ -113,11 +114,11 @@
         "cuddle": "애니메이션에서 껴안는 GIF 이미지를 하나 보내드립니다.",
         "trig": "TRIGGERED",
         "bot": "이 렘봇이 실행된 시간, 보이스 채널 연결 수, 사용자 수 및 서버(길드) 수 등의 봇 정보를 보여드립니다.",
-        "top": "Shows the top 10 guilds (sorted by users) that this shard is connected to",
+        "top": "이 shard에 연결된 상위 10개의 길드 리스트를 가져옵니다. (유저수 기준)",
         "about": "라이브러리나 제작자분 등, 저에 관한 기본적인 정보를 보여드립니다.",
         "lenny": "( ͡° ͜ʖ ͡°)",
-        "lmg": "Let me google that for you",
-        "fskip": "Skips the Current Song/a number of songs/all songs",
+        "lmg": "당신을 위해서 그것을 구글링해 드릴게요.",
+        "fskip": "이 노래/숫자 만큼/모든 음악 스킵",
         "leave": "현재 연결되어 있는 보이스 채널에서 떠납니다.",
         "say": "렘이 지정한 말을 하도록 합니다.",
         "ar": "Add a role to yourself or a user",
@@ -144,8 +145,8 @@
         "ibsafe": "ibsear.ch에서 이미지를 하나 가져와 드립니다. (SFW 짤들만)",
         "iblewd": "ibsearch.xxx에서 이미지를 하나 가져와 드립니다. (ibsafe 명령어와 같지만 야짤(NSFW)들도 포함됩니다.)",
         "qr": "You can remove single songs with their songid, or multiple with `qr startid-stopid`, this would remove all songs starting at the startid and ending at the stopid, or delete multiple ids by seperating them with commas",
-        "shuffle": "Shuffles the queue. Note that at least 3 Songs have to be in the queue for this command to work.",
-        "owo": "Sends you random OwO What's this memes, which are handpicked by Wolke",
+        "shuffle": "큐를 섞습니다. 최소 3개의 곡이 큐에 있어야 작동합니다.",
+        "owo": "Wolke가 손수 선택한 이게 무슨 밈인지 알 수 있는 랜덤한 OwO를 보냅니다.",
         "getNode": "Gives you the permission node, category node and category of a command",
         "resetPerms": "지금까지 설정된 모든 권한을 초기화합니다. 주의해서 사용하세요.",
         "pat": "Pat someone who has been a good boy/girl/helicopter",
@@ -156,13 +157,19 @@
         "choose": "Make Rem choose something for you, seperate the choices with `;`",
         "tickle": "Tickle Tickle Tickle",
         "image": "[IMAGE COMMANDS]",
-        "define": "Get a definition of a term from Urbandictionary"
+        "define": "Get a definition of a term from Urbandictionary",
+        "dog": "고양이보다 강아지를 더 좋아하시나요? 이 명령어는 당신에게 잘 어울릴 거에요",
+        "kiss": "누군가에게 키스를 보냅니다 <3",
+        "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "제 현재 버전은 다음과 같아요. : {{version}}",
     "add": "이 링크로 당신의 서버에 저를 추가해 주세요. : {{- link}}",
     "bug": "이 링크로 지원 서버(버그 제보 등)에 들어오실 수 있어요. : {{- link}}",
     "level": {
-        "result": "You are **Level {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Total XP:**{{total}}**",
+        "result": "사용자는 현재 **레벨 {{level}}** XP: **{{current}}XP**/**{{needed}}XP** 전체 XP:**{{total}}**",
         "disabled": "이 서버는 현재 경험치 시스템을 사용하고 있지 않아요!"
     },
     "joinVoice": {
@@ -219,9 +226,9 @@
     },
     "rq": {
         "db-error": "데이터베이스에 오류가 발생한 것 같아요!",
-        "success-multiple": "Added the following Songs:\n```{{- table}}```",
+        "success-multiple": "다음과 같은 음악을 추가했습니다:\n```{{- table}}```",
         "too-big": "곡 {{number}}개가 추가되었어요.",
-        "no-songs-added": "I could not add any songs as they are already in the queue, try again!",
+        "no-songs-added": "이미 큐에 추가된 음악은 추가 할 수 없습니다, 다시 시도해주세요!",
         "too-much": "You can not add more than {{number}} songs at once!"
     },
     "qra": {
@@ -236,7 +243,7 @@
         "give": "**{{- user}}**님에게 쿠키 **1**개를 선물해 드리셨어요!",
         "new-server": "다시 시도해주시기 바래요.",
         "arere": "어라라... 뭔가 잘못된 것 같아요...",
-        "perms": "You need a discord role called WolkeBot to give cookies!",
+        "perms": "WolkeBot 권한이 있어야 쿠키를 줄 수 있습니다!",
         "one-user": "더도말고 덜도말고 딱 **한 분**만 멘션해주시라구요!",
         "count": "현재 당신은 **{{number}}개**의 쿠키를 가지고 계셔요. 쿠키가 있다면 저도 한 입 주실거죠..? 헤헤."
     },
@@ -250,7 +257,7 @@
         "unsupported": "선택하신 언어는 아직 제가 말할 수 있는 언어가 아니에요. 하지만 GitHub에서 선택하신 언어로 번역하여 풀 리퀘스트를 올리면 제가 그 언어로 말할 수 있게 될지도 몰라요! 현재 제가 말할 수 있는 언어는 다음과 같아요. : {{languages}}",
         "native-name": "Native Name",
         "english-name": "영어 이름",
-        "shortcode": "shortcode",
+        "shortcode": "짧은 코드",
         "available-languages": "List of available Languages\nPlease note that setLang needs the shortcode"
     },
     "np": {
@@ -275,20 +282,20 @@
         "success-enable": "이 서버에 레벨 시스템을 활성화 해뒀어요. 비활성화하고 싶으시다면 이 명령어를 한번 더 입력하시면 되요."
     },
     "no-pm-server": {
-        "success-disable": "Ok I just disabled pm notifications for this server, type this command again to enable them.",
-        "success-enable": "Ok I just enabled pm notifications for this server, type this command again to disable them."
+        "success-disable": "PM 알림을 이 서버에 대해서 비활성화 했습니다. 명령어를 다시 입력해서 활성화 할 수 있습니다.",
+        "success-enable": "PM 알림을 이 서버에 대해서 활성화 했습니다. 명령어를 다시 입력해서 비활성화 할 수 있습니다."
     },
     "no-channel-server": {
-        "success-disable": "Ok I just disabled pm notifications for this server and enabled the channel notifications, type this command again to revert it.",
-        "success-enable": "Ok I just enabled pm notifications for this server and disabled the channel notifications, type this command again to revert it."
+        "success-disable": "PM 알림을 이 서버에 대해서 비활성화 했고, 채널 알림을 활성화했습니다. 명령어를 다시 입력해서 되돌릴 수 있습니다.",
+        "success-enable": "PM 알림을 이 서버에 대해서 활성화 했고, 채널 알림을 비활성화했습니다. 명령어를 다시 입력해서 되돌릴 수 있습니다."
     },
     "no-level": {
         "success-disable": "알겠어요. 당신에게만 레벨 시스템을 비활성화했어요. 이 명령어를 다시 입력해서 레벨 시스템을 다시 활성화할 수 있답니다.",
         "success-enable": "알았어요. 당신에게만 레벨 시스템을 활성화했어요. 이 명령어를 다시 입력하면 레벨 시스템을 비활성화할 수 있어요."
     },
     "no-pm": {
-        "success-disable": "Ok I just disabled pm notifications for you, type this command again to enable them.",
-        "success-enable": "Ok I just enabled pm notifications for you, type this command again to disable them."
+        "success-disable": "PM 알림을 비활성화 했습니다. 명령어를 다시 입력해서 활성화 할 수 있습니다.",
+        "success-enable": "PM 알림을 활성화 했습니다. 명령어를 다시 입력해서 비활성화 할 수 있습니다."
     },
     "eat-cookie": {
         "success": "{{number}}개의 쿠키를 드셨어요! 맛있지 않나요?",
@@ -303,16 +310,16 @@
         "avg-users": "길드 당 평균 유저 수",
         "voice": "보이스 채널 연결 수",
         "shard": "shard",
-        "guilds-s": "Guilds (shard)",
-        "channels-s": "Channels (shard)",
-        "users-s": "Users on this shard",
+        "guilds-s": "길드 (shard)",
+        "channels-s": "채널 (shard)",
+        "users-s": "이 shard에 있는 유저 수",
         "made": "제작자 :",
         "lib": "라이브러리",
         "voice_active": "AVC",
         "voice_s": "VC(shard)",
         "voice_active_s": "AVC (shard)"
     },
-    "rank": "You can find the Leaderboard for this Server here: {{- link}}",
+    "rank": "이 서버 리더보드는 이 링크에서 찾으실 수 있습니다: {{- link}}",
     "pp": {
         "err": {
             "api-body": "API 응답을 읽을 수 없었어요!",
@@ -320,7 +327,7 @@
             "no-link": "유효한 osu! 링크가 아니에요!",
             "unvalid-link": "비트맵 링크를 알려주셔야죠!"
         },
-        "success": "PP for map `{{- artist}} - {{- title}} [{{- version}}] with Acc {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}`"
+        "success": "`{{- artist}} - {{- title}} [{{- version}}]` 맵에 대한 PP (정확도 `{{- accuracy}}%`) `{{- pp}}PP` `{{- mods}}`"
     },
     "server-info": {
         "id": "ID",
@@ -328,7 +335,7 @@
         "member": "멤버",
         "text": "채팅 채널",
         "voice": "보이스 채널",
-        "roles": "Roles",
+        "roles": "권한",
         "creation": "만들어진 날짜",
         "region": "지역",
         "owner": "소유자"
@@ -341,7 +348,7 @@
         "next": ":musical_note: Playing next **{{- song}}**"
     },
     "prefix": {
-        "success": "Ok I just set the prefix to {{- prefix}}, try `{{- prefix}}ping` to check it",
+        "success": "명령어 접두사를 `{{- prefix}}`로 변경했습니다, `{{- prefix}}ping`로 확인해보세요.",
         "no-prefix": "명령어 선행사(Prefix)를 설정해주세요!"
     },
     "voice": {
@@ -349,7 +356,7 @@
         "error-volume": "볼륨을 설정하는 데에 문제가 있었어요!",
         "success-volume": "볼륨이 설정되었어요. : {{- volume}}",
         "no-volume": "볼륨이 설정되어 있지 않아요!",
-        "repeat-start": "Started repeat for **{{- song}}**",
+        "repeat-start": "**{{- song}}** 반복을 시작했습니다.",
         "already-playing": "이 곡은 이미 재생 중이잖아요!",
         "blocked": "이 영상은 다운로드할 수 없었어요. 영상의 길이가 너무 길거나, 제한되어 있거나 삭제되었을 수도 있어요.",
         "dl-start": ":hourglass: 곡을 불러오고 있어요!",
@@ -392,11 +399,19 @@
     "report": "리포트를 Wolke에게 보냈습니다, 이걸 악용하지 마세요, 봇 사용을 밴당할 수 있습니다!",
     "greeting": {
         "no-greeting": "제가 말하게 될 인삿말을 지정하시지 않으셨어요!",
-        "no-add": "인삿말을 추가하거나 초기화할 수 있어요."
+        "no-add": "인삿말을 추가하거나 초기화할 수 있어요.",
+        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
+        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "제가 사용할 작별 인사를 설정하시지 않으셨습니다!",
-        "no-add": "작별 인사의 설정이나 재설정이 가능합니다."
+        "no-add": "작별 인사의 설정이나 재설정이 가능합니다.",
+        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
+        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "{{- user}}에게 {{- role}} 권한을 부여했습니다."
@@ -445,8 +460,9 @@
             "type": "종류",
             "cat": "카테고리",
             "perm": "권한",
-            "use": "Use"
-        }
+            "use": "사용"
+        },
+        "page-does-not-exist": "이 페이지는 존재하지 않습니다. 더 적은 숫자의 페이지를 시도해보세요!"
     },
     "rp": {
         "success": "I successfully removed the permission `{{- node}}` from the **{{- type}}** `{{- id}}`"
@@ -456,7 +472,7 @@
         "error-cd": "하루에 최대 **2** :heart: 러브 포인트만 사용할 수 있어요. 다음 사용 가능 시간 : {{- time}}.",
         "next": " 다음 사용 가능 시간 : {{- time}}",
         "self": ":broken_heart: 당신 스스로한테 러브 포인트를 줄 수는 없다구요!",
-        "success-remove": "**{{- target}}**님의 러브 포인트를 **{{- rep}}**:heart:만큼 없애셨어요. 앞으로 **{{uses}}**번 없앨 수 있어요."
+        "success-remove": "**{{- target}}**님의 러브 포인트를 **{{- rep}}**:heart:만큼 없애셨어요. 앞으로 **{{uses}}**번 사용 할 수 있어요."
     },
     "dere": {
         "no-dere": "입력하신 데레 성향을 찾을 수 없었어요. 검색 가능한 데레 성향들의 목록이에요. : \n",
@@ -483,13 +499,13 @@
     },
     "ap": {
         "type": {
-            "user": "user",
-            "guild": "guild",
-            "role": "role",
-            "channel": "channel"
+            "user": "사용자",
+            "guild": "길드",
+            "role": "권한",
+            "channel": "채널"
         },
-        "success": "Ok, I just added the permission `{{- node}}` `{{- allowed}}` to the `{{- type}}` `{{- name}}`",
-        "wrong-node": "The permission node `{{- node}}` will not work, as it is not a valid permission node. To get the permission node for a command type `{{- prefix}}getNode command`",
+        "success": "`{{- node}}` 권한에 대해서 `{{- allowed}}`를 `{{- type}}` 설정으로 `{{- name}}`에 추가했습니다.",
+        "wrong-node": "퍼미션 노드 `{{- node}}`는 작동하지 않습니다, 이 노드는 유효하지 않습니다. 커맨드에 대한 퍼미션 노드를 보시려면 `{{- prefix}}getNode 커맨드`를 입력해주세요.",
         "target-not-found": "I could not find the target {{- target}} for this command",
         "no-allowance-set": "You did not tell me if the perm should be allowed or not, add `true` or `false` depending on your choice",
         "missing-args": "The correct syntax for this cmd is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Example:\n```{{-prefix}}ap playlist.* true -> allows all commands of the category playlist in the server\n{{-prefix}}ap music.fskip -u @user true -> allows the mentioned user to use {{- prefix}}fskip```"
