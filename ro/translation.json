@@ -5,14 +5,14 @@
         "whole-num": ":no_entry_sign: Te rog foloseste un numar intreg!",
         "nan": ":no_entry_sign: Orice ai trimis, te rog doar adauga un numar intreg. :) ",
         "no-song-in-queue": ":no_entry_sign: Nu e nici o melodie in lista, poate vrei sa adaugi una :musical_note: ?",
-        "no-song-playing": ":musical_note: Nu este nici un cantec acum!",
+        "no-song-playing": ":musical_note: Nu este nicio melodie redata in acest moment!",
         "no-permission": ":no_entry_sign: Nu ai dreptul sa folosesti aceasta comanda, te rog adauga-ti dreptul pentru `{{- node}}` pentru a o folosi.",
         "no-voice": ":no_entry_sign: Nu sunt conectata la nici un canal cu voce pe acest Server!",
         "level-update": ":tada: Ai ajuns la **Nivelul  {{level}}** pe **{{- server}}** !",
         "empty-search": ":no_entry_sign: Nu ai cautat nici un termen!",
         "negative": ":no_entry_sign: Te rog nu folosi un numar negativ!",
         "cancel": "anuleaza",
-        "version": "versiune",
+        "version": "Versiune",
         "author": "autor",
         "lib": "biblioteca folosita",
         "more": "{{number}} mai mult",
@@ -25,7 +25,8 @@
         "invite": "Invita",
         "language-name-en": "Romanian",
         "native-name": "Romana",
-        "empty-say": ":no_entry_sign: Nu ai introdus un mesaj!"
+        "empty-say": ":no_entry_sign: Nu ai introdus un mesaj!",
+        "page": "Page"
     },
     "help": {
         "intro": "hai sa ne distram impreuna aici pe Discord (/^▽^)/ selecteaza o categorie de comenzi raspunzand cu {{pre}}numarul de ajutor al comenzii pentru a sti mai mult:",
@@ -50,11 +51,11 @@
         "queue": "Arata lista de melodii",
         "np": "Arata melodia redata acum",
         "rq": "Adauga o melodie aleatoare/un numar de melodii in lista de redare",
-        "stream": "Transmite radioul de pe internet selectat, poti cauta radiouri sau le poti adauga prin adaugarea url-ului la comanda",
+        "stream": "Transmite radioul de pe internet selectat, poti cauta radiouri sau le poti adauga prin adaugarea -u link la comanda",
         "youtube": "[YOUTUBE]",
         "yts": "Cauta pe Youtube si primesti primul rezultat",
         "ytq": "Cauta pe Youtube si adauga primul rezultat in lista de redare",
-        "mod": "Moderatorul cp",
+        "mod": "Panou de control al moderatorilor",
         "mod-info": "Aceste comenzi necesita ca utilizatorul sa aiba rolul numit WolkeBot",
         "info": "primesti informatii despre serverul curent",
         "ban": "Baneaza un utilizator si sterge mesajele lui/ei din ultimele 7 zile",
@@ -82,10 +83,10 @@
         "roll": "Invarte un numar intre zero si numarul ales, daca nu e nici un numar ales o sa fie 10",
         "8ball": "Isi da opinia pentru intrebarea de la 8ball magic",
         "garfield": "Primesti o banda desenata aleatoare cu Garfield",
-        "cat": "Primesti o imagine aleatoare cu  pisici",
-        "hug": "Primesti un GIF cu o imbratisare anime",
-        "slap": "Primesti un GIF cu o palma anime",
-        "setLang": "seteaza limba, limbile acceptate momentan sunt {{languages}}",
+        "cat": "Primesti o imagine aleatoare cu pisici. Avem nevoie de pisici!",
+        "hug": "Imbratiseaza pe cineva :>",
+        "slap": "Cineva te-a suparat? Palmuieste-i!",
+        "setLang": "seteaza limba; foloseste !w.setLang fara argumente pentru a primi o lista cu toate limbile disponibile",
         "report": "Daca esti prea timid sa vii pe Serverul Discord de suport, foloseste report pentru a raporta dezvoltatorului Wolke, dar nu abuza!",
         "feedback": "Pentru pareri folositi suportul discord va rog ^^",
         "talk": "Daca vrei sa vorbesti cu mine, @mentioneaza-ma cu mesaj :D",
@@ -142,7 +143,7 @@
         "rp": "Comanda pentru a sterge drepturi; o explicatie detaliata se afla pe serverul de suport discord (!w.bug pentru a primi invitatie)",
         "cry": "Esti trist? Aceasta este comanda perfecta pentru tine.",
         "ibsafe": "Cauta pe ibsear.ch (doar imagini SFW)",
-        "iblewd": "Cauta pe ibsearch.xxx (la fel ca ibsafe dar si cu imagini NSFW)",
+        "iblewd": "Cauta pe ibsearch.xxx (la fel ca ibsafe dar cu imagini NSFW)",
         "qr": "Poti sa stergi o singura melodie cu IDmelodie, sau mai multe cu `qr IDinceput-IDsfarsit`, aceasta va sterge toate melodiile incepand cu IDinceput si terminand cu IDsfarsit, sau sterge mai multe ID-uri separandu-le cu virgula",
         "shuffle": "Amesteca lista de redare. Trebuie sa fie cel putin 3 melodii in lista de redare pentru ca aceasta comanda sa functioneze.",
         "owo": "Iti trimite la intamplare un OwO Ce sunt memeurile astea, care au fost culese cu mana de Wolke.",
@@ -156,7 +157,13 @@
         "choose": "Fa-o pe Rem sa alege ceva pentru tine, separeaza alegerile cu `;` ",
         "tickle": " Gadilici Gadilici Gadilici",
         "image": "[COMENZI DE IMAGINE]",
-        "define": "Primesti o definitie a unui termen din Urbandictionary"
+        "define": "Primesti o definitie a unui termen din Urbandictionary",
+        "dog": "Iti plac cainii mai mult decat pisicile? Aceasta comanda este perfecta pentru tine",
+        "kiss": "Da cuiva un sarut <3",
+        "setGreeting": "Seteaza un salut in canal unde comanda este executata.Poti folosi %USER% si %GUILD% care vor fi inlocuite de numele utilizatorului si numele breslei.",
+        "setFarewell": "Seteaza un ramas bun in canal cand comanda este executata. Poti folosi %USER% si %GUILD%care vor fi inlocuite cu numele utilizatorului si numele breslei.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "In momentul de fata rulez versiunea {{version}}",
     "add": "Foloseste acest lnk pentru a ma adauga serverului tau: {{-link}}",
@@ -300,7 +307,7 @@
         "guilds": "Servere",
         "avg-channels": "Canale in medie per breasla.",
         "avg-users": "Utilizatori in medie per breasla.",
-        "voice": "Conexiuni vocale",
+        "voice": "VC",
         "shard": "ciob",
         "guilds-s": "Breslele (shard)",
         "channels-s": "Canalele (shard)",
@@ -391,11 +398,19 @@
     "report": "OK, am trimis raportul tau catre Wolke; te rog nu abuza de aceasta functie pentru ca ti-ar putea fi interzisa folosirea botului!",
     "greeting": {
         "no-greeting": "Nu ai adaugat mesajul de intampinare pe care ar trebui sa il folosesc!",
-        "no-add": "Poti seta sau reseta mesajul de intampinare"
+        "no-add": "Poti seta sau reseta mesajul de intampinare",
+        "set-greeting": "```Salut:{{- text}}\nCanal:{{- channel}}\nReseteaza salutul cu  {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "Nu este niciun mesaj de intampinare momentan.\n\nPoti seta un mesaj de intampinare cu `{{- prefix}}setGreeting text` si poti reseta un mesaj de intampinare cu `{{- prefix}}setGeeting reset`.\n",
+        "reset-greeting": "Tocmai am resetat mesajul de intampinare. Nu va mai aparea de acum incolo.",
+        "success": "OK, am setat mesajul de intampinare:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Nu ai adaugat mesajul de la revedere pe care ar trebui sa il folosesc!",
-        "no-add": "Poti seta sau reseta mesajul de la revedere."
+        "no-add": "Poti seta sau reseta mesajul de la revedere.",
+        "set-farewell": "```la revedere:{{- text}}\nCanal:{{- channel}}\nReseteaza mesajul de la revedere cu {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "Nu este niciun mesaj de la revedere momentan.\n\nPoti seta un mesaj de la revedere cu `{{- prefix}}setFarewell text` si poti reseta mesajul de la revedere cu `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "Tocmai am resetat mesajul de la reverede. Nu va mai aparea de acum incolo.",
+        "success": "OK, am setat mesajul de la revedere:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "OK, i-am dat lui {{- user}} rolul {{- role}}"
@@ -445,7 +460,8 @@
             "cat": "Categorie",
             "perm": "Drept",
             "use": "Permisiune"
-        }
+        },
+        "page-does-not-exist": "This page does not exist. Try a lower page number!"
     },
     "rp": {
         "success": "Am sters cu succes dreptul pentru `{{- node}}` de la **{{- type}}** `{{- id}}`"
