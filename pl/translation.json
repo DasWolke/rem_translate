@@ -162,8 +162,8 @@
         "kiss": "Pocałuj kogoś <3",
         "setGreeting": "Ustawia wiadomość powitalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
         "setFarewell": "Ustawia wiadomość pożegnalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "pout": "Hmmpf :< Fochnij się na kogoś",
+        "smug": "Rzuć komuś wywyższające się spojrzenie :^)"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
