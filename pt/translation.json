@@ -24,7 +24,9 @@
         "support": "Support",
         "invite": "Invite",
         "language-name-en": "English",
-        "native-name": "English"
+        "native-name": "English",
+        "empty-say": ":no_entry_sign: You did not enter a message!",
+        "page": "Page"
     },
     "help": {
         "intro": "vamos nos divertir juntos aqui no Discord (/^▽^)/ para escolher uma categoria de comando utilize {{pre}}help e o número do comando para saber mais:",
@@ -141,13 +143,27 @@
         "rp": "The remove permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
         "cry": "Feeling sad ? This is the right cmd for you.",
         "ibsafe": "Searches on ibsear.ch (only sfw pics)",
-        "iblewd": "Searches on ibsearch.xxx (same as ibsafe but with nsfw pics too)",
+        "iblewd": "Searches on ibsearch.xxx (same as ibsafe but with nsfw pics)",
         "qr": "You can remove single songs with their songid, or multiple with `qr startid-stopid`, this would remove all songs starting at the startid and ending at the stopid, or delete multiple ids by seperating them with commas",
         "shuffle": "Shuffles the queue. Note that at least 3 Songs have to be in the queue for this command to work.",
         "owo": "Sends you random OwO What's this memes, which are handpicked by Wolke",
         "getNode": "Gives you the permission node, category node and category of a command",
         "resetPerms": "Resets all permissions set until now, use with caution",
-        "pat": "Pat someone who has been a good boy/girl/helicopter"
+        "pat": "Pat someone who has been a good boy/girl/helicopter",
+        "triggered": "TRIGGERED",
+        "stare": "stareeeee...",
+        "nom": "Nom :>",
+        "potato": "Everyone wants a potato",
+        "choose": "Make Rem choose something for you, seperate the choices with `;`",
+        "tickle": "Tickle Tickle Tickle",
+        "image": "[IMAGE COMMANDS]",
+        "define": "Get a definition of a term from Urbandictionary",
+        "dog": "You like dogs more than cats ? This command is the right one for you",
+        "kiss": "Give someone a kiss <3",
+        "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "No momento estou a executar na versão {{version}} ",
     "add": "Use este link para me colocar no seu servidor: {{- link}} ",
@@ -238,7 +254,11 @@
     "set-lang": {
         "no-lang": "Você não especificou um idioma! Os idiomas suportados até o momento são:  {{languages}}",
         "success": "Ok, acabei de definir o idioma deste servidor como {{- language}}.",
-        "unsupported": "O idioma ainda não foi implementado, mas você pode ajudar adicionando um Pull Request com seu idioma no Github. No momento estão disponíveis {{languages}}."
+        "unsupported": "O idioma ainda não foi implementado, mas você pode ajudar adicionando um Pull Request com seu idioma no Github. No momento estão disponíveis {{languages}}.",
+        "native-name": "Native Name",
+        "english-name": "English Name",
+        "shortcode": "shortcode",
+        "available-languages": "List of available Languages\nPlease note that setLang needs the shortcode"
     },
     "np": {
         "song-duration": "Tocando agora: ` {{- title}} {{current}}/{{duration}} {{repeat}} `",
@@ -294,7 +314,10 @@
         "channels-s": "Canais nesse shard",
         "users-s": "Usuários nesse shard",
         "made": "Made by:",
-        "lib": "Library"
+        "lib": "Library",
+        "voice_active": "AVC",
+        "voice_s": "VC(shard)",
+        "voice_active_s": "AVC (shard)"
     },
     "rank": "Você pode conferir o placar para este servidor aqui: {{- link}}",
     "pp": {
@@ -320,7 +343,9 @@
     "leave": "Ok, saí do Canal de Voz",
     "play": {
         "no-result": "Não encontrei nenhuma música!",
-        "playing": ":musical_note: A tocar: **{{- song}}** "
+        "playing": ":musical_note: A tocar: **{{- song}}** ",
+        "success": ":musical_note: Now playing **{{- song}}**",
+        "next": ":musical_note: Playing next **{{- song}}**"
     },
     "prefix": {
         "success": "Ok, acabeide definir o prefixo como {{- prefix}}, use `{{- prefix}}ping` para testar.",
@@ -345,7 +370,7 @@
         "success": ":track_next: Pulei a música {{- title}}",
         "stop": ":stop_button: Parei a música atual",
         "all": ":stop_button: Skipped all songs.",
-        "some": ":track_next: Skipped {{- amount}} songs"
+        "some": ":track_next: Skipped {{- amount}} songs."
     },
     "vskip": {
         "user-no-voice": "Você não pode votar, não está no mesmo Canal de Voz!",
@@ -374,11 +399,19 @@
     "report": "Ok, mandei seu relatório para o Wolke, por favor não abuse ou você pode ser banido de usar o bot.",
     "greeting": {
         "no-greeting": "Você não definiu a saudação que eu devo usar!",
-        "no-add": "Você pode ou definir ou resetar a saudação"
+        "no-add": "Você pode ou definir ou resetar a saudação",
+        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
+        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Você não definiu a despedida que eu devo usar!",
-        "no-add": "Você pode ou definir ou resetar a despedida"
+        "no-add": "Você pode ou definir ou resetar a despedida",
+        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
+        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok, acabei de dar para {{- user}} o cargo {{- role}} "
@@ -428,14 +461,15 @@
             "cat": "Category",
             "perm": "Permission",
             "use": "Use"
-        }
+        },
+        "page-does-not-exist": "This page does not exist. Try a lower page number!"
     },
     "rp": {
         "success": "I successfully removed the permission `{{- node}}` from the **{{- type}}** `{{- id}}`"
     },
     "love": {
         "success": "You just gave **{{- target}}** **{{- rep}}** :heart: Love Point. Remaining uses **{{uses}}**.",
-        "error-cd": "You can only give **2** :heart: Love Points per Day, next use {{- time}}.",
+        "error-cd": "You can only give **2** :heart: Love Points per day, next use {{- time}}.",
         "next": " Next use {{- time}}",
         "self": ":broken_heart: You can not give Love Points to yourself.",
         "success-remove": "You just removed **{{- rep}}**:heart: Love Point from **{{- target}}** Remaining uses **{{uses}}**."
@@ -480,5 +514,13 @@
         "nothing-found": "You did not set any Permissions yet.",
         "confirmation": "Are you sure you want to reset the Permissions ? Type `yes` to reset them and `no` to cancel this command.",
         "success": "I just reset all permissions you set."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: I can not choose anything, if you enter nothing!",
+        "success": "I choose **{{- choice}}**!"
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: I can not search a definition, if you enter nothing!",
+        "no-result": "I could not find anything with the term `{{- term}}`"
     }
 }
