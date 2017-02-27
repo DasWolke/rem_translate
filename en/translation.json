@@ -23,7 +23,8 @@
     "support": "Support",
     "invite": "Invite",
     "language-name-en": "English",
-    "native-name": "English"
+    "native-name": "English",
+    "page": "Page"
   },
   "help": {
     "intro": "lets have fun together here on Discord (/^▽^)/ select a command category by responding with {{pre}}help number of command to know more:",
@@ -134,7 +135,9 @@
     "define": "Get a definition of a term from Urbandictionary",
     "kiss": "Give someone a kiss <3",
     "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-    "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name."
+    "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
+    "pout": "Hmmpf :< Pout at someone",
+    "smug": "Give someone a smug :^)"
   },
   "add": "Use this link to add me to your Server: {{- link}}",
   "bug": "Please join the support discord: {{- link}} to report a bug.",
@@ -417,7 +420,8 @@
       "cat": "Category",
       "perm": "Permission",
       "use": "Use"
-    }
+    },
+    "page-does-not-exist": "This page does not exist. Try a lower page number!"
   },
   "rp": {
     "success": "I successfully removed the permission `{{- node}}` from the **{{- type}}** `{{- id}}`"
