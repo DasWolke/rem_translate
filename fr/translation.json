@@ -25,7 +25,8 @@
         "invite": "Inviter",
         "language-name-en": "French",
         "native-name": "Français",
-        "empty-say": ":no_entry_sign: Tu n'as pas entré de message!"
+        "empty-say": ":no_entry_sign: Tu n'as pas entré de message!",
+        "page": "Page"
     },
     "help": {
         "intro": "ayons du plaisir tous ensemble sur Discord (/^▽^)/  sélectionne une catégorie de commandes en répondant avec {{pre}}help \"numéro de la commande\" pour en apprendre plus:",
@@ -82,9 +83,9 @@
         "roll": "Tire un nombre entre zéro et un nombre, s'il n'y a pas de nombre le tirage sera sur 10",
         "8ball": "Donne l'opinion de la boule8 magique à une question",
         "garfield": "Donne une planche de Garfield au hasard",
-        "cat": "Envoi une image de chat au hasard",
-        "hug": "Donne un gif d'un calin d'anime",
-        "slap": "Donne un gif d'une gifle d'anime",
+        "cat": "Envoi une image de chat au hasard. Nous avons tous besoin de chats !",
+        "hug": "Câline quelqu'un :>",
+        "slap": "Quelqu'un a été méchant avec toi ? Gifle-le !",
         "setLang": "Défini la langue, utilise !w.setLang seul pour voir une liste de toutes les langues",
         "report": "Si tu es trop timide pour venir sur le Discord du support, utilise \"report\" pour envoyer un rapport au développeur Wolke, mais n'en abuses pas!",
         "feedback": "Pour les retours utilises le discord du support s'il te plaît ^^",
@@ -110,7 +111,7 @@
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "Juste une aubergine",
         "gtn": "Te donnes un comic \"Green Tea Neko\" aléatoirement, uniquement utilisable avec un salon configuré NSFW ou Admin.",
-        "cuddle": "Te donnes un câlin d'anime en gif",
+        "cuddle": "Reçois un câlin",
         "trig": "TRIGGERED",
         "bot": "Te donnes quelques informations à propos de Rem, comme son temps de fonctionnement et plusieurs liens utiles.",
         "top": "Montre le top 10 des guildes (triée par utilisateurs) auxquelles cette instance (shard) est connectée",
@@ -156,7 +157,13 @@
         "choose": "Fait choisir Rem quelque chose pour vous, sépare les choix avec `;` ",
         "tickle": "Guili Guili Guili",
         "image": "[COMMANDES DES IMAGES]",
-        "define": "Cherche une définition d'un terme sur Urbandictionary"
+        "define": "Cherche une définition d'un terme sur Urbandictionary",
+        "dog": "Tu aimes les chiens plus que les chats ? Alors cette commande est faite pour toi",
+        "kiss": "Envoie un baiser à quelqu'un <3",
+        "setGreeting": "Définie un message de bienvenue dans le salon où cette commande a été exécuté. Tu peux utiliser %USER% et %GUILD% qui vont être remplacés par le nom d'utilisateur et le nom de la guilde.",
+        "setFarewell": "Définie un message d'adieu dans le salon où cette commande a été exécuté. Tu peux utiliser %USER% et %GUILD% qui vont être remplacés par le nom d'utilisateur et le nom de la guilde.",
+        "pout": "Hmmpf :< Boude quelqu'un",
+        "smug": "Fait un sourire suffisant à quelqu'un :^)"
     },
     "version": "Actuellement je suis en version {{version}}",
     "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
@@ -360,10 +367,10 @@
         "success": "La chanson suivante a été trouvé: {{- link}}"
     },
     "skip": {
-        "success": ":track_next: La chanson {{- title}} est ignorée",
-        "stop": ":stop_button: Chanson actuelle arrêtée",
+        "success": ":track_next: La chanson {{- title}} est ignorée.",
+        "stop": ":stop_button: Chanson actuelle arrêtée.",
         "all": ":stop_button: Toutes les chansons sont ignorées.",
-        "some": ":track_next: {{- amount}} chanson(s) ignorée(s)"
+        "some": ":track_next: {{- amount}} chanson(s) ignorée(s)."
     },
     "vskip": {
         "user-no-voice": "Tu ne peux pas voter pour passer, si tu n'es pas dans le même salon vocal!",
@@ -392,11 +399,19 @@
     "report": "OK, j'ai envoyé le rapport à Wolke, merci de ne pas en abuser, puisque cela pourrait te bannir d'utiliser ce bot!",
     "greeting": {
         "no-greeting": "Tu n'as pas ajouté le message de bienvenue que je devrais utiliser!",
-        "no-add": "Tu peux définir ou réinitialiser le message d'accueil."
+        "no-add": "Tu peux définir ou réinitialiser le message d'accueil.",
+        "set-greeting": "```Message de bienvenue:{{- text}}\nSalon:{{- channel}}\nRéinitialise le message avec {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "Il n'y a pas de message de bienvenue défini pour le moment.\n\nTu peux définir un message de bienvenue avec `{{- prefix}}setGreeting texte` et réinitialiser le message avec `{{- prefix}}setGreeting reset`",
+        "reset-greeting": "Je viens de réinitialisé le message de bienvenue, il ne va plus apparaître.",
+        "success": "OK, je viens de définir le message de bienvenue sur:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Tu n'as pas ajouté le message d'adieu que je devrais utiliser!",
-        "no-add": "Tu peux définir ou réinitialiser le message d'adieu."
+        "no-add": "Tu peux définir ou réinitialiser le message d'adieu.",
+        "set-farewell": "```Message d'adieu:{{- text}}\nSalon:{{- channel}}\nRéinitialise le message avec {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "Il n'y a pas de message d'adieu défini pour le moment.\n\nTu peux définir un message d'adieu avec `{{- prefix}}setFarewell texte` et réinitialiser le message avec `{{- prefix}}setFarewell reset`",
+        "reset-farewell": "Je viens de réinitialisé le message d'adieu, il ne va plus apparaître.",
+        "success": "OK, je viens de définir le message d'adieu sur:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok je viens de donner à {{- user}} le rôle {{- role}}"
@@ -446,14 +461,15 @@
             "cat": "Catégorie",
             "perm": "Permission",
             "use": "Utilisation"
-        }
+        },
+        "page-does-not-exist": "Cette page n'existe pas. Essaie un numéro de page plus petit"
     },
     "rp": {
         "success": "J'ai supprimé avec succès la permission `{{- node}}` du **{{- type}}** `{{- id}}`"
     },
     "love": {
         "success": "Tu viens de donner à **{{- target}}** **{{- rep}}** :heart: Point d'Amour.\nUtilisations restantes **{{uses}}**.",
-        "error-cd": "Tu  peux donner uniquement **2** :heart: Point d'Amour par Jour, prochaine utilisation {{- time}}.",
+        "error-cd": "Tu ne peux donner uniquement **2** :heart: Point d'Amour par Jour, prochaine utilisation {{- time}}.",
         "next": " Prochaine utilisation {{- time}}",
         "self": ":broken_heart: Tu ne peux pas te donner de Points d'Amour.",
         "success-remove": "Vous venez de supprimer **{{- rep}}**:heart: Love Point de **{{- target}}** Utilisations restantes **{{uses}}**. "
