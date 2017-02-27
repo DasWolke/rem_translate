@@ -12,7 +12,7 @@
         "empty-search": ":no_entry_sign: Nie wpisałeś/aś niczego do wyszukania!",
         "negative": ":no_entry_sign: Proszę nie używaj ujemnych liczb!",
         "cancel": "anuluj",
-        "version": "wersja",
+        "version": "Wersja",
         "author": "autor",
         "lib": "użyta biblioteka",
         "more": "{{number}} więcej",
@@ -25,7 +25,8 @@
         "invite": "Zaproszenie",
         "language-name-en": "Polish",
         "native-name": "Polski",
-        "empty-say": ":no_entry_sign: Nie podałeś/łaś wiadomości! "
+        "empty-say": ":no_entry_sign: Nie podałeś/łaś wiadomości! ",
+        "page": "Strona"
     },
     "help": {
         "intro": "bawmy sie razem tutaj na Discordzie (/^▽^)/ wybierz kategorię komend poprzez odpowiedź {{pre}}help numer kategorii:",
@@ -45,7 +46,7 @@
         "search": "Szuka piosenki w bazie danych bota i pokazuje 5 najlepszych wyników",
         "skip": "Rozpoczyna głosowanie na pominięcie piosenki, potrzeba więcej niż 50% głosów słuchaczy aby pominąć.",
         "voteskip": "Rozpoczyna głosowanie na pominięcie piosenki, potrzeba więcej niż 50% głosów słuchaczy aby pominąć.",
-        "qa": "Dodaje Piosenkę/Filmik Youtube do kolejki maksymalna długość: 1H30M",
+        "qa": "Dodaje piosenkę z: YouTube/Soundcloud/Osu/wyszukiwarki. Maksymalna długość: 1H30M",
         "qra": "usuwa wszystkie piosenki oprócz tej która jest grana albo określoną liczbę piosenek.",
         "queue": "Pokazuje aktualną kolejkę",
         "np": "Pokazuje aktualnie graną Piosenkę",
@@ -68,7 +69,7 @@
         "setPrefix": "Ustawia prefiks bota, spacje/wzmianki są niedozwolone!",
         "other": "[Inne Rzeczy]",
         "r34": "Szuka tagów z Rule34 i zwraca 1 zdjęcie, można używać tylko z rolą WolkeBot lub skonfigurowanym kanałem NSFW.",
-        "kona": "Szuka tagów z Konachan i zwraca 1 zdjęcie, można używać tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
+        "kona": "Szuka tagów z Konachan i wysyła jedno zdjęcie, można używać tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
         "e621": "Szuka tagów z E621 i zwraca 1 zdjęcie, można używać tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
         "yandere": "Szuka tagów z Yande.re i zwraca 1 zdjęcie, można używać tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
         "level": "Twój poziom i wymagane XP do następnego poziomu.",
@@ -82,9 +83,9 @@
         "roll": "Losuje numer od 0 do podanej liczby, lub do 10 jeżeli jej nie podano",
         "8ball": "Wyświetla opinię magicznej 8ball do zadanego pytania",
         "garfield": "Wyświetla losowy komiks z garfieldem",
-        "cat": "Wyświetla losowy obrazek z kotem",
-        "hug": "Wyświetla anime gif z przytulania",
-        "slap": "Wyświetla anime gif z policzkowania",
+        "cat": "Wyświetla losowy obrazek z kotem. Wszyscy potrzebujemy kotów!",
+        "hug": "Przytul kogoś :>",
+        "slap": "Ktoś był dla ciebie niemiły? Spoliczkuj go!",
         "setLang": "ustawia język, obecnie wspierane: {{languages}}",
         "report": "Jeżeli wstydzisz się dołączyć do serwera wsparcia, użyj report aby wysłać zgłoszenie do dewelopera Wolke, nie nadużywaj tego!",
         "feedback": "Aby przekazać opinię, proszę użyj serwera wsparcia ^^",
@@ -113,7 +114,7 @@
         "cuddle": "Wyświetla anime gif z przytulaniem",
         "trig": "TRIGGERED",
         "bot": "Wyświetla informacje o czasie online Rem, połączeniach głosowych, liczbie użytkowników i ilości gildii",
-        "top": "Wyświetla top10 gildii (użytkowników w gildii), które są połączone do tego shard'u",
+        "top": "Wyświetla top 10 gildii (użytkowników w gildii), które są połączone do tego shard'u",
         "about": "Wyświetla podstawowe informacje o mnie, takie jak biblioteka i kto mnie stworzył.",
         "lenny": "( ͡° ͜ʖ ͡°)",
         "lmg": "Pozwól mi to wygooglować dla Ciebie",
@@ -141,8 +142,8 @@
         "gp": "Komenda do wyświetlenia uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
         "rp": "Komenda do usunięcia uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
         "cry": "Smutno? Komenda w sam raz dla Ciebie!",
-        "ibsafe": "Przeszukuje ibsear.ch (tylko sfw obrazki)",
-        "iblewd": "Przeszukuje ibsearch.xxx (to samo co ibsafe + obrazki nsfw)",
+        "ibsafe": "Przeszukuje ibsear.ch (tylko obrazki sfw)",
+        "iblewd": "Przeszukuje ibsearch.xxx (to samo co ibsafe ale z obrazkami nsfw)",
         "qr": "Możesz usunąć pojedynczą piosenkę poprzez jej id lub kilka na raz poprzez `qr startid-stopid`, usunie to wszystkie piosenki zaczynając od startid i kończąc na stopid, możesz także usunąć kilka id poprzez rozdzielanie ich przecinkami",
         "shuffle": "Miesza kolejkę. Zauważ, że w kolejce muszą być co najmniej 3 piosenki, aby to działało.",
         "owo": "Wysyła losowy meme OwO What's this?, spośród ręcznie wybranych przez Wolke",
@@ -156,7 +157,13 @@
         "choose": "Poproś Rem, aby wybrała coś za Ciebie, oddziel opcje średnikami `;`",
         "tickle": "Gili gili gili",
         "image": "[KOMENDY OBRAZKOWE]",
-        "define": "Wyświetl definicję ze słownika Urbandictionary"
+        "define": "Wyświetl definicję ze słownika Urbandictionary",
+        "dog": "Wolisz psy od kotów? Ta komenda jest dla Ciebie!",
+        "kiss": "Pocałuj kogoś <3",
+        "setGreeting": "Ustawia wiadomość powitalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
+        "setFarewell": "Ustawia wiadomość pożegnalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
@@ -316,8 +323,8 @@
     "pp": {
         "err": {
             "api-body": "Nie można przeanalizować odpowiedzi api!",
-            "osu-api": "Wygląda na to że osu! api ma mały problem.",
-            "no-link": "To nie jest porpawny link osu!",
+            "osu-api": "Wygląda na to że api osu! ma mały problem.",
+            "no-link": "To nie jest poprawny link osu!",
             "unvalid-link": "Brak linku mapy!"
         },
         "success": "PP do mapy `{{- artist}} - {{- title}} [{{- version}}] z dokładnością {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}`"
@@ -351,7 +358,7 @@
         "no-volume": "Nie ustalono głośności!",
         "repeat-start": "Rozpoczęto powtarzanie piosenki **{{- song}}**",
         "already-playing": "Ta piosenka jest już odtwarzana!",
-        "blocked": "Nie można pobrać tego wideo. Może jest za długie albo zablokowane/usunięte",
+        "blocked": "Nie można pobrać tego wideo. Może jest za długie bądź zablokowane/usunięte",
         "dl-start": ":hourglass: Ładuję piosenkę!",
         "use-proxy": "Próba pobrania przez proxy, może chwilę zająć.",
         "too-much": "Nie możesz ustawić głośności powyżej 200!"
@@ -392,11 +399,19 @@
     "report": "Wysłałam Twoje zgłoszenie do Wolke, proszę nie nadużywaj tego, ponieważ możesz zostać zablokowany od używania bota!",
     "greeting": {
         "no-greeting": "Nie dodałeś/aś powitania, którego powinnam użyć!",
-        "no-add": "Możesz ustawić albo zresetować powitanie."
+        "no-add": "Możesz ustawić albo zresetować powitanie.",
+        "set-greeting": "\n ```Powitanie:{{- text}}\nKanał:{{- channel}}\nZresetuj powitanie używając {{- prefix}}setGreeting reset``` ",
+        "no-set-greeting": "Obecnie nie ma ustawionego żadnego powitania.\n\nMożesz ustawić wiadomość powitalną używając  `{{- prefix}}setGreeting tekst` oraz ją zresetować poprzez `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "Właśnie zresetowałam powitanie. Już nie będzie się ono wyświetlało.",
+        "success": "Właśnie ustawiłam powitanie jako:\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "Nie dodałeś/aś pożegnania, którego powinnam użyć!",
-        "no-add": "Możesz ustawić albo zresetować pożegnanie."
+        "no-add": "Możesz ustawić albo zresetować pożegnanie.",
+        "set-farewell": "```Pożegnanie:{{- text}}\nKanał:{{- channel}}\nZresetuj pożegnanie używając {{- prefix}}setFarewell reset``` ",
+        "no-set-farewell": "Obecnie nie ma ustawionego żadnego pożegnania.\n\nMożesz ustawić wiadomość pożegnalną używając  `{{- prefix}}setFarewell tekst` oraz ją zresetować poprzez `{{- prefix}}setFarewell reset`.\n",
+        "reset-farewell": "Właśnie zresetowałam pożegnanie. Już nie będzie się ono wyświetlało.",
+        "success": "Właśnie ustawiłam pożegnanie jako:\n```{{- text}}```"
     },
     "add-role": {
         "ok": "Ok, właśnie przydzieliłam {{- user}} rolę {{- role}} "
@@ -416,7 +431,7 @@
         "id": "id",
         "name": "nazwa",
         "self": "samo przyznawalna",
-        "lvl": "Dostepne od poziomu",
+        "lvl": "Dostępne od poziomu",
         "default": "standardowe"
     },
     "user-info": {
@@ -433,7 +448,7 @@
         "role": "Role"
     },
     "flip": {
-        "head": "Moneta wylądowała na orłże {{- url}}",
+        "head": "Moneta wylądowała na orle {{- url}}",
         "tail": "Moneta wylądowała na reszce {{- url}}"
     },
     "gp": {
@@ -445,8 +460,9 @@
             "type": "Typ",
             "cat": "Kategoria",
             "perm": "Uprawnienie",
-            "use": "Zezwolona"
-        }
+            "use": "Użyj"
+        },
+        "page-does-not-exist": "Ta strona nie istnieje. Spróbuj wpisać niższy numer strony!"
     },
     "rp": {
         "success": "Pomyślnie usunęłam uprawnienia `{{- node}}` z **{{- type}}** `{{- id}}`"
