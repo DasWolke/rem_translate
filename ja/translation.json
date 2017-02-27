@@ -25,7 +25,8 @@
         "invite": "招待",
         "language-name-en": "Japanese",
         "native-name": "日本語",
-        "empty-say": ":no_entry_sign: メッセージが入力されていません！"
+        "empty-say": ":no_entry_sign: メッセージが入力されていません！",
+        "page": "Page"
     },
     "help": {
         "intro": "一緒にディスコードを楽しみましょう(/^▽^)/\n詳しく知りたいカテゴリーの番号と一緒に{{pre}}helpコマンドを送信してください。",
@@ -156,7 +157,13 @@
         "choose": "Remに何かを選んでもらいます。それぞれの選択肢は`;`で区切ってください。",
         "tickle": "こちょこちょ!",
         "image": "[IMAGE COMMANDS]",
-        "define": "Urban Dictionaryで言葉の定義を検索します。"
+        "define": "Urban Dictionaryで言葉の定義を検索します。",
+        "dog": "猫よりも犬派ですか？これを使いましょう！",
+        "kiss": "指定した人にキスします <3",
+        "setGreeting": "コマンドが実行されたチャンネルの挨拶文を設定します。%USER%と%GUILD%を使用すると、それぞれユーザ名とサーバー名に置き換えることが出来ます。",
+        "setFarewell": "コマンドが実行されたチャンネルのお別れのメッセージを設定します。%USER%と%GUILD%を使用すると、それぞれユーザ名とサーバー名に置き換えることが出来ます。",
+        "pout": "Hmmpf :< Pout at someone",
+        "smug": "Give someone a smug :^)"
     },
     "version": "現在の私のバージョンは {{version}} です。",
     "add": "このリンクを使って私をあなたのサーバーに追加してください！\n{{- link}}",
@@ -392,11 +399,19 @@
     "report": "Wolkeにレポートを報告しました。\n濫用が確認された場合、Botの使用を禁止する可能性があります！",
     "greeting": {
         "no-greeting": "挨拶の言葉が設定されていません！",
-        "no-add": "挨拶を設定、もしくはリセットすることができます。"
+        "no-add": "挨拶を設定、もしくはリセットすることができます。",
+        "set-greeting": "```挨拶文: {{- text}}\nチャンネル: {{- channel}}\n\n挨拶文のリセットは {{- prefix}}setGreeting reset で行えます。```",
+        "no-set-greeting": "現在、挨拶文は設定されていません。\n\n挨拶文は、`{{- prefix}}setGreeting text`で設定、`{{- prefix}}setGreeting reset`でリセットすることが出来ます。",
+        "reset-greeting": "挨拶の文をリセットしました。もう出てきませんよ！",
+        "success": "分かりました。挨拶の文を```{{-text}}```に設定しました。"
     },
     "farewell": {
         "no-farewell": "お別れの言葉が設定されていません！",
-        "no-add": "お別れの言葉を設定、もしくはリセットすることができます。"
+        "no-add": "お別れの言葉を設定、もしくはリセットすることができます。",
+        "set-farewell": "```お別れのメッセージ: {{- text}}\nチャンネル: {{- channel}}\n\nメッセージのリセットは {{- prefix}}setGreeting reset で行えます。```",
+        "no-set-farewell": "現在、お別れのメッセージは設定されていません。\n\nメッセージは、`{{- prefix}}setGreeting text`で設定、`{{- prefix}}setGreeting reset`でリセットすることが出来ます。",
+        "reset-farewell": "お別れのメッセージをリセットしました。もう出てきませんよ！",
+        "success": "分かりました。お別れのメッセージを```{{-text}}```に設定しました。"
     },
     "add-role": {
         "ok": "{{- user}} に {{- role}} の役割を追加しました。"
@@ -446,7 +461,8 @@
             "cat": "カテゴリ",
             "perm": "パーミッション",
             "use": "使用可能"
-        }
+        },
+        "page-does-not-exist": "This page does not exist. Try a lower page number!"
     },
     "rp": {
         "success": "**{{- type}}** `{{- id}}`から`{{- node}}`パーミッションを剥奪しました。"
