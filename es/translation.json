@@ -26,7 +26,7 @@
         "language-name-en": "Spanish",
         "native-name": "Español",
         "empty-say": ":no_entry_sign: ¡No has introducido ningún mensaje!",
-        "page": "Page"
+        "page": "Página"
     },
     "help": {
         "intro": "¡Vamos a pasarlo bien en Discord (/^▽^)/!, selecciona una categoría del listado respondiendo con {{pre}}help y el número de la categoría que quieras seleccionar, con el fin de conocer más acerca de los comandos:",
@@ -162,8 +162,8 @@
         "kiss": "Dale un beso a alguien <3.",
         "setGreeting": "Establece una bienvenida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD%, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
         "setFarewell": "Establece una despedida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "pout": "Hmmpf :< Dale una mala cara a alguien",
+        "smug": "Dale a alguien un smug :^)"
     },
     "version": "Actualmente me encuentro en la versión {{version}}",
     "add": "Utiliza este enlace para añadirme a tu servidor: {{- link}}",
@@ -462,7 +462,7 @@
             "perm": "Permiso",
             "use": "Usar"
         },
-        "page-does-not-exist": "This page does not exist. Try a lower page number!"
+        "page-does-not-exist": "Esta pagina no existe. ¡Intenta con un número de página más bajo!"
     },
     "rp": {
         "success": "He eliminado satisfactoriamente el permiso `{{- node}}` de tipo **{{- type}}** `{{- id}}`"
