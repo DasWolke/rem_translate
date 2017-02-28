@@ -26,7 +26,7 @@
         "language-name-en": "Korean",
         "native-name": "한국어",
         "empty-say": ":no_entry_sign: 아무런 말도 입력하시지 않으셨어요!",
-        "page": "Page"
+        "page": "페이지"
     },
     "help": {
         "intro": "Discord에서 저랑 같이 신나게 놀자구요! (/^▽^)/ 명령어 카테고리를 하나 골라 {{pre}}help <카테고리 이름>를 입력하면 해당 카테고리의 명령어들을 알아볼 수 있어요. :",
@@ -87,7 +87,7 @@
         "hug": "무작위로 허그하는 애니메이션 움짤을 가져와 드립니다.",
         "slap": "애니메이션에서 뺨을 때리는 GIF 이미지를 랜덤하게 하나 가져옵니다.",
         "setLang": "언어를 설정합니다. 현재 지원되는 언어는 다음과 같습니다. : {{languages}}",
-        "report": "If you are too shy to come on the Support Discord, use report to send a report to the Developer Wolke, but dont abuse it!",
+        "report": "서포트 디스코드에 들어오기에는 당신이 너무 수줍다면, 리포트 기능을 이용해서 개발자 Wolke에게 보고해주세요, 이걸 남용하지 마세요!",
         "feedback": "피드백을 원하시면 렘봇 지원 Discord 서버에 들어와주세요! ㅎㅎ",
         "talk": "저랑 이야기하고 싶으시다구요? @멘션으로 채팅해주시면 같이 이야기할 수 있어요. :D",
         "helpReply": "알겠어요. 개인 채팅으로 저한테 쓰실 수 있는 명령어의 목록을 보내드렸어요.",
@@ -104,8 +104,8 @@
         "lewd": "뭔가 음탕한 것 같은 이미지를 가져ㅇ... 으음",
         "rem": "무작위로 렘 일러스트를 가져와 드립니다.",
         "wip": "[개발 중인 명령어]",
-        "gr": "Set a greeting with set greetingMessage,{{user}} will be replaced with the user that just joined and {{guild}} with the name of the server.\nThe greeting will be in the Channel, where the cmd was executed",
-        "fw": "Set a farewell with set farewellMessage,{{user}} will be replaced with the user that just joined and {{guild}} with the name of the server\nThe farewell will be in the channel, where the cmd was executed",
+        "gr": "`set greetingMessage`로 환영 메시지를 설정하실 수 있습니다, {{user}}는 사용자 이름, {{guild}}는 서버 이름으로 바뀌어서 나옵니다.\n환영 메시지는 이 명령어가 실행된 채널에서 나옵니다.",
+        "fw": "`set farewellMessage`로 작별 메시지를 설정하실 수 있습니다,{{user}}는 사용자 이름, {{guild}}는 서버 이름으로 바뀌어서 나옵니다.\n작별 메시지는 이 명령어가 실행된 채널에서 나옵니다.",
         "s": "The server command, sets stuff like greetings and farewells",
         "shrug": "¯\\_(ツ)_/¯",
         "flip": "(╯°□°）╯︵ ┻━┻ 쾅!",
@@ -121,7 +121,7 @@
         "fskip": "이 노래/숫자 만큼/모든 음악 스킵",
         "leave": "현재 연결되어 있는 보이스 채널에서 떠납니다.",
         "say": "렘이 지정한 말을 하도록 합니다.",
-        "ar": "Add a role to yourself or a user",
+        "ar": "자기 자신이나 사용자에게 권한을 부여합니다.",
         "cr": "Create a role or add a role to the bot, -d -> default, -l 2 -> gives the role to the user once he reaches level 2, -s -> make the role self assignable, example -> cr -l 20 rolename, adds a role a user gets with level 20 called rolename",
         "lr": "현재 렘이 가지고 있는 모든 권한을 보여줍니다.",
         "rr": "Removes a Role from yourself, another user or the server",
@@ -153,17 +153,17 @@
         "triggered": "TRIGGERED",
         "stare": "stareeeee...",
         "nom": "Nom :>",
-        "potato": "Everyone wants a potato",
-        "choose": "Make Rem choose something for you, seperate the choices with `;`",
+        "potato": "모두가 감자를 원합니다",
+        "choose": "렘이 당신을 위해서 무언가를 선택하게 합니다. `;`로 구분해서 적어주세요.",
         "tickle": "Tickle Tickle Tickle",
         "image": "[IMAGE COMMANDS]",
         "define": "Get a definition of a term from Urbandictionary",
         "dog": "고양이보다 강아지를 더 좋아하시나요? 이 명령어는 당신에게 잘 어울릴 거에요",
         "kiss": "누군가에게 키스를 보냅니다 <3",
-        "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-        "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "setGreeting": "이 명령어를 입력한 채널에서 렘이 환영 인사를 하도록 할 수 있습니다. %USER%에는 사용자 이름을, %GUILD%에는 길드 이름으로 치환되며, 선택적으로 사용할 수 있는 명령 옵션입니다.",
+        "setFarewell": "이 명령어를 입력한 채널에서 렘이 작별 인사를 하도록 할 수 있습니다. %USER%에는 사용자 이름으로, %GUILD%에는 길드 이름으로 치환되며, 선택적으로 사용하실 수 있습니다.",
+        "pout": "볼에 바람 넣고, 후으으음! :<",
+        "smug": "누군가에게 자신의 당당함을 표출해보세요 :^)"
     },
     "version": "제 현재 버전은 다음과 같아요. : {{version}}",
     "add": "이 링크로 당신의 서버에 저를 추가해 주세요. : {{- link}}",
@@ -216,7 +216,7 @@
     "roll": {
         "whole-number": "아무 숫자나 지정해주세요!",
         "negative": "{{number}}와 함께 랜덤 명령어를 사용하시는건 불가능합니다.",
-        "success": "Rolled a {{first}} out of {{second}}"
+        "success": "{{first}}와 {{second}} 사이에서 주사위를 굴렸습니다."
     },
     "qa": {
         "nothing-found": "검색어 `{{search}}`로는 아무 곡도 찾을 수 없었어요.",
@@ -229,7 +229,7 @@
         "success-multiple": "다음과 같은 음악을 추가했습니다:\n```{{- table}}```",
         "too-big": "곡 {{number}}개가 추가되었어요.",
         "no-songs-added": "이미 큐에 추가된 음악은 추가 할 수 없습니다, 다시 시도해주세요!",
-        "too-much": "You can not add more than {{number}} songs at once!"
+        "too-much": "한번에 {{number}}개 이상의 곡을 추가 할 수 없습니다!"
     },
     "qra": {
         "to-small": "{{number}}개의 곡은 제거할 수 없었어요!",
@@ -257,8 +257,8 @@
         "unsupported": "선택하신 언어는 아직 제가 말할 수 있는 언어가 아니에요. 하지만 GitHub에서 선택하신 언어로 번역하여 풀 리퀘스트를 올리면 제가 그 언어로 말할 수 있게 될지도 몰라요! 현재 제가 말할 수 있는 언어는 다음과 같아요. : {{languages}}",
         "native-name": "Native Name",
         "english-name": "영어 이름",
-        "shortcode": "짧은 코드",
-        "available-languages": "List of available Languages\nPlease note that setLang needs the shortcode"
+        "shortcode": "단축코드(약자)",
+        "available-languages": "현재 사용 가능한 언어들의 리스트입니다.\nsetLang은 단축코드를 필요로 함을 기억해두세요."
     },
     "np": {
         "song-duration": "현재 재생 중 :` {{- title}} {{current}}/{{duration}} {{repeat}} `",
@@ -344,8 +344,8 @@
     "play": {
         "no-result": "곡을 찾을 수 없어요!",
         "playing": ":musical_note: 현재 재생 중 : **{{- song}}**",
-        "success": ":musical_note: Now playing **{{- song}}**",
-        "next": ":musical_note: Playing next **{{- song}}**"
+        "success": ":musical_note: **{{- song}}** 재생중",
+        "next": ":musical_note: **{{- song}}**을 다음에 재생합니다."
     },
     "prefix": {
         "success": "명령어 접두사를 `{{- prefix}}`로 변경했습니다, `{{- prefix}}ping`로 확인해보세요.",
@@ -400,18 +400,18 @@
     "greeting": {
         "no-greeting": "제가 말하게 될 인삿말을 지정하시지 않으셨어요!",
         "no-add": "인삿말을 추가하거나 초기화할 수 있어요.",
-        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
-        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
-        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
-        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
+        "set-greeting": "```인사말 : {{- text}}\n채널 : {{- channel}}\n환영 인사를 초기화하려면 {{- prefix}}setGreeting reset 을 입력해주세요.```",
+        "no-set-greeting": "현재 환영 인사를 어떻게 할 지 알려주지 않으셨어요.\n\n`{{- prefix}}setGreeting [인사말]`로 환영 인사말을 알려주실 수 있고, `{{- prefix}}setGreeting reset`으로 환영 인사를 초기화할 수 있어요.",
+        "reset-greeting": "환영 인사를 초기화했어요. 이제 누가 오시더라도 반겨드리지 않을거에요!",
+        "success": "알겠어요. 환영 인사를 다음과 같이 설정했어요. :\n```{{- text}}```"
     },
     "farewell": {
         "no-farewell": "제가 사용할 작별 인사를 설정하시지 않으셨습니다!",
         "no-add": "작별 인사의 설정이나 재설정이 가능합니다.",
-        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
-        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
-        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
-        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
+        "set-farewell": "```인사말 : {{- text}}\n채널 : {{- channel}}\n작별 인사를 초기화하려면 {{- prefix}}setFarewell reset 을 입력해주세요.```",
+        "no-set-farewell": "작별 인사를 어떻게 할 지 알려주지 않으셨어요.\n\n`{{- prefix}}setFarewell [인사말]`로 작별 인사말을 알려주실 수 있고, `{{- prefix}}setFarewell reset`으로 작별 인사를 초기화할 수 있어요.",
+        "reset-farewell": "작별 인사를 초기화했어요. 이제 아무한테도 작별 인사를 하지 않을게요.",
+        "success": "알겠어요. 작별 인사를 다음과 같이 설정했어요. :\n```{{- text}}```"
     },
     "add-role": {
         "ok": "{{- user}}에게 {{- role}} 권한을 부여했습니다."
@@ -441,11 +441,11 @@
         "nick": "닉네임",
         "join": "가입 일자",
         "created": "계정 생성 일자",
-        "playing": "Playing",
+        "playing": "플레이 중",
         "info": "사용자 정보",
         "bot": "봇 여부",
         "status": "상태",
-        "role": "Roles"
+        "role": "권한"
     },
     "flip": {
         "head": "The coin flipped to head {{- url}}",
@@ -465,10 +465,10 @@
         "page-does-not-exist": "이 페이지는 존재하지 않습니다. 더 적은 숫자의 페이지를 시도해보세요!"
     },
     "rp": {
-        "success": "I successfully removed the permission `{{- node}}` from the **{{- type}}** `{{- id}}`"
+        "success": "**{{- type}}** `{{- id}}` 의 `{{- node}}` 의 권한을 제거했습니다."
     },
     "love": {
-        "success": "**{{- target}}**님에게 **{{- rep}}** :heart:만큼의 러브 포인트를 주셨어요. 앞으로 **{{uses}}**번 주실 수 있어요.",
+        "success": "**{{- target}}**님에게 **{{- rep}}** :heart:만큼의 러브 포인트를 주셨어요. 앞으로 **{{uses}}**번 사용하실 수 있어요.",
         "error-cd": "하루에 최대 **2** :heart: 러브 포인트만 사용할 수 있어요. 다음 사용 가능 시간 : {{- time}}.",
         "next": " 다음 사용 가능 시간 : {{- time}}",
         "self": ":broken_heart: 당신 스스로한테 러브 포인트를 줄 수는 없다구요!",
@@ -476,24 +476,24 @@
     },
     "dere": {
         "no-dere": "입력하신 데레 성향을 찾을 수 없었어요. 검색 가능한 데레 성향들의 목록이에요. : \n",
-        "dandere": "The Dandere (だんデレ) type refers to a character who is often silent and to themselves.\n It may be due to shyness or just because they’re the quiet type.\n However,when alone with the person they are attracted to, they usually come out of their shell and become more loving.\n This word is an abbreviation of Danmari (だんまり) which means silent and Deredere (デレデレ) which means lovey dovey.",
-        "deredere": "The Deredere (デレデレ) type refers to a character who is completely kind, happy, and energetic.\n No matter what may happen, they quickly revert to their cheerful self.\n This may be the only character type that doesn’t have any abbreviation with the base Deredere (デレデレ) word, although the definition isn’t simply lovey dovey like the other types.",
-        "himedere": "The Himedere (ひめデレ) type refers to a character who wishes to be treated like a princess by the person she loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Hime (ひめ) which means princess and Deredere (デレデレ) which means lovey dovey.",
-        "kamidere": "The Kamidere (かみデレ) type refers to a character with a god complex.\n They’re highly arrogant and proud, and aren’t afraid to speak their minds and show everyone how right they are.\n This word is an abbreviation of Kami (かみ) which means God and Deredere (デレデレ) which means lovey dovey.",
-        "kuudere": "The Kuudere (クーデレ), sometimes written Coodere or Kūdere, type refers to a character who is often cold, blunt, and cynical.\n They may seem very emotionless on the outside, but on the inside they’re very caring — at least when it comes to the ones they love.\nThis word is an abbreviation of Cool (クール) and Deredere (デレデレ) which means lovey dovey.",
-        "mayadere": "The Mayadere (まやデレ) type refers to a character who is often a dangerous antagonist of a series, but switches sides after falling in love with another character.\n The character may remain deadly and unpredictable for the protagonist or other main character in the Anime or Manga.",
-        "oujidere": "The Oujidere (おうじデレ) type refers to a character who wishes to be treated like a prince by the person he loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Ouji (おうじ) which means prince and Deredere (デレデレ) which means lovey dovey.",
-        "tsundere": "The Tsundere (ツンデレ) type is possibly one of the most popular or simply most used character types in anime and manga.\n This type refers to a character who treats the one they love poorly. \nSometimes this is because they started out hating them and eventually loves them as the series goes on, and sometimes it’s because that’s the only way they know how to react.\n An example is if the main character calls a tsundere character cute.\n The tsundere character will get upset and flustered, possibly cause physical harm to the one they love, and then call them stupid.\nThis word is an abbreviation of Tsuntsun (ツンツン) which means to look away in disgust and Deredere (デレデレ) which means lovey dovey.",
-        "undere": "The Undere (ウンデレ) type refers to a character who says yes to pretty much everything the one they love says. \n They agree as much as possible to become as close as they can to their love interest. \n This word is an abbreviation of Un (ウン) which is a short way Japanese people say Yes and Deredere (デレデレ) which means lovey dovey.",
-        "yandere": "The Yandere (ヤンデレ) type refers to a character who starts out nice and sweet but eventually becomes dark and obsessive over the one they love.\n They become stalkers and use violence on, and possibly even murder, any person who gets close to their love interest — even if they’re too shy to simply speak with that person they have a crush on.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Deredere (デレデレ) which means lovey dovey.",
-        "yangire": "The Yangire (ヤンギレ) type is similar in some ways to Yandere. \n It is a character who may start out nice and sweet but becomes very aggressive and psychotic.\n However, unlike Yandere, Yangire do not become violent because of they attraction to a character. \n Instead, they may snap simply because they’re irritated with a character that has nothing to do with their love interest.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Kire (きれ) which means to cut or snap."
+        "dandere": "다루데레 (だんデレ) 유형은 자주 침묵하고 혼잣말을 자주 합니다.\n수줍음 때문이거나 조용한 유형일 수 있습니다.\n  그러나, 그들이 끌리는 사람과 단 둘이 있을 때, 그들은 보통 그들의 분위기 에서 나와 더욱 사랑스럽게 변합니다.\n  이 단어는 약어로 단마리 (だんまり)의  침묵과 데레데레 (デレデレ)의 부끄부끄 를 의미합니다.",
+        "deredere": "데레데레 (デレデレ) 유형은 완전히 친절하고 행복하며 활력있는 캐릭터를 나타냅니다.\n  일어날 수있는 일이 무엇이든간에, 그들은 빨리 쾌활한 상태로 되돌아갑니다.\n  이 정의는 다른 유형과 마찬가지로 단순한  부끄부끄는 아니지만, 기본 데레데레 (デレデレ) 단어로 약어 가없는 유일한 문자 유형일 수 있습니다.",
+        "himedere": "히메데레(ひめデレ) 란 실제로는 왕족이 아니더라도 자신이 사랑하는 사람이 공주처럼 대하는 것을 원하는 캐릭터를 가리킵니다.\n이 단어는 약어로 히메 (ひめ)의  공주를 의미하고 데레데레 (デレデレ)는 부끄러워하는것을 의미합니다.",
+        "kamidere": "카미데레 (kamire) 유형은 신 같은 성격을 갖고 있습니다.\n  그들은 아주 거만하고 자랑스러워하며 마음을 잘 표현하고 자기 자신을 모두 보여 주는 것을 꺼려 하지 않습니다.\n  이 단어는 약어로 카미 (か み)의 신과 데레데레 (デレデレ)의 부끄부끄를 합친 뜻입니다.",
+        "kuudere": "쿨데레 (クーデレ)는 때로는 차갑고, 둔하고, 냉소적인 캐릭터를 지칭합니다.\n  그들은 외부에서 매우 냉정하게 보일지 모르지만, 내부에서 그들은 적어도 그들이 사랑하는 것에 관해서는 매우 배려하고 있습니다.\n이 단어는 약어로 쿨 (ク ー ル)은 쿨함, 데레데레 (デ レ デ レ)는 부끄부끄를 의미합니다.",
+        "mayadere": "메가데레 (ま や デ レ) 유형은 종종 시리즈의 위험한 인물이지만 속성이 다른 사람과 사랑에 빠지면 다르게 바뀝니다.\n  캐릭터는 애니 또는 망가의 주인공이나 부인물에게 치명적이고 예측 불가능한 행동을 할 수 있습니다.",
+        "oujidere": "오지데레 (おうじデレ) 타입은 실제로는 왕족이 아니더라도 자신이 사랑하는 사람이 왕자처럼 대하는 것을 원하는 캐릭터를 가리킵니다.\n이 단어는 약어이며, 황태자를 의미하는 오우지 (お う じ) , 부끄부끄를 의미하는 데레데레 (デレデレ)를 의미합니다.",
+        "tsundere": "츤데레 (ツンデレ) 유형은 아마도 애니메이션 및 만화에서 가장 인기 있거나 흔히 사용되는 유형 중 하나 일 수 있습니다.\n  이 유형은 사랑하는 사람을 새침하게 다루는 성격을 지칭합니다.\n때로는 시리즈 시착부분에는 주인공에게 새초롬하게 반응하지만, 시리즈가 진행됨에 따라 결국 그들을 사랑하게 됩니다. 때로는 반응하는 방법을 알고있는 유일한 사람이기도 합니다.\n  예를 들어 주인공이 츤데레를 귀엽게 대하는 경우입니다.\n  그러면 츤데레 캐릭터는 화가 나서 사랑하는 사람을 때리거나 바보라고 부르기도 합니다.\n이 단어는 약어로, 츤츤 (ツンツン)의 혐오감을 멀리하는 것과 데레데레 (デレデレ)는 부끄부끄를 의미합니다.",
+        "undere": "운데레 (ウンデレ) 유형은 사랑하는 사람이 말하는 모든 것에 긍정하는 사람을 가리킵니다.\n  그들은 가능한 한 그들이 사랑과 관심사에 가능한 한 가까워지는 것을 원합니다.\n  이 단어는 약어로, 운 (ウ ン)의 예스와 데레데레 (デレデレ)의 부끄부끄라는 뜻이 합쳐져 있습니다.",
+        "yandere": "얀데레 (ヤンデレ)는 멋지고 달콤하지만 결국 사랑하는 사람보다 어둡고 강박적 인 사람을 의미합니다.\n  그들은 스토커가 되어 사랑에 관심을 갖게되는 사람에게 폭력을 사용하고, 심지어는 살인을 저지르기도 합니다.\n  이 단어는 약어이며, 정신적으로나 정서적으로 아픈 것을 의미하는 얀도루 (やんでる), 부끄부끄를 의미하는 데레데레 (デレデレ)를 합친 단어 입니다.",
+        "yangire": "얀기레 (ヤンギレ) 유형은 얀데레와 몇 가지면에서 유사합니다.\n  멋지고 달콤하지만 아주 공격적이고 정신적으로 끔찍한 캐릭터입니다.\n  그러나 얀데레와 달리 얀기레는 캐릭터에 대한 매력으로 인해 폭력적으로 변하지 않습니다.\n  대신, 그들은 사랑 혹은 관심사와 아무런 관련이없는 인물에 짜증을 내기 때문에 간단히 피할 수 있습니다.\n  이 단어는 약어로, 정신적으로나 정서적으로 아픈 것을 의미하는 얀데레 (や ん で る), 잘라내는 것을 의미하는 기레 (き れ)를 합친 말 입니다."
     },
     "shuffle": {
         "not-enough-shuffle": "큐의 순서를 다 바꾸려면 큐에 최소한 3개의 곡은 있어야 해요.",
         "success": "큐 순서를 다 갈아엎어버렸어요!"
     },
     "get-node": {
-        "success": "Permission node: `{{- node}}` Category node:`{{- category}}.*` Category:`{{- category}}`",
+        "success": "퍼미션 노드: `{{- node}}` 카테고리 노드:`{{- category}}.*` 카테고리:`{{- category}}`",
         "not-found": "명령어를 찾을 수 없다구요!",
         "no-args": "Type a cmd without a prefix after this to get it's permission node, category node and category"
     },
@@ -516,11 +516,11 @@
         "success": "당신이 설정하신 모든 권한을 초기화했어요."
     },
     "choose": {
-        "empty-choose": ":no_entry_sign: I can not choose anything, if you enter nothing!",
-        "success": "I choose **{{- choice}}**!"
+        "empty-choose": ":no_entry_sign: 아무것도 입력하지 않으시면 고를 수 없습니다!",
+        "success": "**{{- choice}}**를 골랐습니다!"
     },
     "define": {
-        "empty-search": ":no_entry_sign: I can not search a definition, if you enter nothing!",
+        "empty-search": ":no_entry_sign: 아무것도 입력하시지 않으시면 검색 할 수 없습니다!",
         "no-result": "I could not find anything with the term `{{- term}}`"
     }
 }
