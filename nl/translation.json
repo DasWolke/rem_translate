@@ -4,11 +4,11 @@
         "no-pm": ":no_entry: Deze command werkt niet in privé kanalen!",
         "whole-num": ":no_entry_sign: Gebruik alsjeblieft een heel getal!",
         "nan": ":no_entry_sign: Wat je zojuist ook stuurde, voeg alsjeblieft een rond getal toe. :)␣",
-        "no-song-in-queue": ":no_entry_sign: Er staat geen nummers in de speel lijst, misschien moet je er één toevoegen :musical_note: ?",
-        "no-song-playing": ":musical_note: Er word op dit moment geen lied afgespeeld!",
-        "no-permission": ":no_entry_sign: Je hebt geen toestemming om deze command te gebruiken, voeg alsjeblieft een Discord rol genaamd WolkeBot toe aan jezelf om het te gebruiken.",
-        "no-voice": ":no_entry_sign: Ik ben niet verbonden met een spraak kanaal op deze server!",
-        "level-update": ":tada: Je hebt zojuist **Level  {{level}}** bereikt op **{{server}}** ",
+        "no-song-in-queue": ":no_entry_sign: Er staan geen nummers in de afspeellijst, misschien moet je er één toevoegen :musical_note: ?",
+        "no-song-playing": ":musical_note: Er wordt op dit moment geen nummer afgespeeld!",
+        "no-permission": ":no_entry_sign: Je hebt geen toestemming om deze command te gebruiken, voeg alsjeblieft een Discord rol genaamd WolkeBot aan jezelf toe om het te gebruiken.",
+        "no-voice": ":no_entry_sign: Ik ben niet verbonden met een spraakkanaal op deze server!",
+        "level-update": ":tada: Je hebt zojuist **Level  {{level}}** bereikt op **{{- server}}** ",
         "empty-search": ":no_entry_sign: Je hebt geen zoekterm ingevuld!",
         "negative": ":no_entry_sign: Gebruik alsjeblieft geen negatief getal!",
         "cancel": "cancel",
@@ -29,81 +29,81 @@
         "page": "Page"
     },
     "help": {
-        "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ selecteer een command categorie door te reageren met {{pre}}help nummer van command om meer te weten te komen:",
+        "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ Selecteer een command categorie door te reageren met {{pre}}help nummer van een command om meer te weten te komen:",
         "intro_2": "Hey ik ben",
         "support": "[SUPPORT]",
-        "bug": "Krijg de link toe gestuurde naar de Rem bot support server.\n",
-        "help": "de hulp commando\n",
+        "bug": "Krijg de link naar de Rem bot support server toegestuurd.",
+        "help": "het hulp command",
         "add": "Krijg een link om mij aan je server toe te voegen",
         "music": "[MUZIEK]",
-        "voice": "Ik kom in de spraak kanaal waar jij op dit moment in zit (Normale muziek commands zorgen ook dat de bot in het spraak kanaal komt)",
-        "silent": "Ik verlaat het spraak kanaal waar ik nu mee verbonden ben. (Alleen te gebruiken met WolkeBot rol)",
+        "voice": "Ik kom in het spraakkanaal waar jij op dit moment in zit (Normale muziek commands zorgen ook dat de bot in het spraakkanaal komt)",
+        "silent": "Ik verlaat het spraakkanaal waar ik nu mee verbonden ben. (Alleen te gebruiken met WolkeBot rol)",
         "play": "Speel iets af van /Youtube/Soundcloud/Osu/zoek",
         "pause": "Pauzeer het huidige nummer",
         "resume": "Verder gaan met het afspelen van het gepauzeerde nummer ",
-        "volume": "Veranderd het volume van de bot, waarden tussen 1-200 (Alleen te gebruiken met WolkeBot rol)",
+        "volume": "Verandert het volume van de bot, waarden tussen 1-200 (Alleen te gebruiken met WolkeBot rol)",
         "forever": "Speelt een nummer herhaald af tot er nieuwe nummers worden toegevoegd aan de wachtrij, alleen te gebruiken met de WolkeBot rol",
-        "search": "Zoekt naar een lied in de Bot Database en laat de 5 beste resultaten zien",
+        "search": "Zoekt naar een nummer in de Bot Database en laat de 5 beste resultaten zien",
         "skip": "Start een stemming om het huidige nummer over te slaan, meer dan 50% van het kanaal moet stemmen, dan word het overgeslagen.",
-        "voteskip": "Start een stemming om het huidige nummer over te slaan, meer dan 50% van het kanaal moet stemmen, dan word het overgeslagen.",
-        "qa": "Voegt een liedje toe aan de wachtrij van Youtube/Soundscloud/Osu/search   maximale lengte: 1U30M",
-        "qra": "Verwijderd alle nummers behalve die nu afgespeeld wordt of een bepaald aantal nummers",
+        "voteskip": "Start een stemming om het huidige nummer over te slaan, meer dan 50% van het kanaal moet stemmen, dan wordt het overgeslagen.",
+        "qa": "Voegt een nummer van Youtube/Soundscloud/Osu/search toe aan de wachtrij.  Maximale lengte: 1U30M",
+        "qra": "Verwijdert of alle nummers behalve het nummer dat nu afgespeeld wordt of een bepaald aantal nummers.",
         "queue": "Laat de huidige wachtrij zien",
-        "np": "Laat zien welk nummer er nu afgespeeld word",
-        "rq": "Voegt een willekeurig nummer/een aantal nummers toe aan de wachtrij",
-        "stream": "Speelt de geselecteerde internet radio af, je kunt zoeken naar radio's of ze direct toevoegen door -u url aan de command toe te voegen",
+        "np": "Laat zien welk nummer er nu wordt afgespeeld",
+        "rq": "Voegt een willekeurig nummer/aantal nummers aan de wachtrij toe",
+        "stream": "Speelt de geselecteerde internet radio af, je kunt zoeken naar radio's of ze direct toevoegen door -u url aan het command toe te voegen",
         "youtube": "[YOUTUBE]",
         "yts": "Zoekt op Youtube en geeft je het eerste resultaat",
-        "ytq": "Zoekt op Youtube en voegt het eerste resultaat toe aan de wachtrij",
+        "ytq": "Zoekt op Youtube en voegt het eerste resultaat aan de wachtrij toe",
         "mod": "De Mod cp",
-        "mod-info": "Deze commands verseisen allemaal dat de gebruiker de Discord rol genaamd WolkeBot heeft",
+        "mod-info": "Deze commands vereisen allemaal dat de gebruiker de Discord rol genaamd WolkeBot heeft",
         "info": "Geeft je wat informatie over de huidige server",
-        "ban": "Verband de gebruiker en verwijderd 7 dagen van zijn/haar berichten",
-        "kick": "Verwijderd een gebruiker",
-        "rm": "verwijderd berichten, je kunt filteren voor bots, gebruikers, commands/reacties van Rem of gewoon tot 100 berichten deleten\nFilters: -b -> bots| -r -> messages from rem| -u @user -> messages from a certain user| -c -> Bericht dat start met een voorvoegsel van Rem",
-        "noLevelServer": "Schakelt het level systeem uit voor de hele server, gebruik de command opnieuw om het weer in te schakelen",
+        "ban": "Verbant de gebruiker en verwijdert 7 dagen van zijn/haar berichten",
+        "kick": "Verwijdert een gebruiker",
+        "rm": "verwijdert berichten, je kunt filteren voor bots, gebruikers, commands/reacties van Rem of gewoon tot 100 berichten deleten.\nFilters: -b -> bots| -r -> berichten van rem| -u @user -> berichten van een bepaalde gebruiker| -c -> Bericht wat start met het voorvoegsel van Rem",
+        "noLevelServer": "Schakelt het level systeem uit voor de hele server, gebruik het command opnieuw om het weer in te schakelen",
         "noPmServer": "Schakelt PM notificaties uit voor de hele server, gebruik de command opnieuw om het weer in te schakelen",
-        "noChServer": "Schakelt de PM notificaties voor de hele server en schakelt kanaal notificaties in, gebruik de command opnieuw om het weer om te draaien",
-        "setLewd": "Voegt het huidige kanaal toe als NSFW kanaal",
-        "remLewd": "Verwijderd het huidige kanaal van de lijst met NSFW kanalen",
-        "setPrefix": "Veranderd het voorvoegsel van de bot, geen spaties/vermeldingen toegestaan!",
+        "noChServer": "Schakelt de PM notificaties voor de hele server uit en schakelt in plaats daarvan kanaal notificaties in, gebruik de command opnieuw om het weer om te draaien",
+        "setLewd": "Voegt het huidige kanaal toe als een NSFW kanaal",
+        "remLewd": "Verwijdert het huidige kanaal van de lijst met NSFW kanalen",
+        "setPrefix": "Verandert het voorvoegsel van de bot, geen spaties/vermeldingen toegestaan!",
         "other": "[Andere Dingen]",
-        "r34": "Zoekt op Rule34 met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met WolkeBot rol of een aangepast NSFW kanaal.",
-        "kona": "Zoekt op Konachan met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met WolkeBot rol of een aangepast NSFW kanaal.",
-        "e621": "Zoekt op E621 met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met WolkeBot rol of een aangepast NSFW kanaal.",
-        "yandere": "Zoekt op Yande.re met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met WolkeBot rol of een aangepast NSFW kanaal.",
+        "r34": "Zoekt op Rule34 met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met de WolkeBot rol of in een aangepast NSFW kanaal.",
+        "kona": "Zoekt op Konachan met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met de WolkeBot rol of in een aangepast NSFW kanaal.",
+        "e621": "Zoekt op E621 met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met de WolkeBot rol of in een aangepast NSFW kanaal.",
+        "yandere": "Zoekt op Yande.re met de gegeven labels en geeft 1 afbeelding terug, alleen bruikbaar met de WolkeBot rol of in een aangepast NSFW kanaal.",
         "level": "Je Level en de XP die je nodig hebt voor het volgende Level",
         "rank": "Ranglijst van deze server",
         "noLevel": "Schakelt het Level systeem voor jou uit. Gebruik dit opnieuw om het weer aan te zetten.",
-        "noPm": "Schakelt PM notificaties voor jou uit. Gebruik opnieuw om het weer in te schakelen.",
-        "pp": "Rekent PP voor de beatmap met optionele accuraatheid en mods uit",
-        "cookie": "Geeft een koekje aan de benoemde gebruiker of laat jouw koekjes zien als je niemand benoemt. (Koekjes geven is alleen mogelijk met WolkeBot rol)",
+        "noPm": "Schakelt PM notificaties voor jou uit. Gebruik dit opnieuw om het weer aan te zetten.",
+        "pp": "Berekent PP voor de beatmap met optionele accuraatheid en mods",
+        "cookie": "Geeft een koekje aan de genoemde gebruiker of laat jouw koekjes zien als je niemand benoemt. (Koekjes geven is alleen mogelijk met WolkeBot rol)",
         "eatCookie": "Eet een koekje.",
-        "git": "Geeft jou de Github link van Rem",
-        "roll": "Rol een nummer tussen nul en het aangegeven getal, als er geen getal is aangegeven word 10 gebruikt.",
+        "git": "Geeft je de Github link van Rem",
+        "roll": "Rol een nummer tussen nul en het aangegeven getal, als er geen getal is aangegeven wordt 10 gebruikt.",
         "8ball": "Geeft je de mening van de magische 8ball over een vraag",
-        "garfield": "Geeft je een willekeurige Garfield grap",
-        "cat": "Stuurt je een willekeurige plaatje van een kat",
-        "hug": "Geeft je een anime knuffel gif",
-        "slap": "Geeft je een anime klap gif",
-        "setLang": "Kies de taal, ren !w.setLang zonder geen enkele aantastingen om een lijst van talen te krijgen.\n",
-        "report": "Als je te verlegen bent om naar de support Discord te komen, gebruik dan report om een verslag te sturen naar de ontwikkelaar Wolke, maar misbruik het niet!",
-        "feedback": "Voor advies alsjeblieft de support Discord gebruiken ^^",
+        "garfield": "Geeft je een willekeurige Garfield strip",
+        "cat": "Stuurt je een willekeurige plaatje van een kat. We willen allemaal katten!",
+        "hug": "Geef iemand een knuffel :>",
+        "slap": "Iemand was gemeen tegen je? Sla ze!",
+        "setLang": "Kies de taal, gebruik !w.setLang zonder geen enkele toevoegingen om een lijst van talen te krijgen.",
+        "report": "Als je te verlegen bent om naar de support Discord te komen, gebruik report dan om een verslag te sturen naar de ontwikkelaar Wolke maar misbruik het niet!",
+        "feedback": "Gebruik voor feedback alsjeblieft de support Discord ^^",
         "talk": "Als je met me wilt praten @mention me met een bericht :D",
         "helpReply": "OK, ik heb je een lijst met commands gestuurd via PM.",
         "moderation": "[MODERATIE]",
         "misc": "[DIVERS]",
-        "stats": "[STATS]",
-        "user": "[GERUIKER]",
+        "stats": "[STATISTIEKEN]",
+        "user": "[GEBRUIKER]",
         "admin": "[ADMIN]",
         "nsfw": "[NSFW]",
         "eastereggs": "[PAASEIEREN]",
         "proxer": "[PROXER]",
         "no-cat": "[ONGECATEGORISEERD]",
-        "ping": "Geeft je de ping van de bot, realiseer dat dit niet de ping van een spraak channel is.",
+        "ping": "Geeft je de ping van de bot, realiseer je dat dit niet de ping van een spraakkanaal is.",
         "lewd": "Zo obsceen uwu",
         "rem": "Geeft je een willekeurige foto van Rem.",
-        "wip": "[LOPENDE WERKZAAMHEDEN]",
+        "wip": "[WERKZAAMHEDEN IN UITVOERING]",
         "gr": "Zet een groet met set greetingMessage,{{user}} zal worden verplaatst met het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. De groet zal plaatsvinden in de kanaal waar de command is toegepast",
         "fw": "Zet een afscheidsgroet met set farewellMessage, {{user}} zal worden verplaatst met het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. De groet zal plaatsvinden in de kanaal waar de command is toegepast.",
         "s": "De server command, zet dingen zoals groeten en afscheidsberichten.",
@@ -165,23 +165,23 @@
         "pout": "Hmmpf :< Pout at someone",
         "smug": "Give someone a smug :^)"
     },
-    "version": "Op het moment run ik op versie {{version}}",
-    "add": "Gebruik deze link om me aan je server toe te voegen: {{- link}}",
+    "version": "Op het moment gebruik ik versie {{version}}",
+    "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
     "bug": "Join de support Discord: {{- link}} om een bug aan te geven.",
     "level": {
-        "result": "Je bent **level {{level}}**  XP: **{{current}}XP**/**{{needed}}XP** Totale XP:**{{total}}** ",
+        "result": "Je bent **level {{level}}**  XP: **{{current}}XP**/**{{needed}}XP** \nTotale XP:**{{total}}** ",
         "disabled": "Het XP systeem is uitgeschakeld op deze server!"
     },
     "joinVoice": {
-        "join": "Ok, ik kom bij je voice channel.",
-        "error": "Er is een fout opgetreden terwijl ik bij je voice channel probeerde te komen!",
+        "join": "Ok, ik kom nu in je voice channel.",
+        "error": "Er is een fout opgetreden terwijl ik in je spraakkanaal probeerde te komen!",
         "permission": "Geen toestemming! Je moet jezelf de WolkeBot rol geven om dit te gebruiken.",
         "no-voice": "Je zit niet in een voice channel!",
         "already-voice": "Ik zit al in een voice channel, verplaats me om dat te veranderen!"
     },
     "nsfw-images": {
         "nothing-found": "Geen plaatjes gevonden met de termen: `{{tags}}`",
-        "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW channels) om NSFW commands te gebruiken",
+        "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
         "error-body": "Er is een fout opgetreden bij het interpreteren van de API  reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746"
     },
     "8ball": {
@@ -193,76 +193,76 @@
             "Zeker weten van niet.",
             "Doe het gewoon.",
             "Dat is een geweldig idee.",
-            "Weet je het zeker?"
+            "Weet je dat zeker?"
         ],
-        "no-message": "Je hebt een vraag niet beantwoord."
+        "no-message": "Je hebt geen vraag gesteld."
     },
     "ban": {
-        "success": "Verbannen gebruiker {{user}}",
-        "privilege": "Mijn rol heeft niet de rechten om {{user}} te verbannen!",
+        "success": "Gebruiker {{user}} verbannen",
+        "privilege": "Mijn rol heeft niet de benodigde rechten om {{user}} te verbannen!",
         "err": "Er is een fout opgetreden terwijl ik {{user}} probeerde te verbannen!",
-        "perms": "Je kan de eigenaar en niemand anders verbannen met de WolkeBot rol.",
-        "self": "Je kan me niet verbannen met mijn eigen commando.",
-        "no-mention": "Noem alstublieft de persoon op die je wilt verbannen."
+        "perms": "Je kan de eigenaar of iemand met de WolkeBot rol niet verbannen.",
+        "self": "Je kan mij niet verbannen met mijn eigen command.",
+        "no-mention": "Noem alsjeblieft de persoon die je wilt verbannen."
     },
     "kick": {
-        "success": "Gebruiker eruit geschopt {{gebruiker}}",
-        "privilege": "Mijn rol heeft niet het recht om mensen eruit the schoppen {{gebruiker}} !",
-        "err": "Er is een error op komen dagen tijdens het proberen van iemand eruit te schoppen {{gebruiker}} !",
-        "perms": "Je kan de eigenaar en niemand anders eruit schoppen met de WolkeBot rol.",
-        "self": "Je kan me er niet uit schoppen met mijn eigen commando.",
-        "no-mention": "Noem alstublieft een gerbuiker op die je eruit wilt schoppen."
+        "success": "Gebruiker {{user}} eruit geschopt",
+        "privilege": "Mijn rol heeft niet de benodigde rechten om {{user}} eruit te schoppen!",
+        "err": "Er is een fout opgetreden terwijl ik {{user}} eruit probeerde te schoppen!",
+        "perms": "Je kan de eigenaar of iemand met de WolkeBot rol er niet uitschoppen.",
+        "self": "Je kan me er niet uitschoppen met mijn eigen command.",
+        "no-mention": "Noem alsjeblieft een gebruiker die je eruit wilt schoppen."
     },
     "roll": {
-        "whole-number": "Voeg alstublieft een heel getal toe!",
-        "negative": "Ik kan niet rollen met een {{nummer}}",
-        "success": "Rolde een {{eerste}} uit een {{tweede}}"
+        "whole-number": "Voeg alsjeblieft een heel getal toe!",
+        "negative": "Ik kan niet rollen met een {{number}}",
+        "success": "Rolde {{first}} uit {{second}}"
     },
     "qa": {
-        "nothing-found": "Geen lied gevonden met Zoek Term '{{zoek}}'␣",
-        "empty-search": "Je hebt geen link/zoekterm gekozen!",
-        "started-download": "Download gestart van '{{- url}}'␣",
-        "success": "Ingeplaatst in de lijst."
+        "nothing-found": "Geen lied gevonden met zoekterm '{{search}}'␣",
+        "empty-search": "Je hebt geen link/zoekterm genoemd!",
+        "started-download": "Download van '{{- url}}'␣ gestart",
+        "success": "**{{- song}}** in de afspeellijst geplaatst"
     },
     "rq": {
-        "db-error": "Een data basis error is op komen dagen!",
-        "success-multiple": "De volgende liedjes zijn toegevoegd.\n'''{{- tabel}}'''",
+        "db-error": "Een databank fout heeft plaatsgevonden!",
+        "success-multiple": "De volgende nummers zijn toegevoegd:\n```{{- table}}```",
         "too-big": "Ik heb {{number}} liedjes toegevoegd.",
         "no-songs-added": "Ik kon geen enkel lied toevoegen omdat ze al in de wachtrij waren, probeer opnieuw.",
         "too-much": "Je kan niet meer dan {{number}} liederen tegelijk toevoegen!"
     },
     "qra": {
-        "to-small": "Je kan de liedjes{{nummer}} niet uit de lijst halen!",
-        "success": "De volgende liedjes zijn uit de wachtlijst gehaald `{{number}` songs.",
-        "too-big": "Dit liedje {{nummer}} is verwijderd",
-        "one-song": "Gebruik {{- voorvoegsel}}fskip om het liedje nu te overslaan.",
+        "to-small": "Je kan de {{number}} nummers niet uit de lijst halen!",
+        "success": "`{{number}}` nummers verwijderd",
+        "too-big": "{{number}} nummers verwijderd",
+        "one-song": "Gebruik {{- prefix}}fskip om het huidige nummer over te slaan!",
         "no-number": "Je hebt niet gezegt hoeveel liederen ik uit de wachtlijst moet halen!",
         "removed": "`{{- title}}` Van de wachtlijst verwijdert."
     },
     "cookie": {
-        "give": "Gaf gebruiker **{{- gebruiker}}** **11** koekje!",
-        "new-server": "Probeer het opnieuw, alstublieft.",
-        "arere": "Aww.....iets ging verkeerd.",
+        "give": "Gaf gebruiker **{{- user}}** **1** koekje!",
+        "new-server": "Probeer het opnieuw, alsjeblieft.",
+        "arere": "Aww.....er ging iets verkeerd.",
         "perms": "Je hebt een discord rol genaamd WolkeBot nodig om koekjes te geven!",
-        "one-user": "Alstublieft, noem **1 User**,niet meer, niet minder!",
-        "count": "Jij hebt **{{nummer}}** koekjes op dit moment."
+        "one-user": "Noem alsjeblieft **1 User**, niet meer, niet minder!",
+        "count": "Je hebt **{{number}}** koekjes op dit moment."
     },
     "eastereggs": {
-        "jay": "Jay houd van je-",
-        "magic": "xX_Cats_Xx was hier-"
+        "jay": "Jay houdt van je~ :heart:␣",
+        "magic": "xX_Cats_Xx was hier -10.10.2016"
     },
     "set-lang": {
-        "no-lang": "Je hebt geen specifieke taal uitgekozen! Op dit moment zijn er {{talen}}\nniet om uit te kiezen.",
-        "success": "Oke Ik heb net de taal van de server gezet naar {{-taal}}",
-        "unsupported": "Deze taal is nog niet in het systeem, maar je kan helpen door een pull request met jouw taal op GitHub aan te vragen. Je kunt de volgende verkrijgbare talen gebruiken door deze bevel zonder aanpassingen.",
+        "no-lang": "Je hebt geen specifieke taal uitgekozen! Op dit moment zijn er {{languages}} beschikbaar.",
+        "success": "Oke ik heb net de taal van de server veranderd in {{- language}}.",
+        "unsupported": "Deze taal is nog niet in het systeem, maar je kan helpen door een pull request met jouw taal op GitHub aan te vragen. Je kan de momenteel beschikbare talen vinden door dit commando zonder toevoegingen te gebruiken.",
         "native-name": "Oorspronkelijke naam",
         "english-name": "Engelse naam\n",
         "shortcode": "Kleine code",
         "available-languages": "Lijst van talen verkrijgbaar.\nAlsjeblieft noteer dat setLang de kleine code nodig heeft."
     },
     "np": {
-        "song-duration": "Op dit moment speelt Rem: {{titel}} {{nu}} {{tijd}}{herhaling}}",
-        "song": "Op dit moment spelen we:{{--title}}{{herhaal}}",
+        "song-duration": "Huidige nummer:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
+        "song": "Huidige nummer: `{{--title}} {{repeat}}`",
         "repeat-on": "Herhaal:aan",
         "repeat-single": "Herhaal: lied",
         "repeat-queue": "Herhaal: wachtlijst",
@@ -274,35 +274,35 @@
         "queued": "In de wachtlijst:"
     },
     "rem-lewd": {
-        "no-nsfw": "Er zijn nog geen NSFW Channels.",
-        "success": "Succesvol  {{- channel}} verwijderd uit NSFW channels!"
+        "no-nsfw": "Er zijn nog geen NSFW kanalen.",
+        "success": "{{- channel}} succesvol verwijderd van de NSFW kanalen!"
     },
     "no-level-server": {
-        "success-disable": "Ok ik heb zojuist het level systeem uitgezet voor deze server, gebruik deze command nog een keer om het weer aan te zetten.",
-        "success-enable": "Ok ik heb zojuist het level systeem aangezet voor deze server, gebruik deze command nog een keer om het weer aan te zetten."
+        "success-disable": "Ok ik heb zojuist het level systeem uitgezet voor deze server, gebruik dit  commando nog een keer om het weer aan te zetten.",
+        "success-enable": "Ok ik heb zojuist het level systeem aangezet voor deze server, gebruik dit commando nog een keer om het uit te zetten."
     },
     "no-pm-server": {
-        "success-disable": "Ok ik heb zojuist pm notificaties voor deze server uitgeschakeld, typ deze command opnieuw om ze in te schakelen.",
-        "success-enable": "Ok ik heb zojuist pm notificaties voor deze server ingeschakeld, typ deze command opnieuw om ze uit te schakelen."
+        "success-disable": "Ok ik heb zojuist pm notificaties voor deze server uitgeschakeld, gebruik dit  commando nog een keer om het in te schakelen.",
+        "success-enable": "Ok ik heb zojuist pm notificaties voor deze server ingeschakeld, typ dit commando opnieuw om ze uit te schakelen."
     },
     "no-channel-server": {
-        "success-disable": "Ok ik heb zojuist pm notificaties uitgeschakeld voor deze server en channel notificaties ingeschakeld, typ deze command opnieuw om het om omgekeerde te doen.",
-        "success-enable": "Ok ik heb zojuist pm notificaties ingeschakeld voor deze server en channel notificaties uitgeschakeld, typ deze command opnieuw om het omgekeerde te doen."
+        "success-disable": "Ok ik heb zojuist pm notificaties uitgeschakeld voor deze server en kanaal notificaties ingeschakeld, gebruik dit commando opnieuw om het omgekeerde te doen.",
+        "success-enable": "Ok ik heb zojuist pm notificaties ingeschakeld voor deze server en kanaal notificaties uitgeschakeld, gebruik dit commando opnieuw om het omgekeerde te doen."
     },
     "no-level": {
-        "success-disable": "Oke, ik heb het level systeem uitgeschakeld voor je, typ dit commando nog een keer in om het weer in te schakelen.",
-        "success-enable": "Oke, ik heb het level systeem ingeschakeld voor je, typ dit commando nog een keer in om het weer uit te schakelen."
+        "success-disable": "Oke, ik heb het level systeem uitgeschakeld voor je, gebruik dit commando nog een keer om het weer in te schakelen.",
+        "success-enable": "Oke, ik heb het level systeem ingeschakeld voor je, gebruik dit commando nog een keer om het uit te schakelen."
     },
     "no-pm": {
         "success-disable": "Oke, ik heb PM notificaties uitgeschakeld voor je, typ dit commando nog een keer in om het weer in te schakelen.",
-        "success-enable": "Oke, ik heb PM notificaties ingeschakeld voor je, typ dit commando nog een keer in om het weer uit te schakelen."
+        "success-enable": "Oke, ik heb PM notificaties ingeschakeld voor je, gebruik dit commando nog een keer om het weer uit te schakelen."
     },
     "eat-cookie": {
         "success": "Je at net {{number}} Koekje(s)!",
         "failure": "Je hebt geen koekjes om te eten."
     },
     "bot-info": {
-        "uptime": "Uptime",
+        "uptime": "Tijd online",
         "users": "Gebruikers",
         "channels": "Kanalen",
         "guilds": "Bonden",
@@ -322,62 +322,62 @@
     "rank": "Je kan het scorebord voor de server hier vinden: {{- link}}",
     "pp": {
         "err": {
-            "api-body": "Kon API Response niet ontleden!",
+            "api-body": "Kon API antwoord niet ontleden!",
             "osu-api": "De osu! api lijkt een klein probleem te hebben.",
             "no-link": "Dit is geen geldige osu link!",
-            "unvalid-link": "Geen map link geleverd."
+            "unvalid-link": "Geen map link geleverd!"
         },
-        "success": "PP voor map `{{- artist}} - {{- title}} [{{- version}}] met Account {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}` "
+        "success": "PP voor map `{{- artist}} - {{- title}} [{{- version}}] met Account {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}`"
     },
     "server-info": {
         "id": "ID",
         "name": "Naam",
         "member": "Leden",
-        "text": "Tekst channels",
+        "text": "Tekst kanalen",
         "voice": "Spraak kanalen",
         "roles": "Rollen",
-        "creation": "Datum van creatie",
+        "creation": "Aanmaak datum",
         "region": "Regio",
         "owner": "Eigenaar"
     },
-    "leave": "OK, ik heb de spraak kanaal verlaten.",
+    "leave": "OK, ik heb het spraakkanaal verlaten.",
     "play": {
-        "no-result": "Geen lied gevonden!",
-        "playing": ":musical_note: Nu aan het afspelen: **{{- song}}** ",
+        "no-result": "Geen nummer gevonden!",
+        "playing": ":musical_note: Nu aan het afspelen: **{{- song}}**",
         "success": "\n:musical_note: Nu aan het afspelen:  **{{- song}}** ",
         "next": ":musical_note: Volgend lied: **{{- song}}** "
     },
     "prefix": {
-        "success": "OK, ik heb het voorvoegsel gezet naar {{- prefix}}, probeer `{{- prefix}}ping` om te controleren.",
-        "no-prefix": "Plaats een voorvoegsel A.U.B."
+        "success": "OK, ik heb het voorvoegsel veranderd naar {{- prefix}}, probeer `{{- prefix}}ping` om het te controleren.",
+        "no-prefix": "Gebruik alsjeblieft een voorvoegsel!"
     },
     "voice": {
-        "in-queue": "**{{- song}}** is al in de wachtrij.",
-        "error-volume": "Fout bij het veranderen van de volume!",
-        "success-volume": "Zet volume naar {{- volume}} ",
-        "no-volume": "Geen volume gezet!",
-        "repeat-start": "Begint met her herhalen van **{{- song}}** ",
-        "already-playing": "Dit lied speelt al af!",
-        "blocked": "Deze video is niet beschikbaar om to downloaden. Mischien is het te lang of is het geblockt/weggehaald",
-        "dl-start": ":hourglass: laadt liedje!",
-        "use-proxy": "Proberende over de proxy te downloaden, kan even duren.",
+        "in-queue": "**{{- song}}** staat al in de wachtrij.",
+        "error-volume": "Fout bij het veranderen van het volume!",
+        "success-volume": "Zet volume naar {{- volume}}",
+        "no-volume": "Geen volume ingesteld!",
+        "repeat-start": "Begonnen met het herhalen van **{{- song}}**",
+        "already-playing": "Dit nummer speelt al af!",
+        "blocked": "Deze video is niet beschikbaar om te downloaden. Mischien is het te lang of is het geblockt/weggehaald",
+        "dl-start": ":hourglass: nummer wordt geladen!",
+        "use-proxy": "Aan het proberen via de proxy te downloaden, kan even duren.",
         "too-much": "Je kan de volume niet hoger dan 200 zetten!"
     },
     "yts": {
-        "success": "Heb het volgende liedje gevonden: {{- link}}"
+        "success": "Het volgende nummer is gevonden: {{- link}}"
     },
     "skip": {
-        "success": ":track_next: Liedje overgeslagen: {{- title}}",
-        "stop": ":stop_button: Huidige liedje gestopt.",
+        "success": ":track_next: Nummer overgeslagen: {{- title}}",
+        "stop": ":stop_button: Huidige nummer gestopt.",
         "all": ":stop_button: Alle liederen overgeslagen.",
         "some": ":track_next: {{- amount}} liederen overgeslagen."
     },
     "vskip": {
-        "user-no-voice": "Je kan niet stemmen om over te slaan als je niet in dezelfde Voicechannel zit!",
-        "same-voice": "Je zit niet in dezelfde Voicechannel als ik!",
+        "user-no-voice": "Je kan niet stemmen om over te slaan als je niet in hetzelfde spraakkanaal zit!",
+        "same-voice": "Je zit niet in hetzelfde spraakkanaal als ik!",
         "dup": "Je hebt al gestemd!",
         "success-add": "Stem toegevoegd, stempercentage op **{{current}}%/{{needed}}%",
-        "success-skip": "Liedje weggestemd: **{{- title}}**",
+        "success-skip": "Nummer weggestemd: **{{- title}}**",
         "vote": "\nTyp {{- prefix}}yes om het lied over te slaan. huidige kiespercentage op {{- perct}}%/{{- needed}}\nLeden die hebben gekozen:\n ```{{- table}}``` ",
         "in-prog": "Er is al een verkiezing om het lied over te slaan, gebruik {{- prefix}}yes om het huidig lied over te slaan."
     },
@@ -385,18 +385,18 @@
         "less-2": "Je kan niet minder dan 2 berichten verwijderen!",
         "over-100": "Je kan niet meer dan 100 berichten in een keer verwijderen!",
         "success": "Succesvol {{number}} berichten verwijderd.",
-        "error": "Error tijdens het verwijderen van berichten!",
+        "error": "Fout tijdens het verwijderen van berichten!",
         "over-limit": "Je kan niet minder dan 2 of meer dan 100 berichten verwijderen!",
         "no-limit": "Je hebt niet gespecificeerd hoeveel berichten ik moet verwijderen.",
         "nothing-found": "Ik vondt geen bericht dat overeenkomt met de filter!"
     },
     "search": {
-        "success": "Volgende liedjes gevonden:"
+        "success": "De volgende nummers zijn gevonden:"
     },
     "set-lewd": {
         "success": "Succesvol {{- channel}} toegevoegd aan de NSFW kanalen!"
     },
-    "report": "Oke, ik heb je melding naar Wolke gestuurd. Gelieve niet te misbruiken, je kunt worden geband van het gebruiken van de bot!",
+    "report": "Oke, ik heb je melding naar Wolke gestuurd. Gelieve dit niet te misbruiken, je kunt worden gebanned van het gebruiken van de bot!",
     "greeting": {
         "no-greeting": "Je hebt geen groet geplaatst die ik moet gebruiken!",
         "no-add": "Je kan of de groet zetten, of de groet terugzetten op de standaard.",
