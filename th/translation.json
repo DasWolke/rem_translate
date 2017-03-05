@@ -1,3 +1,526 @@
 {
-  "uwu": "uwu"
+    "generic": {
+        "error": ":x: เกิดข้อผิดพลาด!",
+        "no-pm": ":no_entry: คำสั่งนี้ไม่ทำงานในแชทส่วนตัว!",
+        "whole-num": ":no_entry_sign: กรุณาใช้ตัวเลขทั้งหมด!",
+        "nan": ":no_entry_sign: ไม่ว่าคุณจะส่งอะไรมา, กรุณาใส่เลขทั้งหมด :)␣ ",
+        "no-song-in-queue": ":no_entry_sign: ไม่มีเพลงในคิว, ควรจะเพิ่ม :musical_note: ?",
+        "no-song-playing": ":musical_note: ไม่มีเพลงที่กำลังเล่นในขณะนี้!",
+        "no-permission": ":no_entry_sign: คุณไม่ได้รับอนุญาติที่จะใช้คำสั่งนี้, กรุณาเพิ่มสิทธิ `{{- node}}` ให้แก่ตัวคุณเองเพื่อใช้มัน",
+        "no-voice": ":no_entry_sign: ฉันไม่ได้เชื่อมต่อเข้าห้องใดๆ บนเซิร์ฟเวอร์นี้เลย!",
+        "level-update": ":tada: คุณเพิ่งจะถึง **เลเวล  {{level}}** บน **{{- server}}** ",
+        "empty-search": ":no_entry_sign: คุณยังไม่ได้ป้อนในช่องค้นหา!",
+        "negative": " :no_entry_sign: กรุณาอย่าใส่ตัวเลขติดลบ!",
+        "cancel": "ยกเลิก",
+        "version": "รุ่น",
+        "author": "ผู้เขียน",
+        "lib": "library ที่ใช้",
+        "more": "{{number}} มาก",
+        "abort": ":x: ยกเลิก",
+        "cat-nope": ":no_entry_sign: ไม่พบหมวดหมู่!",
+        "mention": "กรุณา mention user",
+        "cancelled-command": "ยกเลิกคำสั่งแล้ว",
+        "donate": "บริจาค",
+        "support": "สนับสนุน",
+        "invite": "เชิญ",
+        "language-name-en": "อังกฤษ",
+        "native-name": "อังกฤษ",
+        "empty-say": ":no_entry_sign: คุณยังไม่ได้ในข้อความ",
+        "page": "หน้า"
+    },
+    "help": {
+        "intro": "มาสนุกใน Discord ด้วยกันเถอะ (/^▽^)/ เลือกหมวดหมู่คำสั่งโดยใช้ {{pre}} ตัวเลขของคำสั่งช่วยเหลือเพื่อเรียนรู้เพิ่มเติม:",
+        "intro_2": "ไง ฉันเร็ม",
+        "support": "[สนับสนุน]",
+        "bug": "เอาลิงค์สนับสนุน dicord",
+        "help": "คำสั่งช่วยเหลือ",
+        "add": "เอาลิงค์เพื่อจะเพิ่มฉันเข้าเซิฟเวอร์",
+        "music": "[เพลง]",
+        "voice": "ฉันเข้าห้องที่คุณอยู่ในขณะนี้ (คำสั่งเพลง ปกติทำให้บอทเข้าห้องด้วยเหมือนกัน)",
+        "silent": "ฉันออกจากห้องแล้ว, ขณะนี้ฉันเชื่อมต่อกับ (ใช้ได้แค่กับ WolkeBot Role เท่านั้น)",
+        "play": "เล่นบางอย่างจาก /Youtube/Soundcloud/Osu/search ",
+        "pause": "หยุดเพลงปัจจุบัน",
+        "resume": "เล่นเพลงที่หยุดไว้",
+        "volume": "ตั้งค่าเสียของบอท, ระหว่าง 1-200 (ใช้ได้แค่กับ WolkeBot Role เท่านั้น)",
+        "forever": "เล่นเพลงซ้ำจนกว่าเพลงใหม่จะถูกเพิ่มเข้ามาในคิว (ใช้ได้แค่กับ WolkeBot Role เท่านั้น)",
+        "search": "ค้นหาเพลงจากฐานข้อมูลบอทและแสดง 5 ผลลัพธ์ที่ดีที่สุด",
+        "skip": "เริ่มโหวตข้ามเพลงปัจจุบัน, ต้องโหวตมากกว่า 50% ของห้อง, จึงจะข้าม",
+        "voteskip": "เริ่มโหวตข้ามเพลงปัจจุบัน, ต้องโหวตมากกว่า 50% ของห้อง, จึงจะข้าม",
+        "qa": "คิวเพลงจาก Youtube/Soundcloud/Osu/search ",
+        "qra": "ลบเพลงทั้งหมด ยกเว้นเพลงที่กำลังเล่นขณะนี้ หรือจะลบจำนวนเพลงทีพิมพ์",
+        "queue": "แสดงคิว ณ ปัจจุบัน",
+        "np": "แสดงเพลงที่กำลังเล่น ณ ปัจจุบัน",
+        "rq": "เพิ่มเพลงที่ถูกสุ่ม/จำนวนของเพลงไปยังคิว",
+        "stream": "ถ่ายทอดสดสถานีวิทยุออนไลน์ที่เลือก, คุณสามารถค้นหาหรือเพิ่มโดยใช้คำสั่ง -u URL",
+        "youtube": "[YOUTUBE]",
+        "yts": "ค้นหา Youtube และส่งผลลัพธ์แรกให้กับคุณ",
+        "ytq": "ค้นหา Youtube และ เพิ่มผลลัพธ์แรกไปยังคิว",
+        "mod": "มอท cp",
+        "mod-info": "คำสั่งพวกนี้จำเป็นต้องมี Role ชื่อ WolkeBot",
+        "info": "ส่งข้อมูลเกี่ยวกับเซิฟเวอร์ ณ ปัจจุบันให้คุณ",
+        "ban": "แบน user และลบข้อความของ เขา/เธอ 7วัน",
+        "kick": "เตะuser",
+        "rm": "ในการลบข้อความ คุณสามารถคัดจาก bots, users, commands/responses ของเร็ม หรือแค่ลบถึง 100 ข้อความ Filters: -b -> bots| -r -> ข้อความจากเร็ม| -u @user -> ข้อความจากบางผู้ใช้งาน| -c -> ข้อความที่เริ่มด้วย คำอุปสรรคของเร็ม ",
+        "noLevelServer": "ปิดใช้งานระบบเลเวลบนเซิฟเวอร์ทั้งหมด, ใช้คำสั่งอีกครั้งเพื่อ เปิดใช้งาน",
+        "noPmServer": "ปิดใช้งานการแจ้งเตือน pm บนเซิฟเวอร์ทั้งหมด, ใช้คำสั่งอีกครั้งเพื่อ เปิดใช้งาน",
+        "noChServer": "ปิดใช้งานการแจ้งเตือน pm บนเซิฟเวอร์ทั้งหมด และ เปิดการแจ้งเตือนห้องแทน, ใช้คำสั่งอีกครั้งเพื่อคืนกลับ",
+        "setLewd": "เพิ่มเพิ่มเซิฟเวอร์ปัจจุบันเป็น ห้องNSFW",
+        "remLewd": "ลบห้องปัจจุบันจากรายการของ ห้องNSFW",
+        "setPrefix": "ตั้งค่า คำอุปสรรค ของบอท, ไม่ เว้นไว้/ไม่ใช้mentions ",
+        "other": "[อย่างอื่น]",
+        "r34": "ค้นหา Rule34 เพื่อแท็กและจะส่งรูปกลับมา 1 รูป ,ใช้ได้กับแค่ WolkeBot Role หรือ ห้องที่กำหนดค่า NSFW",
+        "kona": "ค้นหา Konachan เพื่อแท็กและจะส่งรูปกลับมา 1 รูป, ใช้ได้กับแค่ห้องที่กำหนดค่า NSFW หรือ แอดมิน",
+        "e621": "ค้นหา E621 เพื่อแท็กและจะส่งรูปกลับมา 1 รูป, ใช้ได้กับแค่ห้องที่กำหนดค่า NSFW หรือ แอดมิน ",
+        "yandere": "ค้นหา Yande.re เพื่อแท็กและจะส่งรูปกลับมา 1 รูป, ใช้ได้กับแค่ห้องที่กำหนดค่า NSFW หรือ แอดมิน ",
+        "level": "เลเวลและ XP ของคุณไม่พอสำหรับเลเวลถัดไป",
+        "rank": "ลีดเดอร์บอร์ดของเซิฟเวอร์นี้",
+        "noLevel": "ปิดการใช้งานระบบเลเวล ของคุณ, ใช้อีกครั้งเพื่อเปิดระบบ",
+        "noPm": "ปิดการใช้งานการแจ้งเตือนข้อความส่วนตัวของคุณ, ใช้อีกครั้งเพื่อเปิดระบบ",
+        "pp": "คำนวณ PP ของ beatmap ด้วยตัวเลือกที่ถูกต้องและ mods",
+        "cookie": "ส่งคุกกี้ ให้กับ mentioned user หรือแสดงคุกกี้ของคุณเอง ถ้าไม่มีใคร mentioned.",
+        "eatCookie": "กินคุกกี้",
+        "git": "ส่งลิงค์ githubของเร็ม ให้คุณ",
+        "roll": "หมุน เลขระหว่าง 0 และเลขนั้น, ถ้าไม่มีเลข มันจะออกเป็น 10",
+        "8ball": "ส่งความคิดเห็นของคำถาม magic 8ball ของคุณ ให้คุณ",
+        "garfield": "ส่งการ์ตูนการ์ฟีลด์แบบส่ม ให้คุณ",
+        "cat": "ส่งภาพแมวแบบส่มให้คุณ พวกเราต้องการแมว!",
+        "hug": "กอด บางคน :>",
+        "slap": "บางคนทำไม่ดีกับคุณ? ตบเลย!",
+        "setLang": "ชุดภาษา, พิมพ์ !w.setLang เฉยๆ เพื่อที่จะดูภาษาที่มี",
+        "report": "ถ้าคุณขี้อายมากที่จะมา Support Discord, ใช้การรีพอร์ตเพื่อส่งรายงานไปให้กับผู้พัฒนา Wolke, แต่ใช้ผิดวิธี!",
+        "feedback": "สำหรับการ feedback ใช้ support discord นะ  ^^ ",
+        "talk": "ถ้าคุณต้องการจะคุยกับฉันละก็ @mention ฉันตามด้วยข้อความสิ :D",
+        "helpReply": "โอเค, ฉันส่งลิสคำสั่งไปทางแซทส่วนตัวแล้ว",
+        "moderation": "[ผู้ดูแล]",
+        "misc": "[เบ็ดเตล็ด]",
+        "stats": "[สถิติ]",
+        "user": "[ผู้ใช้]",
+        "admin": "[แอดมิน]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[EASTEREGGS]",
+        "proxer": "[PROXER]",
+        "no-cat": "[หมวดหมู่]",
+        "ping": "ส่งค่าปิงของบอทให้คุณ, ระวังนี้ไม่ใช้ปิงเสียง",
+        "lewd": "ลามก! uwu",
+        "rem": "ส่งรูปภาพของเร็มแบบสุ่มให้คุณ",
+        "wip": "[กำลังดำเนินการ]",
+        "gr": "ตั้งค่าการทักทายด้วย ข้อความทักทาย, {{user}} จะถูกใส่เป็นชื่อของผู้ใช้ที่เพิ่งจะเข้ามาและ {{guild}} กับชื่อของเซิฟเวอร์ คำทักทายจะอยู่ในห้อง,ที่ที่ cmd ทำงาน",
+        "fw": "ตั้งค่าการร่ำลาด้วย ข้อความการอำลา, {{user}} จะถูกใส่เป็นชื่อของผู้ใช้ที่เพิ่งจะเข้ามาและ {{guild}} กับชื่อของเซิฟเวอร์ คำการอำลาจะอยู่ในห้อง,ที่ที่ cmd ทำงาน",
+        "s": "คำสั่งของเซิฟเวอร์, เช่น คำร่ำลา , คำทักทาย",
+        "shrug": "¯\\_(ツ)_/¯",
+        "flip": "(╯°□°）╯︵ ┻━┻",
+        "eggplant": "ก็แค่มะเขือ",
+        "gtn": "ส่ง green tea neko comic แบบสุ่มให้คุณ, ใช้ได้กับแค่ ห้องNSFW,Admin",
+        "cuddle": "รับกอด",
+        "trig": "ทริกเกอร์",
+        "bot": "ส่งข้อมูลของเร็มบางส่วนให้แก่คุณ, เวลาใช้บริการและลิงค์ที่เป็นประโยชน์",
+        "top": "แสดง 10 อันดับกิลด์ (เรียงโดยผู้ใช้) ที่ shard เชื่อมต่อกับ",
+        "about": "แสดงข้อมูลพื้นฐานเกี่ยวกับฉัน, เช่น library และ คนที่สร้างฉัน",
+        "lenny": "( ͡° ͜ʖ ͡°) ",
+        "lmg": "ปล่อยให้ฉันหาสิ่งนั้นให้คุณ",
+        "fskip": "ข้ามเพลงในขณะนี้/เลขของเพลง/เพลงทั้งหมด",
+        "leave": "ฉันออกจากห้องแล้ว, ขณะนี้ฉันเชื่อมต่อกับ ",
+        "say": "ให้เร็มพูดอะไรบางอย่าง",
+        "ar": "เพิ่ม role ให้ตัวคุณเอง หรือ ให้user",
+        "cr": "สร้าง role หรือเพิ่ม role ให้บอท, -d -> ค่าเริ่มต้น, -l 2 -> ให้ role แก่ user เมื่อถึงเลเวล2, -s -> หมอบหมาย role ให้ตัวเอง, ตัวอย่าง -> cr -l 20 rolename, เพิ่ม role ให้ผู้ใช้เมื่อเลเวล 20 ชื่อว่า \"rolename\"",
+        "lr": "รายการ roles ที่เชื่อมต่อกับเร็มณขณะนี้",
+        "rr": "ลบ Role จากตัวคุณเอง, คนอื่นหรือเซิฟเวอร์",
+        "roles": "[บทบาท]",
+        "repeat": "เล่น เพลง/คิว ซ้ำจนกว่าจะมีเพลงใหม่เพิ่มมาในคิว",
+        "sayd": "ให้เร็มพูดบางอย่าง และ ลบคำสั่งของคุณ",
+        "generic": "[เกี่ยวกับ]",
+        "fun": "[สนุก]",
+        "coin": "โย้นเหรียญให้คุณ",
+        "nyan": "Nya :3",
+        "uwu": "uwu",
+        "dere": "ค้นหาคำนิยามของ dere หรือ สุ่มมาหนึ่ง",
+        "love": "ให้ mentioned user แต้มความรัก,เพิ่ม - เพื่อลบแต้มความรักออก 1",
+        "sinfo": "ให้ข้อมูลคุณเกี่ยวกับเซิฟเวอร์ ณ ปัจจุบัน",
+        "uinfo": "ให้ข้อมูลคุณเกี่ยวกับตัวคุณเอง/ mentioned User ",
+        "apq": "เพิ่ม เพลย์ลิส ลงคิว, ใช้ได้กับแค่ youtube-playlists และต้องการ id ไม่ใช้ลิงค์",
+        "ap": "คำสั่งเพิ่มสิทธิ, สามารถหาคำอะฺบายเพิ่มเติมได้ใน support discord (!w.bug เพื่อรับการเชิญ)",
+        "gp": "คำสั่งรับสิทธิ, สามารถหาคำอะฺบายเพิ่มเติมได้ใน support discord (!w.bug เพื่อรับการเชิญ)",
+        "rp": "คำสั่งลบสิทธิ, สามารถหาคำอะฺบายเพิ่มเติมได้ใน support discord (!w.bug เพื่อรับการเชิญ) ",
+        "cry": "กำลังรู้สึกแย่ ? นี้เป็นคำสั่งที่เหมาะกับคุณ",
+        "ibsafe": "ค้นหาบน  ibsear.ch (เฉพาะรูปภาพ sfw)",
+        "iblewd": "ค้นหาบน  ibsearch.xxx (เหมือนกับ ibsafe แต่เฉพาะรูปnsfw)",
+        "qr": "คุณสามารถลบเพลงหนึ่งเพลงด้วยไอดีเพลงนั้น. หรือ ผสมกับ `qr startid-stopid`, มันจะเริ่มลบที่ startid และจบที่ stopid, หรือ ลบโดยแยกไอดี",
+        "shuffle": "สับคิว ต้องมีอย่างน้อย 3 เพลงในคิวถึงจะทำงาน",
+        "owo": "ส่ง OwO ให้คุณแบบสุ่ม นี้มันมุขอะไร, ได้รับคัดเลือกโดย Wolke",
+        "getNode": "ส่งสิทธิ node, ประเภทขิงnode และ ประเภทของคำสั่งให้คุณ",
+        "resetPerms": "รีเซ็ตสิทธิทั้งหมดในตอนนี้, ใช้ด้วยความระมัดระวัง",
+        "pat": "ตบคนที่เป็น ชาย/หญิง/เฮลิคอปเตอร์ ที่ดีเบาๆ",
+        "triggered": "TRIGGERED",
+        "stare": "stareeeee...",
+        "nom": "Nom :>",
+        "potato": "ทุกคนต้องการมันฝรั่ง",
+        "choose": "ให้เร็มเลือกบางอย่างให้คุณ, ขั้นด้วย `;`",
+        "tickle": "คัน คัน คัน",
+        "image": "[คำสั่ง รูปภาพ]",
+        "define": "รับความหมายของคำจากเออร์เบินดิกชันแนรี",
+        "dog": "คุณชอบหมามากกว่าแมว ? คำสั่งนี้เหมาะสำหรับคุณ",
+        "kiss": "ส่งจูบให้ใครบางคน <3",
+        "setGreeting": "ตั้งค่าการทักทายของห้องทีี่ที่มีคำสั่งอยู๋ คุณสามารถใช้ %USER% และ %GUILD% ที่จะใส่ชื่อของผู้ใช้และชื่อกิลด์",
+        "setFarewell": "ตั้งค่าการร่ำลาของห้องทีี่ที่มีคำสั่งอยู่ คุณสามารถใช้ %USER% และ %GUILD% ที่จะใส่ชื่อของผู้ใช้และชื่อกิลด์",
+        "pout": "ฮึ่มฟ.. :< ทำหน้ามุ่ยใส่บางคน",
+        "smug": "ใจแคบกับใครบางคน :^)"
+    },
+    "version": "ปัจจุบัน ฉันรุ่น {{version}} ",
+    "add": "ใช้ลิงค์นี้เพื่อเพิ่มฉันเข้าเซิฟของคุณ: {{- link}} ",
+    "bug": "กรุณาเข้า support discord: {{- link}} เพื่อแจ้งบัค",
+    "level": {
+        "result": "คุณ **เลเวล {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Total XP:**{{total}}** ",
+        "disabled": "ระบบ XP ถูกปิดใช้งานบนเซิร์ฟเวอร์นี้!"
+    },
+    "joinVoice": {
+        "join": "โอเค, กำลังเชื่อมต่อเข้าห้องของคุณ",
+        "error": "เกิดข้อผิดพลาดในขณะที่พยายามที่จะเข้าร่วมห้องของคุณ!\n",
+        "permission": "ไม่ได้รับอนุญาติ! คุณต้องให้ WolkeBot role แก่ตัวคุณเองเพื่อใช้",
+        "no-voice": "คุณไม่ได้อยู่ในห้อง!",
+        "already-voice": "ฉันอยู่ในห้องแล้ว, ย้ายฉันเพื่อเปลี่ยนห้อง"
+    },
+    "nsfw-images": {
+        "nothing-found": "ไม่เจอภาพที่แท็ก: `{{tags}}` ",
+        "no-nsfw-channel": "กรุณา ตั้ง/เพิ่ม ห้องNSFW ด้วย {{- prefix}}setLewd (หนึ่งในห้องNSFW) เพื่อใช้ คำสั่งNSFW",
+        "error-body": "เกิดข้อผิดพลาดของ api กรุณาลองอีกครั้ง, ถ้ามีปัญหาติดต่อ Wolke#6746"
+    },
+    "8ball": {
+        "answers": [
+            "ไม่.",
+            "ใช่.",
+            "บางที.",
+            "ฉันไม่คิดเช่นนั้น",
+            "แน่นอนไม่มี.",
+            "JUST DO IT!",
+            "เป้นความคิดที่ดี.",
+            "แน่ใจแล้วหรอ?"
+        ],
+        "no-message": "คุณไม่ได้ตอบคำถาม"
+    },
+    "ban": {
+        "success": "แบน {{user}} ",
+        "privilege": "role ของฉันไม่มีสิทธิที่จะ แบน {{user}} ! ",
+        "err": "เกิดข้อผิดพลาดขณะพยายามแบน {{user}} ! ",
+        "perms": "คุณไม่สามารถแบนเจ้าของหรือใครก็ตามด้วย WolkeBot Role",
+        "self": "คุณไม่สามารถแบนฉันด้วยคำสั่งของฉัน",
+        "no-mention": "กรุณา mention คนที่จะแบน"
+    },
+    "kick": {
+        "success": "แตะ {{user}} ",
+        "privilege": "role ของฉันไม่มีสิทธิที่จะ แตะ {{user}} ! ",
+        "err": "เกิดข้อผิดพลาดขณะพยายามเตะ {{user}} ! ",
+        "perms": "คุณไม่สามารถเตะเจ้าของหรือใครก็ตามด้วย WolkeBot Role",
+        "self": "คุณไม่สามารถเตะฉันด้วยคำสั่งของฉัน",
+        "no-mention": "กรุณา mention คนที่จะเตะ"
+    },
+    "roll": {
+        "whole-number": "กรุณาใส่ตัวเลขทั้งหมด",
+        "negative": "ฉันไม่สามารถหมุนด้วย {{number}} ",
+        "success": "หมุน {{first}} จาก {{second}} "
+    },
+    "qa": {
+        "nothing-found": "ไม่พบเพลง `{{search}}`",
+        "empty-search": "คุณยังไม่ได้ใส่ ลิงค์/คำที่ต้องการค้นหา",
+        "started-download": "เริ่มต้นโหลด `{{- url}}`",
+        "success": "คิว **{{- song}}** "
+    },
+    "rq": {
+        "db-error": "เกิดข้อผิดพลาดบนฐานข้อมูล",
+        "success-multiple": "เพิ่มเพลงเพลงต่อไปนี้:\n```{{- table}}``` ",
+        "too-big": "เพิ่ม {{number}} เพลง",
+        "no-songs-added": "ฉันไม่สามารถเพิ่มเพลงที่มีอยู่แล้วใยคิวได้, ลองอีกครั้ง!",
+        "too-much": "คุณไม่สามารถเพิ่มมากกว่า {{number}} เพลงในครั้งเดียว"
+    },
+    "qra": {
+        "to-small": "คุณไม่สามารถลบเพลง {{number}}  !",
+        "success": "ลบเพลง `{{number}}`",
+        "too-big": "ลบเพลง {{number}} ",
+        "one-song": "ใช้  {{- prefix}} fskip เพื่อข้ามเพลงในตอนนี้!",
+        "no-number": "คุณไม่ได้บอกว่ากี่เพลงที่ ฉันควรจะลบ!",
+        "removed": "ลบ `{{- title}}` จากคิว"
+    },
+    "cookie": {
+        "give": "ให้ **{{- user}}** **1** คุกกี้! ",
+        "new-server": "กรุณาลองอีกครั้ง",
+        "arere": "เอ๊ะ!... บางอย่างมันผิดไป...",
+        "perms": "คุณจำเป็นต้องมี role ที่ชื่อว่า WolkeBot เพื่อส่งคุกกี้!",
+        "one-user": "กรุณา mention **1 คน**, ไม่มาก, ไม่น้อย! ",
+        "count": "คุณมี **{{number}} คุกกี้**"
+    },
+    "eastereggs": {
+        "jay": "คนโง่ รัก คุณ~ :heart:",
+        "magic": "xX_Cats_Xx เคยอยู่ที่นี้ -10.10.2016"
+    },
+    "set-lang": {
+        "no-lang": "คุณยังไม่ได้ระบุภาษา! ขณะนี้มีภาษา {{languages}} ใช้ได้",
+        "success": "โอเค ฉันเพิ่งจะตั้งภาษาของเซิฟเวอร์นี้เป็น {{- language}}. ",
+        "unsupported": "ภาษานี้ยังไม่ได้ดำเนินการที, แต่คุณสามารถช่วยด้วยโดยการส่งคำขอด้วยภาษาของคุณบน Github คุณสามารถหาภาษาที่ใช้งานได้ โดยการใช้คำสั่งเฉยๆ ไม่ต้องอะไรตามหลัง",
+        "native-name": "ชื่อพื้นเมือง",
+        "english-name": "ชื่อภาษาอังกฤษ",
+        "shortcode": "shortcode",
+        "available-languages": "รายชื่อภาษาที่ใช้ได้\nกรุณา"
+    },
+    "np": {
+        "song-duration": "ขณะนี้กำลังเล่น:` {{- title}} {{current}}/{{duration}} {{repeat}} ` ",
+        "song": "ขณะนี้กำลังเล่น: `{{-title}} {{repeat}}` ",
+        "repeat-on": "เล่นซ้ำ:on",
+        "repeat-single": "ทำซ้ำ: เดียว",
+        "repeat-queue": "ทำซ้ำ: คิว",
+        "emoji-repeat-single": ":repeat_one: ทำซ้ำ: เพลงตอนนี้",
+        "emoji-repeat-queue": ":repeat: ทำซ้ำ: คิว",
+        "emoji-repeat-off": ":heavy_check_mark: ทำซ้ำ: ปิด"
+    },
+    "queue": {
+        "queued": "คิว:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "ยังไม่มีห้องNSFWเลย",
+        "success": "ลบ {{- channel}} ออกจาก ห้องNSFW เรียบร้อยแล้ว"
+    },
+    "no-level-server": {
+        "success-disable": "โอเค ฉันเพิ่งจะปิดการใช้งานระบบเลเวลของเซิฟเวอร์นี้, พิมพ์คำสั่งนี้อีกครั้งเพื่อเปิดระบบ",
+        "success-enable": "โอเค ฉันเพิ่งเปิดการใช้งานระบบเลเวลของเซิฟเวอร์นี้, พิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบ"
+    },
+    "no-pm-server": {
+        "success-disable": "โอเค ฉันเพิ่งปิดการใช้งานระบบการแจ้งเตือน PMของเซิฟเวอร์นี้, พิมพ์คำสั่งนี้อีกครั้งเพื่อเปิดระบบ",
+        "success-enable": "โอเค ฉันเพิ่งเปิดการใช้งานระบบการแจ้งเตือน PMของเซิฟเวอร์นี้, พิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบ"
+    },
+    "no-channel-server": {
+        "success-disable": "โอเค ฉันเพิ่งปิดการใช้งานระบบการแจ้งเตือน PMของเซิฟเวอร์นี้ และเปิดระบบการแจ้งเตือนห้อง , พิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบกลับสู่สภาพเดิม",
+        "success-enable": "โอเค ฉันเพิ่งเปิดการใช้งานระบบการแจ้งเตือน PMของเซิฟเวอร์นี้ และปิดระบบการแจ้งเตือนห้อง , พิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบกลับสู่สภาพเดิม"
+    },
+    "no-level": {
+        "success-disable": "โอเค, ฉันปิดการใช้งานระบบเลเวลของคุณ, พิพม์คำสั่งนี้อีกครั้งเพื่อเปิดระบบ",
+        "success-enable": "โอเค, ฉันเปิดการใช้งานระบบเลเวลของคุณ, พิพม์คำสั่งนี้อีกครั้งเพื่อปิดระบบ"
+    },
+    "no-pm": {
+        "success-disable": "โอเค, ฉันปิดการใช้งานระบบระบบการแจ้งเตือน PMของคุณ, พิพม์คำสั่งนี้อีกครั้งเพื่อเปิดระบบ",
+        "success-enable": "โอเค, ฉันเปิดการใช้งานระบบระบบการแจ้งเตือน PMของคุณ, พิพม์คำสั่งนี้อีกครั้งเพื่อปิดระบบ"
+    },
+    "eat-cookie": {
+        "success": "คุณเพิ่งกิน {{number}} คุกกี้!",
+        "failure": "คูณไม่มีคุกกี้เลย"
+    },
+    "bot-info": {
+        "uptime": "ช่วงเวลาให้บริการ",
+        "users": "ผู้ใช้",
+        "channels": "ห้อง",
+        "guilds": "กิลด์",
+        "avg-channels": "เฉลี่ย ห้องต่อกิลด์",
+        "avg-users": "เฉลี่ย ผู้ใช้ต่อกิลด์",
+        "voice": "VC",
+        "shard": "shard",
+        "guilds-s": "กิลด์ (shard) ",
+        "channels-s": "ห้อง (shard)",
+        "users-s": "ผู้ใช้งานบนshardนี้",
+        "made": "สร้างโดย",
+        "lib": "ไลบารี่",
+        "voice_active": "AVC",
+        "voice_s": "VC(shard) ",
+        "voice_active_s": "AVC (shard)"
+    },
+    "rank": "คุณสามารถหาลีดเดอร์บอร์ดของเซิฟนี้ได้จาก: {{- link}} ",
+    "pp": {
+        "err": {
+            "api-body": "ไม่สามารถวิเคราะห์ api ได้!",
+            "osu-api": "ดูเหมือนว่า OSU! api จะมีปัญหานิดหน่อย",
+            "no-link": "เป็นลิงค์ OSU! ที่ไม่ถูกต้อง ",
+            "unvalid-link": "ลิงค์แมพไม่ซัพพอร์ต"
+        },
+        "success": "PP สำหรับแมพ `{{- artist}} - {{- title}} [{{- version}}] เฉลี่ย {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}` "
+    },
+    "server-info": {
+        "id": "ไอดี",
+        "name": "ชื่อ",
+        "member": "สมาชิก",
+        "text": "ข้อความห้อง",
+        "voice": "ห้อง",
+        "roles": "บทบาท",
+        "creation": "วันที่สร้าง",
+        "region": "ภูมิภาค",
+        "owner": "เจ้าของ"
+    },
+    "leave": "โอเคฉันออกจากห้อง",
+    "play": {
+        "no-result": "ไม่เจอเพลง!",
+        "playing": ":musical_note: กำลังเล่น **{{- song}}** ",
+        "success": ":musical_note: กำลังเล่น **{{- song}}**",
+        "next": ":musical_note: เล่นเพลงต่อไป **{{- song}}**"
+    },
+    "prefix": {
+        "success": "โอเค ฉันเพิ่งตั้ง คำอุปสรรค เป็น  {{- prefix}},ลอง `{{- prefix}}ping` เพื่อตรวจสอบ",
+        "no-prefix": "กรุณาเพิ่มคำอุปสรรค"
+    },
+    "voice": {
+        "in-queue": "**{{- song}}** กำลังเล่นอยู่ในคิว",
+        "error-volume": "เกิดความผิดพลาดขณะตั้งค่าเสียง",
+        "success-volume": "ตั้งระดับเสียงเป็น {{- volume}} ",
+        "no-volume": "ไม่มีการตั้งระดับเสียง!",
+        "repeat-start": "เริ่มทำซ้ำ> **{{- song}}** ",
+        "already-playing": "เพลงนี้กำลังเล่นอยู๋!",
+        "blocked": "วีดีโอนี้ไม่สามารถโหลดได้, บางทีมันอาจจะยาว หรือ ถูกบล็อค/ถูกลบ",
+        "dl-start": ":hourglass: กำลังโหลดเพลง!",
+        "use-proxy": "พยายามที่จะโหลดผ่านพร็อกซี่, อาจใช้เวลานิดหน่อย",
+        "too-much": "คุณไม่สามารถตั้งระดับเสียงสูงกว่า 200!"
+    },
+    "yts": {
+        "success": "พบเพลงต่อไปนี้: {{- link}} "
+    },
+    "skip": {
+        "success": ":track_next: ข้ามเพลง {{- title}}. ",
+        "stop": ":stop_button: หยุดเพลง",
+        "all": ":stop_button: ข้ามเพลงทั้งหมดแล้ว",
+        "some": ":track_next: ข้าม  {{- amount}} เพลงแล้ว"
+    },
+    "vskip": {
+        "user-no-voice": "คุณไม่สามารถโหวตาม, ถ้าคุณไม่อยู่ในห้องเดียวกัน!",
+        "same-voice": "คุณอยู๋ไม่ได้อยู่ในห้องเดียวกับฉัน!",
+        "dup": "คุณโหวตแล้ว!",
+        "success-add": "เพิ่มโหวตของคุณ, เปอร์เซ็นต์การโหวต **{{current}}%/{{needed}}%** ",
+        "success-skip": "โหวตข้ามเพลง: **{{- title}}** ",
+        "vote": "พิมพ์ {{- prefix}}yes เพื่อโหวตข้ามเพลงในขณะนี้ ปัจจุบัน ออกเสียงร้อยละ {{- perct}}%/{{- needed}}\nผูใช้ที่โหวตแล้ว\n ```{{- table}}``` ",
+        "in-prog": "โหวตข้ามกำลังดำเนินการอยู่, ใช้ {{- prefix}}yes เพื่อโหวตข้ามเพลงในขณะนี้"
+    },
+    "rm": {
+        "less-2": "คุณไม่สามารถลบข้อความน้อยกว่า 2 ข้อความ",
+        "over-100": "คุณไม่สามารถลบข้อความมากกว่า100ในครั้งเดียวได้",
+        "success": "ลบข้อความ  {{number}} ข้อความเรียบร้อยแล้ว",
+        "error": "เกิดข้อผิดพลาดขณะพยายามลบข้อความ!",
+        "over-limit": "คุณไม่สามารถลบข้อความน้อยกว่า 2 ข้อความ หรือมากกว่า 100 ในครั่งเดียวได้!",
+        "no-limit": "คุณไม่ได้ระบุจำนวนข้อความที่ฉันควรลบ",
+        "nothing-found": "ฉันไม่พบข้อความที่ตรงกับตัวกรอง!"
+    },
+    "search": {
+        "success": "พบเพลงดังต่อไปนี้:"
+    },
+    "set-lewd": {
+        "success": "เพิ่ม {{- channel}} ไปยัง ห้องNSFW เรียบร้อยแล้ว"
+    },
+    "report": "โอเค, ฉันส่งรีพอร์ตไปยัง Wolke, กรุณาอย่าใช้ผิดวิธี, ไม่งั้นคุณอาจจะถูกแบนจากการใช้บอท",
+    "greeting": {
+        "no-greeting": "คุณไม่ได้ใส่คำทักทายที่ฉันจะต้องใช้!",
+        "no-add": "คุณสามารถทั้งตั้งค่าและรีเซ็ตคำทักทายได้",
+        "set-greeting": "```คำทักทาย:{{- text}}\nห้อง:{{- channel}}\nรีเซ็ตคำทักทายด้วย {{- prefix}}setGreeting reset``` ",
+        "no-set-greeting": "ไม่มีการตั้งการทักทายในขณะนี้\n\nคุณสามารถตั้งค่าคำทักทายด้วย `{{- prefix}}setGreeting text` และรีเซ็ตคำทักทายด้วย `{{- prefix}}setGreeting reset`.",
+        "reset-greeting": "ฉันเพิ่งจะรีเซ็ตคำทักทาย, มันจะไม่ปรากฏอีกต่อไปแล้ว",
+        "success": " เอาละ,ฉันเพิ่งจะตั่งคำทักทายเป็น:\n```{{- text}}```"
+    },
+    "farewell": {
+        "no-farewell": "คุณไม่ได้ใส่คำร่ำลาที่ฉันจะต้องใช้!",
+        "no-add": "คุณสามารถทั้งตั้งค่าและรีเซ็ตคำร่ำลาได้",
+        "set-farewell": "```คำร่ำลา:{{- text}}\nห้อง:{{- channel}}\nรีเซ็ตคำร่ำลาด้วย {{- prefix}}setFarewell reset``` ",
+        "no-set-farewell": "ไม่มีการตั้งการร่ำลาในขณะนี้\n\nคุณสามารถตั้งค่าคำร่ำลาด้วย `{{- prefix}}setFarewell text` และรีเซ็ตคำร่ำลาด้วย `{{- prefix}}setFarewell reset`.",
+        "reset-farewell": "ฉันเพิ่งจะรีเซ็ตคำร่ำลา, มันจะไม่ปรากฏอีกต่อไปแล้ว",
+        "success": "เอาละ,ฉันเพิ่งจะตั่งคำร่ำลาเป็น:\n```{{- text}}```"
+    },
+    "add-role": {
+        "ok": "โอเค ฉันเพิ่งให้  {{- user}} role {{- role}}"
+    },
+    "create-role": {
+        "missing": "ชื่อ role ที่คุณระบุไม่มีอยู่บนเซิร์ฟเวอร์",
+        "new": "ฉันควรจะสร้าง role ให้คุณไหม?",
+        "no-args": "คุณไม่ได้เพิ่มอาร์กิวเมนต์ใส่ในคำสั่งเลย",
+        "ok": "โอเค, ฉันเพิ่งสร้าง role {{- role}} ",
+        "exists": "role {{- role}} มีอยู่แล้ว"
+    },
+    "remove-role": {
+        "ok": "โอเคฉันเพิ่งลบ role {{- role}} จาก {{- user}} ! "
+    },
+    "list-roles": {
+        "nr": "nr.",
+        "id": "id",
+        "name": "ชื่อ",
+        "self": "มอบหมายตัวเอง",
+        "lvl": "ใช้ได้ที่เวเวล",
+        "default": "ค่าเริ่มต้น"
+    },
+    "user-info": {
+        "id": "$t(server-info.id)",
+        "name": "$t(server-info.name)",
+        "discriminator": "discriminator",
+        "nick": "ชื่อเล่น",
+        "join": "เข้าร่วมแล้ว",
+        "created": "สร้างแล้ว",
+        "playing": "กำลังเล่น",
+        "info": "ข้อมูล user",
+        "bot": "บอท",
+        "status": "สถานะ",
+        "role": "บทบาท"
+    },
+    "flip": {
+        "head": "เหรียญพลิกเป็น หัว {{- url}} ",
+        "tail": "เหรียญพลิกเป็น ก้อย {{- url}} "
+    },
+    "gp": {
+        "no-cat": "ฉันไม่สามารถหาสิทธิ์ใด ๆ กับหมวดหมู่ {{- cat}} ",
+        "no-perms": "คุณไม่ได้เพิ่มสิทธิ์ใดๆเลย",
+        "table": {
+            "id": "$t(server-info.id) ",
+            "name": "ชื่อ",
+            "type": "ชนิด",
+            "cat": "ประเภท",
+            "perm": "อนุญาติ",
+            "use": "ใช้"
+        },
+        "page-does-not-exist": "ไม่พบหน้านี้, ลองเปิดหน้าที่น้อยกว่านี้สิ!"
+    },
+    "rp": {
+        "success": "ฉันลบสิทธิ `{{- node}}` จาก **{{- type}}** `{{- id}}` เรียบร้อยแล้ว"
+    },
+    "love": {
+        "success": "คุณเพิ่งให้ **{{- target}}** **{{- rep}}** :หัวใจ: แต้มความรัก. เหลือ **{{uses}}**. ",
+        "error-cd": "คุณสามารถให้ได้แค่ **2** :หัวใจ: แต้มความรักต่อวัน, ต่อไปใช้ {{- time}}. ",
+        "next": " ต่อไปใช้ {{- time}} ",
+        "self": ":broken_heart: คุณไม่สามารถให้แต้มความรักแก่ตัวเองได้",
+        "success-remove": "คุณเพิ่งลบ **{{- rep}}**:หัวใจ:แต้มความรักจาก **{{- target}}** เหลือ **{{uses}}**. "
+    },
+    "dere": {
+        "no-dere": "ชนิดของ dere ที่คุณค้นหา ไม่มีอยู่, นี่คือรายการที่เป็นไปได้",
+        "dandere": "The Dandere (だんデレ) type refers to a character who is often silent and to themselves.\n It may be due to shyness or just because they’re the quiet type.\n However,when alone with the person they are attracted to, they usually come out of their shell and become more loving.\n This word is an abbreviation of Danmari (だんまり) which means silent and Deredere (デレデレ) which means lovey dovey.",
+        "deredere": "The Deredere (デレデレ) type refers to a character who is completely kind, happy, and energetic.\n No matter what may happen, they quickly revert to their cheerful self.\n This may be the only character type that doesn’t have any abbreviation with the base Deredere (デレデレ) word, although the definition isn’t simply lovey dovey like the other types.",
+        "himedere": "The Himedere (ひめデレ) type refers to a character who wishes to be treated like a princess by the person she loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Hime (ひめ) which means princess and Deredere (デレデレ) which means lovey dovey.",
+        "kamidere": "The Kamidere (かみデレ) type refers to a character with a god complex.\n They’re highly arrogant and proud, and aren’t afraid to speak their minds and show everyone how right they are.\n This word is an abbreviation of Kami (かみ) which means God and Deredere (デレデレ) which means lovey dovey.",
+        "kuudere": "The Kuudere (クーデレ), sometimes written Coodere or Kūdere, type refers to a character who is often cold, blunt, and cynical.\n They may seem very emotionless on the outside, but on the inside they’re very caring — at least when it comes to the ones they love.\nThis word is an abbreviation of Cool (クール) and Deredere (デレデレ) which means lovey dovey.",
+        "mayadere": "The Mayadere (まやデレ) type refers to a character who is often a dangerous antagonist of a series, but switches sides after falling in love with another character.\n The character may remain deadly and unpredictable for the protagonist or other main character in the Anime or Manga.",
+        "oujidere": "The Oujidere (おうじデレ) type refers to a character who wishes to be treated like a prince by the person he loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Ouji (おうじ) which means prince and Deredere (デレデレ) which means lovey dovey.",
+        "tsundere": "The Tsundere (ツンデレ) type is possibly one of the most popular or simply most used character types in anime and manga.\n This type refers to a character who treats the one they love poorly. \nSometimes this is because they started out hating them and eventually loves them as the series goes on, and sometimes it’s because that’s the only way they know how to react.\n An example is if the main character calls a tsundere character cute.\n The tsundere character will get upset and flustered, possibly cause physical harm to the one they love, and then call them stupid.\nThis word is an abbreviation of Tsuntsun (ツンツン) which means to look away in disgust and Deredere (デレデレ) which means lovey dovey.",
+        "undere": "The Undere (ウンデレ) type refers to a character who says yes to pretty much everything the one they love says. \n They agree as much as possible to become as close as they can to their love interest. \n This word is an abbreviation of Un (ウン) which is a short way Japanese people say Yes and Deredere (デレデレ) which means lovey dovey.",
+        "yandere": "The Yandere (ヤンデレ) type refers to a character who starts out nice and sweet but eventually becomes dark and obsessive over the one they love.\n They become stalkers and use violence on, and possibly even murder, any person who gets close to their love interest — even if they’re too shy to simply speak with that person they have a crush on.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Deredere (デレデレ) which means lovey dovey.",
+        "yangire": "The Yangire (ヤンギレ) type is similar in some ways to Yandere. \n It is a character who may start out nice and sweet but becomes very aggressive and psychotic.\n However, unlike Yandere, Yangire do not become violent because of they attraction to a character. \n Instead, they may snap simply because they’re irritated with a character that has nothing to do with their love interest.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Kire (きれ) which means to cut or snap."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "มีเพลงน้อยกว่า 3 เพลงในคิวที่จะ สับเปลี่ยนมัน",
+        "success": "สับคิว!"
+    },
+    "get-node": {
+        "success": "สิทธิ node: `{{- node}}` ประเภท node:`{{- category}}.*` ประเภท:`{{- category}}` ",
+        "not-found": "ไม่พบคำสั่งนี้",
+        "no-args": "พิมพ์ cmd โดยไม่มีคำอุปสรรคเพื่อรับ สิทธิของnode, ประเภท node และ ประเภท"
+    },
+    "ap": {
+        "type": {
+            "user": "ผู้ใช้",
+            "guild": "กิลด์",
+            "role": "บทบาท",
+            "channel": "ห้อง"
+        },
+        "success": "โอเค, ฉันเพิ่งเพิ่มสิทธิ `{{- node}}` `{{- allowed}}` ไปยัง `{{- type}}` `{{- name}}` ",
+        "wrong-node": "สิทธิ node `{{- node}}` จะไม่ทำงาน, ถ้ายังไม่ได้รับอนุญาติ วิธีรับสิทธิของnodeพิมพ์ `{{- prefix}}getNode command` ",
+        "target-not-found": "ฉันไม่สามารถหาเป้าหมาย {{- target}} ของคำสั่งนี้ได้",
+        "no-allowance-set": "คุณไม่ได้บอกฉันว่าสิทธิควรจะได้รับการอนุญาติหรือไม่, เพิ่ม `true` หรือ `false` ขึ้นอยู๋กับตัวเลือกของคุณ",
+        "missing-args": "คำสั่งนี้ไวยากรณ์ผิด `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nตัวอย่าง:\n```{{-prefix}}ap playlist.* true -> อนุญาติทุกคำสั่งเพื่ิอใส่ playlist ลง server\n{{-prefix}}ap music.fskip -u @user true -> อนุญาติให้ user ใช้คำสั่ง {{- prefix}}fskip``` "
+    },
+    "reset-perms": {
+        "nothing-found": "คุณยังไม่ได้ตั้งสิทธิที",
+        "confirmation": "คุณแน่ใจหรอที่จะลบสิทธิ ? พิมพ์ `yes` เพื่อรีเซ็ต และ `no` เพื่อยกเลิก",
+        "success": "ฉันเพิ่งจะรีเซ็ตสิทธิทั้งหมด"
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: ฉันเลือกอะไรให้ไม่ได้, ถ้าไม่ได้ใส่อะไร!",
+        "success": "ฉันเลือก **{{- choice}}**!"
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: ฉันไม่สามารถหาคำนิยาม, ถ้าคุณไม่ได้ใส่อะไรเลย!",
+        "no-result": "ฉันไม่สามารถหาอะไรได้เลยจาก `{{- term}}`"
+    }
 }
