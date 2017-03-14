@@ -137,7 +137,8 @@
     "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
     "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
     "pout": "Hmmpf :< Pout at someone",
-    "smug": "Give someone a smug :^)"
+    "smug": "Give someone a smug :^)",
+    "lick": "Check if somebody is eatable"
   },
   "add": "Use this link to add me to your Server: {{- link}}",
   "bug": "Please join the support discord: {{- link}} to report a bug.",
