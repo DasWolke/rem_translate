@@ -143,7 +143,7 @@
         "rp": "Komenda do usunięcia uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
         "cry": "Smutno? Komenda w sam raz dla Ciebie!",
         "ibsafe": "Przeszukuje ibsear.ch (tylko obrazki sfw)",
-        "iblewd": "Przeszukuje ibsearch.xxx (to samo co ibsafe ale z obrazkami nsfw)",
+        "iblewd": "Przeszukuje ibsearch.xxx (to samo co ibsafe lecz z obrazkami nsfw)",
         "qr": "Możesz usunąć pojedynczą piosenkę poprzez jej id lub kilka na raz poprzez `qr startid-stopid`, usunie to wszystkie piosenki zaczynając od startid i kończąc na stopid, możesz także usunąć kilka id poprzez rozdzielanie ich przecinkami",
         "shuffle": "Miesza kolejkę. Zauważ, że w kolejce muszą być co najmniej 3 piosenki, aby to działało.",
         "owo": "Wysyła losowy meme OwO What's this?, spośród ręcznie wybranych przez Wolke",
@@ -163,7 +163,8 @@
         "setGreeting": "Ustawia wiadomość powitalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
         "setFarewell": "Ustawia wiadomość pożegnalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
         "pout": "Hmmpf :< Fochnij się na kogoś",
-        "smug": "Rzuć komuś wywyższające się spojrzenie :^)"
+        "smug": "Rzuć komuś wywyższające się spojrzenie :^)",
+        "lick": "Sprawdź czy ktoś jest jadalny"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
