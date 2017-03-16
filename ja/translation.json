@@ -163,7 +163,8 @@
         "setGreeting": "コマンドが実行されたチャンネルの挨拶文を設定します。%USER%と%GUILD%を使用すると、それぞれユーザ名とサーバー名に置き換えることが出来ます。",
         "setFarewell": "コマンドが実行されたチャンネルのお別れのメッセージを設定します。%USER%と%GUILD%を使用すると、それぞれユーザ名とサーバー名に置き換えることが出来ます。",
         "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "smug": "Give someone a smug :^)",
+        "lick": "Check if somebody is edible"
     },
     "version": "現在の私のバージョンは {{version}} です。",
     "add": "このリンクを使って私をあなたのサーバーに追加してください！\n{{- link}}",
