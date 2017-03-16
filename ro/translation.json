@@ -163,7 +163,8 @@
         "setGreeting": "Seteaza un salut in canal unde comanda este executata.Poti folosi %USER% si %GUILD% care vor fi inlocuite de numele utilizatorului si numele breslei.",
         "setFarewell": "Seteaza un ramas bun in canal cand comanda este executata. Poti folosi %USER% si %GUILD%care vor fi inlocuite cu numele utilizatorului si numele breslei.",
         "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "smug": "Give someone a smug :^)",
+        "lick": "Check if somebody is edible"
     },
     "version": "In momentul de fata rulez versiunea {{version}}",
     "add": "Foloseste acest lnk pentru a ma adauga serverului tau: {{-link}}",
