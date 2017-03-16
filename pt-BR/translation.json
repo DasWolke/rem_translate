@@ -26,7 +26,7 @@
         "language-name-en": "Brazilian Portuguese",
         "native-name": "Português brasileiro",
         "empty-say": ";no_entry_sign: Você não escreveu uma mensagem",
-        "page": "Page"
+        "page": "Página"
     },
     "help": {
         "intro": "vamos nos divertir juntos aqui no Discord (/^▽^)/ para escolher uma categoria de comando utilize {{pre}}help e o número do comando para saber mais:",
@@ -144,14 +144,14 @@
         "cry": "Se sentindo triste? Este é o comando certo para você.",
         "ibsafe": "Pesquisa no ibsear.ch (apenas imagens sfw)",
         "iblewd": "Pesquisa no ibsearch.xxx (o mesmo que ibsafe mas com imagens nsfw também)",
-        "qr": "You can remove single songs with their songid, or multiple with `qr startid-stopid`, this would remove all songs starting at the startid and ending at the stopid, or delete multiple ids by seperating them with commas",
+        "qr": "Você pode extrair músicas com sua songid único ou múltiplo com 'startid qr-stopid', este seria remover todas as músicas começando no startid e terminando no stopid ou excluir várias ids de debulha por eles com vírgulas",
         "shuffle": "Embaralha a fila.Deve haver pelo menos 3 músicas na fila para esse comando funcionar.",
         "owo": "Manda um meme \" OwO What's this\" aleatório, que são escolhidos a mão por Wolke",
         "getNode": "Retorna o Node de permissão, Node de categoria e Categoria de um commando",
         "resetPerms": "Redefine todas permissões definidas até agora, use com cuidado!",
         "pat": "Acaricie alguém que foi um bom garoto/garota/helicóptero",
         "triggered": "NERVOSO",
-        "stare": "stareeeee...",
+        "stare": "stareeeee... ",
         "nom": "Nom :>",
         "potato": "Todo mundo quer uma batata",
         "choose": "Faça Rem escolher algo para você, separe as escolhas com `;`",
@@ -162,8 +162,9 @@
         "kiss": "Dê um beijo em alguém <3",
         "setGreeting": "Define uma saudação no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
         "setFarewell": "Define uma despedida no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "pout": "Hmmph :< Faneca norueguesa a alguém",
+        "smug": "dar alguém uma presunçosa :^)",
+        "lick": "Verificar se alguém é comestível"
     },
     "version": "No momento estou rodando na versão {{version}} ",
     "add": "Use este link para me colocar no seu Servidor: {{- link}} ",
@@ -257,7 +258,7 @@
         "unsupported": "O idioma ainda não foi implementado, mas você pode ajudar adicionando um Pull Request com seu idioma no Github. No momento estão disponíveis {{languages}}.",
         "native-name": "Nome Nativo",
         "english-name": "Nome Inglês",
-        "shortcode": "shortcode",
+        "shortcode": "Shortcode",
         "available-languages": "Lista de linguagens disponíveis\n"
     },
     "np": {
@@ -316,8 +317,8 @@
         "made": "Feito por:",
         "lib": "Biblioteca",
         "voice_active": "AVC",
-        "voice_s": "VC(shard)",
-        "voice_active_s": "AVC (shard)"
+        "voice_s": "VC(estilha)",
+        "voice_active_s": "AVC(estilha)"
     },
     "rank": "Você pode conferir o placar para este Servidor aqui: {{- link}}",
     "pp": {
@@ -344,7 +345,7 @@
     "play": {
         "no-result": "Não encontrei nenhuma música!",
         "playing": ":musical_note: Tocando agora: **{{- song}}** ",
-        "success": ":nota_musical: tocando agora **{{- song}}**\n",
+        "success": ":musical_note: tocando agora **{{- song}}**",
         "next": ":musical_note: Proxima música **{{- song}}** \n"
     },
     "prefix": {
@@ -400,18 +401,18 @@
     "greeting": {
         "no-greeting": "Você não definiu a saudação que eu devo usar!",
         "no-add": "Você pode ou definir ou resetar a saudação",
-        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
-        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
-        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
-        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
+        "set-greeting": "```Saudação:{{-text}}\nCanal:{{-channel}}\nRedefinir a saudação com {{-prefix}}setGreeting reset```",
+        "no-set-greeting": "Não há nenhuma saudação definido no momento.\n\nVocê pode definir uma saudação com o `{{-prefix}} setGreeting texto` E reset uma saudação com o `{{-prefix}}setGreeting reset`.",
+        "reset-greeting": "Eu apenas reset a saudação, ele não aparece mai.",
+        "success": "bem, devo apenas configurar a saudação ao:\n```{{- text}}``` "
     },
     "farewell": {
         "no-farewell": "Você não definiu a despedida que eu devo usar!",
         "no-add": "Você pode ou definir ou resetar a despedida",
-        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
-        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
-        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
-        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
+        "set-farewell": "```Despedida:{{-text}}\nCanal:{{-channel}}\nReset a despedida com {{-prefix}}setFarewell reset```",
+        "no-set-farewell": "Não há nenhum conjunto de despedida no momento.\n\nVocê pode conjunto uma despedida com  `{{- prefix}}setFarewell text` e resetuma despedida com `{{- prefix}}setFarewell reset`.",
+        "reset-farewell": "Eu apenas reset a despedida, ele não aparece mais.",
+        "success": "bem, devo apenas definir a despedida de:\n```{{- text}}``` "
     },
     "add-role": {
         "ok": "Ok, acabei de dar para {{- user}} o cargo {{- role}} "
@@ -462,7 +463,7 @@
             "perm": "Permissão",
             "use": "Uso"
         },
-        "page-does-not-exist": "This page does not exist. Try a lower page number!"
+        "page-does-not-exist": "Esta página não existe. Tente um mais baixo página número!"
     },
     "rp": {
         "success": "Eu removi a permissão `{{- node}}` de **{{- type}}** `{{- id}}` "
@@ -483,10 +484,10 @@
         "kuudere": "O tipo Kuudere (クーデレ),as vezes escrito como Coodere ou Kūdere,se refere a um personagem que é frequentemente frio e cínico.\nEles podem parecer sem emoção por fora,mas por dentro são muito carinhosos -- pelo menos quando se trata da pessoa que eles amam.\nEssa palavra é uma abreviação de Cool (クール) e Deredere (デレデレ) que significa amoroso",
         "mayadere": "O tipo Mayadere (まやデレ) refere-se a um personagem que é frequentemente um antagonista perigoso de uma série,mas muda de lado depois de se apaixonar por outro personagem.\n O personagem pode permanecer mortal e imprevisível para o protagonista ou outro personagem principal no Anime ou Mangá.",
         "oujidere": "O tipo Oujidere (おうじデレ)  se refere à um personagem que deseja ser tratado como principe pela pessoa que ele ama, mesmo que não seja da realeza.\nEssa palavra é uma abreviação de Ouji (おうじ) que significa Princesa, e Deredere, que significa Amorzinho",
-        "tsundere": "The Tsundere (ツンデレ) type is possibly one of the most popular or simply most used character types in anime and manga.\n This type refers to a character who treats the one they love poorly. \nSometimes this is because they started out hating them and eventually loves them as the series goes on, and sometimes it’s because that’s the only way they know how to react.\n An example is if the main character calls a tsundere character cute.\n The tsundere character will get upset and flustered, possibly cause physical harm to the one they love, and then call them stupid.\nThis word is an abbreviation of Tsuntsun (ツンツン) which means to look away in disgust and Deredere (デレデレ) which means lovey dovey.",
-        "undere": "The Undere (ウンデレ) type refers to a character who says yes to pretty much everything the one they love says. \n They agree as much as possible to become as close as they can to their love interest. \n This word is an abbreviation of Un (ウン) which is a short way Japanese people say Yes and Deredere (デレデレ) which means lovey dovey.",
-        "yandere": "The Yandere (ヤンデレ) type refers to a character who starts out nice and sweet but eventually becomes dark and obsessive over the one they love.\n They become stalkers and use violence on, and possibly even murder, any person who gets close to their love interest — even if they’re too shy to simply speak with that person they have a crush on.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Deredere (デレデレ) which means lovey dovey.",
-        "yangire": "The Yangire (ヤンギレ) type is similar in some ways to Yandere. \n It is a character who may start out nice and sweet but becomes very aggressive and psychotic.\n However, unlike Yandere, Yangire do not become violent because of they attraction to a character. \n Instead, they may snap simply because they’re irritated with a character that has nothing to do with their love interest.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Kire (きれ) which means to cut or snap."
+        "tsundere": "O Tsundere (ツンデレ) tipo é possivelmente um dos mais populares ou simplesmente mais utilizados tipos de caractere em anime e manga.\nEste tipo se refere a um personagem quem ama pobremente\nÀs vezes isso é porque começou a odiar e eventualmente os ama como a série vai, e às vezes é porque essa é a única maneira que eles sabem como reagir.\nUm exemplo é se o personagem principal chamada um personagem tsundere bonitinho\nO tsundere personagem vai ficar aborrecido e perturbado, possivelmente causar danos físicos à pessoa que amam e depois lhes chamar estúpido.\nEsta palavra é uma abreviação de Tsuntsun (ツンツン) que significa olhar para longe em repugnância e Deredere (デレデレ) que significa lovey dovey.",
+        "undere": "O Undere (ウンデレ) tipo se refere a um personagem que diz sim para praticamente tudo que a um eles amam diz.\nEles concordam tanto quanto possível para se tornar o mais próximo possível de seus amor interesse.\nEsta palavra é uma abreviatura  UN (ウン) que é um curto percurso povo Japonês dizer sim e Deredere (デレデレ) que significa lovey dovey.",
+        "yandere": "A Yandere (ヤンデレ) tipo se refere a um personagem que começa a nice e doces mas eventualmente fica escuro e obsessivo por cima a um eles amam.\nEles se perseguidores e usar violência, e possivelmente até mesmo de assassínio, qualquer pessoa que chega perto delas amor interesse - mesmo se eles estiverem demasiado tímidos para simplesmente falar com a pessoa que eles têm um pique.\nEsta palavra é uma abreviação de Yanderu (やんでる) que significa ser mentalmente ou emocionalmente doente e Deredere (デレデレ) que significa lovey dovey",
+        "yangire": "O Yangire (ヤンギレ) tipo é semelhante em algumas formas de Yandere.\nÉ um personagem que começa nice e doces mas se torna  agressivo e psicótico.\nNo entanto, diferentemente Yandere, Yangire não se tornam violentas porque de eles atração para um caractere.\nEm vez disso, eles podem simplesmente snap porque eles estão irritados com um caractere que não tem nada a ver com o seu amor o interesse.\nEsta palavra é uma abreviação de Yanderu (やんでる) que significa ser mentalmente ou emocionalmente doente e Kire (きれ) que significa cortar ou snap."
     },
     "shuffle": {
         "not-enough-shuffle": "É necessário que tenha pelo menos 3 musicas na fila para eu embaralhá-las",
