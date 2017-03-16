@@ -163,7 +163,8 @@
         "setGreeting": "Définie un message de bienvenue dans le salon où cette commande a été exécuté. Tu peux utiliser %USER% et %GUILD% qui vont être remplacés par le nom d'utilisateur et le nom de la guilde.",
         "setFarewell": "Définie un message d'adieu dans le salon où cette commande a été exécuté. Tu peux utiliser %USER% et %GUILD% qui vont être remplacés par le nom d'utilisateur et le nom de la guilde.",
         "pout": "Hmmpf :< Boude quelqu'un",
-        "smug": "Fait un sourire suffisant à quelqu'un :^)"
+        "smug": "Fait un sourire suffisant à quelqu'un :^)",
+        "lick": "Vérifie si quelqu'un est comestible"
     },
     "version": "Actuellement je suis en version {{version}}",
     "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
