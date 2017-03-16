@@ -23,8 +23,8 @@
         "donate": "บริจาค",
         "support": "สนับสนุน",
         "invite": "เชิญ",
-        "language-name-en": "อังกฤษ",
-        "native-name": "อังกฤษ",
+        "language-name-en": "Thai",
+        "native-name": "ไทย",
         "empty-say": ":no_entry_sign: คุณยังไม่ได้ในข้อความ",
         "page": "หน้า"
     },
@@ -163,7 +163,8 @@
         "setGreeting": "ตั้งค่าการทักทายของห้องทีี่ที่มีคำสั่งอยู๋ คุณสามารถใช้ %USER% และ %GUILD% ที่จะใส่ชื่อของผู้ใช้และชื่อกิลด์",
         "setFarewell": "ตั้งค่าการร่ำลาของห้องทีี่ที่มีคำสั่งอยู่ คุณสามารถใช้ %USER% และ %GUILD% ที่จะใส่ชื่อของผู้ใช้และชื่อกิลด์",
         "pout": "ฮึ่มฟ.. :< ทำหน้ามุ่ยใส่บางคน",
-        "smug": "ใจแคบกับใครบางคน :^)"
+        "smug": "ใจแคบกับใครบางคน :^)",
+        "lick": "Check if somebody is edible"
     },
     "version": "ปัจจุบัน ฉันรุ่น {{version}} ",
     "add": "ใช้ลิงค์นี้เพื่อเพิ่มฉันเข้าเซิฟของคุณ: {{- link}} ",
@@ -476,17 +477,17 @@
     },
     "dere": {
         "no-dere": "ชนิดของ dere ที่คุณค้นหา ไม่มีอยู่, นี่คือรายการที่เป็นไปได้",
-        "dandere": "The Dandere (だんデレ) type refers to a character who is often silent and to themselves.\n It may be due to shyness or just because they’re the quiet type.\n However,when alone with the person they are attracted to, they usually come out of their shell and become more loving.\n This word is an abbreviation of Danmari (だんまり) which means silent and Deredere (デレデレ) which means lovey dovey.",
-        "deredere": "The Deredere (デレデレ) type refers to a character who is completely kind, happy, and energetic.\n No matter what may happen, they quickly revert to their cheerful self.\n This may be the only character type that doesn’t have any abbreviation with the base Deredere (デレデレ) word, although the definition isn’t simply lovey dovey like the other types.",
-        "himedere": "The Himedere (ひめデレ) type refers to a character who wishes to be treated like a princess by the person she loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Hime (ひめ) which means princess and Deredere (デレデレ) which means lovey dovey.",
-        "kamidere": "The Kamidere (かみデレ) type refers to a character with a god complex.\n They’re highly arrogant and proud, and aren’t afraid to speak their minds and show everyone how right they are.\n This word is an abbreviation of Kami (かみ) which means God and Deredere (デレデレ) which means lovey dovey.",
-        "kuudere": "The Kuudere (クーデレ), sometimes written Coodere or Kūdere, type refers to a character who is often cold, blunt, and cynical.\n They may seem very emotionless on the outside, but on the inside they’re very caring — at least when it comes to the ones they love.\nThis word is an abbreviation of Cool (クール) and Deredere (デレデレ) which means lovey dovey.",
-        "mayadere": "The Mayadere (まやデレ) type refers to a character who is often a dangerous antagonist of a series, but switches sides after falling in love with another character.\n The character may remain deadly and unpredictable for the protagonist or other main character in the Anime or Manga.",
-        "oujidere": "The Oujidere (おうじデレ) type refers to a character who wishes to be treated like a prince by the person he loves, even if they aren’t royalty in actuality.\nThis word is an abbreviation of Ouji (おうじ) which means prince and Deredere (デレデレ) which means lovey dovey.",
-        "tsundere": "The Tsundere (ツンデレ) type is possibly one of the most popular or simply most used character types in anime and manga.\n This type refers to a character who treats the one they love poorly. \nSometimes this is because they started out hating them and eventually loves them as the series goes on, and sometimes it’s because that’s the only way they know how to react.\n An example is if the main character calls a tsundere character cute.\n The tsundere character will get upset and flustered, possibly cause physical harm to the one they love, and then call them stupid.\nThis word is an abbreviation of Tsuntsun (ツンツン) which means to look away in disgust and Deredere (デレデレ) which means lovey dovey.",
-        "undere": "The Undere (ウンデレ) type refers to a character who says yes to pretty much everything the one they love says. \n They agree as much as possible to become as close as they can to their love interest. \n This word is an abbreviation of Un (ウン) which is a short way Japanese people say Yes and Deredere (デレデレ) which means lovey dovey.",
-        "yandere": "The Yandere (ヤンデレ) type refers to a character who starts out nice and sweet but eventually becomes dark and obsessive over the one they love.\n They become stalkers and use violence on, and possibly even murder, any person who gets close to their love interest — even if they’re too shy to simply speak with that person they have a crush on.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Deredere (デレデレ) which means lovey dovey.",
-        "yangire": "The Yangire (ヤンギレ) type is similar in some ways to Yandere. \n It is a character who may start out nice and sweet but becomes very aggressive and psychotic.\n However, unlike Yandere, Yangire do not become violent because of they attraction to a character. \n Instead, they may snap simply because they’re irritated with a character that has nothing to do with their love interest.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Kire (きれ) which means to cut or snap."
+        "dandere": "The Dandere (だんデレ) เป็นชนิดของตัวละครที่ออกอาการเงียบ\n อาจจะเป็นเพราะความเขินอายหรือเป็นเพราะเขารัก\n ไม่ว่ายังไงก็ตาม, เมื่ออยู่กับคนที่เขาชอบ, พวกเขาจะออกมาจากเปลือกของเขาและแสดงความรักมากขึ้น\n Dandere เป็นคำย่อของ Danmari (การだんまり) ซึ่งหมายความว่าเงียบและ Deredere ที่มีความหมายว่า รักมากมาย",
+        "deredere": "The Deredere  (デレデレ) เป็นชนิดของตัวละครที่ใจดี, มีความสุข, กระปรี้กระเปร่า\n ไม่ว่าอะไรจะเกิดขึ้น, พวกเขาก็ยังร่าเริงอยู่เสมอ\n ประเภทของตัวละครนี้อาจจะเป็นประเภทเดียวที่ไม่มีความหมายเกี่ยวข้องกับคำว่า Deredere แม้ว่ามันอาจจะไม่มีความรักมากมายเหมือนประเภทอื่นๆ",
+        "himedere": "The Himedere (ひめデレ) เป็นชนิดของตัวละครที่ปรารถนาที่จะได้รับการปฏบัติเหมือนเจ้าหญิงโดยคนที่เธอรัก, แม้ว่าพวกเขาจะไม่ได้เป็นพระบรมวงศานุวงศ์ในความเป็นจริง \nHimedere มาจากคำว่า ฮิเมะ (ひめ) ที่แปลว่าเจ้าหญิงและ Deredere ที่มีความหมายว่า รักมากมาย",
+        "kamidere": "The Kamidere (かみデレ) เป็นชนิดของตัวละครที่มีสายเลือดพระเจ้า/เป็นพระเจ้า\n พวกเขาหยิ่งและภาคภูมิใจมาก, และไม่กลัวที่จะพูดความคิดของเขาและแสดงสิ่งที่ถูกต้องให้ทุกคน\n Kamidere มาจากคำว่า คามิ (かみ) ที่แปลว่าพระเจ้า และ Deredere ที่มีความหมายว่า รักมากมาย",
+        "kuudere": "The Kuudere (クーデレ) , บางครั้งเขียนว่า Coodere หรือ Kūdere, เป็นชนิดของตัวละครที่ เยือกเย็น,แข็งทื่อ,ดูถูก\n พวกเขาอาจไม่ค่อยแสดงอารมณ์จากภายนอก, แต่ภายในพวกเขาอ่อนแอและเปราะบางมาก — อย่างน้อยก็แสดงให้คนที่พวกเขารัก\nคำนี้มาจากคำว่า คู/cool (クール) และ Deredere ที่มีความหมายว่า รักมากมาย",
+        "mayadere": "The Mayadere (まやデレ) ป็นชนิดของตัวละครที่อันตรายและเป็นศัตรู, แต่อีกด้านหนึ่งกำลังตกหลุมรักตัวละครอื่นอยู่\nตัวละครนี้อาจจะดูร้ายและคาดเดาไม่ได้สำหรับตัวเอก หรือตัวละครหลักอื่น ๆ ในอะนิเมะหรือมังงะ",
+        "oujidere": "The Oujidere (おうじデレ)  คือประเภทของคนที่อยากให้ถูกปฎิบัคิเหมือนเจ้าชายจากคนที่เขารัก \nแม้ว่าเขาจะไม่ใช่เจ้าชายจริงๆ\nOujidere มาจากคำว่า Ouji ซึ่งหมายถึง เจ้าชาย และ Deredere ที่มีความหมายว่า รักมากมาย",
+        "tsundere": "The Tsundere (ツンデレ)   เป็นคนประเภทที่ถูกกล่าวถึงมากที่สุดและมักใช้เป็นบุคคลิกของตัวละครในมังงะและอนิเมะ.\nคนประเภทนี้จะมีบุคคลิกที่ปฎิบัติกับคนที่รักได้ไม่ดีนัก.\nบางครั้งอาจเป็นเพราะพวกเขาเริ่มจากทะเลาะและไม่ชอบหน้ากันแต่ก็รักกันในที่สุดหรืออาจเป็นทางเดียวที่จะแสดงความรู้สึกได้.\nตัวอย่าง:\nถ้าตัวละครหลักชมตัวละครที่ Tsundere ว่าน่ารัก ตัวละครนั้นจะรู้สึกเขินและแกล้งโวยวายใส่ตนที่ชอบจากนั้นก็ด่าเขาว่าบ้า.\nTsundere มาจากคำว่า Tsuntsun ซึ่งหมายถึงมองด้วยความรังเกัยจ  และ Deredere ที่มีความหมายว่ารักมากมาย",
+        "undere": "The Undere (ウンデレ)  คือประเภทของคนที่เห็นด้วยกับทุกคำที่คนรักพูด.\nพวกเขามักจะเห็นด้วยกับคำพูดทุกคำเท่าที่จะทำได้เพื่อให้คนที่รักสนใจ.\nUndere มาจากคำว่า Un ซึ่งแปลว่าเห็นด้วยแบบสั้นๆ และ Deredere ที่มีความหมายว่ารักมากมาย",
+        "yandere": " The Yandere (ヤンデレ) คือประเภทของคนที่ภายนอกเป็นคนนิสัยดีและน่ารักแต่ในที่สุดก็จะเข้าสู่ความมือและครอบงำคนรักหนึ่งเดียวของพวกเขา\n พวกเขากลายเป็นพวกสตอล์กเกอร์ และบ้าขึ้น, และเป็นแม้กระทั้งฆ่าฆาตกร, ไม่ว่าใครก็ตามที่เข้าใครคนรักที่พวกเขาสนใจ — แม้ว่าพวกเขาจะอายเกินกว่าที่จะพูดคุยกับคนที่เขาชอบ\n Yandere มาจากคำว่า Yanderu (やんでる) ซึ่งหมายถึง อารมณ์แปรปรวน และ Deredere ที่มีความหมายว่ารักมากมาย",
+        "yangire": "The Yangire (ヤンギレ) มีบุคคลิกคล้ายกับ Yandere.\nตัวละครนี้จะเริ่มจากเป็นคนนิสัยดีและน่ารัก แต่ภายหลังจะมีนิสัยที่รุนแรงและโรคจิต.\nอย่างไรก็ตาม, Yanfire จะไม่ใช้กำลังเพราะความชอบที่มีให้กับตัวละครตัวอื่น พวกเขาจะทำก็ต่อเมื่อเขาเกลียดตัวละครอื่น\nYangire มาจากคำว่า Yanderu ซึ่งหมายถึง อารมณ์แปรปรวน และ Kire ที่มีความหมายว่าตัดอิอิ"
     },
     "shuffle": {
         "not-enough-shuffle": "มีเพลงน้อยกว่า 3 เพลงในคิวที่จะ สับเปลี่ยนมัน",
