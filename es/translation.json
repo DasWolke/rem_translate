@@ -36,7 +36,7 @@
         "help": "El comando de ayuda.",
         "add": "Obtén un enlace para añadirme a tu servidor.",
         "music": "[MÚSICA]",
-        "voice": "Con éste comando me uno al canal de voz donde estés conectado, otros comandos de música también hacen que me una al canal.",
+        "voice": "Con este comando me uno al canal de voz donde estés conectado, otros comandos de música también hacen que me una al canal.",
         "silent": "Con este comando abandono el canal donde esté conectada, solo puede ser utilizado por usuarios que posean \"WolkeBot\".",
         "play": "Reproduces algo de Youtube/SoundCloud/Osu o alguna busqueda",
         "pause": "Pausas la canción actual.",
@@ -163,7 +163,8 @@
         "setGreeting": "Establece una bienvenida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD%, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
         "setFarewell": "Establece una despedida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
         "pout": "Hmmpf :< Dale una mala cara a alguien",
-        "smug": "Dale a alguien un smug :^)"
+        "smug": "Dale a alguien un smug :^)",
+        "lick": "Comprueba si alguien es comestible"
     },
     "version": "Actualmente me encuentro en la versión {{version}}",
     "add": "Utiliza este enlace para añadirme a tu servidor: {{- link}}",
