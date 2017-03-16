@@ -14,19 +14,19 @@
         "cancel": "cancel",
         "version": "Versie",
         "author": "auteur",
-        "lib": "gebruikte library",
+        "lib": "gebruikte bibliotheek",
         "more": "{{number}} meer",
         "abort": ":x: geannuleerd",
         "cat-nope": ":no_entry_sign: Deze categorie bestaat niet!",
-        "mention": "Verwijs een lid AUB.",
-        "cancelled-command": "De command is geannuleerd.",
-        "donate": "Doneer.",
-        "support": "Support",
-        "invite": "Inviteer",
+        "mention": "Noem alsjeblieft een gebruiker.",
+        "cancelled-command": "Het commando is geannuleerd.",
+        "donate": "Doneer",
+        "support": "Ondersteuning",
+        "invite": "Uitnodigen",
         "language-name-en": "Dutch",
         "native-name": "Nederlands\n",
         "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!",
-        "page": "Page"
+        "page": "Pagina"
     },
     "help": {
         "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ Selecteer een command categorie door te reageren met {{pre}}help nummer van een command om meer te weten te komen:",
@@ -104,66 +104,67 @@
         "lewd": "Zo obsceen uwu",
         "rem": "Geeft je een willekeurige foto van Rem.",
         "wip": "[WERKZAAMHEDEN IN UITVOERING]",
-        "gr": "Zet een groet met set greetingMessage,{{user}} zal worden verplaatst met het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. De groet zal plaatsvinden in de kanaal waar de command is toegepast",
-        "fw": "Zet een afscheidsgroet met set farewellMessage, {{user}} zal worden verplaatst met het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. De groet zal plaatsvinden in de kanaal waar de command is toegepast.",
-        "s": "De server command, zet dingen zoals groeten en afscheidsberichten.",
+        "gr": "Stel een begroeting in met set greetingMessage,{{user}} zal worden vervangen door de naam van het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het commando is toegepast",
+        "fw": "Stel een afscheidsbericht in met set farewellMessage, {{user}} zal worden vervangen door de naam van het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het commando is toegepast",
+        "s": "Het server commando, stel dingen zoals begroetingen en afscheidsberichten in.",
         "shrug": "¯\\_(ツ)_/¯",
         "flip": "(╯°□°）╯︵ ┻━┻",
-        "eggplant": "alleen maar een aubergine",
-        "gtn": "Geeft je een willekeurige Green Tea Neko strip, alleen bruikbaar met de WolkeBot rol of een geconfigureerde NSFW kanaal",
-        "cuddle": "Geeft je een anime knuffel animatie",
-        "trig": "TRIGGERED",
-        "bot": "Geeft je informatie over Rem, de uptime en ook goede gebruikbare links",
-        "top": "Geeft the top 10 guilds(gesorteerd op aantal gebruikers) die aangesloten zijn op deze shard",
-        "about": "Geeft je basis informatie over mij, de bibliotheek en wie mij gecreerd heeft.",
-        "lenny": "( ͡° ͜ʖ ͡°) ",
-        "lmg": "Laat mij dat voor je googlen",
-        "fskip": "Slaat de huidige lied/ een aantal liederen/ alle liederen over",
-        "leave": "Ik verlaat de spraak kanaal waaraan ik  aangesloten ben.",
-        "say": "LAat Rem iets zeggen",
-        "ar": "Voeg een rol toe aan jezelf of een gebruiker",
-        "cr": "Creeer een rol of voeg een rol toe aan de bot, -d -> standaard, -l 2 -> geeft de rol aan de gebruiker wanneer hij level 2 berijkt, -s -> maakt de rol zelf toewijsbaar, bijvoorbeeld -> cr -l 20 rol1 creert een rol genaamd rol1 die toegewezen word aan een gebruiker die lvl 20 berijkt",
-        "lr": "Lijst met rollen die aangesloten zijn aan Rem op dit moment",
-        "rr": "Verwijdert een rol van jezelf of een andere lid van de server",
+        "eggplant": "slechts een aubergine",
+        "gtn": "Geeft je een willekeurige Green Tea Neko strip, alleen bruikbaar in een geconfigureerd NSFW kanaal of door een admin.",
+        "cuddle": "Wordt knuffelig",
+        "trig": "GETRIGGERED",
+        "bot": "Geeft je wat informatie over Rem, de tijd online en een aantal bruikbare links.",
+        "top": "Geeft de top 10 guilds (gesorteerd op gebruikers) die aangesloten zijn op dit fragment",
+        "about": "Geeft je basis informatie over mij, zoals de bibliotheek en wie mij gecreëerd heeft.",
+        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lmg": "Laat mij dat voor je opzoeken",
+        "fskip": "Slaat het huidige nummer/een aantal nummers/alle nummers over",
+        "leave": "Ik verlaat het spraakkanaal waar ik momenteel in zit.",
+        "say": "Laat Rem iets zeggen",
+        "ar": "Voeg een rol toe aan jezelf of aan een gebruiker",
+        "cr": "Creëer een rol of voeg een rol toe aan de bot, -d -> standaard, -l 2 -> geeft de rol aan de gebruiker wanneer hij level 2 berijkt, -s -> maakt de rol zelf toewijsbaar, bijvoorbeeld -> cr -l 20 rolnaam creëert een rol genaamd rolnaam die toegewezen wordt aan een gebruiker die lvl 20 berijkt",
+        "lr": "Toont een lijst met alle rollen die gelinkt zijn aan Rem op dit moment",
+        "rr": "Verwijdert een rol van jezelf, een andere gebruiker of van de server",
         "roles": "[ROLLEN]",
-        "repeat": "Herhaalt een lied/de wachtlijst tot er een nieuwe lied wordt toegevoegd aan de wachtlijst.",
-        "sayd": "Laat Rem iets zeggen en verwijdert jouw command.",
+        "repeat": "Herhaalt een nummer/de wachtlijst tot er nieuwe nummers worden toegevoegd aan de wachtlijst.",
+        "sayd": "Laat Rem iets zeggen en verwijdert jouw commando",
         "generic": "[ALGEMEEN]",
         "fun": "[PRET]",
-        "coin": "Flip een munt voor je",
-        "nyan": "Nyaa :3",
+        "coin": "gooit een munt voor je op",
+        "nyan": "Nya :3",
         "uwu": "uwu",
         "dere": "Zoekt de -dere definitie of een willekeurige -dere definitie",
-        "love": "Geeft de vermelde lid een liefdespunt,  voeg - toe om 1 liefdespunt af te trekken.",
+        "love": "Geeft het genoemde lid een liefdespunt, voeg - toe om 1 liefdespunt af te trekken.",
         "sinfo": "geeft je wat info over de huidige server",
-        "uinfo": "geeft je wat info over jezelf/ de aangewezen lid",
-        "apq": "voegt een afspeellijst toe aan de wachtlijst, verwerkt alleen youtube afspeellijsteen en heeft alleen de id nodig. NIET HET ADRES!!",
-        "ap": "De command om permissies toe te voegen, een uitgebreide uitleg kan gevonden worden op de Rem server(!w.bug om een invitatie te krijgen)",
-        "gp": "De command om permissies te bezichtigen, een uitgebreide uitleg kan gevonden worden op de Rem server(!w.bug om een invitatie te krijgen)",
-        "rp": "De command om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server(!w.bug om een invitatie te krijgen)",
-        "cry": "Voel je je verdrietig? Dit is de juiste command voor je.",
+        "uinfo": "geeft je wat info over jezelf/het genoemde lid",
+        "apq": "voegt een afspeellijst toe aan de wachtlijst, ondersteund alleen youtube afspeellijsten en heeft alleen het id nodig. NIET HET ADRES!!",
+        "ap": "Het commando om permissies toe te voegen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "gp": "Het commando om permissies te bezichtigen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "rp": "Het commando om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "cry": "Voel je je verdrietig? Dit is dit het juiste commando voor je.",
         "ibsafe": "Zoekt op ibsear.ch (alleen sfw pics)",
-        "iblewd": "Zoekt op ibsearch.xxx (hetzelfde als ibsave, maar ook met NSFW fotos)",
-        "qr": "Je kan enkele liederen wehalen met hun liednummer, of verschillende met 'qr startid-stopid', dit zou alle liederen tussen startid-stopid weghalen, of verwijder verschillende liederen door de id's te scheiden met kommas",
-        "shuffle": "Schudt de queue door. Let op dat er ten minste 3 liederen in de wachtlijst moeten zijn om d ecommand te laten werken.",
-        "owo": "Verstuurt willekeurige \"OwO What's this\" memes, uitgekozen door Wolke. ",
-        "getNode": "Geeft jou het knooppunt. categorie knooppunt en de categorie van een opdracht",
+        "iblewd": "Zoekt op ibsearch.xxx (hetzelfde als ibsave, maar met NSFW fotos)",
+        "qr": "Je kan enkele nummers weghalen met hun nummerid, of verschillende met 'qr startid-stopid', dit zou alle liederen tussen startid-stopid weghalen, of verwijder verschillende liederen door de id's te scheiden met kommas",
+        "shuffle": "Husselt de afspeellijst door elkaar. Let op dat er ten minste 3 nummers in de wachtlijst moeten zijn om het commando te laten werken.",
+        "owo": "Verstuurt willekeurige \"OwO What's this\" memes, uitgekozen door Wolke zelf.",
+        "getNode": "Geeft jou het knooppunt, het categorie knooppunt en de categorie van een commando",
         "resetPerms": "Reset alle toestemmingen die gezet zijn, wees voorzichtig met het gebruiken hiervan.",
-        "pat": "Geef iemand die een goede jongen/meisje/helicopter is een aai over de bol.",
-        "triggered": "Getriggerd",
+        "pat": "Geef iemand die een goede jongen/meisje/helikopter is geweest een aai over de bol.",
+        "triggered": "GETRIGGERED",
         "stare": "staaaaaaar............",
         "nom": "Nom :>",
         "potato": "Iedereen wilt een aardappel",
         "choose": "Laat Rem iets kiezen voor je, scheid keuzes met `;`",
         "tickle": "Kietel Kietel Kietel",
-        "image": "[COMMANDS DIE BETREKKING HEBBEN OP AFBEELDINGEN]",
+        "image": "[AFBEELDING COMMANDOS]",
         "define": "Haal de definitie van een term van Urbandictionary",
-        "dog": "You like dogs more than cats ? This command is the right one for you",
-        "kiss": "Give someone a kiss <3",
-        "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-        "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "dog": "Vind je honden leuker dan katten? Dan is dit commando het juiste voor jou",
+        "kiss": "Geef iemand een kus <3",
+        "setGreeting": "Stel een begroeting in in het kanaal waar het commando is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
+        "setFarewell": "Stel een afscheidsbericht in in het kanaal waar het commando is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
+        "pout": "Hmmph :< pruilt naar iemand",
+        "smug": "Geef iemand een zelfingenomen :^)",
+        "lick": "Controleer of deze persoon eetbaar is"
     },
     "version": "Op het moment gebruik ik versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -182,7 +183,7 @@
     "nsfw-images": {
         "nothing-found": "Geen plaatjes gevonden met de termen: `{{tags}}`",
         "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
-        "error-body": "Er is een fout opgetreden bij het interpreteren van de API  reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746"
+        "error-body": "Er is een fout opgetreden bij het interpreteren van de API reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746"
     },
     "8ball": {
         "answers": [
@@ -227,17 +228,17 @@
     "rq": {
         "db-error": "Een databank fout heeft plaatsgevonden!",
         "success-multiple": "De volgende nummers zijn toegevoegd:\n```{{- table}}```",
-        "too-big": "Ik heb {{number}} liedjes toegevoegd.",
-        "no-songs-added": "Ik kon geen enkel lied toevoegen omdat ze al in de wachtrij waren, probeer opnieuw.",
-        "too-much": "Je kan niet meer dan {{number}} liederen tegelijk toevoegen!"
+        "too-big": "{{number}} nummers toegevoegd.",
+        "no-songs-added": "Ik kon geen enkel nummer toevoegen omdat ze al in de wachtrij staan, probeer opnieuw.",
+        "too-much": "Je kan niet meer dan {{number}} nummers tegelijk toevoegen!"
     },
     "qra": {
         "to-small": "Je kan de {{number}} nummers niet uit de lijst halen!",
         "success": "`{{number}}` nummers verwijderd",
         "too-big": "{{number}} nummers verwijderd",
         "one-song": "Gebruik {{- prefix}}fskip om het huidige nummer over te slaan!",
-        "no-number": "Je hebt niet gezegt hoeveel liederen ik uit de wachtlijst moet halen!",
-        "removed": "`{{- title}}` Van de wachtlijst verwijdert."
+        "no-number": "Je hebt niet gezegd hoeveel nummers ik uit de wachtlijst moet halen!",
+        "removed": "`{{- title}}` van de wachtlijst verwijdert."
     },
     "cookie": {
         "give": "Gaf gebruiker **{{- user}}** **1** koekje!",
@@ -258,17 +259,17 @@
         "native-name": "Oorspronkelijke naam",
         "english-name": "Engelse naam\n",
         "shortcode": "Kleine code",
-        "available-languages": "Lijst van talen verkrijgbaar.\nAlsjeblieft noteer dat setLang de kleine code nodig heeft."
+        "available-languages": "Lijst van beschikbare talen.\nHou in gedachte dat setLang de kleine code nodig heeft"
     },
     "np": {
         "song-duration": "Huidige nummer:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
         "song": "Huidige nummer: `{{--title}} {{repeat}}`",
         "repeat-on": "Herhaal:aan",
-        "repeat-single": "Herhaal: lied",
+        "repeat-single": "Herhaal: enkel nummer",
         "repeat-queue": "Herhaal: wachtlijst",
-        "emoji-repeat-single": ":repeat_one: Repeat: current song",
-        "emoji-repeat-queue": ":repeat:␣ Repeat: queue",
-        "emoji-repeat-off": ":heavy_check_mark:␣ Repeat: off"
+        "emoji-repeat-single": ":repeat_one: Herhaal: huidige nummer",
+        "emoji-repeat-queue": ":repeat: Herhaal: wachtlijst",
+        "emoji-repeat-off": ":heavy_check_mark: Herhalen: uit"
     },
     "queue": {
         "queued": "In de wachtlijst:"
@@ -309,15 +310,15 @@
         "avg-channels": "Gemiddeld aantal kanalen per bond",
         "avg-users": "Gemiddeld aantal gebruikers per bond",
         "voice": "VC",
-        "shard": "shard",
-        "guilds-s": "Groepen",
-        "channels-s": "Kanalen",
-        "users-s": "GEbruikers op deze shard",
+        "shard": "fragment",
+        "guilds-s": "Servers (fragment)",
+        "channels-s": "Kanalen (fragment)",
+        "users-s": "Gebruikers op dit fragment",
         "made": "Gemaakt door:",
         "lib": "Bibliotheek",
-        "voice_active": "Actieve Spraak Kanaal",
-        "voice_s": "Spraak Kanaal(shard)",
-        "voice_active_s": "Actieve Spraak Kanaal(shard)"
+        "voice_active": "Actieve Spraakkanaal",
+        "voice_s": "Spraakkanaal (fragment)",
+        "voice_active_s": "Actieve Spraakkanaal (fragment)"
     },
     "rank": "Je kan het scorebord voor de server hier vinden: {{- link}}",
     "pp": {
@@ -344,8 +345,8 @@
     "play": {
         "no-result": "Geen nummer gevonden!",
         "playing": ":musical_note: Nu aan het afspelen: **{{- song}}**",
-        "success": "\n:musical_note: Nu aan het afspelen:  **{{- song}}** ",
-        "next": ":musical_note: Volgend lied: **{{- song}}** "
+        "success": ":musical_note: Nu aan het afspelen:  **{{- song}}**",
+        "next": ":musical_note: Volgend nummer: **{{- song}}**"
     },
     "prefix": {
         "success": "OK, ik heb het voorvoegsel veranderd naar {{- prefix}}, probeer `{{- prefix}}ping` om het te controleren.",
@@ -361,7 +362,7 @@
         "blocked": "Deze video is niet beschikbaar om te downloaden. Mischien is het te lang of is het geblockt/weggehaald",
         "dl-start": ":hourglass: nummer wordt geladen!",
         "use-proxy": "Aan het proberen via de proxy te downloaden, kan even duren.",
-        "too-much": "Je kan de volume niet hoger dan 200 zetten!"
+        "too-much": "Je kan het volume niet hoger dan 200 zetten!"
     },
     "yts": {
         "success": "Het volgende nummer is gevonden: {{- link}}"
@@ -369,8 +370,8 @@
     "skip": {
         "success": ":track_next: Nummer overgeslagen: {{- title}}",
         "stop": ":stop_button: Huidige nummer gestopt.",
-        "all": ":stop_button: Alle liederen overgeslagen.",
-        "some": ":track_next: {{- amount}} liederen overgeslagen."
+        "all": ":stop_button: Alle nummers overgeslagen.",
+        "some": ":track_next: {{- amount}} nummers overgeslagen."
     },
     "vskip": {
         "user-no-voice": "Je kan niet stemmen om over te slaan als je niet in hetzelfde spraakkanaal zit!",
@@ -378,17 +379,17 @@
         "dup": "Je hebt al gestemd!",
         "success-add": "Stem toegevoegd, stempercentage op **{{current}}%/{{needed}}%",
         "success-skip": "Nummer weggestemd: **{{- title}}**",
-        "vote": "\nTyp {{- prefix}}yes om het lied over te slaan. huidige kiespercentage op {{- perct}}%/{{- needed}}\nLeden die hebben gekozen:\n ```{{- table}}``` ",
-        "in-prog": "Er is al een verkiezing om het lied over te slaan, gebruik {{- prefix}}yes om het huidig lied over te slaan."
+        "vote": "Typ {{- prefix}}yes om het lied over te slaan. Huidige kiespercentage op {{- perct}}%/{{- needed}}\nLeden die hebben gekozen:\n ```{{- table}}```",
+        "in-prog": "Er is al een stemming om het lied over te slaan, gebruik {{- prefix}}yes om het huidig lied over te slaan."
     },
     "rm": {
         "less-2": "Je kan niet minder dan 2 berichten verwijderen!",
         "over-100": "Je kan niet meer dan 100 berichten in een keer verwijderen!",
         "success": "Succesvol {{number}} berichten verwijderd.",
         "error": "Fout tijdens het verwijderen van berichten!",
-        "over-limit": "Je kan niet minder dan 2 of meer dan 100 berichten verwijderen!",
+        "over-limit": "Je kan niet minder dan 2 of meer dan 100 berichten tegelijk verwijderen!",
         "no-limit": "Je hebt niet gespecificeerd hoeveel berichten ik moet verwijderen.",
-        "nothing-found": "Ik vondt geen bericht dat overeenkomt met de filter!"
+        "nothing-found": "Ik vond geen bericht dat overeenkomt met de filter!"
     },
     "search": {
         "success": "De volgende nummers zijn gevonden:"
@@ -398,30 +399,30 @@
     },
     "report": "Oke, ik heb je melding naar Wolke gestuurd. Gelieve dit niet te misbruiken, je kunt worden gebanned van het gebruiken van de bot!",
     "greeting": {
-        "no-greeting": "Je hebt geen groet geplaatst die ik moet gebruiken!",
-        "no-add": "Je kan of de groet zetten, of de groet terugzetten op de standaard.",
-        "set-greeting": "```Greeting:{{- text}}\nChannel:{{- channel}}\nReset the greeting with {{- prefix}}setGreeting reset```",
-        "no-set-greeting": "There is no greeting set at the moment.\n\nYou can set a greeting with `{{- prefix}}setGreeting text` and reset a greeting with `{{- prefix}}setGreeting reset`.\n",
-        "reset-greeting": "I just reset the greeting, it will not appear anymore.",
-        "success": "Alright, I just set the greeting to:\n```{{- text}}```"
+        "no-greeting": "Je hebt geen begroeting ingesteld die ik moet gebruiken!",
+        "no-add": "Je kan de groet instellen of resetten.",
+        "set-greeting": "```Groet:{{- text}}\nKanaal:{{- channel}}\nReset de begroeting met {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "Er is geen begroeting ingesteld op dit moment.\n\nJe kan een begroeting instellen met `{{- prefix]]setGreeting text` en resetten met `{{- prefix}}setGreeting reset`.\n",
+        "reset-greeting": "Ik heb de begroeting gereset, het zal niet meer verschijnen.",
+        "success": "Oke, ik heb de begroeting veranderd in:\n```{{- text}}```"
     },
     "farewell": {
-        "no-farewell": "Je hebt geen afscheidsgroet geplaatst die ik moet gebruiken!",
-        "no-add": "Je kunt de afscheidsbericht of instellen of resetten.",
-        "set-farewell": "```farewell:{{- text}}\nChannel:{{- channel}}\nReset the farewell with {{- prefix}}setFarewell reset```",
-        "no-set-farewell": "There is no farewell set at the moment.\n\nYou can set a farewell with `{{- prefix}}setFarewell text` and reset a farewell with `{{- prefix}}setFarewell reset`.\n",
-        "reset-farewell": "I just reset the farewell, it will not appear anymore.",
-        "success": "Alright, I just set the farewell to:\n```{{- text}}```"
+        "no-farewell": "Je hebt geen afscheidsbericht ingesteld dat ik moet gebruiken!",
+        "no-add": "Je kan het afscheidsbericht instellen of resetten.",
+        "set-farewell": "```Afscheid:{{- text}}\nKanaal:{{- channel}}\nReset het afscheid met {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "Er is geen afscheidsbericht ingesteld op dit moment.\n\nJe kan een afscheid instellen met `{{- prefix}}setFarewell text` en resetten met `{{- prefix}}setFarewell reset`\n",
+        "reset-farewell": "Ik heb het afscheidsbericht gereset, het zal niet meer verschijnen.",
+        "success": "Oke, ik heb het afscheidsbericht veranderd in\"\n```{{- text}}```"
     },
     "add-role": {
-        "ok": "Ok, ik heb {{- user}} de rol {{- role}}  gegeven"
+        "ok": "Ok, ik heb {{- user}} de rol {{- role}} gegeven"
     },
     "create-role": {
-        "missing": "De rol die je hebt gespecificeert bestaat niet op deze server.",
-        "new": "Zal ik de rol voor je creeren?",
-        "no-args": "Je hebt geen argumenten gezet voor de command.",
-        "ok": "Ok, ik heb de {{- role}} gecreerd.",
-        "exists": "de {{- role}} bestaat al in de database."
+        "missing": "De rol die je hebt gespecificeerd bestaat niet op deze server.",
+        "new": "Zal ik de rol voor je creëren?",
+        "no-args": "Je hebt geen toevoegingen gebruikt voor het commando",
+        "ok": "Ok, ik heb de {{- role}} rol gecreëerd.",
+        "exists": "De {{- role}} bestaat al in de database."
     },
     "remove-role": {
         "ok": "Ok, ik heb de {{- role}} rol verwijderd van {{- user}} !"
@@ -430,7 +431,7 @@
         "nr": "nr.",
         "id": "id",
         "name": "naam",
-        "self": "zelf toewijsbare",
+        "self": "zelf toewijsbaar",
         "lvl": "Beschikbaar vanaf level",
         "default": "standaard"
     },
@@ -439,8 +440,8 @@
         "name": "$t(server-info.name)",
         "discriminator": "discriminator",
         "nick": "Roepnaam",
-        "join": "Bijgevoegd",
-        "created": "Gecreeerd",
+        "join": "Toegetreden",
+        "created": "Gecreëerd",
         "playing": "Speelt",
         "info": "Gebruikersinfo",
         "bot": "Bot",
@@ -448,8 +449,8 @@
         "role": "Rollen"
     },
     "flip": {
-        "head": "Er is kop gegooit {{- url}}",
-        "tail": "Er is cent gegooit {{- url}}"
+        "head": "Er is kop gegooid {{- url}}",
+        "tail": "Er is munt gegooid {{- url}}"
     },
     "gp": {
         "no-cat": "Ik vond geen enkele permissies voor de categorie {{- cat}}",
@@ -462,40 +463,40 @@
             "perm": "Permissie",
             "use": "Gebruik"
         },
-        "page-does-not-exist": "This page does not exist. Try a lower page number!"
+        "page-does-not-exist": "Deze pagina bestaat niet. Probeer een lager paginanummer!"
     },
     "rp": {
-        "success": "Ik heb de permissie `{{- node}}` successvol verwijdert van de **{{- type}}** `{{- id}}` "
+        "success": "Ik heb de permissie `{{- node}}` succesvol verwijderd van **{{- type}}** `{{- id}}` "
     },
     "love": {
-        "success": "je hebt **{{- target}}** **{{- rep}}** :heart: liefdespunten gegeven. Resterende toepassingen: **{{uses}}**.",
-        "error-cd": "\nJa kan maar **2** :heart: Liefdespunten per dag geven, volgende gebruik {{- time}}. ",
+        "success": "Je hebt net aan **{{- target}}** **{{- rep}}** :heart: een liefdespunt gegeven. Resterend aantal: **{{uses}}**.",
+        "error-cd": "Je kan maar **2** :heart: liefdespunten per dag geven, volgende mogelijkheid {{- time}}.",
         "next": "␣in {{- time}} mag je dit weer doen.",
         "self": ":broken_heart: Je kan geen liefdespunten aan jezelf geven.",
-        "success-remove": "U heeft net **{{- rep}}:heart: liefedespunt(en) van **{{- target}}** weggehaald Overgebleven punten: **{{uses}}**"
+        "success-remove": "Je hebt net **{{- rep}}:heart: liefedespunt(en) van **{{- target}}** weggehaald Overgebleven punten: **{{uses}}**"
     },
     "dere": {
-        "no-dere": "de -dere die je zocht bestaat niet. Hier is een lijst met mogelijke -deres:",
-        "dandere": "de Dandere (だんデレ) type verwijst naar personen die meestal stil en terug getrokken zijn.\nHet kan zijn dat ze verlegen zijn of gewoon een rustig type zijn.\nMaar waneer ze alleen zijn met de persoon tot wie ze zich aangetroken voelen, komen ze uit hun schild en zijn ze liefdevoller.\n Dit woord is een afkorting van Danmari (だんまり), wat stil betekent, en Deredere (デレデレ), wat liefdevol betekent.",
-        "deredere": "De Deredere (デレデレ) type verwijst naar personen die helemaal vriendelijk, energiek en blij zijn.\n Wat er ook gebeurt, ze worden snel weer hun blije zelf..\n Dit is waarschijnlijk de enige karakter type dat geen afkorting van Deredere (デレデレ) woord is, hoewel de definitie niet simpelweg liefdevol is.",
-        "himedere": "De Himedere (ひめデレ) type verwijst naar een persoon die behandelt wil worden als een prinses door de persoon waarvan ze houdt, al is ze geen prinses in werkelijkheid. Dit woord is een afkorting van Hime (ひめ), wat prinses betekent, en Deredere (デレデレ), wat liefdevol betekent.",
-        "kamidere": "De Kamidere (かみデレ) type verwijst naar een persoon met een god complex. Kamideres zijn arrogant en trots, en zijn niet bang om hun mening te geven en iedereen te wijzen hoe juist ze zijn.\n Dit woord is een afkorting van  Kami (かみ) , wat god betekent, en Deredere (デレデレ), wat liefdevol betekent.",
-        "kuudere": "De Kuudere (ク ー デ レ), soms geschreven Coodere of Kūdere, het type verwijst naar een personage dat vaak koud, bot, en cynisch is.\n Ze kan heel emotieloos lijken aan de buitenkant, maar van binnen zijn ze erg zorgzaam - tenminste als het gaat om degenen die ze liefhebben.\nDit woord is een afkorting van Cool (ク ー ル) en Deredere (デ レ デ レ), wat smoorverliefd betekent",
-        "mayadere": "De Mayadere (まやデレ) type verwijst naar iemand die een gevaarlijke antagonist is, maar van kant verwisselt nadat hij verliefd wordt op iemand.\n Deze persoon zal vaak nog steeds gevaarlijk en onvoorspelbaar zijn voor de protagonist of andere hoofdrollen in de anime of manga.",
-        "oujidere": "De Oujidere (おうじデレ) type verwijst naar een persoon die behandelt wil worden als een prins door de persoon waarvan hij houdt, al is hij geen prins in werkelijkheid. Dit woord is een afkorting van  Ouji (おうじ), wat prins betekent, en Deredere (デレデレ), wat liefdevol betekent.",
-        "tsundere": "de The Tsundere (ツンデレ) is waarschijnlijk een van de populairste of simpeler gezegd de meest gebruikte letter karakters in anime en manga. Dit refereert naar iemand die de mensen die hij niet zo aardig vind bedreigt. Soms komt dit doordat ze starten met degene te haten en diegene dit als enige manier heeft om te reageren. Een voorbeeld hiervoor is als de hoofdpersoon de tsundere karakter schattig noemt. De tsundere karakter word boos en zenuwachtig en zal waarschijnlijk fysieke schade aanrichten aan degene van wie ze houden en ze stom noemen. Dit woord is een afkorting van Tsuntsun (ツンツン) wat betekent wegkijken en walgen en Deredere (デレデレ) wat smoorverliefd betekent.",
-        "undere": "De Undere (ウ ン デ レ) karakter verwijst naar een personage die ja zegt tegen vrijwel alles wat degene die ze liefhebben zegt.\n Zij komen overeen zo veel mogelijk zo dicht mogelijk te worden als hun liefde interesse aan kan.\n Dit woord is een afkorting van Un (ウ ン), dat is een korte weg Japanners zeggen ja en Deredere (デ レ デ レ), dat smoorverliefd betekent.",
-        "yandere": "De Yandere (ヤ ン デ レ) karakter verwijst naar een personage dat  aardig en lief begint maar uiteindelijk  donker en obsessief wordt over de degene die ze liefhebben.\n Ze worden stalkers en gebruikers van geweld, en misschien zelfs moord, een persoon die dicht bij hun liefdes-interesse komt. Zelfs als ze te verlegen om gewoon te praten met die persoon hebben ze een oogje op.\n Dit woord is een afkorting van Yanderu (や ん で る), wat  geestelijk of emotioneel ziek betekent en Deredere (デ レ デ レ), dat smoor verliefd betekent.\n",
-        "yangire": "De Yangire (ヤンギレ) karakter lijkt op de Yandere in verschillende redenen. Het is een karakter die misschien lief en zoet start maar heel agressief en psychotisch word. Echter anders dan de Yandere, de Yangire word niet hevig vanwege zijn aandacht naar een persoon.\nIn plaats daarvan ze breken simpelweg omdat ze geïrriteerd worden door een karakter dat niks te maken heeft met zijn liefdes-interesse. Dit woord is een afkorting voor Yanderu (やんでる) wat betekent om mentaal of emotioneel ill en Kire te zijn (きれ) wat betekent om gehakt en gebroken te worden.\n"
+        "no-dere": "De -dere die je zocht bestaat niet. Hier is een lijst met mogelijke -deres:\n",
+        "dandere": "Het Dandere (だんデレ) type verwijst naar personen die meestal stil en terug getrokken zijn.\nHet kan zijn dat ze verlegen of gewoon een rustig type zijn.\nMaar wanneer ze alleen zijn met de persoon tot wie ze zich aangetrokken voelen, komen ze uit hun schulp en zijn ze liefdevoller.\n Dit woord is een afkorting van Danmari (だんまり), wat stil betekent, en Deredere (デレデレ), wat liefdevol betekent.",
+        "deredere": "Het Deredere (デレデレ) type verwijst naar personen die volledig vriendelijk, energiek en blij zijn.\n Wat er ook gebeurt, ze worden snel weer hun blije zelf.\n Dit is waarschijnlijk het enige karakter type dat geen afkorting van Deredere (デレデレ) is, hoewel de definitie niet simpelweg liefdevol is zoals de andere types.",
+        "himedere": "Het Himedere (ひめデレ) type verwijst naar een persoon die behandelt wil worden als een prinses door de persoon waarvan ze houdt, ook al is ze in werkelijkheid geen prinses . Dit woord is een afkorting van Hime (ひめ), wat prinses betekent, en Deredere (デレデレ), wat liefdevol betekent.",
+        "kamidere": "Het Kamidere (かみデレ) type verwijst naar een persoon met een god complex. Kamideres zijn arrogant en trots, en niet bang om hun mening te geven en iedereen te wijzen op hoe juist ze zijn.\n Dit woord is een afkorting van Kami (かみ) , wat god betekent, en Deredere (デレデレ), wat liefdevol betekent.",
+        "kuudere": "Het Kuudere (ク ー デ レ) type, soms geschreven Coodere of Kūdere, verwijst naar een personage dat vaak koud, bot, en cynisch is.\n Ze kunnen heel emotieloos lijken aan de buitenkant, maar van binnen zijn ze erg zorgzaam - tenminste als het gaat om degenen die ze liefhebben.\nDit woord is een afkorting van Cool (ク ー ル) en Deredere (デ レ デ レ), wat liefdevol betekent",
+        "mayadere": "Het Mayadere (まやデレ) type verwijst naar iemand die vaak een gevaarlijke antagonist van een serie is, maar van kant verwisselt nadat hij verliefd wordt op een ander karakter.\n Deze persoon zal vaak nog steeds gevaarlijk en onvoorspelbaar zijn voor de protagonist of andere hoofdrollen in de anime of manga.",
+        "oujidere": "Het Oujidere (おうじデレ) type verwijst naar een persoon die behandelt wil worden als een prins door de persoon waarvan hij houdt, al is hij geen prins in werkelijkheid. Dit woord is een afkorting van  Ouji (おうじ), wat prins betekent, en Deredere (デレデレ), wat liefdevol betekent.",
+        "tsundere": "Tsundere (ツンデレ) is waarschijnlijk een van de populairste of simpeler gezegd de meest gebruikte letter karakters in anime en manga. Dit refereert naar iemand die de mensen waar hij van houdt slecht behandeld. \nSoms komt dit doordat ze begonnen met die persoon te haten of doordat de persoon dit als enige manier heeft om te reageren. \n Een voorbeeld hiervoor is als de hoofdpersoon het tsundere karakter schattig noemt. Het tsundere karakter wordt boos en zenuwachtig en zal waarschijnlijk fysieke schade aanrichten aan degene van wie ze houdt en ze stom noemen.  Dit woord is een afkorting van Tsuntsun (ツンツン) wat wegkijken betekent en Deredere (デレデレ) wat liefdevol betekent.",
+        "undere": "Het Undere (ウ ン デ レ) karakter verwijst naar een personage dat ja zegt tegen vrijwel alles wat degene die ze liefhebben zegt.\n Ze doen hun best het zo veel mogelijk eens te zijn met hun interesse om zo dicht mogelijk bij hen te komen.\n Dit woord is een afkorting van Un (ウ ン), dat is een korte manier waarop Japanners ja zeggen en Deredere (デ レ デ レ), dat liefdevol betekent.",
+        "yandere": "Het Yandere (ヤ ン デ レ) karakter verwijst naar een personage dat aardig en lief begint maar uiteindelijk donker en obsessief wordt over degene die ze liefhebben.\n Ze worden stalkers en gebruikers van geweld, en misschien zelfs moord, tegen een persoon die dicht bij hun liefdes-interesse komt. Zelfs als ze te verlegen zijn om gewoon te praten met die persoon hebben ze een oogje op.\n Dit woord is een afkorting van Yanderu (や ん で る), wat  geestelijk of emotioneel ziek betekent en Deredere (デ レ デ レ), dat liefdevol betekent.\n",
+        "yangire": "Het Yangire (ヤンギレ) karakter lijkt op de Yandere in verschillende redenen. Het is een karakter die misschien lief en zoet start maar heel agressief en psychotisch word. Echter anders dan de Yandere, de Yangire word niet hevig vanwege zijn aandacht naar een persoon.\nIn plaats daarvan ze breken simpelweg omdat ze geïrriteerd worden door een karakter dat niks te maken heeft met zijn liefdes-interesse. Dit woord is een afkorting voor Yanderu (やんでる) wat betekent om mentaal of emotioneel ill en Kire te zijn (きれ) wat betekent om gehakt en gebroken te worden.\n"
     },
     "shuffle": {
-        "not-enough-shuffle": "Er moeten ten minste 3 liederen zijn in de wachtlijst om de liederen te schuifelen. ",
-        "success": "Wachtlijst doorgeschud."
+        "not-enough-shuffle": "Er moeten ten minste 3 nummers in de wachtlijst zijn om de nummers te husselen.",
+        "success": "Wachtlijst gehusseld!"
     },
     "get-node": {
-        "success": "Toestemmings-knoopunt: `{{- node}}` Category node:`{{- category}}.*` Category:`{{-category}}`",
-        "not-found": "Deze command bestaat niet.",
-        "no-args": "Type een opdracht zonder voorvoegsel in om zijn toestemmings-knoopunt, categorie knooppunt en zijn categorie."
+        "success": "Toestemmings-knooppunt: `{{- node}}` Categorie node:{{- category}}.*` Categorie:`{{-category}}`",
+        "not-found": "Dit commando bestaat niet.",
+        "no-args": "Typ een commando zonder voorvoegsel hierna om het toestemmings-knooppunt, het categorie-knooppunt en de categorie te krijgen"
     },
     "ap": {
         "type": {
@@ -504,23 +505,23 @@
             "role": "rol",
             "channel": "kanaal"
         },
-        "success": "Oke, Ik heb net de toestemming `{{- node}}` `{{- allowed}}` naar `{{type}}` `{{- name}}` toevegoed",
-        "wrong-node": "De toestemmings-knooppunt `{{- node}}` zal niet werken omdat het geen geldige toestemmings-knoopunt is. Om een geldige toestemmings-knoopunt te krijgen type `{{- prefix}}getNodecommand`",
-        "target-not-found": "Ik kon het doelwit niet vinden {{- target}} voor deze opdracht\n",
-        "no-allowance-set": "U heeft mij niet verteld of deze toestemming waar of niet waar is, voeg 'true' of 'false' gebaseerd op uw keuze  ",
-        "missing-args": "De correcte syntaxis for deze opdracht is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nVoorbeeld:\n```{{-prefix}}ap playlist.* true -> Geeft alle opdrachten toestemming in deze categorie-lijst in de server\n{{-prefix}}ap music.fskip -u @user true -> allows the mentioned user to use {{-prefix}}fskip```"
+        "success": "Oke, Ik heb net de toestemming `{{- node}}` `{{- allowed}}` aan `{{type}}` `{{- name}}` toegevoegd",
+        "wrong-node": "Het toestemmings-knooppunt `{{- node}}` zal niet werken omdat het geen geldig toestemmings-knooppunt is. Om een geldige toestemmings-knooppunt te krijgen type `{{- prefix}}getNodecommand`",
+        "target-not-found": "Ik kon het doelwit {{- target}} niet vinden voor dit commando",
+        "no-allowance-set": "Je hebt me niet verteld of de permissie toegestaan is of niet, voeg `true` of `false` toe afhankelijk van je keuze",
+        "missing-args": "De correcte syntaxis for deze opdracht is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nVoorbeeld:\n```{{-prefix}}ap playlist.* true -> Geeft alle opdrachten toestemming in deze categorie-lijst in de server\n{{-prefix}}ap music.fskip -u @user true -> staat de genoemde persoon toe om gebruik te maken van {{-prefix}}fskip```"
     },
     "reset-perms": {
-        "nothing-found": "Je hebt nog geen toestemingen gezet.",
-        "confirmation": "Ben je zeker dat je alla toestemmingen wil resetten? Typ \"yes\" om ze te resetten en \"no\" om de command te annuleren.",
-        "success": "Ik heb alle toestemmingen die je gezet hebt, terug gesteld."
+        "nothing-found": "Je hebt nog geen toestemmingen gezet.",
+        "confirmation": "Weet je zeker dat je alle toestemmingen wilt resetten? Typ \"yes\" om ze te resetten en \"no\" om het commando te annuleren.",
+        "success": "Ik heb zojuist alle toestemmingen gereset."
     },
     "choose": {
         "empty-choose": ":no_entry_sign: Ik kan niets kiezen als je niets invoert!",
         "success": "Ik kies **{{- choice}}**!"
     },
     "define": {
-        "empty-search": ":no_entry_sign: Ik kan niet naar de definitie zoeken als je geen term invult!",
-        "no-result": "Ik kon niets vinden met de term `{{- term}}` "
+        "empty-search": ":no_entry_sign: Ik kan niet naar de definitie zoeken als je geen zoekterm invult!",
+        "no-result": "Ik kon niets vinden met de term `{{- term}}`"
     }
 }
