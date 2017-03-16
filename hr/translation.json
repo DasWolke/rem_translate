@@ -1,3 +1,527 @@
 {
-  "uwu": "uwu"
+    "generic": {
+        "error": ":x: Dogodila se pogreška!",
+        "no-pm": ":no_entry: Ova naredba ne radi u privatnim kanalima!",
+        "whole-num": ":no_entry_sign: Molim upotrijebi cijeli broj.",
+        "nan": ":no_entry_sign:  Što god si upravo sada poslao, molim dodajte cijeli broj. :) ",
+        "no-song-in-queue": ":no_entry_sign: Nema pjesme u redu čekanja, možda da dodaš jednu :musical_note:",
+        "no-song-playing": ":musical_note: Trenutrno niti jedna pjesma nije puštena.",
+        "no-permission": "no_entry_sign: Nemaš dozvole da koristite ovu naredbu, molimo dodaj si dozvolu `{{- node}}` da bi mogli tu naredbu koristiti.",
+        "no-voice": ":no_entry_sign: Nisam spojena u nikoji kanal za pričanje na ovome Serveru!",
+        "level-update": ":tada: Upravo si postigao *{{level}}. razinu** na **{{- server}}**",
+        "empty-search": ":no_entry_sign: Nisi ukucao pojam za traženje!",
+        "negative": ":no_entry_sign: Molim ne koristiti negativne brojeve!",
+        "cancel": "otkaži",
+        "version": "Verzija",
+        "author": "autor",
+        "lib": "njižnica korištena",
+        "more": "{{number}} više",
+        "abort": ":x: otkazano",
+        "cat-nope": ":no_entry_sign: Ova kategorija ne postoji!",
+        "mention": "Molim spomeni korisnika.",
+        "cancelled-command": "Otkazana naredba",
+        "donate": "Doniraj",
+        "support": "Pomoć",
+        "invite": "Pozovi",
+        "language-name-en": "Croatian",
+        "native-name": "Hrvatski",
+        "empty-say": ":no_entry_sign: Nisi napisao poruku!",
+        "page": "Stranica"
+    },
+    "help": {
+        "intro": "Idemo se zabavljati zajedno na ovome Discordu (/^▽^)/ odaberite kategoriju naredbi s {{pre}}help \"broj naredbe\" da saznate više:",
+        "intro_2": "Bok, ja sam",
+        "support": "[PODRŠKA]",
+        "bug": "dobi link za \"support Discord\"",
+        "help": "naredba za pomoć",
+        "add": "Nabavi link da me dodaš u svoj server",
+        "music": "[MUZIKA]",
+        "voice": "Pridružim ti se u Glasovnom Kanalu u kojem si trenutno (uobičajene naredbe za glazbu natjeraju Bota da dođe u vašu Glasovnu Sobu također)",
+        "silent": "Ja ću izaći iz Glasovnog Kanala u kojoj sam trenutno spojena. (samo se može koristiti s ulogom WolkeBot)",
+        "play": "Pusti neku pjesmu s Youtube-a/Soundcloud-a/Osu-a/tražilicom",
+        "pause": "Pauziraj trenutnu pjesmu.",
+        "resume": "Odustavi pauziranu pjesmu.",
+        "volume": "Postavi zvuk Bota između 1 i 200 (samo se može koristiti s WolkeBot ulogom)",
+        "forever": "Pusti pjesmu da svira na ponavljanju dok se ne doda nova, samo se može koristiti s ulogom WolkeBot.",
+        "search": "Potraži pjesmu u databazi Bota i pokaži najboljih 5 rezultata.",
+        "skip": "Pokrene Voteskip naredbu za trenutnu pjesmu da je preskoči, više od 50% kanala mora glasati za, onda je preskočena.",
+        "voteskip": "Pokrene Voteskip naredbu za trenutnu pjesmu da je preskoči, više od 50% kanala mora glasati, onda je preskočena. ",
+        "qa": "Postavi pjesmu s Youtube-a/Soundcloud-a/Osu-a/tražilice u red.",
+        "qra": "Makne ili sve pjesme osim one koja trenutno se reproducira ili odreženi broj pjesama.",
+        "queue": "Pokaže trenutni red.",
+        "np": "Pokaže trenutnu pjesmu koja se reproducira.",
+        "rq": "Doda slučajnu pjesmu/broj pjesma u red.",
+        "stream": "Steam-a odabrani Internet radio, možete tražiti za radio ili direktno ih dodati dodavanjem -u url do naredbe.",
+        "youtube": "[YOUTUBE]",
+        "yts": "Pretraži Youtube i daje prvi rezultat.",
+        "ytq": "Pretraži Youtube i doda prvi rezultat u red.",
+        "mod": "Mod cp.",
+        "mod-info": "Ovim naredbama je potrebno da korisnik ima Discord ulogu zvanom WolkeBot.",
+        "info": "Daje informacije o trenutnom serveru.",
+        "ban": "Zabrani pristup korisniku i briše poruke 7 dana od njihovih poruka.",
+        "kick": "Izbacuje korisnika.",
+        "rm": "Miče poruku, možete filtrirati za botove, korisnike, naredbe/odgovore od Rem ili samo briše do 100 poruka.\nFiltri: -b -> Botovi| -r -> Poruke od Rem| -u @korisnik -> Poruke određenog korisnika| -c -> Poruke koje počinju s Reminim prefixom.",
+        "noLevelServer": "Onemogućuje sistem razina za cijeli server, upotrijebi ovu naredbu opet da se ponovo uspostavi.",
+        "noPmServer": "Onemogućuje PM obavijesti za cijeli server, upotrijebi ovu naredbu opet da se ponovo uspostavi.",
+        "noChServer": "Onemogućuje PM obavijesti za cijeli server i omogućuje obavijesti kanala umjesto toga, upotrijebi ovu naredbu opet da se ponovo uspostavi.",
+        "setLewd": "Doda trenutni kanal kao NSFW kanal.",
+        "remLewd": "Miče trenutni kanal s liste NSFW kanala.",
+        "setPrefix": "Postavlja prefix od Bota, razmaci/spominjana zabranjena!",
+        "other": "[Druge Stvari]",
+        "r34": "Traži slike po Rule34-u i daje jednu, samo se može koristiti s WolkeBot ulogom ili konfiguracijom NSFW kanala.",
+        "kona": "Traži po Konachan za tagove i daje jednu sliku, samo se može koristiti s konfiguracijom kanala NSFW ili Adminom.",
+        "e621": "Traži po E621 za tagove i daje jednu sliku, samo se može koristiti s konfiguracijom kanala NSFW ili Adminom.",
+        "yandere": "Traži po Yande.re za tagove i daje jednu sliku, samo se može koristiti s konfiguracijom kanala NSFW ili Adminom.",
+        "level": "Tvoja razina i XP potreban za sljedeću razinu.",
+        "rank": "Leadboard za ovaj Server.",
+        "noLevel": "Isključuje sistem razina za tebe. Koristi ponovo da se ponovo uključi.",
+        "noPm": "Isključuje PM obavijesti za tebe. Koristi ponovo da se ponovo uključi.",
+        "pp": "Kalkulira PP za beatmapu s odabirnom preciznosti i modovi.",
+        "cookie": "Daje keks spomenutoj osobi ili pokazuje tvoje kekse ako nitko nije spomenut.",
+        "eatCookie": "Pojedeš kekes.",
+        "git": "Da ti link od github-a od Rem.",
+        "roll": "Baci broj između nula i broja, ako nema broj onda će biti 10.",
+        "8ball": "Magična 8ball loptica ti da mišljenje o tvojem pitanju.",
+        "garfield": "Da ti slučajni Garfield strip.",
+        "cat": "Da ti slučajnu sliku mačke. Svkome od nas treba mačka!",
+        "hug": "Zagrli nekoga :>",
+        "slap": "Neko je bio zao prema tebi? Odalami ga!",
+        "setLang": "Postavi jezik, pokreni !w.setLang bez ikakvih argumenata da dobiješ list jezika.",
+        "report": "Ako se previše sramiš da dođeš na Support Discord, koristi naredbu report da pošalješ Autoru Wolkeu izvješće, ali nemoj zloupotrebljavati naredbu.",
+        "feedback": "Za povratne informacije koristi Support Discord molim ^^",
+        "talk": "Ako pričaš sa mnom @mention me s porukom.",
+        "helpReply": "OK, poslala samt i listu naredbi u PM-ove",
+        "moderation": "[MODERACIJA]",
+        "misc": "[RAZNO]",
+        "stats": "[STATIKE]",
+        "user": "[KORISNIK]",
+        "admin": "[ADMIN]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[EASTEREGGOVI]",
+        "proxer": "[PROXER]",
+        "no-cat": "[NEKATEGORIZIRANO]",
+        "ping": "Daje ti ping od Bota, ali imaj na umu da ovo nije glasovni ping.",
+        "lewd": "Jako nepristojno uwu",
+        "rem": "Da ti slučajnu sliku Rem.",
+        "wip": "[U IZRADI]",
+        "gr": "Postavi pozdrav sa set greetingMessage,{{user}} će biti zamijenjeno s korisnikom koji se pridružo i {{guild}} uz naziv servera.\nPozdrav će biti u kanalu gjde je cmd bio izvršen.",
+        "fw": "Postavi oproštaj sa set greetingMessage,{{user}} će biti zamijenjeno s korisnikom koji se pridružo i {{guild}} uz naziv servera.\nOproštaj će biti u kanalu gjde je cmd bio izvršen.",
+        "s": "Naredba servera, postavlja stvari kao npr. pozdrave i oproštaje.",
+        "shrug": "¯\\_(ツ)_/¯ ",
+        "flip": "\n(╯°□°）╯︵ ┻━┻ ",
+        "eggplant": "Samo patlidžan",
+        "gtn": "Daje ti slučajan strip od Green Tea Neko-a, samo se može koristiti u NSFW konfiguriranim kanalima ili Admin.",
+        "cuddle": "Zagrli",
+        "trig": "TRIGGERED",
+        "bot": "Da ti neke informacije o Rem, uptime i neke korisne linkove.",
+        "top": "Prikazuje prvih 10 cehova (razvrstani po korisnicima) krhotinom povezano.",
+        "about": "Prikazuje ti osnovne informacije o meni, kao knjižnica i tko me je napravio.",
+        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lmg": "\"Let me google that for you\"",
+        "fskip": "Preskače trenutnu pjesmu/broj pjesme/sve pjesme",
+        "leave": "Izađem is glasovnog kanala u kojem sam trenutno povezana.",
+        "say": "Natjeraj Rem da kaže nešto.",
+        "ar": "Dodaj ulogu sebi ili korisniku.",
+        "cr": "Izradi ulogu ili doda ulogu Botu, -d -> zadano, -l 2 -> daje ulogu korisniku nakon što je dostigao razinu 2, -s -> napravi ulogu samododjeljivu, npr. -> cr -l 20 \"ime uloge\", doda ulogu koju korisnik dobije s razinom 20 zvanom \"ime uloge\".",
+        "lr": "Prikaže sve uloge koje su povezane s Rem u tom trenutku.",
+        "rr": "Briše uloga s tebe, drugoga korisnika ili sa Servera.",
+        "roles": "[ULOGE]",
+        "repeat": "Reproducira pjesmu/red da se ponavlja dok se nove pjesme ne dodaju u red.",
+        "sayd": "Natjeraj Rem da kaže nešto i da izbriše tvoju naredbu.",
+        "generic": "[GENERIČNO]",
+        "fun": "[ZABAVA]",
+        "coin": "okrene novčić za tebe",
+        "nyan": "Nya :3",
+        "uwu": "uwu",
+        "dere": "Potraži za \"dere\" definiciju ili da slučajnu.",
+        "love": "Daje navedenom korisniku ljubavni bod, dodaj - da smanjiš ljubavne bodove korisnika za 1.",
+        "sinfo": "daje ti neke informacije o trenutnom serveru",
+        "uinfo": "daje ti neke informacije o sebi/spomenutom korisniku",
+        "apq": "Doda plalist u red, samo podržava youtube-plaliste i samo treba ID. NE LINK.",
+        "ap": "Naredba za dodavanje dozvola, ekstenzivno objažnjenje se može naći na Support Discordu (!w.bug da dobiješ poziv)",
+        "gp": "Naredba za dobivanje dozvola, ekstenzivno objažnjenje se može naći na Support Discordu (!w.bug da dobiješ poziv)",
+        "rp": "Naredba za brisanje dozvola, ekstenzivno objažnjenje se može naći na Support Discordu (!w.bug da dobiješ poziv)",
+        "cry": "Osjećaš se tužno? Ovo je dobra naredba za tebe.",
+        "ibsafe": "Traži po ibsear.ch (samo SFW slike)",
+        "iblewd": "Traži po ibsearch.xxx (isto kao ibsafe samo s NSFW slikama)",
+        "qr": "Možeš izbrisat jednu pjesmu s njihovim songid, ili više s `qr startid-stopid`, ovo će izbrisati sve pjesme počevši od startid i završavajući na stopid, ili briže više ID-ova razdvajajući ih od zareza.",
+        "shuffle": "Izmješa red. Imaj na umu da najviše 3 pjesme moraju biti u redu da ova naredba radi.",
+        "owo": "Pošalje ti slučajne \"OwO What's this\" memeove, koje je Wolke izabrao.",
+        "getNode": "Da ti čvor dozvola, kategorija i kategoriju naredbe.",
+        "resetPerms": "Resetira sve dozvole do sada, upotrijebi s upozorenje.",
+        "pat": "Potapkaj nekoga tko je bio dobar dečko/cura/helikopter",
+        "triggered": "TRIGGERED",
+        "stare": "*buljenje...*",
+        "nom": "Njam :>",
+        "potato": "Svatko hoće krupmir.",
+        "choose": "Natjeraj Rem da izabere nešto za tebe, razdvoji izbore s `;`",
+        "tickle": "*Škakljanje*",
+        "image": "[NAREDBE ZA SLIKE]",
+        "define": "Da ti definiciju pojma s Urbandictionary",
+        "dog": "Voliš pse više od mačaka? Ova naredba je za tebe.",
+        "kiss": "Daj nekome poljubac <3",
+        "setGreeting": "U kanal gdje se izvršava naredba postavlja pozdrav. Koristite %USER% i %GUILD% koji će biti zamijenjen s korisničkovim imenom i imenom ceha.",
+        "setFarewell": "U kanal gdje se izvršava naredba postavlja opraštaj. Koristite %USER% i %GUILD% koji će biti zamijenjen s korisničkovim imenom i imenom ceha.",
+        "pout": "Hmmpf :< Duri se na nekoga",
+        "smug": "Pokaži nekome svoje samozadovoljstvo :^)",
+        "lick": "Provjeri je li netko jestiv"
+    },
+    "version": "Trenutno poslužujem na verziji {{version}}",
+    "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
+    "bug": "Molim prodruži se Support Discordu: prijavi greške na {{- link}}",
+    "level": {
+        "result": "Ti si **razina {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Ukupni XP:**{{total}}** ",
+        "disabled": "XP sistem je isključen na ovom serveru!"
+    },
+    "joinVoice": {
+        "join": "Ok, pridružujem se tvojem glasovnom kanalu.",
+        "error": "Dogodila se pogreška dok sam se pokušavala spojit na tvoj glasovni kanal.",
+        "permission": "Nema dozvola! Moraš dati sebi ulogu WolkeBot da možeš to koristiti.",
+        "no-voice": "Nisi u nikojem glavonom kanalu.",
+        "already-voice": "Već sam spojena u glasovni kanal, pomakni me da to promijeniš!"
+    },
+    "nsfw-images": {
+        "nothing-found": "Nema nađenih slika s tagom: `{{tags}}`",
+        "no-nsfw-channel": "Molim postavi/dodaj NSFW kanal s {{- prefix}}setLewd (u jednom od NSFW kanala) da možeš koristiti NSFW naredbe.",
+        "error-body": "Dogodila se pogreška prilikom obrade api odgovor. Molimo pokušajte ponovo, ako se problem nastavi kontaktiraj Wolke#6746"
+    },
+    "8ball": {
+        "answers": [
+            "Ne.",
+            "Da.",
+            "Možda.",
+            "Ne mislim da je tako.",
+            "Totalno ne.",
+            "Samo učini to.",
+            "To je odlična ideja.",
+            "Jesi li siguran u to?"
+        ],
+        "no-message": "Nisi ukucao pitanje."
+    },
+    "ban": {
+        "success": "Zabranjen pristup korisniku {{user}}",
+        "privilege": "Moja uloga mi ne daje pravo da zabranjujem pristup {{user}} !",
+        "err": "Pogrešk se dogodila dok si pokušavao zabranitt pristup {{user}} !",
+        "perms": "Ne možeš zabranit pristup vlasniku ili ikome tko ima WolkeBot ulogu.",
+        "self": "Ne možeš mi zabraniti pristup s mojom vlastitom naredbom.",
+        "no-mention": "Molim spomeni osobu kojoj želiš zabranit pristup."
+    },
+    "kick": {
+        "success": "Izbačeni korisnik {{user}}",
+        "privilege": "Moja uloga mi ne daje pravo da izbacujem {{user}} !",
+        "err": "Pogreška se dogolia pri pokušavanju izbačenja {{user}} !",
+        "perms": "Ne možeš izbaciti vlasnika ili ikoga s WolkeBot ulogom.",
+        "self": "Ne možeš me izbaciti s mojom vlastitom narednom.",
+        "no-mention": "Molim spomeni osobu koju želiš izbaciti."
+    },
+    "roll": {
+        "whole-number": "Molim dodaj cijeli broj!",
+        "negative": "Ne mogu bacati s {{number}}",
+        "success": "Bačen {{first}} od {{second}}"
+    },
+    "qa": {
+        "nothing-found": "Niti jedna pjesma pronačeno s ovim pojmom za pretraživanje `{{search}}`",
+        "empty-search": "Nisi ukucao link/pojam za traženje",
+        "started-download": "Pokrenuto skidanje `{{- url}}`",
+        "success": "Postavljeno u red: **{{- song}}** "
+    },
+    "rq": {
+        "db-error": "Pogreška u databazi se dogodila.",
+        "success-multiple": "Dodane sljedeće pjesme:\n```{{- table}}``` ",
+        "too-big": "Dodano {{number}} pjesama.",
+        "no-songs-added": "Ne mogu dodati niti jednu pjesmu jer su već u redu, pokušaj ponovo!",
+        "too-much": "Ne možeš dodati više od {{number}} pjesama od jednom!"
+    },
+    "qra": {
+        "to-small": "Ne možeš ukloniti {{number}} pjesama!",
+        "success": "Uklonjeno `{{number}}` pjesama.",
+        "too-big": "Uklonjeno {{number}} pjesama.",
+        "one-song": "Koristi {{- prefix}}fskip da preskočiš trenutnu pjesmu!",
+        "no-number": "Nisi naveo koliko pjesema hoćeš da izbrišem iz reda.",
+        "removed": "Izbrisan `{{- title}}` iz reda. "
+    },
+    "cookie": {
+        "give": "Dan keks korisniku **{{- user}}** **1** !",
+        "new-server": "Molim pokušaj ponovo.",
+        "arere": "Arere... nešto se dogodilo...",
+        "perms": "Moraš imati Discord ulogu WolkeBot da daješ kekse!",
+        "one-user": "Molim spominji **Jednog Korisnika**, ne manje, ne više!",
+        "count": "Imaš **{{number}} keksa** upravo sada."
+    },
+    "eastereggs": {
+        "jay": "Jay te voli~ :heart:",
+        "magic": "xX_Cats_Xx je bio ovdje -10.10.2016 "
+    },
+    "set-lang": {
+        "no-lang": "Nisi specificiro jezik! Trenutno je {{languages}} dostupno.",
+        "success": "Ok upravo sam postavila jezik za ovaj server na {{- language}} .",
+        "unsupported": "Ovaj jezik nije još dodan, ali možeš pomoći tome da daš molbu za svoj jezik na github-u. Možeš naći trenutne jezike na raspolaganju koristeći ovu naredbu bez argumenata.",
+        "native-name": "Izvorno Ime",
+        "english-name": "Englesko Ime",
+        "shortcode": "shortcode",
+        "available-languages": "Lista dostupnih jezika\nMolim pazi da setLang treba shortcode"
+    },
+    "np": {
+        "song-duration": "Trenutno reproducira: ` {{- title}} {{current}}/{{duration}} {{repeat}} `",
+        "song": "Trenutno reproducira: `{{-title}} {{repeat}}`",
+        "repeat-on": "ponavljanje:uključeno",
+        "repeat-single": "ponavljanje: jedan put",
+        "repeat-queue": "ponavljanje: red",
+        "emoji-repeat-single": ":repeat_one: Ponavlja: trenutnu pjesmu",
+        "emoji-repeat-queue": ":repeat: Ponavlja: red",
+        "emoji-repeat-off": ":heavy_check_mark: Ponavljanje: isključeno"
+    },
+    "queue": {
+        "queued": "U redu:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "Nema još NSFW kanala.",
+        "success": "Uspješno uklonjen {{- channel}} s NSFW kanala!"
+    },
+    "no-level-server": {
+        "success-disable": "Ok, upravo sam onemogućila sistem za razinu na ovome serveru, upiši ovu naredbu ponovo da je omogućiš.",
+        "success-enable": "Ok, upravo sam omogućila sistem za razinu na ovome serveru, napiši ovu naredbu ponovo da je onemogućiš."
+    },
+    "no-pm-server": {
+        "success-disable": "Ok, upravo sam isključila PM obavijesti za ovaj server, napiši ovu naredbu ponovo da je ponovo da ih uključiš.",
+        "success-enable": "Ok, upravo sam uključila PM ovaijesti za ovaj server, napiši ovu naredbu ponovo da je ponovo da ih isključiš."
+    },
+    "no-channel-server": {
+        "success-disable": "Ok, upravo sam isključila PM obavijesti za ovaj server i uključila obavijesti za kanal, napiši ovu naredbu ponovo da vratiš.",
+        "success-enable": "Ok, upravo sam uključila PM obavijesti za ovaj server i isključila obavijesti za kanal, napiši ovu naredbu ponovo da vratiš."
+    },
+    "no-level": {
+        "success-disable": "Ok, isključila sam sistem razina za tebe, ponovo napiši ovu naredbu da uključiš.",
+        "success-enable": "Ok, uključila sam sistem razina za tebe, ponovo napiši ovu naredbu da isključiš."
+    },
+    "no-pm": {
+        "success-disable": "Ok, upravo sam isključila PM obavijesti za tebe, napiši ovu naredbu ponovo da ih uključiš.",
+        "success-enable": "Ok, upravo sam uključila PM obavijesti za tebe, napiši ovu naredbu ponovo da ih isključiš."
+    },
+    "eat-cookie": {
+        "success": "Upravo si pojeo {{number}} keks(ova)!",
+        "failure": "Nemaš više keksova."
+    },
+    "bot-info": {
+        "uptime": "Uptime",
+        "users": "Korisnici",
+        "channels": "Kanali",
+        "guilds": "Cehovi",
+        "avg-channels": "Prosječni kanali po cehu",
+        "avg-users": "Prosječni korisnici po cehu",
+        "voice": "VC",
+        "shard": "krhotina",
+        "guilds-s": "Cheovi (krhotine)",
+        "channels-s": "Kanali (krhotine)",
+        "users-s": "Korisnici na ovoj krhotini",
+        "made": "Napravio/la:",
+        "lib": "Knjižnica",
+        "voice_active": "AVC",
+        "voice_s": "VC (krhotina)",
+        "voice_active_s": "AVC (krhotina)"
+    },
+    "rank": "Možeš nači Leaderboard za ovaj Server ovdje: {{- link}}",
+    "pp": {
+        "err": {
+            "api-body": "Nije moguče rasčlaniti api odgovor",
+            "osu-api": "izgleda da osu! api ima mali poblem.",
+            "no-link": "Ovo nije valjani osu! link!",
+            "unvalid-link": "Link za mapu nije pružen!"
+        },
+        "success": "PP za mapu `{{- artist}} - {{- title}} [{{- version}}] s Acc {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}` "
+    },
+    "server-info": {
+        "id": "ID",
+        "name": "Ime",
+        "member": "Članovi",
+        "text": "Tekst kanali",
+        "voice": "Glasovni kanali",
+        "roles": "Uloge",
+        "creation": "Datum izrade",
+        "region": "Regija",
+        "owner": "Vlasnik"
+    },
+    "leave": "Ok, izašla sam iz glasovnog kanala.",
+    "play": {
+        "no-result": "Pjesma nije nađena!",
+        "playing": ":musical_note: Reproducira se **{{- song}}** ",
+        "success": ":musical_note: Trenutno reproduciranje **{{- song}}** ",
+        "next": ":musical_note: Reproducira sljedeće **{{- song}}**"
+    },
+    "prefix": {
+        "success": "Ok, upravo sam postavila prefix na {{- prefix}}, pokušaj `{{- prefix}}ping` da provjeriš.",
+        "no-prefix": "Molim dodaj prefix!"
+    },
+    "voice": {
+        "in-queue": "**{{- song}}** već u redu.",
+        "error-volume": "Greška kod postavljanja zvuka!",
+        "success-volume": "Postavi zvuk na {{- volume}}",
+        "no-volume": "Zvuk nije postavljen!",
+        "repeat-start": "Pokrenuto ponavljanje za **{{- song}}** ",
+        "already-playing": "Pjesma se već reproducira!",
+        "blocked": "Ovaj video nije dosupan za preuzimanje. Možda je predug ili je blokiran/maknut.",
+        "dl-start": ":hourglass: učitavanje pjesme!",
+        "use-proxy": "Pokušavanje preuzimanja preko proxyja, ovo može potrajati.",
+        "too-much": "Ne možeš zvuk postavit više od 200!"
+    },
+    "yts": {
+        "success": "Pronađena sljedeća pjesma: {{- link}}"
+    },
+    "skip": {
+        "success": ":track_next: Preskočena pjesma {{- title}}.",
+        "stop": ":stop_button: Zaustavljena trenutna pjesma.",
+        "all": ":stop_button: Preskočene sve pjesme.",
+        "some": ":track_next: Preskočeno {{- amount}} pjesama. "
+    },
+    "vskip": {
+        "user-no-voice": "Ne možeš glasat za preskakanje, ako nisi u istom glasovnom kanalu.",
+        "same-voice": "Nisi u istom glasovnom kanalu kao i ja!",
+        "dup": "Već si glasao!",
+        "success-add": "Dodan tvoj glas, postotak glasanja na **{{current}}%/{{needed}}%** ",
+        "success-skip": "Preskočena pjesma glasanjem: **{{- title}}** ",
+        "vote": "Upiši {{- prefix}}yes da preskočiš glasanjem trenutnu pjesmu. Trenutni postotak glasa je na {{- perct}}%/{{- needed}}\nKorisnici koji su glasali:\n```{{- table}}```",
+        "in-prog": "Glasanje za preskakanje pjesme je već u tijeku, koristi {{- prefix}}yes da preskočiš trenutnu pjesmu."
+    },
+    "rm": {
+        "less-2": "Ne možeš izbrisati manje od 2 poruke!",
+        "over-100": "Ne možeš izbrisati više od 100 poruka od jednom!",
+        "success": "Uspješno izbrisano {{number}} poruka.",
+        "error": "Pogreška u pokušavanju brisanje poruke!",
+        "over-limit": "Ne možeš izbrisat manje od 2 poruke ili više od 100 poruka od jednom!",
+        "no-limit": "Nisi specificiro koliko hoćeš poruka izbrisat.",
+        "nothing-found": "Nisam mogla naći poruku koja odgovara filtru"
+    },
+    "search": {
+        "success": "Pronađene sljedeće pjesme:"
+    },
+    "set-lewd": {
+        "success": "Uspješno dodan {{- channel}} u NSFW kanale!"
+    },
+    "report": "Ok, poslala sam izvješće Wolkeu, molim nemoj zloupotrebljavati ovo, kako možeš dobit zabranu korištenja Bota!",
+    "greeting": {
+        "no-greeting": "Nisi dodao pozdrav koji da koristim!",
+        "no-add": "Možeš samo postavit ili resetirat pozdrav.",
+        "set-greeting": "```Pozdrav:{{- text}}\nKanal:{{- channel}}\nResetira pozdrav sa {{- prefix}}setGreeting reset``` ",
+        "no-set-greeting": "Nema pozdrava postavljenog u trenutku.\n\nMožeš postaviti pozdrav s `{{- prefix}}setFarewell tekst` i resetirati pozdrav s `{{- prefix}}setFarewell reset`.",
+        "reset-greeting": "Upravo sam resetirala pozdrav, neće se više pojaviti",
+        "success": "Uredu, upravo sam postavila pozdrav za:\n```{{- text}}```"
+    },
+    "farewell": {
+        "no-farewell": "Nisi dodao oproštaj koji da koristim!",
+        "no-add": "Možeš samo postavit ili resetirat oproštaj.",
+        "set-farewell": "\n```zbogom:{{- text}}\nKanal:{{- channel}}\nResetiraj oproštaj sa {{- prefix}}setFarewell reset``` ",
+        "no-set-farewell": "Nema oproštaja postavljenog u trenutku.\n\nMožeš postaviti oproštaj s `{{- prefix}}setFarewell tekst` i resetirati oproštaj s `{{- prefix}}setFarewell reset`.",
+        "reset-farewell": "Upravo sam resetirala oproštaj, neće se više prikazati.",
+        "success": "Uredu, upravo sam postavila oproštaj za:\n```{{- text}}```"
+    },
+    "add-role": {
+        "ok": "Ok, upravo sam dala {{- user}} ulogu {{- role}}"
+    },
+    "create-role": {
+        "missing": "Navedeni naziv uloge ne postoji na Serveru.",
+        "new": "Da napravim novu ulogu za tebe?",
+        "no-args": "Nisi dao nikoji argument k naredbi.",
+        "ok": "Ok, upravo sam napravila ulogu {{- role}}",
+        "exists": "Uloga {{- role}} već postoji."
+    },
+    "remove-role": {
+        "ok": "Ok, upravo sam maknula ulogu {{- role}} s {{- user}} !"
+    },
+    "list-roles": {
+        "nr": "nr.",
+        "id": "id",
+        "name": "ime",
+        "self": "samododjeljivo",
+        "lvl": "Dostupno na razini",
+        "default": "zadano"
+    },
+    "user-info": {
+        "id": "$t(server-info.id) ",
+        "name": "$t(server-info.name) ",
+        "discriminator": "diskriminator",
+        "nick": "Nadimak",
+        "join": "Se pridružio",
+        "created": "Je napravio",
+        "playing": "Reproducira se",
+        "info": "Info korisnika",
+        "bot": "Bot",
+        "status": "Status",
+        "role": "Uloge"
+    },
+    "flip": {
+        "head": "Novčić se okrenuo na glavu {{- url}}",
+        "tail": "Novčić se okrenuo na rep {{- url}}"
+    },
+    "gp": {
+        "no-cat": "Nisam mogla pronači dozvole s tom kategorijom {{- cat}} ",
+        "no-perms": "Nisi dodao nikakve dozvole još.",
+        "table": {
+            "id": "\n$t(server-info.id)",
+            "name": "Ime",
+            "type": "Tip",
+            "cat": "Kategorija",
+            "perm": "Dozvole",
+            "use": "Koristi"
+        },
+        "page-does-not-exist": "Stranica ne postoji. Broja napisati manji broj stranica!"
+    },
+    "rp": {
+        "success": "Uspješno sam maknula dozvolu `{{- node}}` sa **{{- type}}** `{{- id}}`"
+    },
+    "love": {
+        "success": "Upravo si dao **{{- target}}** **{{- rep}}** :heart: ljubavni bod.\nPreostala korištenja **{{uses}}**.",
+        "error-cd": "Možeš samo dati **2** :heart: ljubavna boda po danu, sljedeće korištenje {{- time}}. ",
+        "next": " Sljedeće korištenje {{- time}}",
+        "self": ":broken_heart: Ne možeš sam sebi dati ljubavne bodove.",
+        "success-remove": "Upravo si uklonio **{{- rep}}**:heart: ljubavni bod od **{{- target}}** Preostala korištenja **{{uses}}**. "
+    },
+    "dere": {
+        "no-dere": "Dere tip koji si tražio ne postoji. Evo liste od mogućih dere tipova.",
+        "dandere": "Vrsta Dandere (だんデレ) se odnosi na lik koji je često tih i sam.\nMožda zbog stidljivosti ili samo zato što su miran tip.\nMeđutim, kad je sam s osobom koja ih privlači, oni obično izlaze iz svoje ljuske i postaju više ljubavni.\nOva riječ je skraćenica od Danmari (だんまり) što znači tiha i Deredere (デレデレ) što znači \"love dovey\".",
+        "deredere": "Vrsta Deredere (デレデレ) odnosi se na lik koji je potpuno ljubazan, sretan i energičan.\nBez obzira što se može dogoditi, oni se broz vrate u svoje veselo stanje.\nTo može biti jedini tip koji ne ima ikoju kraticu osnovne riječ Deredere (デレデレ), iako definicija nije jednostavno \"lovey dovey\" kao druge vrste.",
+        "himedere": "Vrsta Himedere (ひめデレ) odnosi se na lik koji želi biti tretiran kao princeza od strane osobe koju voli, čak i ako oni nisu kraljevske krvi u stvarnosti.\nOva riječ je skraćenica od Hime (ひめ) što znači princeza i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "kamidere": "Vrsta Kamidere (かみデレ) odnosi se na lika koji voli izigravati Boga.\nOni su vrlo arogantni i ponosni i ne boje se da iznesu svoje mišljenje i svima pokazati koliko su oni dobri.\nOva riječ je skraćenica od Kami (かみ) što znači Bog i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "kuudere": "Vrsta Kuudere (クーデレ), ponekad zapisano Coodere ili Kūdere, tip se odnosi na lik koji je često hladan, tup i ciničan.\nOni se možda čine koda da nemaju emocija izvana, ali iznutra su vrlo brižni — barem kada je riječ o onima koje vole.\nOva riječ je skraćenica od super (クール) i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "mayadere": "Vrsta Mayadere (まやデレ) odnosi se na lik koji je često opasan antagonist u seriji, ali mijenja strane nakon pada u ljubavi s drugim likom.\nLik može ostati smrtonosan i nepredvidiv protagonist ili drugi glavni lik u Anime ili Manga.",
+        "oujidere": "Vrsta Oujidere (おうじデレ) odnosi se na lik koji želi da ga tretira kao princa od stranje osobe koju voli, čak i ako oni nisu kraljevske krvi u stvarnosti.\nOva riječ je skraćenica od Ouji (おうじ) što znači princ i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "tsundere": "Tsundere (ツンデレ) tip je vjerojatno jedan od najpopularnijih ili jednostavno najviše korišteni lik u u anime i manga.\nOvaj tip se odnosi na lika koji tretira one koje vole loše.\nPonekad je ovo jer su ih počeli mrziti i na kraju ih voli kako serija nastavlja, a ponekad je to jer je to jedini način na koji znaju reagirati.\nPrimjer je ako glavni lik zove tsundere lik slatkim.\nTsundere lik će se biti uznemiren i usplahiren, eventualno nanijeti fizičku štetu na onoga kojeg vole, i onda ih nazvati glupim.\nOva riječ je skraćenica od Tsuntsun (ツンツン) što znači gledati u suprotnu stranu gadljivo i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "undere": "Undere (ウンデレ) tip se odnosi na lik koji kaže \"Da\" na sve ono što kaže onaj kojeg vole.\nSlažu se što je sve moguće da postanu blizki svom ljubavnom interesu.\nOva riječ je skraćenica od Un (ウン) što je način na koji Japanci kažu \"Da\" i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "yandere": "Vrsta Yandere (ヤンデレ) odnosi se na lika koji se na početku ponaša lijepo i slatko, ali na kraju postaje mračan i opsesivan nad onim kojeg vole.\nPostanu Stalkeri i koriste nasilje na, i možda čak ubojstva, svaku osobu koja priđe njihovom ljubavnom interesu — čak i ako su previše sramežljivi da jednostavno razgovaraju s tom osobom u koju su zaljubljeni.\nOva riječ je skraćenica od Yanderu (やんでる) što znači da budeš mentalno ili emocionalno bolesnstan i Deredere (デレデレ) što znači \"lovey dovey\".",
+        "yangire": "Yangire (ヤンギレ) tip je sličan na neki način na Yandere.\nTo je lik koji se na početku ponaša lijepo i slatko, ali postaje vrlo agresivan i psihotičan.\nMeđutim, za razliku od Yandere, Yangire ne postaju nasilni radi atrakcije u lika.\nUmjesto toga, oni mogu puknut jednostavno zato što ih iritira lik koji nema veze sa svojim ljubavnim interesom.\nOva riječ je skraćenica od Yanderu (やんでる) što znači biti mentalno ili emocionalno bolestan i Kire (きれ) što znači izrezati ili puknuti (mentalno)."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "Treba biti najviše 3 pjesme u redu da ih mogu izmješat.",
+        "success": "Izmješaj red."
+    },
+    "get-node": {
+        "success": "Čvor dozvola: `{{- node}}` Kategorijski čvor:`{{- category}}.*` Kategorija:`{{- category}}` ",
+        "not-found": "Ova naredba ne postoji.",
+        "no-args": "Napiši naredbu bez prefixa poslije ovoga da dobiješ čvor dozvola, kategorija i kategoriju"
+    },
+    "ap": {
+        "type": {
+            "user": "korisnih",
+            "guild": "ceh",
+            "role": "uloga",
+            "channel": "kanal"
+        },
+        "success": "Ok, upravo sam dodala dozvolu `{{- node}}` `{{- allowed}}` u `{{- type}}` `{{- name}}`",
+        "wrong-node": "Taj čvor dozvola `{{- node}}` neće raditi, zato što nije valjan čvor dozvola. Da dobiješ čvor dozvola za tip naredbe koristi `{{- prefix}}getNode naredba`",
+        "target-not-found": "Nisa mogla naći cilj {{- target}} za ovu naredbu.",
+        "no-allowance-set": "Nisi mi rekao je li se dozvola može dopustiti ili ne, dodaj `true` ili `false` ovisno o tvom izboru.",
+        "missing-args": "Pravilna sintaksa za ovu naredbu je `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nPrimjer:\n```{{-prefix}}ap playlist.* true -> dopušta sve naredbe u kategoriji playliste u serveru\n{{-prefix}}ap music.fskip -u @user true -> dupošta spomenutoj osobi da koristi {{- prefix}}fskip``` "
+    },
+    "reset-perms": {
+        "nothing-found": "Nemaš dozvola još.",
+        "confirmation": "Jesi li siguran da želiš resetirat dozvole? Napiši `yes` da ih resetiraš i `no` da otkažeš ovu naredbu. ",
+        "success": "Upravo sam resetirala sve dozvole koje si postavio."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: Ne mogu odabrati ništa, nisi ništa napisao!",
+        "success": "Odabiram **{{- choice}}**! "
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: Ne mogu potražiti definiciju, nisi ništa napisao!",
+        "no-result": "Nisam mogla pronaći ništa s pojom `{{- term}}`"
+    }
 }
