@@ -163,7 +163,8 @@
         "setGreeting": "Setzt eine Begrüßung für den Channel wo der Command ausgeführt wird. Du kannst %USER% und %GUILD% benutzen damit rem die Stellen mit Benutzer und Serveramen ersetzt.",
         "setFarewell": "Setzt eine Verabschiedung für den Channel wo der Command ausgeführt wird. Du kannst %USER% und %GUILD% benutzen damit rem die Stellen mit Benutzer und Serveramen ersetzt. ",
         "pout": "Schmolle jemanden an hmmpf :<",
-        "smug": "Sende jemandem ein süffisantes Grinsen :^)"
+        "smug": "Sende jemandem ein süffisantes Grinsen :^)",
+        "lick": "Überprüfe ob jemand gut schmeckt :P"
     },
     "version": "Momentan verwende ich Version{{version}}",
     "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
