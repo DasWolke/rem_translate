@@ -117,7 +117,7 @@
     "owo": "Sends you random OwO What's this memes, which are handpicked by Wolke",
     "dere": "Search for a dere definition or get a random one",
     "love": "Gives the mentioned user a love point, add - to reduce the lovepoints of the user by 1",
-    "apq": "adds a playlist to the queue, only supports youtube-playlists and only needs the id. NOT THE LINK.",
+    "apq": "adds a playlist to the queue, only supports youtube-playlists at the moment, just use the link of a playlist",
     "ap": "The add permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
     "gp": "The get permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
     "rp": "The remove permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
@@ -460,5 +460,8 @@
     "undere": "The Undere (ウンデレ) type refers to a character who says yes to pretty much everything the one they love says. \n They agree as much as possible to become as close as they can to their love interest. \n This word is an abbreviation of Un (ウン) which is a short way Japanese people say Yes and Deredere (デレデレ) which means lovey dovey.",
     "yandere": "The Yandere (ヤンデレ) type refers to a character who starts out nice and sweet but eventually becomes dark and obsessive over the one they love.\n They become stalkers and use violence on, and possibly even murder, any person who gets close to their love interest — even if they’re too shy to simply speak with that person they have a crush on.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Deredere (デレデレ) which means lovey dovey.",
     "yangire": "The Yangire (ヤンギレ) type is similar in some ways to Yandere. \n It is a character who may start out nice and sweet but becomes very aggressive and psychotic.\n However, unlike Yandere, Yangire do not become violent because of they attraction to a character. \n Instead, they may snap simply because they’re irritated with a character that has nothing to do with their love interest.\n This word is an abbreviation of Yanderu (やんでる) which means to be mentally or emotionally ill and Kire (きれ) which means to cut or snap."
+  },
+  "apq": {
+    "unsupported": "This Playlist is not supported!"
   }
 }
