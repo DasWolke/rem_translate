@@ -164,7 +164,8 @@
         "setFarewell": "Seteaza un ramas bun in canal cand comanda este executata. Poti folosi %USER% si %GUILD%care vor fi inlocuite cu numele utilizatorului si numele breslei.",
         "pout": "Hmmpf :< Pout at someone",
         "smug": "Give someone a smug :^)",
-        "lick": "Check if somebody is edible"
+        "lick": "Check if somebody is eatable",
+        "playlist": "[PLAYLIST]"
     },
     "version": "In momentul de fata rulez versiunea {{version}}",
     "add": "Foloseste acest lnk pentru a ma adauga serverului tau: {{-link}}",
@@ -522,5 +523,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Nu pot cauta o definitie daca nu ai adaugat nimic!",
         "no-result": "Nu am putut sa gasesc nimic pentru termenul `{{- term}}` "
+    },
+    "apq": {
+        "unsupported": "This Playlist is not supported!"
     }
 }
