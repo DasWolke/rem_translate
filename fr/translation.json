@@ -137,7 +137,7 @@
         "love": "Donne à l'utilisateur mentionné un point d'amour, ajoute \"-\" pour réduire les points d'amour de l'utilisateur de 1",
         "sinfo": "Te donne des informations à propos du serveur actuel",
         "uinfo": "Te donne des informations à propos de toi/de l'utilisateur mentionné",
-        "apq": "Ajoute une playlist à la file d'attente, ne supporte uniquement les playlists YouTube et ne requiert que l'id. Pas le lien.",
+        "apq": "Ajoute une playlist à la file d'attente, ne supporte uniquement les playlists YouTube pour le moment, utilise le lien de la playlist.",
         "ap": "La commande d'ajout de permission, une explication détaillée peut être trouvée sur le Discord du support (!w.bug pour recevoir l'invitation)",
         "gp": "La commande d'obtention de permission, une explication détaillée peut être trouvée sur le Discord du support (!w.bug pour recevoir l'invitation)",
         "rp": "La commande de suppression de permission, une explication détaillée peut être trouvée sur le Discord du support (!w.bug pour recevoir l'invitation)",
@@ -164,7 +164,8 @@
         "setFarewell": "Définie un message d'adieu dans le salon où cette commande a été exécuté. Tu peux utiliser %USER% et %GUILD% qui vont être remplacés par le nom d'utilisateur et le nom de la guilde.",
         "pout": "Hmmpf :< Boude quelqu'un",
         "smug": "Fait un sourire suffisant à quelqu'un :^)",
-        "lick": "Vérifie si quelqu'un est comestible"
+        "lick": "Vérifie si quelqu'un est comestible",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Actuellement je suis en version {{version}}",
     "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Je ne peux pas chercher de définition si tu n'entres rien!",
         "no-result": "Je n'ai rien pu trouver avec le terme `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Cette playlist n'est pas supportée !"
     }
 }
