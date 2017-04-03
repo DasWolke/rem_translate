@@ -164,7 +164,8 @@
         "setFarewell": "Stel een afscheidsbericht in in het kanaal waar het commando is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
         "pout": "Hmmph :< pruilt naar iemand",
         "smug": "Geef iemand een zelfingenomen :^)",
-        "lick": "Controleer of deze persoon eetbaar is"
+        "lick": "Controleer of deze persoon eetbaar is",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Op het moment gebruik ik versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Ik kan niet naar de definitie zoeken als je geen zoekterm invult!",
         "no-result": "Ik kon niets vinden met de term `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Deze afspeellijst wordt niet ondersteund!"
     }
 }
