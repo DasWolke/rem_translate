@@ -137,7 +137,7 @@
         "love": "Gives the mentioned user a love point, add - to reduce the lovepoints of the user by 1",
         "sinfo": "gives you some information about the current server",
         "uinfo": "gives you some information about yourself/the mentioned User",
-        "apq": "adds a playlist to the queue, only supports youtube-playlists and only needs the id. NOT THE LINK.",
+        "apq": "adds a playlist to the queue, only supports youtube-playlists at the moment, just use the link of a playlist",
         "ap": "The add permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
         "gp": "The get permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
         "rp": "The remove permission command, an extensive explanation can be found on the support discord (!w.bug to get the invite)",
@@ -163,7 +163,9 @@
         "setGreeting": "Sets a greeting in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
         "setFarewell": "Sets a farewell in the channel where the command is executed. You can use %USER% and %GUILD% which will get replaced with the user name and the guild name.",
         "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)"
+        "smug": "Give someone a smug :^)",
+        "lick": "Check if somebody is eatable",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Su anda Sürüm kullaniyorum{{version}}",
     "add": "Bu linki kulan beni diger servere eklemek için: {{- link}}",
@@ -522,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: I can not search a definition, if you enter nothing!",
         "no-result": "I could not find anything with the term `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "This Playlist is not supported!"
     }
 }
