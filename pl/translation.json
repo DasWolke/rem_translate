@@ -85,7 +85,7 @@
         "garfield": "Wyświetla losowy komiks z garfieldem",
         "cat": "Wyświetla losowy obrazek z kotem. Wszyscy potrzebujemy kotów!",
         "hug": "Przytul kogoś :>",
-        "slap": "Ktoś był dla ciebie niemiły? Spoliczkuj go!",
+        "slap": "Ktoś był dla Ciebie niemiły? Spoliczkuj go!",
         "setLang": "ustawia język, obecnie wspierane: {{languages}}",
         "report": "Jeżeli wstydzisz się dołączyć do serwera wsparcia, użyj report aby wysłać zgłoszenie do dewelopera Wolke, nie nadużywaj tego!",
         "feedback": "Aby przekazać opinię, proszę użyj serwera wsparcia ^^",
@@ -111,7 +111,7 @@
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "tylko bakłażan",
         "gtn": "Wyświetla losowy komiks GreenTeaNeko, działa tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
-        "cuddle": "Wyświetla anime gif z przytulaniem",
+        "cuddle": "Przytulaj",
         "trig": "TRIGGERED",
         "bot": "Wyświetla informacje o czasie online Rem, połączeniach głosowych, liczbie użytkowników i ilości gildii",
         "top": "Wyświetla top 10 gildii (użytkowników w gildii), które są połączone do tego shard'u",
@@ -137,7 +137,7 @@
         "love": "Daje wspomnianemu uzytkownikowi 1 punkt miłości, dodaj - aby go zabrać",
         "sinfo": "wyświetla informacje o serwerze",
         "uinfo": "wyświetla informacje o sobie/wspomnianym użytkowników",
-        "apq": "dodaje playlistę do kolejki, wspiera tylko playlisty z youtube i potrzebuje tylko id. NIE CAŁE LINKI.",
+        "apq": "dodaje playlistę do kolejki, obecnie wspiera tylko playlisty z youtube, po prostu dodaj link playlisty.",
         "ap": "Komenda do dodania uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
         "gp": "Komenda do wyświetlenia uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
         "rp": "Komenda do usunięcia uprawnień, dokładne wytłumaczenie znajduje się na serwerze wsparcia (!w.bug aby dostać zaproszenie)",
@@ -164,7 +164,8 @@
         "setFarewell": "Ustawia wiadomość pożegnalną w kanale tekstowym, w którym została uruchomiona komenda. Możesz użyć %USER% oraz %GUILD%, które zostaną zastąpione nazwą użytkownika i gildii.",
         "pout": "Hmmpf :< Fochnij się na kogoś",
         "smug": "Rzuć komuś wywyższające się spojrzenie :^)",
-        "lick": "Sprawdź czy ktoś jest jadalny"
+        "lick": "Sprawdź, czy ktoś jest jadalny",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
@@ -368,10 +369,10 @@
         "success": "Znaleziono następującą piosenkę: {{- link}}"
     },
     "skip": {
-        "success": ":track_next: Pominięto piosenkę {{- title}}",
-        "stop": ":stop_button: Zatrzymano aktualną piosenkę",
+        "success": ":track_next: Pominięto piosenkę {{- title}}.",
+        "stop": ":stop_button: Zatrzymano obecną piosenkę.",
         "all": ":stop_button: Pominięto wszystkie piosenki.",
-        "some": ":track_next: Pominięto {{- amount}} piosenek"
+        "some": ":track_next: Pominięto {{- amount}} piosenek."
     },
     "vskip": {
         "user-no-voice": "Nie możesz pominąć, jeżeli nie jesteś w tym samym kanale głosowym!",
@@ -463,7 +464,7 @@
             "perm": "Uprawnienie",
             "use": "Użyj"
         },
-        "page-does-not-exist": "Ta strona nie istnieje. Spróbuj wpisać niższy numer strony!"
+        "page-does-not-exist": "Ta strona nie istnieje. Spróbuj wpisać niższy numer!"
     },
     "rp": {
         "success": "Pomyślnie usunęłam uprawnienia `{{- node}}` z **{{- type}}** `{{- id}}`"
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Nie mogę znaleźć definicji, jeżeli niczego nie podałeś/aś!",
         "no-result": "Nie mogłam niczego znaleźć z `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Ta playlista nie jest wspierana!"
     }
 }
