@@ -164,7 +164,8 @@
         "setFarewell": "U kanal gdje se izvršava naredba postavlja opraštaj. Koristite %USER% i %GUILD% koji će biti zamijenjen s korisničkovim imenom i imenom ceha.",
         "pout": "Hmmpf :< Duri se na nekoga",
         "smug": "Pokaži nekome svoje samozadovoljstvo :^)",
-        "lick": "Provjeri je li netko jestiv"
+        "lick": "Provjeri je li netko jestiv",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
     "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
@@ -177,7 +178,7 @@
         "join": "Ok, pridružujem se tvojem glasovnom kanalu.",
         "error": "Dogodila se pogreška dok sam se pokušavala spojit na tvoj glasovni kanal.",
         "permission": "Nema dozvola! Moraš dati sebi ulogu WolkeBot da možeš to koristiti.",
-        "no-voice": "Nisi u nikojem glavonom kanalu.",
+        "no-voice": "Nisi u nikojem glasovnom kanalu.",
         "already-voice": "Već sam spojena u glasovni kanal, pomakni me da to promijeniš!"
     },
     "nsfw-images": {
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Ne mogu potražiti definiciju, nisi ništa napisao!",
         "no-result": "Nisam mogla pronaći ništa s pojom `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Playlista nije podržana!"
     }
 }
