@@ -1,11 +1,11 @@
 {
     "generic": {
         "error": ":x: Ein Fehler ist aufgetreten!",
-        "no-pm": ":no_entry: Dieser Befehl funktioniert nicht in privaten Nachrichten!",
+        "no-pm": ":no_entry: Dieser Befehl funktioniert nicht in privaten Kanälen\n!",
         "whole-num": ":no_entry_sing: Bitte füge eine ganze Zahl an!",
         "nan": ":no_entry_sing: Was auch immer du gerade gesendet hast, verwende bitte eine ganze Zahl. :)",
         "no-song-in-queue": "no_entry_sign: Momentan ist kein Lied in der Warteschlange, füge doch eins hinzu :musical_note: ?",
-        "no-song-playing": "Entfernt Nachrichten, du kannst Bots, Benutzern, Befehle/Antworten oder einfach bis zu 100 Nachrichten löschen",
+        "no-song-playing": ":musical_note: Zur Zeit spielt kein Lied!",
         "no-permission": ":no_entry_sign: Dir fehlt die Berechtigung `{{- node}}`, weise sie dir zu um diesen Befehl zu verwenden.",
         "no-voice": ":no_entry_sign: Ich bin aktuell mit keinem Voicechannel auf diesem Server verbunden!",
         "level-update": ":tada: Du hast gerade **Level {{level}}** auf **{{- server}}** erreicht.",
@@ -33,10 +33,10 @@
         "intro_2": "Hey, ich bin",
         "support": "[SUPPORT]",
         "bug": "sendet dir den Link des Support-Discords",
-        "help": "der hilfs Befehl",
+        "help": "der Hilfsbefehl",
         "add": "sendet dir einen Link um mich zu einem anderen Server hinzuzufügen",
         "music": "[MUSIK]",
-        "voice": "Ich trete deinem Voicechannel bei...\n(Durch Musik Befehle trete ich auch bei)",
+        "voice": "Ich trete dem Voicechannel bei in dem du dich gerade befindest (durch Musik-Befehle trete ich auch bei)",
         "silent": "Ich verlasse den Voicechannel. (Nur nutzbar mit der WolkeBot Rolle)",
         "play": "Spielt einen YT-Link/SC-Link/osu-link, maximale Länge: 1H30M ",
         "pause": "Pausiert das Lied ",
@@ -137,7 +137,7 @@
         "love": "Gibt dem benannten Benutzer einen Liebespunkt, durch hinzufügen von - sinkt der Liebesscore um des Users um eins.",
         "sinfo": "gibt dir Informationen über den aktuellen server.",
         "uinfo": "gibt dir Informationen über dich selber/den erwähnten Nutzer",
-        "apq": "Fügt eine Playlist zu der Warteschlange hinzu. Bitte beachte, dass du die PlaylistID benötigst, NICHT den Playlist link.",
+        "apq": "Fügt eine Playlist zu der Warteschlange hinzu.",
         "ap": "Der Erlaubnis hinzufügen Befehl, eine genaue Beschreibung kannst du auf dem Hilfe Server finden (!w.bug um den Link zu bekommen)",
         "gp": "Der Erlaubnis bekommen Befehl, eine genaue Beschreibung kannst du auf dem Hilfe Server finden (!w.bug um den Link zu bekommen) \n",
         "rp": "Der Berechtigung entfernen Befehl, eine genaue Beschreibung kannst du auf dem Hilfe Server finden (!w.bug um den Link zu bekommen)",
@@ -164,7 +164,8 @@
         "setFarewell": "Setzt eine Verabschiedung für den Channel wo der Command ausgeführt wird. Du kannst %USER% und %GUILD% benutzen damit rem die Stellen mit Benutzer und Serveramen ersetzt. ",
         "pout": "Schmolle jemanden an hmmpf :<",
         "smug": "Sende jemandem ein süffisantes Grinsen :^)",
-        "lick": "Überprüfe ob jemand gut schmeckt :P"
+        "lick": "Überprüfe ob jemand gut schmeckt :P",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Momentan verwende ich Version{{version}}",
     "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
@@ -507,9 +508,9 @@
         },
         "success": "Ok ich habe gerade die Berechtigung `{{- node}}` `{{- allowed}}` zu dem `{{- type}}` `{{- name}}` hinzugefügt.",
         "wrong-node": "Die Berechtigungs ID `{{- node}}` wird nicht funktionieren, da es keine erlaubte Berechtigungs ID ist. Um die ID für einen Befehl zu bekommen schreibe `{{- prefix}}getNode Befehl`",
-        "target-not-found": "Ich konnte das ziel {{- target}} nicht finden.",
+        "target-not-found": "Ich konnte das Ziel {{- target}} nicht finden.",
         "no-allowance-set": "Bitte gib an ob die Berechtigung positiv oder negativ ist, füge `true` (positiv) oder `false` (negativ) an den Befehl an, je nach dem wie du dich entscheidest.",
-        "missing-args": "Der richtige Syntax für diesen Befehl ist `{{-prefix}}ap <Notiz> [-u|-r|-c] [Ziel] <erlaubt>`\nBeispiel:\n```{{-prefix}}ap playlist.* ture  -> erlaubt alle Befehle der Kategorei Playlist auf dme Server.\n{{-prefix}}ap music.fskip -u @Benutzer ture -> erlaubt dem gennanten Benutzer {{- prefix}}fskip zu benutzen```"
+        "missing-args": "Der richtige Syntax für diesen Befehl ist `{{-prefix}}ap <Notiz> [-u|-r|-c] [Ziel] <erlaubt>`\nBeispiel:\n```{{-prefix}}ap playlist.* true  -> erlaubt alle Befehle der Kategorie Playlist auf dem Server.\n{{-prefix}}ap music.fskip -u @Benutzer true -> erlaubt dem genannten Benutzer {{- prefix}}fskip zu benutzen```"
     },
     "reset-perms": {
         "nothing-found": "Du hast bisher keine Berechtigungen gesetzt.",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Ich kann nicht nach einer Definition für einen Begriff suchen, wenn du mir keinen Begriff sagst!",
         "no-result": "Ich konnte keine Definition zu dem Begriff `{{- term}}` finden."
+    },
+    "apq": {
+        "unsupported": "Diese Playliste wird nicht unterstützt."
     }
 }
