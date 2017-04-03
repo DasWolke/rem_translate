@@ -164,7 +164,8 @@
         "setFarewell": "Define uma despedida no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
         "pout": "Hmmph :< Faneca norueguesa a alguém",
         "smug": "dar alguém uma presunçosa :^)",
-        "lick": "Verificar se alguém é comestível"
+        "lick": "Verificar se alguém é comestível",
+        "playlist": "[PLAYLIST]"
     },
     "version": "No momento estou rodando na versão {{version}} ",
     "add": "Use este link para me colocar no seu Servidor: {{- link}} ",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: Eu não consigo encontrar uma definiçao se você não colocar nada!",
         "no-result": "Eu nao consegui achar nada com o termo`{{- term}}` \n"
+    },
+    "apq": {
+        "unsupported": "This Playlist is not supported!"
     }
 }
