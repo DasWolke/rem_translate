@@ -164,7 +164,8 @@
         "setFarewell": "이 명령어를 입력한 채널에서 렘이 작별 인사를 하도록 할 수 있습니다. %USER%에는 사용자 이름으로, %GUILD%에는 길드 이름으로 치환되며, 선택적으로 사용하실 수 있습니다.",
         "pout": "볼에 바람 넣고, 후으으음! :<",
         "smug": "누군가에게 자신의 당당함을 표출해보세요 :^)",
-        "lick": "Check if somebody is edible"
+        "lick": "누가 먹을 수 있는지 알아보세요.",
+        "playlist": "[PLAYLIST]"
     },
     "version": "제 현재 버전은 다음과 같아요. : {{version}}",
     "add": "이 링크로 당신의 서버에 저를 추가해 주세요. : {{- link}}",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: 아무것도 입력하시지 않으시면 검색 할 수 없습니다!",
         "no-result": "I could not find anything with the term `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "이 재생목록은 지원되지 않네요.."
     }
 }
