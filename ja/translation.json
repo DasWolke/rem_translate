@@ -164,7 +164,8 @@
         "setFarewell": "コマンドが実行されたチャンネルのお別れのメッセージを設定します。%USER%と%GUILD%を使用すると、それぞれユーザ名とサーバー名に置き換えることが出来ます。",
         "pout": "Hmmpf :< Pout at someone",
         "smug": "Give someone a smug :^)",
-        "lick": "Check if somebody is edible"
+        "lick": "誰かが食べられるか確かめる",
+        "playlist": "[PLAYLIST]"
     },
     "version": "現在の私のバージョンは {{version}} です。",
     "add": "このリンクを使って私をあなたのサーバーに追加してください！\n{{- link}}",
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: 何か入力しないと定義が探せませんよ！",
         "no-result": "`{{- term}}`の検索結果は見つかりませんでした…"
+    },
+    "apq": {
+        "unsupported": "This Playlist is not supported!"
     }
 }
