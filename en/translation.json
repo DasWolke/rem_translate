@@ -50,7 +50,7 @@
     "queue": "Shows the current Queue",
     "np": "Shows the currently playing Song",
     "shuffle": "Shuffles the queue. Note that at least 3 Songs have to be in the queue for this command to work.",
-    "stream": "Streams the selected Internet radio, you can search for radios or directly add them by appending -u url to the command",
+    "moe": "Streams Listen.moe ^^",
     "youtube": "[YOUTUBE]",
     "sinfo": "gives you some information about the current server",
     "uinfo": "gives you some information about yourself/the mentioned User",
