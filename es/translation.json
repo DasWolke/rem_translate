@@ -83,9 +83,9 @@
         "roll": "Lanza un número entre cero y el número asignado, si no especificas ningún número por defecto será el 10.",
         "8ball": "Muestra la opinión de la bola 8 mágica con respecto a tu pregunta.",
         "garfield": "Muestra un comic de garfield aleatorio.",
-        "cat": "Envía una imagen aleatoria con gatos.",
-        "hug": "Muestra una gif de un abrazo en un anime.",
-        "slap": "Muestra un gif de una bofetada en un anime.",
+        "cat": "Envía una imagen aleatoria con gatos. ¡Todos necesitamos gatos!",
+        "hug": "Abraza a alguien :>",
+        "slap": "¿Alguien te trato mal?, ¡Golpealo!",
         "setLang": "Seleccionas el idioma, utiliza !w.setLang sin argumentos para obtener una lista de idiomas.",
         "report": "Si eres muy tímido como para pasar por el Discord de soporte, utiliza el comando report para mandar un reporte al Desarrollador Wolke, ¡pero no abuses de él!",
         "feedback": "Para dar feedback utiliza el Discord de soporte por favor ^^",
@@ -111,7 +111,7 @@
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "solo una berenjena",
         "gtn": "Muestra un comic aleatorio de green tea neko, solo puede ser usado en un canal configurado como NSFW o por un Administrador.",
-        "cuddle": "Muestra un gif de un abrazo en un anime.",
+        "cuddle": "Da una acaricia",
         "trig": "Provocar",
         "bot": "Da información sobre el tiempo de actividad de Rem, el tiempo activo y enlaces útiles.",
         "top": "Muestra el top 10 de los gremios (según la cantidad de usuarios) en el que está conectado esta sección.",
@@ -137,7 +137,7 @@
         "love": "Dale al usuario mencionado un punto de amor, añade - para quitar un punto de amor.",
         "sinfo": "Proporciona información sobre el servidor actual.",
         "uinfo": "Proporciona información sobre ti o el usuario mencionado.",
-        "apq": "Añades una lista de reproducción a la cola, solo soporta listas de reproducción de Youtube y solo necesitas la ID, no el enlace.",
+        "apq": "Añades una lista de reproducción a la cola. De momento solo soporta listas de Youtube, añade una copiando el enlace.",
         "ap": "El comando para agregar permisos, puedes encontrar una extensa guía sobre su uso en el Discord de soporte (usa !w.bug para recibir la invitación)",
         "gp": "El comando para observar permisos, puedes encontrar una extensa guía sobre su uso en el discord de soporte (usa !w.bug para recibir la invitación)",
         "rp": "El comando para remover permisos, puedes encontrar una extensa guía sobre  su uso en el Discord de soporte (usa !w.bug para recibir la invitación)",
@@ -164,7 +164,8 @@
         "setFarewell": "Establece una despedida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
         "pout": "Hmmpf :< Dale una mala cara a alguien",
         "smug": "Dale a alguien un smug :^)",
-        "lick": "Comprueba si alguien es comestible"
+        "lick": "Comprueba si alguien es comestible",
+        "playlist": "[PLAYLIST]"
     },
     "version": "Actualmente me encuentro en la versión {{version}}",
     "add": "Utiliza este enlace para añadirme a tu servidor: {{- link}}",
@@ -369,7 +370,7 @@
     },
     "skip": {
         "success": ":track_next: La canción {{- title}} ha sido saltada.",
-        "stop": ":stop_button: Se ha detenido la canción",
+        "stop": ":stop_button: La canción actual fue detenida.",
         "all": ":stop_button: Todas las canciones fueron omitidas.",
         "some": ":track_next: {{- amount}} canciones han sido omitidas."
     },
@@ -470,7 +471,7 @@
     },
     "love": {
         "success": "Le diste a **{{- target}}** **{{- rep}}** :heart: punto/s de amor. Usos restantes: **{{uses}}**.",
-        "error-cd": "Solo puedes dar **2** :heart: puntos de amor por día, intenta en {{- time}}.",
+        "error-cd": "Solo puedes dar **2** :heart: puntos de amor por día, siguiente uso en {{- time}}.",
         "next": " Siguiente uso: {{- time}}",
         "self": ":broken_heart: No puedes darte puntos de amor a ti mismo.",
         "success-remove": "Acabas de quitarle **{{- rep}}**:heart: Punto de Amor a **{{- target}}**. Usos restantes **{{uses}}**."
@@ -523,5 +524,8 @@
     "define": {
         "empty-search": ":no_entry_sign: ¡No puedo buscar una definición si no introduces nada!",
         "no-result": "No he encontrado nada con el término `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "¡Esta lista de reproducción no está soportada!"
     }
 }
