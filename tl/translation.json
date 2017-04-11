@@ -1,3 +1,532 @@
 {
-  "awoo": "awoo"
+    "generic": {
+        "error": ":x: May maling naganap!",
+        "no-pm": ":no_entry: Ang Command na ito ay hindi gagana sa mga pribadong channel!",
+        "whole-num": ":no_entry_sign: Gumamit ng buo na numero!",
+        "nan": ":no_entry_sign: Kung ano man ang ipinadala mo, lagyan mo lamang ng buong numero :) ",
+        "no-song-in-queue": ":no_entry_sign: Walang kantang nakapila, siguro magdagdag ka :musical_note:?",
+        "no-song-playing": ":musical_note: Walang kantang gumagana sa ngayon!",
+        "no-permission": ":no_entry_sign: Wala kang permiso para gamitin ang command, pakiusap idagdag ang permisong `{{- node}}` sa sarili upang magamit ito.",
+        "no-voice": ":no_entry_sign: Ako ay hindi konektado sa kahit anong voice channel sa Server na ito!",
+        "level-update": ":tada: Umabot ka sa **Level {{level}}** sa **{{- server}}*",
+        "empty-search": ":no_entry_sign: Wala kang linagay na search Term!",
+        "negative": ":no_entry_sign: Huwag gumamit ng negatibong numero!",
+        "cancel": "i-cancel",
+        "version": "Bersyon",
+        "author": "Awtor",
+        "lib": "ginamit na library",
+        "more": "{{number}} pa",
+        "abort": ":x: kinansela",
+        "cat-nope": ":no_entry_sign: Ang kategoryang ito ay wala pa!",
+        "mention": "Pakiusap magbanggit ng user.",
+        "cancelled-command": "Hindi itinuloy ang command.",
+        "donate": "Donate",
+        "support": "Supporta",
+        "invite": "Ma-anyaya",
+        "language-name-en": "Ingles",
+        "native-name": "Ingles",
+        "empty-say": ":no_entry_sign: Wala kang inilagay na mensahe!",
+        "page": "Pahina"
+    },
+    "help": {
+        "intro": "magsaya tayo dito sa Discord (/^▽^)/ pumili ng kategorya sa pamamagitan ng pagsagot ng numero ng {{pre}}help command para sa karagdagang impormasyon:",
+        "intro_2": "Kamusta, ako si",
+        "support": "[SUPORTA]",
+        "bug": "kunin ang Link ng support discord",
+        "help": "ang help command",
+        "add": "Kumuha ng link para idagdag ako sa iyong server",
+        "music": "[MUSIKA]",
+        "voice": "Ako ay sasali sa Voice Channel na kasalukuyan kang naroon (ang mga music commands ay gumagana rin para sumali ang bot)",
+        "silent": "Ako ay aalis ng Voice Channel na ako ay kasalukuyang nakakonekta. (magagamit lamang ng WolkeBot Role)",
+        "play": "Magpatugtog ng kung ano mula sa Youtube/ Soundcloud/Osu/search",
+        "pause": "Ipagpaliban ang Kasalukuyang Kanta",
+        "resume": "Ituloy ang pinagpalibang Kanta",
+        "volume": "Magtatakda ng Lakas Ng Tunog ng Bot, Halagang 1-200 (Magagamit lamang ng WolkeBot Role)",
+        "forever": "Patutugtugin ang kanta ng paulit-ulit hanggang may mga bagong kantang idinagdag, magagamit lamang ng WolkeBot Role",
+        "search": "Maghahanap ng Kanta sa Bot Database at ipapakita ang 5 pinakamagandang Resulta",
+        "skip": "Sisimulan ang Voteskip para sa kasalukuyang Kanta, higit sa 50% ng channel ang kailangang bumoto upang laktawan ito.",
+        "voteskip": "Sisimulan ang Voteskip para sa kasalukuyang Kanta, higit sa 50% ng channel ang kailangang bumoto upang laktawan ito.",
+        "qa": "Ipipila ang kanta mula sa YouTube/Soundcloud/Osu/search",
+        "qra": "tatanggalin ang lahat ng kanta maliban sa tumutugtog ngayon o ilang bilang ng mga kanta.",
+        "queue": "Ipapakita ang kasalukuyang Pila",
+        "np": "Ipapakita ang kasalukuyang tumutugtog na Kanta",
+        "rq": "Magdadagdag ng Kanta/ilang mga kanta sa Pila",
+        "stream": "Magsi-stream ang napiling Internet radio, maaaring maghanap ng mga radyo o diretsong idagdag sa pamamagitan ng pagdagdag ng -u url sa command",
+        "youtube": "[YOUTUBE]",
+        "yts": "Hahanapin sa Youtube at ibibigay sayo ang Unang Resulta",
+        "ytq": "Hahanapin sa Youtube at idadagdag sa Unang Resulta ng Pila",
+        "mod": "Ang Mod cp",
+        "mod-info": "Ang mga Commands na ito ay nangangailangan na ang manggagamit ay may Discord Role pangalang WolkeBot",
+        "info": "magbibigay ng ilang impormasyon tungkol sa kasalukuyang samahan",
+        "ban": "Permanenteng Paaalisin ang Mangagamit at buburahin ang 7 Araw ng kanyang mga mensahe",
+        "kick": "Magpapaalis ng User",
+        "rm": "Magtatanggal ng mga mensahe, maaaring salain ang bots, users, commands/tugon ni rem o burahin hanggang 100 ng mga mensahe.\nMga Pagsasala:\n-b -> bots|\n-r -> mga mensahe mula kay rem|\n-u @user -> mga mensahe mula sa isang user|\n-c -> mga mensahe na nagsisimula sa prefix ni rem.",
+        "noLevelServer": "Papatigilin ang level system para sa buong server, gamitin ulit ang command upang muling paganahin ito",
+        "noPmServer": "Papatigilin ang pm notifications para sa buong server, gamitin ulit ang command upang muling paganahin ito",
+        "noChServer": "Hindi Pagaganahin ang pm notifications para sa buong server at pagaganahin sa halip ang channel notifications, gamitin ang command ulit upang ibalik ito sa dati",
+        "setLewd": "Idadagdag ang kasalukuyang Channel bilang NSFW Channel",
+        "remLewd": "Tatanggalin ang kasalukuyang channel mula sa lista ng NSFW channels",
+        "setPrefix": "Itatakda ang prefix ng bot, walang patlang/pagbanggit na pinahihintulot!",
+        "other": "[Ibang Bagay]",
+        "r34": "Maghahanap sa Rule34 ng tags at ibibigay pabalik ang 1 Imahe, magagamit lamang ng WolkeBot Role o ng naisaayos na NSFW Channel",
+        "kona": "Maghahanap sa Konachan ng tags at ibibigay pabalik ng 1 Imahe, magagamit lamang ng naisaayos na NSFW Channel o Admin.",
+        "e621": "Maghahanap sa E621 ng tags at ibibigay pabalik ang 1 Imahe, magagamit lamang ng naisaayos na NSFW Channel o Admin.",
+        "yandere": "Maghahanap sa Yande.re ng tags at ibibigay pabalik ang 1 Imahe, magagamit lamang ng naisaayos na NSFW Channel o Admin.",
+        "level": "Ang iyong Level at XP na kailangan para sa susunod na Level",
+        "rank": "Leaderboard para sa Server na ito",
+        "noLevel": "tatanggalin ang level system para sa'yo. Gamitin ulit upang mapagana ulit ito.",
+        "noPm": "tatanggalin ang PM notifications para sa'yo. Gamitin ulit upang mapagana ulit ito.",
+        "pp": "Kakalkulahin ang PP ng beatmap na may opsyonal na akuridad at mga modipikasyon",
+        "cookie": "Magbibigay ng biskwit sa nabanggit na user o ipapakita ang iyong mga biskwit kung walang taong nabanggit.",
+        "eatCookie": "Kumain ng Biskwit",
+        "git": "Magbibigay ng github link ni Rem",
+        "roll": "Magpapagulong ng numero sa pagitan ng zero at numero, kung walang numero ito ay mula sa 10",
+        "8ball": "Magbibigay ng Opinyon ng magic 8ball sa katanungan",
+        "garfield": "Magbibigay ng garfield comic",
+        "cat": "Magpapadala ng imahe ng pusa. Lahat tayo't kailangan ng mga pusa!",
+        "hug": "Yakapin ang isang tao :>",
+        "slap": "May isang taong masama sa'yo? Sampalin mo!",
+        "setLang": "Magtatakda ng lenggwahe, patakbuhin ang !w.setLang ng walang kahit anong argumento upang makuha ang listahan ng mga lenggwahe",
+        "report": "Kung ikaw ay masyadong nahihiya na lumapit sa Support Discord, gamitin ang report para magpadala ng sumbong sa Developer Wolke, ngunit huwag abusuhin ito!",
+        "feedback": "Para sa katugunan, gamitin ang support discord pakiusap ^^",
+        "talk": "Kung gusto mo akong kausapin, @banggitin mo ako kasama ang mensahe :D",
+        "helpReply": "Sige, nagpadala ako sa'yo ng listahan ng commands doon sa PM.",
+        "moderation": "[MODERASYON]",
+        "misc": "[SAMUT-SARI]",
+        "stats": "[ISTADO]",
+        "user": "[USER]",
+        "admin": "[ADMIN]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[EASTEREGGS]",
+        "proxer": "[PROXER]",
+        "no-cat": "[WALANG KATEGORYA]",
+        "ping": "Magbibigay sa'yo ng ping ng bot, mabatid na ito ay hindi ng voice ping.",
+        "lewd": "Masyadong mahalay uwu",
+        "rem": "Magbibigay ng larawan ni rem",
+        "wip": "[WORK IN PROGRESS]",
+        "gr": "Itakda ang pagbati sa pamamagitan ng set greetingMessage, {{user}} ay mapapalitan ng user sumali at {{guild}} ng pangalan ng server. Ang pagbati ay nasa Channel, kung saan ang command ay isinagawa.",
+        "fw": "Itakda ang pamamaalam sa pamamagitan ng set farewellMessage,{{user}} ay mapapalitan ng user na umalis at {{guild}} ng pangalan ng server. Ang pamamaalam ay nasa channel, kung saan ang command ay isinagawa.",
+        "s": "Ang server command, pagtatakda ng mga bagay tulad ng pagbati at pamamaalam",
+        "shrug": "¯\\_(ツ)_/¯",
+        "flip": "(╯°□°）╯︵ ┻━┻",
+        "eggplant": "isang talong lamang",
+        "gtn": "Magbibigay ng green tea neko comic, magagamit lamang ng naisaayos na NSFW Channel o ng Admin.",
+        "cuddle": "Magyakapan",
+        "trig": "NA-TRIGGER",
+        "bot": "Magbibigay ng ilang impormasyon tungkol kay Rem, ang uptime at ilang magagamit na links.",
+        "top": "Ipapakita ang 10 pinakamataas na guilds (nakasalansan ayon sa users) na ang shard na ito ay konektado",
+        "about": "Ipapakita ang pangunahing impormasyon tungkol sa akin, katulad ng library at kung sinong gumawa sa akin.",
+        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lmg": "Igu-google ko 'yan para sa'yo",
+        "fskip": "Lalaktawan ang Kasalukuyang Kanta/ ilang mga kanta/ lahat ng mga kanta",
+        "leave": "Aalis ako sa Voice Channel na ako ay kasalukuyang nakakonekta.",
+        "say": "Gawing si Rem ay magsabi ng kung ano",
+        "ar": "Magdagdag ng tungkulin sa iyong sarili o sa user",
+        "cr": "Lumikha ng tungkulin o magdagdag ng tungkulin sa bot, -d -> default, -l 2 -> magbibigay ng tungkulin sa user pag naabot nya ang level 2, -s -> gawing ang tungkulin ay sariling maitalaga, halimbawa -> cr -l 20 rolename, magdagdag ng tungkuling makukuha ng user sa level 20 na matatawag na rolename",
+        "lr": "Ililista ang lahat ng tungkulin na nakadugtong kay Rem sa ngayon",
+        "rr": "Magtatanggal ng tungkulin mula sa iyong sarili, sa ibang user o sa server",
+        "roles": "[MGA TUNGKULIN]",
+        "repeat": "Magpapatugtog ng kanta/ng queue ng paulit-ulit hanggang may mga bagong maidagdag sa queue",
+        "sayd": "Gawing si Rem ay may sabihin at burahin ang iyong command",
+        "generic": "[PANGKARANIWAN]",
+        "fun": "[KATUWAAN]",
+        "coin": "magpapapilantik ng barya para sa'yo",
+        "nyan": "Nya :3",
+        "uwu": "uwu",
+        "dere": "Maghahanap ng kahulugan ng dere o kumuha ng kahit ano",
+        "love": "Magbibigay ng love point sa nabanggit na user, magdagdag ng - upang mabawasan ng 1 ang lovepoints ng user",
+        "sinfo": "magbibigay ng ilang impormasyon tungkol sa kasalukuyang server",
+        "uinfo": "magbibigay ng ilang impormasyon tungkol sa sarili/binanggit na User",
+        "apq": "Magdadagdag ng playlist sa queue, youtube-playlists lamang ang magagamit sa ngayon, gamitin lang ang link ng playlist",
+        "ap": "Ang pagdagdag ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
+        "gp": "Ang pagkuha ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
+        "rp": "Ang pagtanggal ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
+        "cry": "Malungkot ba? Ito ang tamang command para sa'yo.",
+        "ibsafe": "Maghahanap sa ibsear.ch (sfw na larawan lamang)",
+        "iblewd": "Maghahanap sa ibsearch.xxx (katulad ng ibsafe ngunit kasama ang mga nsfw na larawan)",
+        "qr": "Maaaring tanggalin ang isang kanta gamit ang kanilang songid, o madaming kanta gamit ang `qr startid-stopid`, ito ay tatanggal ang lahat ng mga kanta simula sa startid hanggang sa stopid, o burahin ang ilang ids sa pamamagitan ng mga kuwit",
+        "shuffle": "Balasahin ang queue. Tandaan na kailangang may 3 kantang nasa queue para ang command na ito ay gumana.",
+        "owo": "Padadalhan ka ng OwO What's this memes, na pinili ni Wolke",
+        "getNode": "Magbibigay ng permission node, category node at kategorya ng command",
+        "resetPerms": "Aalisin lahat ng permisong nakatakda hanggang ngayon, gamitin ng may pag-iingat",
+        "pat": "Tapikan kung sino ang naging mabuting lalaki/babae/helikoptero",
+        "triggered": "NA-TRIGGER",
+        "stare": "titiiiiig...",
+        "nom": "Nom :>",
+        "potato": "Lahat ng tao may gusto sa patatas",
+        "choose": "Si Rem ang magpipili para sa iyo, hatiin ang pipiliin gamit ng `;`",
+        "tickle": "Kiliti Kiliti Kiliti",
+        "image": "[IMAGE COMMANDS]",
+        "define": "Kukuha ng kahulugan ng salita galing sa Urbandictionary",
+        "dog": "Mas mahilig ka sa mga aso kaysa sa mga pusa ? Itong command ay tama para sa iyo",
+        "kiss": "Halikan ang isang tao <3",
+        "setGreeting": "Magtatakda ng pagbati sa channel kung saan ang command ay ginamit. Maaaring gamitin ang %USER% at %GUILD% na mapapaltan ng username at ng pangalan ng guild.",
+        "setFarewell": "Magtatakda ng pamamaalam sa channel kung saan ang command ay ginamit. Maaaring gamitin ang %USER% at %GUILD% na mapapaltan ng username at ng pangalan ng guild.",
+        "pout": "Hmmpf :< Ngumuso sa isang tao",
+        "smug": "Ngumisi sa isang tao :^)",
+        "lick": "Tingnan kung pwede s'yang kainin",
+        "playlist": "[PLAYLIST]",
+        "moe": "Patugtugin ang Listen.moe ^^"
+    },
+    "version": "Kasalukuyan akong gumagana sa bersyon {{version}}",
+    "add": "Gamitin itong link upang idagdag ako sa iyong Server: {{- link}}",
+    "bug": "Pakiusap sumali sa support discord: {{- link}} upang mag-ulat ng bug.",
+    "level": {
+        "result": "Ikaw ay **Level {{level}}** XP: **{{current}}XP**/** {{needed}}XP** Kabuuang XP:**{{total}}**",
+        "disabled": "Ang XP system ay hindi gumagana sa server na ito!"
+    },
+    "joinVoice": {
+        "join": "Sige, sumasali na sa'yong voice channel ngayon",
+        "error": "May maling naganap habang sinusubukang sumali sa'yong voicechannel!",
+        "permission": "Walang permiso! Kailangan mong bigyan ang iyong sarili ng WolkeBot role upang magamit ito.",
+        "no-voice": "Ikaw ay wala sa voice channel!",
+        "already-voice": "Ako ay nasa voice channel na, ilipat mo ako upang mabago ito!"
+    },
+    "nsfw-images": {
+        "nothing-found": "Walang mga imaheng nahanap gamit ang tags: `{{tags}}`",
+        "no-nsfw-channel": "Pakiusap magtakda/magdagdag ng NSFW channel na may {{- prefix}}setLewd (sa isa sa mga NSFW Channels) upang magamit ang NSFW Commands",
+        "error-body": "May mali sa pagsusuri ng api response. Subukan ulit, kung nagpatuloy ang problema kontakin si Wolke#6746"
+    },
+    "8ball": {
+        "answers": [
+            "Hindi.",
+            "Oo.",
+            "Baka.",
+            "Hindi sa tingin ko.",
+            "Talagang hindi.",
+            "Gawin mo na lang.",
+            "Yan ay mahusay na ideya.",
+            "Sigurado ka ba d'yan?"
+        ],
+        "no-message": "Hindi ka naglagay ng tanong."
+    },
+    "ban": {
+        "success": "Permanenteng Pinatalsik na User {{user}}",
+        "privilege": "Ang tungkulin ko ay walang karapatan na permanenteng magpatalsik {{user}} !",
+        "err": "May maling naganap habang sinusubukang permanenteng patalsikin si {{user}} !",
+        "perms": "Hindi mo maaaring permanenteng patalsikin ang May-ari o sinumang may tungkuling WolkeBot.",
+        "self": "Hindi mo ako maaaring permanenteng patalsikin gamit ang sarili kong command.",
+        "no-mention": "Pakiusap magbanggit ng user na gusto mong permanenteng patalsikin."
+    },
+    "kick": {
+        "success": "Pinatalsik ang User na si {{user}}",
+        "privilege": "Ang tungkulin ko ay walang karapatang magpatalsik kay {{user}} !",
+        "err": "May maling naganap habang sinusubukang patalsikin si {{user}} !",
+        "perms": "Hindi mo maaaring patalsikin ang May-ari o sinumang may tungkuling WolkeBot.",
+        "self": "Hindi mo ako maaaring patalsikin gamit ang sarili kong command",
+        "no-mention": "Pakiusap magbanggit ng user na gusto mong patalsikin."
+    },
+    "roll": {
+        "whole-number": "Pakiusap magdagdag ng buong numero!",
+        "negative": "Hindi ako makakapagpagulong gamit ang {{number}}",
+        "success": "Nagpagulong ng {{first}} mula sa {{second}}"
+    },
+    "qa": {
+        "nothing-found": "Walang Kantang nahanap gamit ang salitang `{{search}}`",
+        "empty-search": "Hindi ka naglagay ng link/searchterm.",
+        "started-download": "Nagsimulang i-download ang `{{- url}}`",
+        "success": "Ipinila ang **{{- song}}**"
+    },
+    "rq": {
+        "db-error": "May pagkakamali sa database na naganap!",
+        "success-multiple": "Idinagdag ang sumusunod na Mga Kanta:\n```{{- table}}```",
+        "too-big": "Nagdagdag ng {{number}} kanta",
+        "no-songs-added": "Hindi ako makapagdagdag kahit anong kanta sapagka't sila ay nasa pila na, subukan ulit!",
+        "too-much": "Hindi ka maaaring magdagdag ng higit sa {{number}} kanta agad!"
+    },
+    "qra": {
+        "to-small": "Hindi mo maaaring tanggalin ang {{number}} kanta!",
+        "success": "Tinanggal ang `{{number}}` sa mga kanta",
+        "too-big": "Tinanggal ang {{number}} sa mga kanta",
+        "one-song": "Gamitin ang {{- prefix}}fskip upang laktawan ang kasalukuyang Kanta!",
+        "no-number": "Hindi mo inilagay kung ilang kanta ang dapat kong tanggalin sa queue!",
+        "removed": "Tinanggal ang `{{- title}}` sa queue."
+    },
+    "cookie": {
+        "give": "Nagbigay si **{{- user}}** **1** ng biskwit!",
+        "new-server": "Subukan ulit pakiusap.",
+        "arere": "Arere... Nagkaproblema...",
+        "perms": "Kailangan mo ng discord role na WolkeBot upang makapagbigay ng mga biskwit!",
+        "one-user": "Pakiusap magbanggit **1 User**, hindi labis, hindi kulang!",
+        "count": "Mayroon kang **{{number}} Biskwit** sa ngayon."
+    },
+    "eastereggs": {
+        "jay": "Si Jay ay nagmamahal sa'yo~ :heart:",
+        "magic": "Si xX_Cats_Xx ay naparito -10.10.2016"
+    },
+    "set-lang": {
+        "no-lang": "Hindi mo tinukoy ang lenggwahe! Kasalukuyang mayroong {{languages}} na magagamit.",
+        "success": "Sige Itinakda ko ang lenggwahe para sa server na ito ang {{- language}}.",
+        "unsupported": "Ang lenggwaheng ito ay hindi pa naipatutupad, ngunit maaari kang tumulong sa pamamagitan ng pagdadagdag ng aplikasyon ng iyong lenggwahe sa github. Maaari mong mahanap ang kasalukuyang magagamit na mga lenggwahe sa pamamagitan ng pagpapatakbo ng command na ito ng walang mga argumento.",
+        "native-name": "Katutubong Pangalan",
+        "english-name": "Ingles na Pangalan",
+        "shortcode": "shortcode",
+        "available-languages": "Listahan ng lahat ng Lenggwahe\nPakitandaan na ang setLang ay kailangan ang shortcode"
+    },
+    "np": {
+        "song-duration": "Kasalukuyang pinatutugtog:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
+        "song": "Kasalukuyang pinatutugtog: `{{-title}} {{repeat}}`",
+        "repeat-on": "Ulitin:on",
+        "repeat-single": "Ulitin: Isa",
+        "repeat-queue": "Ulitin: Nakapila",
+        "emoji-repeat-single": ":repeat_one: Ulitin: Kasalukyang kanta",
+        "emoji-repeat-queue": ":repeat: Ulitin: nakapila",
+        "emoji-repeat-off": ":heavy_check_mark: Ulitin: off"
+    },
+    "queue": {
+        "queued": "Naipila:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "Walang pang NSFW Channels.",
+        "success": "Matagumpay na natanggal ang {{- channel}} mula sa NSFW channels!"
+    },
+    "no-level-server": {
+        "success-disable": "Sige, hindi na gumagana ang level systen para sa server na ito, ilagay ulit ang command na ito para paganahin ulit.",
+        "success-enable": "Sige, pinagana ko na ang level system para sa server na ito, ilagay ulit ang command para hindi ulit paganahin ito."
+    },
+    "no-pm-server": {
+        "success-disable": "Sige, hindi na gumagana ang pm notifications para sa server na ito, ilagay ulit ang command  para gumana ito.",
+        "success-enable": "Sige, gumagana na ang pm notifications para sa server na ito, ilagay ulit ang command para hindi ito gumana."
+    },
+    "no-channel-server": {
+        "success-disable": "Sige, hindi na gumagana ang pm notifications para sa server na ito at pinagana na ang channel notifications, ilagay ulit ang command para ibalik sa dati.",
+        "success-enable": "Sige, gumagana na ang pm notifications para sa server na ito at hindi na gumagana ang channel notifications, ilagay ulit ang command para ibalik sa dati."
+    },
+    "no-level": {
+        "success-disable": "Sige, hindi na gumagana ang level system para sa'yo, ilagay muli ang command para gumana ito.",
+        "success-enable": "Sige, gumagana na ang level system para sa'yo, ilagay ulit ang command para hindi ito gumana."
+    },
+    "no-pm": {
+        "success-disable": "Sige, hindi na gumagana ang pm notifications para sa'yo, ilagay ulit ang command para gumana ito.",
+        "success-enable": "Sige, gumagana na ang pm notifications para sa'yo, ilagay ulit ang command para hindi ito gumana."
+    },
+    "eat-cookie": {
+        "success": "Kakakain mo lamang ng {{number}} na Biskwit!",
+        "failure": "Wala ka pang Biskwit na makakain."
+    },
+    "bot-info": {
+        "uptime": "Uptime",
+        "users": "Users",
+        "channels": "Channels",
+        "guilds": "Guilds",
+        "avg-channels": "Humigit-kumulang na channels bawat guild",
+        "avg-users": "Humigit-kumulang na Users bawat guild",
+        "voice": "Voice Channel",
+        "shard": "shard",
+        "guilds-s": "Guilds (shard)",
+        "channels-s": "Channels (shard)",
+        "users-s": "Users sa shart na ito",
+        "made": "Ginawa ni:",
+        "lib": "Library",
+        "voice_active": "AVC",
+        "voice_s": "VC(shard)",
+        "voice_active_s": "AVC (shard)"
+    },
+    "rank": "Mahahanap ang Leaderboard para sa Server na ito: {{- link}}",
+    "pp": {
+        "err": {
+            "api-body": "Hindi masuri ang tugon ng api!",
+            "osu-api": "Ang osu! api ay mukhang may maliit na problema.",
+            "no-link": "Ito ay hindi balidong osu link!",
+            "unvalid-link": "Walang map link na itinustos!"
+        },
+        "success": "PP para sa mapa `{{- artist}} - {{- title}} [{{- version}}] na may Acc {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}` "
+    },
+    "server-info": {
+        "id": "ID",
+        "name": "Pangalan",
+        "member": "Mga miyembro",
+        "text": "Text channels",
+        "voice": "Voice Channels",
+        "roles": "Mga Tungkulin",
+        "creation": "Petsa ng paglikha",
+        "region": "Rehiyon",
+        "owner": "May-ari"
+    },
+    "leave": "Sige, ako'y umalis ng voice channel.",
+    "play": {
+        "no-result": "Walang kantang nahanap!",
+        "playing": ":musical_note: Tumutugtog ngayon **{{- song}}**",
+        "success": ":musical_note: Ang kanta ngayon ay **{{-song}}**",
+        "next": ":musical_note* Ang susunod na kanta ay **{{-song}}**"
+    },
+    "prefix": {
+        "success": "Sige, itinakda ko ang prefix sa {{- prefix}}, subukan ang {{- prefix}}ping` upang siyasatin ito",
+        "no-prefix": "Pakiusap magdagdag ng prefix!"
+    },
+    "voice": {
+        "in-queue": "**{{- song}} ay nakapila na.",
+        "error-volume": "Pagkakamali habang nagtatakda ng lakas ng tunog!",
+        "success-volume": "Itakda ang lakas ng tunog sa {{- volume}}",
+        "no-volume": "Walang lakas ng tunog na itinakda!",
+        "repeat-start": "Sinimulan ang pag-ulit sa **{{- song}}**",
+        "already-playing": "Ang Kantang ito ay tumutugtog na!",
+        "blocked": "Ang videong ito ay 'di maaring i-download. Baka ito ay masyadong mahaba o hinarangan/tinanggal",
+        "dl-start": ":hourglass: ikinakarga ang kanta!",
+        "use-proxy": "Sinusubukang i-download gamit ang proxy, baka ito'y matagalan.",
+        "too-much": "Hindi mo maaaring itakda ang lakas ng tunog ng higit sa 200!"
+    },
+    "yts": {
+        "success": "Nahanap ang sumusunod na kanta: {{- link}}"
+    },
+    "skip": {
+        "success": ":track_next: Linaktawan ang kantang {{-title}}.",
+        "stop": ":stop_button: Itinigil ang kasalukuyang kanta.",
+        "all": ":stop_button: Linaktawan lahat ng kanta.",
+        "some": ":track_next: Linaktasan ang {{- amount}} kanta."
+    },
+    "vskip": {
+        "user-no-voice": "Hindi ka maaaring mag-voteskip, kung ikaw ay wala sa parehas na voicechannel!",
+        "same-voice": "Ikaw ay wala sa parehas voicechannel na naroon ako!",
+        "dup": "Bumoto ka na!",
+        "success-add": "Idinagdag Ang Iyong Boto, ang votepercentage ay nasa **{{current}}%/{{needed}}%**",
+        "success-skip": "Nai-Voteskip ang Kanta: **{{- title}}**",
+        "vote": "I-type ang {{- prefix}}yes upang i-voteskip ang kasalukuyang kanta. Kasalukuyang votepercentage ay {{- perct}}%/{{- needed}}\nUsers na bumoto:\n ```{{- table}}```",
+        "in-prog": "May voteskip na nagaganap, gumamit ng {{prefix}}yes upang laktawan ang kasalukuyang kanta."
+    },
+    "rm": {
+        "less-2": "Hindi maaaring magbura ng kulang sa 2 mensahe!",
+        "over-100": "Hindi maaaring burahin ang higit sa 100 Mensahe agad!",
+        "success": "Matagumpay na nabura ang {{number}} mensahe.",
+        "error": "May pagkakamali habang sinubukang burahin ang mga mensahe!",
+        "over-limit": "Hindi maaaring magbura ng kulang sa 2 mensahe o higit sa 100 mensahe agad!",
+        "no-limit": "Hindi mo tinukoy kung ilang mensahe ang dapat kong burahin.",
+        "nothing-found": "Walang nahanap na mensahe na tumugma sa pagsasala!"
+    },
+    "search": {
+        "success": "Nahanap ang mga sumusunod na mga Kanta:"
+    },
+    "set-lewd": {
+        "success": "Matagumpay na naidagdag ang {{- channel}} sa mga NSFW Channels!"
+    },
+    "report": "Sige, ipinadala ko ang iyong ulat kay Wolke, pakiusap huwag abusuhin ito, sapagka't ikaw ay maaaring permanenteng mapagbawalan sa paggamit ng bot!",
+    "greeting": {
+        "no-greeting": "Walang idinagdag na pagbati na gagamitin!",
+        "no-add": "Maaaring itakda o burahin ang pagbati.",
+        "set-greeting": "```Pagbati:{{- text}}\nChannel:{{- channel}}\nBurahin ang pagbati gamit ang {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "Walang pagbati na nakalagay sa ngayon.\n\nMaaaring maglagay ng pagbati gamit ang `{{- prefix}}setGreeting text` at tanggalin ito gamit ang `{{- prefix}}setGreeting reset`.",
+        "reset-greeting": "Inalis ko na ang pagbati, hindi na iyon magpapakita.",
+        "success": "Sige, inayos ko ang pagbati na maging: ```{{-text}}```"
+    },
+    "farewell": {
+        "no-farewell": "Walang idinagdag na pamamaalam na gagamitin!",
+        "no-add": "Maaaring itakda o burahin ang pamamaalam.",
+        "set-farewell": "```Pamamaalam:{{- text}}\nChannel:{{- channel}}\nTanggalin ang pamamaalam gamit ang {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "Walang pamamaalam na nakalagay sa ngayon.\n\nMaaaring maglagay ng pamamaalam gamit ang `{{- prefix}}setFarewell text` at tanggalin ito gamit ang `{{- prefix}}setFarewell reset`.",
+        "reset-farewell": "Inalis ko na yung paalam, hindi na iyon magpapakita.",
+        "success": "Sige, inayos ko ang paalam na maging: ```{{-text}}```"
+    },
+    "add-role": {
+        "ok": "Sige, binigyan ko si {{- user}} ng tungkulin na {{- role}}"
+    },
+    "create-role": {
+        "missing": "Ang pangalan ng tungkulin na iyong tinukoy ay wala pa sa server.",
+        "new": "Dapat ko bang gawin ang tungkulin para sa'yo?",
+        "no-args": "Hindi ka nagdagdag ng kahit anong argumento sa command.",
+        "ok": "Sige, lumikha na ako ng tungkuling {{- role}}",
+        "exists": "Ang tungkuling {{- role}} ay nasa database na"
+    },
+    "remove-role": {
+        "ok": "Sige, tinanggal ko na ang tungkuling {{- role}} kay {{- user}} !"
+    },
+    "list-roles": {
+        "nr": "nr.",
+        "id": "id",
+        "name": "pangalan",
+        "self": "kusang maitatalaga",
+        "lvl": "Magagamit sa level",
+        "default": "default"
+    },
+    "user-info": {
+        "id": "$t(server-info.id)",
+        "name": "$t(server-info.name)",
+        "discriminator": "discriminador",
+        "nick": "Palayaw",
+        "join": "Sumali",
+        "created": "Ginawa",
+        "playing": "Naglalaro ng",
+        "info": "Userinfo",
+        "bot": "Bot",
+        "status": "Istado",
+        "role": "Mga tungkulin"
+    },
+    "flip": {
+        "head": "Ang barya ay pumilantik sa ulo {{- url}}",
+        "tail": "Ang barya ay pumilantik sa buntot {{- url}}"
+    },
+    "gp": {
+        "no-cat": "Walang nahanap na permiso gamit ang kategorya {{- cat}}",
+        "no-perms": "Wala pang naidagdag na permiso.",
+        "table": {
+            "id": "$t(server-info.id)",
+            "name": "Pangalan",
+            "type": "Uri",
+            "cat": "Kategorya",
+            "perm": "Permiso",
+            "use": "Gamit"
+        },
+        "page-does-not-exist": "Wala pa ang pahinang ito. Subukan ang mas mababang bilang ng pahina!"
+    },
+    "rp": {
+        "success": "Matagumpay na natanggal ang permisong `{{- node}}` mula sa **{{- type}}** `{{- id}}`"
+    },
+    "love": {
+        "success": "Nagbigay ka kay **{{- target}}** ng **{{- rep}}** :heart: Love Point. Natitirang gamit **{{uses}}**.",
+        "error-cd": "Maaari ka lamang magbigat ng **2** :heart: Love Points bawat araw, sunod na gamit {{- time}}.",
+        "next": " Sunod na gamit {{- time}}",
+        "self": ":broken_heart: Hindi maaaring magbigay ng Love Points sa iyong sarili.",
+        "success-remove": "Tinanggal mo ang **{{- rep}}**:heart: Love Point kay **{{- target}}** Natitirang gamit **{{uses}}**."
+    },
+    "dere": {
+        "no-dere": "Ang uri ng dere na hinanap mo ay wala.\nIto ang listahan ng mga posibleng dere:",
+        "dandere": "Ang Dandere (だんデレ) ay tumutukoy sa uri ng karakter na kadalasang tahimik at mapagpanatili sa kanilang sarili.\nMaaaring ito'y dahil sa pagkamahiyain o talagang dahil lang sa sila'y tahimik.\nGayunman, pag mag-isa kasama ng taong gusto niya, kadalasan silang lumalabas ng kanilang sarili at nagiging mas mapagmahal.\nAng salitang ito ay pagpapaikli ng Danmari (だんまり) na nangangahulugang tahimik at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "deredere": "Ang Deredere (デレデレ) ay tumutukoy sa uri ng karakter na ganap na mabait, masiyahin at masigasig.\nAno man ang mangyari, sila ay mabilis na bumabalik sa kanilang masiyahing sarili.\nMaaaring ito lamang ang uri ng karakter na walang kahit anong pagpapaikli ng salitang ugat na Deredere (デレデレ), bagama't ang depinisyon ay 'di simpleng magiliw tulad ng sa ibang mga uri.",
+        "himedere": "Ang Himedere (ひめデレ) ay tumutukoy sa uri ng karakter na nais tratuhing parang isang prinsesa ng taong kanyang minamahal, kahit na sila'y 'di dugong bughaw sa katotohanan.\nAng salitang ito ay pagpapaikli ng Hime (ひめ) na nangangahulugang prinsesa at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "kamidere": "Ang Kamidere (かみデレ) ay tumutukoy sa uri ng karakter na may god complex.\nSila'y lubhang mayabang at mapagmataas, at hindi takot na sabihin ang kanilang iniisip at ipakita sa lahat kung gaano sila katama.\nAng salitang ito ay pagpapaikli ng Kami (かみ) na nangangahulugang Diyos at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "kuudere": "Ang Kuudere (クーデレ), minsang isinusulat na Coodere o Kūdere, ay tumutukoy sa uri ng karakter na madalas malamig, prangka at mapangutya.\nMukha man silang walang emosyon sa panlabas, ngunit sa loob sila'y napakamaalaga — kahit pagdating man lamang sa kanilang minamahal.\nAng salitang ito ay pagpapaikli sa Cool (クール) at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "mayadere": "Ang Mayadere (まやデレ) ay tumutukoy sa uri ng karakter na kadalasang mapanganib na kontrabida sa isang serye, ngunit babaliktad matapos mapaibig sa ibang karakter.\nAng karakter ay maaaring manatiling The character may remain deadly and unpredictable for the protagonist or other main character in the Anime or Manga. ",
+        "oujidere": "Ang Oujidere (おうじデレ) ay tumutukoy sa uri ng karakter na nais tratuhing parang isang prinsipe ng taong kanyang minamahal, kahit na sila'y 'di dugong bughaw sa katotohanan.\nAng salitang ito ay pagpapaikli ng Ouji (おうじ) na nangangahulugang prinsipe at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "tsundere": "Ang Tsundere (ツンデレ) ay posibleng isa sa pinakasikat o pinakagamit na uri ng karakter sa anime at manga.\nAng uri na ito ay tumutukoy sa karakter na tinatrato ng masama ang minamahal nila.\nMinsan ito ay dahil sa nagsimula silang may poot sa kanila at kalaunan ay minahal sila sa pagpapatuloy ng serye, at minsan ito ay dahil sa yun lamang ang alam nila paraan ng reaksyon.\nHalimbawa ay kung ang pangunahing karakter ay tinawag ang tsundere na karakter ng maganda.\nAng tsundere na karakter ay mababahala at di mapapalagay, posibleng sanhi ng pisikal na pananakit sa minamahal nila, at pagkatapos ay tatawagin silang walang alam.\nAng salitang ito ay pagpapaikli ng Tsuntsun (ツンツン) na nangangahulugang pagtingin papalayo dahil sa pagkasulasok at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "undere": "Ang Undere (ウンデレ) ay tumutukoy sa uri ng karakter na pumapayag sa halos lahat ng sabihin ng kanyang minamahal.\nPumapayag sila hangga't maaari upang mapalapit sa makakaya nila sa gusto nila.\nAng salitang ito ay pagpapaikli ng Un (ウン) na maikling paraan ng mga Hapon ng pag-Oo at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "yandere": "Ang Yandere (ヤンデレ) ay tumutukoy sa uri ng karakter na sa simula ay mabait at malambing ngunit kalaunan ay nagiging masama at nahuhumaling sa minamahal nila.\nSila ay nagiging stalkers at gagamit ng karahasan, at posibleng mapatay, ang kahit sino na mapalapit sa kanilang gusto -- kahit na sila'y masyadong nahihiya lamang na makipag-usap sa gusto nila.\nAng salitang ito ay pagpapaikli ng Yanderu (やんでる) na nangangahulugang may sakit sa pag-iisip o damdamin at Deredere (デレデレ) na nangangahulugang magiliw.",
+        "yangire": "Ang Yangire (ヤンギレ) ay uri na katulad sa ibang paraan ng Yandere.\nIto ay karakter na sa simula ay mabait at malambing ngunit nagiging agresibo at nababaliw.\nGayunman, 'di tulad ng Yandere, ang Yangire ay 'di nagiging bayolente dahil sa pagkagusto sa isang karakter.\nSa halip, sila'y maaaring magwala dahil lamang sa sila'y naiinis sa isang karakter na walang kinalaman sa kanilang gusto.\nAng salitang ito ay pagpapaikli sa Yanderu (やんでる) na nangangahulugang may sakit sa pag-iisip o damdamin at Kire (きれ) na nangangahulugang maputol o lumagutok."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "Kailangang may 3 kanta man lang sa queue para mabalasa.",
+        "success": "Binalasa ang queue!"
+    },
+    "get-node": {
+        "success": "Permission node: `{{- node}}` Category node:`{{- category}}.*` Kategorya:`{{- category}}`",
+        "not-found": "Ang command na ito ay hindi umiral.",
+        "no-args": "Ilagay ang command ng walang prefix upang makuha ang permission node, category node at kategorya nito."
+    },
+    "ap": {
+        "type": {
+            "user": "Manggagamit",
+            "guild": "Samahan",
+            "role": "Tungkulin",
+            "channel": "channel"
+        },
+        "success": "Sige, idinagdag na ang permisong `{{- node}}` `{{- allowed}}` sa `{{- type}}` `{{- name}}`",
+        "wrong-node": "Ang permission node `{{- node}}` ay 'di gagana, dahil hindi ito balido. Para makuha ang permission node para sa isang uri ng command `{{- prefix}}getNode command`",
+        "target-not-found": "Hindi mahanap ang target na {{- target} para sa command",
+        "no-allowance-set": "Hindi mo sinabi kung ang permiso ay dapat bang payagan o hindi, idagdag ang `true` o `false` depende sa napili",
+        "missing-args": "Ang tamang syntax para sa command ay `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Halimbawa:\n```{{-prefix}}ap playlist.* true -> pinapayagan ang lahat ng commands ng category playlist sa server\n{{-prefix}}ap music.fskip -u @user true -> pinapayagan ang binanggit na user na gamitin ang  {{- prefix}}fskip```"
+    },
+    "reset-perms": {
+        "nothing-found": "Wala ka pang nalalagay na mga Permiso.",
+        "confirmation": "Sigurado ka bang gusto mong tanggalin ang Mga Permiso? Ilagay ang `yes` para tanggalin at `no` para hindi ituloy ang command.",
+        "success": "Natanggal ko na ang lahat ng permisong nakalagay."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: Wala akong pipiliing kahit ano, kung wala kang isinulat!",
+        "success": "Ang napili ko ay **{{-choice}}**!"
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: Hindi ako makapaghahanap ng kahulugan, kung wala kang isinulat!",
+        "no-result": "Wala akong mahanap na kahit ano sa salitang `{{-term}}`"
+    },
+    "apq": {
+        "unsupported": "Itong Playlist ay hindi supportado!"
+    }
 }
