@@ -165,7 +165,8 @@
         "pout": "Hmmph :< Faneca norueguesa a alguém",
         "smug": "dar alguém uma presunçosa :^)",
         "lick": "Verificar se alguém é comestível",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLIST]",
+        "moe": "Streams Listen.moe ^^"
     },
     "version": "No momento estou rodando na versão {{version}} ",
     "add": "Use este link para me colocar no seu Servidor: {{- link}} ",
