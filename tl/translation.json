@@ -11,7 +11,7 @@
         "level-update": ":tada: Umabot ka sa **Level {{level}}** sa **{{- server}}*",
         "empty-search": ":no_entry_sign: Wala kang linagay na search Term!",
         "negative": ":no_entry_sign: Huwag gumamit ng negatibong numero!",
-        "cancel": "i-cancel",
+        "cancel": "c-cancel",
         "version": "Bersyon",
         "author": "Awtor",
         "lib": "ginamit na library",
