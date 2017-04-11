@@ -165,7 +165,8 @@
         "pout": "볼에 바람 넣고, 후으으음! :<",
         "smug": "누군가에게 자신의 당당함을 표출해보세요 :^)",
         "lick": "누가 먹을 수 있는지 알아보세요.",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[플레이리스트]",
+        "moe": "Streams Listen.moe ^^"
     },
     "version": "제 현재 버전은 다음과 같아요. : {{version}}",
     "add": "이 링크로 당신의 서버에 저를 추가해 주세요. : {{- link}}",
