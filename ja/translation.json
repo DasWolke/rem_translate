@@ -165,7 +165,8 @@
         "pout": "Hmmpf :< Pout at someone",
         "smug": "Give someone a smug :^)",
         "lick": "誰かが食べられるか確かめる",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLIST]",
+        "moe": "Streams Listen.moe ^^"
     },
     "version": "現在の私のバージョンは {{version}} です。",
     "add": "このリンクを使って私をあなたのサーバーに追加してください！\n{{- link}}",
@@ -526,6 +527,6 @@
         "no-result": "`{{- term}}`の検索結果は見つかりませんでした…"
     },
     "apq": {
-        "unsupported": "This Playlist is not supported!"
+        "unsupported": "このプレイリストはサポートされていません！"
     }
 }
