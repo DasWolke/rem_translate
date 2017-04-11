@@ -161,11 +161,12 @@
         "dog": "¿Te gustan más los perros que los gatos?, este comando es perfecto para ti.",
         "kiss": "Dale un beso a alguien <3.",
         "setGreeting": "Establece una bienvenida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD%, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
-        "setFarewell": "Establece una despedida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
+        "setFarewell": "Establece una despedida en el canal donde el comando es ejecutado. Puedes usar %USER% y %GUILD%, que serán reemplazados con el nombre de usuario y el nombre del servidor.",
         "pout": "Hmmpf :< Dale una mala cara a alguien",
         "smug": "Dale a alguien un smug :^)",
         "lick": "Comprueba si alguien es comestible",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLIST]",
+        "moe": "Transmite Listen.moe ^^"
     },
     "version": "Actualmente me encuentro en la versión {{version}}",
     "add": "Utiliza este enlace para añadirme a tu servidor: {{- link}}",
