@@ -1,3 +1,532 @@
 {
-  "awoo": "awoo"
+    "generic": {
+        "error": "Có lỗi đã xảy ra!",
+        "no-pm": ":no_entry: Mệnh lệnh này không dùng được ở kênh riêng!\n",
+        "whole-num": ":no_entry_sign: Xin bạn dùng số nguyên!",
+        "nan": ":no_entry_sign: Những gì bạn vừa gửi, xin bạn hãy dùng số nguyên tố!",
+        "no-song-in-queue": ":no_entry_sign: Không có bài hát nào trong ",
+        "no-song-playing": ":musical_note: Không có bài hát nào đang chơi vào lúc này",
+        "no-permission": ": No_entry_sign: Bạn không có quyền sử dụng lệnh này, hãy thêm quyền `{{- node}}` cho chính mình để sử dụng nó.\n",
+        "no-voice": ": No_entry_sign: Tôi không kết nối với bất kỳ kênh thoại nào trên Server này!\n",
+        "level-update": ": Tada: Bạn vừa đạt được ** Level {{level}} ** vào ** {{- server}} **",
+        "empty-search": ": No_entry_sign: Bạn đã không nhập Thuật ngữ tìm kiếm!",
+        "negative": ": No_entry_sign: Xin vui lòng không sử dụng một số âm!",
+        "cancel": "Hủy bỏ",
+        "version": "Phiên bản",
+        "author": "Tác giả",
+        "lib": "Thư viện được sử dụng",
+        "more": "{{Number}} nhiều hơn",
+        "abort": ": X: hủy bỏ",
+        "cat-nope": ": No_entry_sign: Danh mục này không tồn tại!",
+        "mention": "Hãy đề cập đến người dùng.",
+        "cancelled-command": "Hủy lệnh.",
+        "donate": "Tặng",
+        "support": "Ủng hộ",
+        "invite": "Mời gọi",
+        "language-name-en": "Anh",
+        "native-name": "Anh",
+        "empty-say": ": No_entry_sign: Bạn đã không nhập một tin nhắn!",
+        "page": "Trang"
+    },
+    "help": {
+        "intro": "Hãy vui chơi cùng nhau ở đây Discord (/ ^ ▽ ^) / Chọn một thể loại lệnh bằng cách trả lời {{pre}} help số lệnh để biết thêm:",
+        "intro_2": "Hey tôi là",
+        "support": "[ỦNG HỘ]",
+        "bug": "Nhận được liên kết của sự bất hòa hỗ trợ",
+        "help": "Lệnh để giúp",
+        "add": "Nhận một liên kết để thêm tôi vào máy chủ của bạn",
+        "music": "[NHẠC]",
+        "voice": "Tôi tham gia vào Kênh Voice bạn đang ở (các lệnh nhạc bình thường làm cho bot tham gia vào kênh thoại)",
+        "silent": "Tôi rời khỏi Kênh thoại mà tôi đang kết nối. (Chỉ có thể sử dụng với Vai trò WolkeBot)",
+        "play": "Phát cái gì đó từ / Youtube / Soundcloud / Osu / search",
+        "pause": "Tạm dừng Song hiện tại",
+        "resume": "Tiếp tục tạm dừng Song",
+        "volume": "Đặt Khối lượng của Bot, Giá trị từ 1-200 (chỉ có thể sử dụng được với Vai trò WolkeBot)",
+        "forever": "Phát một bài hát về Lặp lại cho đến khi những bài mới được thêm vào hàng đợi, chỉ có thể sử dụng được với Vai trò WolkeBot",
+        "search": "Tìm kiếm Bài hát trong Cơ sở dữ liệu Bot và hiển thị 5 Kết quả Tốt nhất",
+        "skip": "Bắt đầu Voteskip cho Bài hát hiện tại, hơn 50% số kênh phải bỏ phiếu, sau đó bỏ qua.",
+        "voteskip": "Bắt đầu Voteskip cho Bài hát hiện tại, hơn 50% số kênh phải bỏ phiếu, sau đó bỏ qua.",
+        "qa": "Hàng đợi một bài hát từ Youtube / Soundcloud / Osu / tìm kiếm",
+        "qra": "Loại bỏ tất cả các bài hát trừ một trong những người đang chơi ngay bây giờ hoặc một số bài hát nhất định.",
+        "queue": "Hiển thị hàng đợi hiện tại",
+        "np": "Cho thấy bài hát hiện đang phát",
+        "rq": "Thêm một Song ngẫu nhiên / một số bài hát vào Queue",
+        "stream": "Truyền radio Internet đã chọn, bạn có thể tìm kiếm radio hoặc trực tiếp thêm chúng bằng cách nối phụ đề -u url vào lệnh",
+        "youtube": "[YOUTUBE]",
+        "yts": "Tìm kiếm Youtube và cho bạn kết quả đầu tiên",
+        "ytq": "Tìm kiếm Youtube và thêm Kết quả đầu tiên vào Hàng đợi",
+        "mod": "Các Mod cp",
+        "mod-info": "Các lệnh này tất cả yêu cầu người sử dụng có vai trò Discord có tên là WolkeBot",
+        "info": "Cung cấp cho bạn một số thông tin về máy chủ hiện tại",
+        "ban": "Cấm người dùng và xóa 7 ngày kể từ ngày gửi tin nhắn",
+        "kick": "Kicks một người dùng",
+        "rm": "Xóa thư, bạn có thể lọc chương trình, người dùng, lệnh / phản hồi của rem hoặc chỉ xóa tới 100 thư. Bộ lọc: -b -> chương trình | -r -> tin nhắn từ rem | -u @user -> tin nhắn từ một người dùng nhất định | -c -> thư bắt đầu bằng tiền tố của rem.",
+        "noLevelServer": "Vô hiệu hoá hệ thống cấp cho toàn bộ máy chủ, sử dụng lại lệnh để kích hoạt lại nó",
+        "noPmServer": "Vô hiệu hoá thông báo pm cho toàn bộ máy chủ, sử dụng lại lệnh để kích hoạt lại nó",
+        "noChServer": "Tắt thông báo pm cho toàn bộ máy chủ và bật thông báo kênh, sử dụng lệnh này một lần nữa để hoàn nguyên",
+        "setLewd": "Thêm kênh hiện tại dưới dạng Kênh NSFW",
+        "remLewd": "Loại bỏ kênh hiện tại khỏi danh sách các kênh NSFW",
+        "setPrefix": "Đặt tiền tố của bot, không có không gian / đề cập cho phép!",
+        "other": "[Những thứ khác]",
+        "r34": "Tìm kiếm Rule34 cho các thẻ và trả về 1 Hình ảnh, chỉ có thể sử dụng được với Vai trò WolkeBot hoặc Kênh NSFW được định cấu hình.",
+        "kona": "Tìm kiếm Konachan cho các thẻ và đưa ra 1 Hình ảnh, chỉ có thể sử dụng được với Kênh NSFW hoặc Quản trị viên đã được định cấu hình.",
+        "e621": "Tìm kiếm E621 cho các thẻ và trả lại 1 Hình ảnh, chỉ có thể sử dụng được với Kênh NSFW hoặc Quản trị viên đã được định cấu hình.",
+        "yandere": "Tìm kiếm Yande.re cho các thẻ và trả lại 1 Hình ảnh, chỉ có thể sử dụng được với Kênh NSFW hoặc Quản trị viên đã được định cấu hình.",
+        "level": "Cấp của bạn và XP cần thiết cho cấp độ tiếp theo",
+        "rank": "Bảng dẫn cho Máy chủ này",
+        "noLevel": "Vô hiệu hoá hệ thống cấp độ cho bạn. Sử dụng lại để kích hoạt lại cho bạn.",
+        "noPm": "Vô hiệu hóa thông báo PM cho bạn. Sử dụng lại để kích hoạt lại cho bạn.",
+        "pp": "Tính PP cho beatmap với độ chính xác tùy chọn và mods",
+        "cookie": "Cung cấp một cookie cho người dùng đã đề cập hoặc hiển thị các cookie của bạn nếu không ai đề cập đến.",
+        "eatCookie": "Ăn Cookie.",
+        "git": "Cung cấp cho bạn liên kết github của Rem",
+        "roll": "Cuộn một số giữa số không và số, nếu không có số thì số đó sẽ vượt quá 10",
+        "8ball": "Cung cấp cho bạn Ý kiến ​​của 8ball ma thuật cho một câu hỏi",
+        "garfield": "Cung cấp cho bạn một truyện garfield ngẫu nhiên",
+        "cat": "Gửi cho bạn một hình ảnh mèo ngẫu nhiên. Chúng ta đều cần mèo!",
+        "hug": "Ôm ai đó:>",
+        "slap": "Ai đó là xấu với bạn? Tát nó!",
+        "setLang": "Thiết lập ngôn ngữ, chạy w.setLang mà không có bất kỳ đối số để có được một danh sách các ngôn ngữ",
+        "report": "Nếu bạn quá ngại khi đến Hỗ trợ Sự bất hòa, hãy sử dụng báo cáo để gửi báo cáo cho Nhà phát triển Wolke, nhưng đừng lạm dụng nó!",
+        "feedback": "Để phản hồi sử dụng sự bất hòa hỗ trợ xin vui lòng ^^",
+        "talk": "Nếu bạn muốn nói chuyện với tôi @ đưa cho tôi với một thông điệp: D",
+        "helpReply": "OK, tôi đã gửi cho bạn một danh sách các lệnh trên PM.",
+        "moderation": "[Kiểm duyệt]",
+        "misc": "[KHÁI QUÁT]",
+        "stats": "[Số liệu thống kê]",
+        "user": "[NGƯỜI DÙNG]",
+        "admin": "[QUẢN TRỊ VIÊN]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[TRƯNG PHỤC SINH]",
+        "proxer": "[PROXER]",
+        "no-cat": "[Chưa được thống nhất]",
+        "ping": "Cung cấp cho bạn ping của bot, hãy lưu ý rằng đây không phải là tiếng ping.",
+        "lewd": "Vì vậy, dâm dục uwu",
+        "rem": "Cung cấp cho bạn một hình ảnh ngẫu nhiên của rem",
+        "wip": "[Đang làm việc]",
+        "gr": "Thiết lập lời chào với thiết lập greetingMessage, {{user}} sẽ được thay thế bằng người dùng vừa tham gia và {{guild}} với tên của máy chủ.\nLời chào sẽ ở trong Channel, nơi cmd đã được thực thi",
+        "fw": "Đặt một chia tay với lời chia tayMessage, {{user}} sẽ được thay thế bằng người dùng vừa tham gia và {{guild}} với tên của máy chủ\nChia tay sẽ được trong kênh, nơi cmd đã được thực hiện",
+        "s": "Lệnh máy chủ, đặt các công cụ như lời chúc và chia tay",
+        "shrug": "¯ \\ _ (ツ) _ / ¯",
+        "flip": "(╯ ° □ °) ╯( ┻━┻",
+        "eggplant": "Chỉ là một loại cà tím",
+        "gtn": "Cung cấp cho bạn một truyện tranh về neko green tea ngẫu nhiên, chỉ có thể sử dụng được với Kênh NSFW hoặc Admin.",
+        "cuddle": "Âu yếm",
+        "trig": "[Kích hoạt]",
+        "bot": "Cung cấp cho bạn một số thông tin về Rem, thời gian hoạt động và một số liên kết hữu ích.",
+        "top": "Hiển thị 10 guild hàng đầu (được sắp xếp bởi người dùng) rằng mảnh vỡ này được kết nối với",
+        "about": "Cho bạn biết thông tin cơ bản về tôi, như thư viện và người đã làm tôi.",
+        "lenny": "(͡ ° ͜ʖ ͡ °)",
+        "lmg": "Hãy để tôi google đó cho bạn",
+        "fskip": "Bỏ qua bài hát hiện tại / một số bài hát / tất cả bài hát",
+        "leave": "Tôi rời khỏi Kênh thoại mà tôi hiện đang kết nối.",
+        "say": "Làm Rem nói điều gì đó",
+        "ar": "Thêm vai trò cho chính bạn hoặc người dùng",
+        "cr": "Tạo một vai trò hoặc thêm một vai trò vào bot, -d -> mặc định, -l 2 -> cho người sử dụng vai trò một khi anh ta đạt đến cấp độ 2, -s -> làm cho vai trò tự gán, ví dụ -> cr -l 20 rolename, thêm một vai trò mà người dùng có được với mức 20 được gọi là rolename",
+        "lr": "Liệt kê tất cả các vai trò được liên kết với Rem vào lúc này",
+        "rr": "Loại bỏ Vai trò khỏi chính bạn, người dùng khác hoặc máy chủ",
+        "roles": "[Vai trò]",
+        "repeat": "Phát một bài hát / hàng đợi Lặp lại cho đến khi những bài hát mới được thêm vào hàng đợi.",
+        "sayd": "Hãy Rem nói điều gì đó và xóa cmd của bạn",
+        "generic": "[CHUNG]",
+        "fun": "[VUI VẺ]",
+        "coin": "Lật một đồng xu cho bạn",
+        "nyan": "Nya :3",
+        "uwu": "uwu ",
+        "dere": "Tìm kiếm một định nghĩa dere hoặc có được một ngẫu nhiên một",
+        "love": "Cung cấp cho người dùng đã đề cập một điểm yêu thích, bổ sung - để giảm điểm yêu thương của người dùng bằng 1",
+        "sinfo": "Cung cấp cho bạn một số thông tin về máy chủ hiện tại",
+        "uinfo": "Cung cấp cho bạn một số thông tin về bản thân bạn / người sử dụng đã đề cập",
+        "apq": "Thêm danh sách phát vào hàng đợi, chỉ hỗ trợ các danh sách phát trên youtube vào lúc này, chỉ cần sử dụng liên kết của danh sách phát",
+        "ap": "Lệnh thêm quyền, bạn có thể tìm thấy lời giải thích sâu rộng trên sự bất hòa hỗ trợ (! W.bug để nhận lời mời)",
+        "gp": "Lệnh get permission, một lời giải thích chi tiết có thể tìm thấy trên sự bất hòa hỗ trợ (! W.bug để nhận lời mời)",
+        "rp": "Lệnh remove permission, một lời giải thích chi tiết có thể tìm thấy trên sự bất hòa hỗ trợ (! W.bug để lấy lời mời)",
+        "cry": "Cảm thấy buồn ? Đây là cmd đúng cho bạn.",
+        "ibsafe": "Tìm kiếm trên ibsear.ch (chỉ các bức ảnh sfw)",
+        "iblewd": "Các tìm kiếm trên ibsearch.xxx (giống như ibsafe nhưng có ảnh nsfw)",
+        "qr": "Bạn có thể loại bỏ các bài hát đơn với songid của họ, hoặc nhiều với `qr startid-stopid`, điều này sẽ loại bỏ tất cả các bài hát bắt đầu từ startid và kết thúc tại stopid, hoặc xóa nhiều id bằng cách tách chúng bằng dấu phẩy",
+        "shuffle": "Xáo trộn hàng đợi. Lưu ý rằng ít nhất 3 Bài hát phải nằm trong hàng đợi để lệnh này hoạt động.",
+        "owo": "Gửi cho bạn ngẫu nhiên OwO Những mẩu này là gì, được Wolke chọn",
+        "getNode": "Cung cấp cho bạn nút cho phép, thể loại nút và thể loại của một lệnh",
+        "resetPerms": "Đặt lại tất cả các quyền được đặt cho đến bây giờ, sử dụng thận trọng",
+        "pat": "Gây cho ai đó là một cậu bé / cô gái / trực thăng tốt",
+        "triggered": "Kích hoạt",
+        "stare": "nhìn chằm chằm",
+        "nom": "Chữ Nôm:>",
+        "potato": "Mọi người đều muốn có một khoai tây",
+        "choose": "Hãy Rem chọn một cái gì đó cho bạn, hãy chọn riêng với `;`",
+        "tickle": "Thọc cù lét Thọc cù lét Thọc cù lét",
+        "image": "[Lệnh ảnh]",
+        "define": "Lấy một định nghĩa về thuật ngữ từ Urbandictionary",
+        "dog": "Bạn thích con chó nhiều hơn mèo? Lệnh này phù hợp với bạn",
+        "kiss": "Cho ai đó một nụ hôn <3",
+        "setGreeting": "Thiết lập một lời chào trong kênh nơi mà lệnh được thực thi. Bạn có thể sử dụng% USER% và% GUILD% sẽ được thay thế bằng tên người dùng và tên guild.",
+        "setFarewell": "Đặt một chia tay trong kênh nơi lệnh được thực hiện. Bạn có thể sử dụng% USER% và% GUILD% sẽ được thay thế bằng tên người dùng và tên guild.",
+        "pout": "Hmmpf: <Pout ở ai đó",
+        "smug": "Cho ai đó tự mãn: ^)",
+        "lick": "Kiểm tra xem có ai ăn được không",
+        "playlist": "[Danh sách phát]",
+        "moe": "dòng nghe.moe ^^"
+    },
+    "version": "Hiện tại tôi đang chạy trên phiên bản {{version}}",
+    "add": "Sử dụng liên kết này để thêm tôi vào Máy chủ của bạn: {{- link}}",
+    "bug": "Vui lòng tham gia sự bất hòa hỗ trợ: {{- link}} để báo cáo lỗi.",
+    "level": {
+        "result": "Bạn là ** Level {{level}} ** XP: ** {{current}} XP ** / ** {{needed}} XP ** Tổng số XP: ** {{total}} **",
+        "disabled": "Hệ thống XP đã bị tắt trên máy chủ này!"
+    },
+    "joinVoice": {
+        "join": "Ok, tham gia kênh thoại của bạn ngay bây giờ",
+        "error": "Đã xảy ra lỗi khi cố gắng tham gia vào kênh thoại của bạn!",
+        "permission": "Không cho phép! Bạn cần phải cung cấp cho mình vai trò WolkeBot để sử dụng.",
+        "no-voice": "Bạn không ở trong một kênh thoại!",
+        "already-voice": "Bạn không ở trong một kênh thoại!"
+    },
+    "nsfw-images": {
+        "nothing-found": "Không tìm thấy ảnh có thẻ: `{{tags}}`",
+        "no-nsfw-channel": "Vui lòng đặt / thêm kênh NSFW với {{- tiền tố}} setLewd (trong một trong các Kênh NSFW) để sử dụng các Lệnh NSFW",
+        "error-body": "Đã xảy ra lỗi khi phân tích phản hồi api. Vui lòng thử lại, nếu sự cố vẫn tiếp tục liên lạc với Wolke # 6746"
+    },
+    "8ball": {
+        "answers": [
+            "Không.",
+            "Vâng.",
+            "Có lẽ.",
+            "Tôi không nghĩ vậy.",
+            "Tất nhiên là không.",
+            "Cứ làm đi.",
+            "Đó là một ý tưởng tuyệt vời.",
+            "Bạn có chắc chắn về điều đó không ?"
+        ],
+        "no-message": "Bạn đã không nhập câu hỏi."
+    },
+    "ban": {
+        "success": "Người dùng bị cấm {{user}}",
+        "privilege": "Vai trò của tôi không có quyền cấm {{user}}!",
+        "err": "Đã xảy ra lỗi khi cố gắng cấm {{user}}!",
+        "perms": "Bạn không thể cấm chủ sở hữu hoặc bất cứ ai có vai trò WolkeBot.",
+        "self": "Bạn không thể cấm tôi bằng lệnh của riêng tôi.",
+        "no-mention": "Hãy đề cập đến người dùng bạn muốn cấm."
+    },
+    "kick": {
+        "success": "Người dùng bị đánh \\ {user}}",
+        "privilege": "Vai trò của tôi không có quyền đá {{user}}!",
+        "err": "Đã xảy ra lỗi khi cố đá {{user}}!",
+        "perms": "Bạn không thể đá Chủ sở hữu hoặc bất cứ ai có Vai trò WolkeBot.",
+        "self": "Bạn không thể đá tôi với lệnh của riêng tôi.",
+        "no-mention": "Hãy đề cập đến người dùng bạn muốn đá."
+    },
+    "roll": {
+        "whole-number": "Hãy thêm một số nguyên!",
+        "negative": "Tôi không thể cuộn bằng {{number}}",
+        "success": "Đã lăn {{first}} trong {{giây}}"
+    },
+    "qa": {
+        "nothing-found": "Không tìm thấy Sông với Cụm từ Tìm kiếm `{{search}}` ␣",
+        "empty-search": "Bạn đã không nhập một liên kết / tìm kiếm.",
+        "started-download": "Bắt đầu tải về `{{- url}}` ␣",
+        "success": "Hàng đợi ** {{- song}} **"
+    },
+    "rq": {
+        "db-error": "Đã xảy ra lỗi cơ sở dữ liệu!",
+        "success-multiple": "Thêm các bài hát sau:\n`` {{- table}} `` `",
+        "too-big": "Đã thêm {{number}} bài hát",
+        "no-songs-added": "Tôi không thể thêm bất kỳ bài hát nào khi chúng đã nằm trong hàng đợi, hãy thử lại!",
+        "too-much": "Bạn không thể thêm nhiều hơn {{number}} bài hát cùng một lúc!"
+    },
+    "qra": {
+        "to-small": "Bạn không thể xóa {{number}} bài hát!",
+        "success": "Đã loại bỏ `{{number}}` bài hát",
+        "too-big": "Đã xóa {{number}} bài hát",
+        "one-song": "Sử dụng {{- tiền tố}} fskip để bỏ qua Bài hát hiện tại!",
+        "no-number": "Bạn không nói bao nhiêu bài hát tôi nên gỡ bỏ từ hàng đợi!",
+        "removed": "Xóa `{{- title}}` khỏi hàng đợi."
+    },
+    "cookie": {
+        "give": "Cho người dùng ** {{- user}} ** ** 1 ** cookie!",
+        "new-server": "Xin vui lòng thử lại.",
+        "arere": "Arere ... có chuyện gì đó đã xảy ra ...",
+        "perms": "Bạn cần một vai trò bất hòa gọi là WolkeBot để cung cấp cookie!",
+        "one-user": "Hãy đề cập đến ** 1 Người dùng **, không nhiều, không kém!",
+        "count": "Bạn có ** {{number}} Cookies ** ngay bây giờ."
+    },
+    "eastereggs": {
+        "jay": "Jay yêu bạn ~: tim: ␣",
+        "magic": "XX_Cats_Xx đã ở đây -10.10.2016"
+    },
+    "set-lang": {
+        "no-lang": "Bạn đã không chỉ định một ngôn ngữ! Hiện tại có {{languages}} sẵn có.",
+        "success": "Ok Tôi chỉ thiết lập ngôn ngữ cho máy chủ này để {{- language}}.",
+        "unsupported": "Ngôn ngữ này chưa được triển khai nhưng bạn có thể trợ giúp bằng cách thêm yêu cầu kéo bằng ngôn ngữ của bạn trên github. Bạn có thể tìm thấy Ngôn ngữ hiện có bằng cách chạy lệnh này mà không có đối số.",
+        "native-name": "Tên địa phương",
+        "english-name": "Tên tiêng Anh",
+        "shortcode": "mã ngắn",
+        "available-languages": "Danh sách các ngôn ngữ có sẵn\nXin lưu ý rằng setLang cần mã ngắn"
+    },
+    "np": {
+        "song-duration": "Hiện đang chơi: `{{- title}} {{current}} / {{duration}} {{repeat}}`",
+        "song": "Hiện đang chơi: `{{-title}} {{repeat}}`",
+        "repeat-on": "Lặp lại: bật",
+        "repeat-single": "Lặp lại: đơn",
+        "repeat-queue": "Lặp lại: hàng đợi",
+        "emoji-repeat-single": ": Repeat_one: Lặp lại: bài hát hiện tại",
+        "emoji-repeat-queue": ": Lặp lại: Lặp lại: hàng đợi",
+        "emoji-repeat-off": ": Heavy_check_mark: Lặp lại: tắt"
+    },
+    "queue": {
+        "queued": "Đã xếp hàng:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "Không có Kênh NSFW nào.",
+        "success": "Đã xóa thành công {{- channel}} khỏi các kênh NSFW!"
+    },
+    "no-level-server": {
+        "success-disable": "Ok Tôi chỉ cần vô hiệu hóa hệ thống cấp cho máy chủ này, gõ lệnh này một lần nữa để kích hoạt nó.",
+        "success-enable": "Ok Tôi chỉ cần kích hoạt hệ thống cấp cho máy chủ này, gõ lệnh này một lần nữa để vô hiệu hóa nó."
+    },
+    "no-pm-server": {
+        "success-disable": "Ok Tôi chỉ cần vô hiệu hóa thông báo pm cho máy chủ này, gõ lệnh này một lần nữa để kích hoạt chúng.",
+        "success-enable": "Ok Tôi chỉ kích hoạt thông báo pm cho máy chủ này, gõ lại lệnh này để vô hiệu hóa chúng."
+    },
+    "no-channel-server": {
+        "success-disable": "Ok, tôi chỉ vô hiệu hóa các thông báo pm cho máy này và bật báo tin kênh, nó sẽ lại để chuyển đổi lại.",
+        "success-enable": "Ok Tôi chỉ bật thông báo pm cho máy chủ này và vô hiệu hóa các thông báo kênh, hãy gõ lại lệnh này để hoàn nguyên nó."
+    },
+    "no-level": {
+        "success-disable": "Ok, tôi vô hiệu hóa hệ thống cấp cho bạn, gõ lệnh này một lần nữa để kích hoạt nó.",
+        "success-enable": "Ok, tôi cho phép hệ thống cấp độ cho bạn, gõ lệnh này một lần nữa để vô hiệu hóa nó."
+    },
+    "no-pm": {
+        "success-disable": "Ok Tôi chỉ vô hiệu hóa thông báo pm cho bạn, hãy gõ lại lệnh này để kích hoạt chúng.",
+        "success-enable": "Ok Tôi chỉ kích hoạt thông báo pm cho bạn, gõ lệnh này một lần nữa để vô hiệu hóa chúng."
+    },
+    "eat-cookie": {
+        "success": "Bạn chỉ cần ăn {{số}} Cookie (s)!",
+        "failure": "Bạn không có bất kỳ Cookies để ăn."
+    },
+    "bot-info": {
+        "uptime": "Thời gian hoạt động",
+        "users": "Người sử dụng",
+        "channels": "Kênh truyền hình",
+        "guilds": "bang hội",
+        "avg-channels": "Avg. Kênh cho mỗi guild",
+        "avg-users": "Avg. Người dùng trên mỗi guild",
+        "voice": "Kênh thoại",
+        "shard": "Mảnh",
+        "guilds-s": "Guild (mảnh)",
+        "channels-s": "Kênh (mảnh)",
+        "users-s": "Người dùng trên mảnh này",
+        "made": "Được làm bởi:",
+        "lib": "Thư viện",
+        "voice_active": "AVC ",
+        "voice_s": "VC (mảnh)",
+        "voice_active_s": "AVC (mảnh)"
+    },
+    "rank": "Bạn có thể tìm thấy Bảng xếp hạng cho Máy chủ ở đây: {{- link}}",
+    "pp": {
+        "err": {
+            "api-body": "Không thể phân tích phản hồi API",
+            "osu-api": "Các osu! Api dường như có một vấn đề nhỏ.",
+            "no-link": "Đây không phải là một liên kết osu hợp lệ!",
+            "unvalid-link": "Không có bản đồ cung cấp cung cấp!"
+        },
+        "success": "PP cho bản đồ `{{- artist}} - {{- title}} [{{- version}}] với Acc {{- accuracy}}%` `{{- pp}} PP` `{{- mods} } `"
+    },
+    "server-info": {
+        "id": "ID",
+        "name": "Tên",
+        "member": "Các thành viên",
+        "text": "Các kênh văn bản",
+        "voice": "Kênh thoại",
+        "roles": "Vai trò",
+        "creation": "Ngày thành lập",
+        "region": "Khu vực",
+        "owner": "Chủ nhân"
+    },
+    "leave": "Ok tôi để lại kênh thoại.",
+    "play": {
+        "no-result": "Không tìm thấy bài hát nào!",
+        "playing": ": Musical_note: Đang chơi ** {{- song}} **",
+        "success": ": Musical_note: Đang chơi ** {{- song}} **",
+        "next": ": Musical_note: Chơi tiếp theo ** {{- song}} **"
+    },
+    "prefix": {
+        "success": "Ok Tôi chỉ đặt tiền tố thành {{- tiền tố}}, hãy thử `{{- tiền tố}} ping` để kiểm tra nó",
+        "no-prefix": "Vui lòng thêm tiền tố!"
+    },
+    "voice": {
+        "in-queue": "** {{- song}} ** đã có trong hàng đợi.",
+        "error-volume": "Lỗi khi cài đặt âm lượng!",
+        "success-volume": "Đặt âm lượng thành {{- volume}}",
+        "no-volume": "Không có tập!",
+        "repeat-start": "Bắt đầu lặp lại cho ** {{- song}} **",
+        "already-playing": "Bài hát này đã chơi!",
+        "blocked": "Video này không có sẵn để tải xuống. Có thể nó quá dài hoặc bị chặn / gỡ bỏ",
+        "dl-start": ": Hourglass: tải bài hát!",
+        "use-proxy": "Cố gắng tải qua proxy, việc này có thể mất một chút.",
+        "too-much": "Bạn không thể thiết lập khối lượng cao hơn 200!"
+    },
+    "yts": {
+        "success": "Đã tìm thấy bài hát sau: {{- link}}"
+    },
+    "skip": {
+        "success": ": Track_next: Bỏ qua bài hát {{- title}}.",
+        "stop": ": Stop_button: Ngừng bài hát hiện tại.",
+        "all": ": Stop_button: Bỏ qua tất cả các bài hát.",
+        "some": ": Track_next: Bỏ qua {{- amount}} bài hát."
+    },
+    "vskip": {
+        "user-no-voice": "Bạn không thể bỏ phiếu, nếu bạn không ở trong cùng một kênh thoại thoại!",
+        "same-voice": "Bạn không ở cùng kênh thoại như tôi!",
+        "dup": "Bạn đã bình chọn!",
+        "success-add": "Đã thêm Cuộc bình chọn của bạn, tỷ lệ người theo dõi tại ** {{current}}% / {{needed}}% **",
+        "success-skip": "Bài hát được tải xuống: ** {{- title}} **",
+        "vote": "Nhập {{- tiền tố}} yes để votekip bài hát hiện tại. Tỷ lệ cử tri hiện tại tại {{- perct}}% / {{- needed}}\nNgười dùng đã bình chọn:\n `` {{- table}} `` `",
+        "in-prog": "Đã có phiếu bỏ phiếu đang tiến hành, sử dụng {{- tiền tố}} có để bỏ qua bài hát hiện tại."
+    },
+    "rm": {
+        "less-2": "Bạn không thể xóa ít hơn 2 tin nhắn!",
+        "over-100": "Bạn không thể xoá hơn 100 Thư cùng một lúc!",
+        "success": "Đã xóa thành công {{number}} tin nhắn.",
+        "error": "Lỗi khi cố gắng xóa thư!",
+        "over-limit": "Bạn không thể xóa ít hơn 2 tin nhắn hoặc hơn 100 Thư cùng một lúc!",
+        "no-limit": "Bạn đã không chỉ định có bao nhiêu thư tôi nên xóa.",
+        "nothing-found": "Tôi đã không tìm thấy một tin nhắn phù hợp với bộ lọc!"
+    },
+    "search": {
+        "success": "Tìm thấy các bài hát sau:"
+    },
+    "set-lewd": {
+        "success": "Đã thêm thành công {{- channel}} vào Kênh NSFW!"
+    },
+    "report": "OK, tôi đã gửi báo cáo của bạn tới Wolke, vui lòng không lạm dụng điều này, vì nó có thể khiến bạn bị cấm sử dụng bot!",
+    "greeting": {
+        "no-greeting": "Bạn đã không thêm những lời chào mà tôi nên sử dụng!",
+        "no-add": "Bạn có thể thiết lập hoặc đặt lại lời chào.",
+        "set-greeting": "`` `Chào mừng: {{- text}}\nKênh: {{- kênh}}\nĐặt lại lời chào với {{- tiền tố}} setGreeting reset```",
+        "no-set-greeting": "Hiện tại không có lời chào nào.\n\nBạn có thể đặt lời chào với `{{- tiền tố}} setGreeting text` và đặt lại lời chào với` {{- tiền tố}} setGreeting đặt lại`.",
+        "reset-greeting": "Tôi chỉ thiết lập lại lời chào, nó sẽ không xuất hiện nữa.",
+        "success": "Được rồi, tôi chỉ đặt lời chào tới:\n`` `{{- text}}` ``"
+    },
+    "farewell": {
+        "no-farewell": "Bạn đã không thêm phần chia tay mà tôi nên sử dụng!",
+        "no-add": "Bạn có thể thiết lập hoặc đặt lại lời tạm biệt.",
+        "set-farewell": "`` `Chia tay: {{- text}}\nKênh: {{- kênh}}\nĐặt lại chia tay với {{- tiền tố}} setFarewell reset```",
+        "no-set-farewell": "Hiện tại không có chia tay.\n\nBạn có thể thiết lập một chia tay với `{{- tiền tố}} setFarewell văn bản` và đặt lại một chia tay với` {{- tiền tố}} setFarewell đặt lại `.",
+        "reset-farewell": "Tôi chỉ đặt lại phần chia tay, nó sẽ không xuất hiện nữa.",
+        "success": "Được rồi, tôi chỉ chia tay để:\n`` `{{- text}}` ``"
+    },
+    "add-role": {
+        "ok": "Ok Tôi chỉ cho {{- user}} vai trò {{- role}}"
+    },
+    "create-role": {
+        "missing": "Tên vai trò mà bạn chỉ định không tồn tại trên máy chủ.",
+        "new": "Tôi có nên tạo vai trò cho bạn không?",
+        "no-args": "Bạn không thêm bất kỳ đối số nào vào lệnh",
+        "ok": "Ok, tôi chỉ tạo ra vai trò {{- role}}",
+        "exists": "Vai trò {{- role}} đã tồn tại trong db"
+    },
+    "remove-role": {
+        "ok": "Ok Tôi chỉ xóa vai trò {{- role}} khỏi {{- user}}!"
+    },
+    "list-roles": {
+        "nr": "nr.",
+        "id": "id.",
+        "name": "Tên",
+        "self": "Tự chuyển nhượng",
+        "lvl": "Có sẵn ở cấp",
+        "default": "mặc định"
+    },
+    "user-info": {
+        "id": "$ T (server-info.id)",
+        "name": "$ T (server-info.name)",
+        "discriminator": "Phân biệt đối xử",
+        "nick": "Tên nick",
+        "join": "Gia nhập",
+        "created": "Tạo",
+        "playing": "Đang chơi",
+        "info": "Thông tin người dùng",
+        "bot": "Bot",
+        "status": "Trạng thái",
+        "role": "Vai trò"
+    },
+    "flip": {
+        "head": "Đồng xu lật đầu {{- url}}",
+        "tail": "Đồng xu lật sang đuôi {{- url}}"
+    },
+    "gp": {
+        "no-cat": "Tôi không thể tìm thấy bất kỳ quyền nào với loại {{- cat}}",
+        "no-perms": "Bạn chưa thêm bất kỳ quyền nào.",
+        "table": {
+            "id": "$ T (server-info.id)",
+            "name": "Tên",
+            "type": "Kiểu",
+            "cat": "Thể loại",
+            "perm": "Sự cho phép",
+            "use": "Sử dụng"
+        },
+        "page-does-not-exist": "Trang này không tồn tại. Hãy thử một số trang thấp hơn!"
+    },
+    "rp": {
+        "success": "Tôi đã xoá thành công sự cho phép `{{- node}}` từ ** {{- type}} ** `{{- id}}`"
+    },
+    "love": {
+        "success": "Bạn chỉ cần đưa ra ** {{- target}} ** ** {{- rep}} **: heart: Love Point. Sử dụng còn lại ** {{uses}} **.",
+        "error-cd": "Bạn chỉ có thể cho ** 2 **: heart: Những điểm tình yêu mỗi ngày, tiếp theo {{- time}}.",
+        "next": "␣Sử dụng tiếp theo {{- time}}",
+        "self": ": Broken_heart: Bạn không thể cho Love Points cho chính mình.",
+        "success-remove": "Bạn chỉ cần xóa ** {{- rep}} **: heart: Love Point từ ** {{- target}} ** Các ứng dụng còn lại ** {{uses}} **."
+    },
+    "dere": {
+        "no-dere": "Loại bạn đã tìm kiếm không tồn tại. Dưới đây là danh sách các lệnh deres có thể:",
+        "dandere": "Loại Dandere (だ ん デ レ) đề cập đến một nhân vật thường im lặng và tự cho mình.\n Có thể là do sự nhút nhát hoặc chỉ vì họ là loại hình im lặng.\n Tuy nhiên, khi một mình với người mà họ bị thu hút, họ thường đi ra khỏi vỏ của họ và trở nên yêu thương hơn.\n Từ này là chữ viết tắt của Danmari (だ ん ま り) có nghĩa là im lặng và Deredere (デ レ デ レ) có nghĩa là tình yêu của chim bồ câu.",
+        "deredere": "Loại Deredere (デ レ デ レ) đề cập đến một nhân vật hoàn toàn tử tế, hạnh phúc và tràn đầy năng lượng.\n Không có vấn đề gì có thể xảy ra, họ nhanh chóng trở lại với niềm vui của họ.\n Đây có thể là loại nhân vật duy nhất không có chữ viết tắt nào với từ Deredere (デ レ デ base) cơ bản, mặc dù định nghĩa này không chỉ đơn giản là dogohyy dovey như các loại khác.",
+        "himedere": "Loại Himedere (ひ め デ レ) đề cập đến một nhân vật muốn được đối xử như một nàng công chúa bởi người cô yêu, ngay cả khi họ không phải là hoàng gia.\nTừ này là chữ viết tắt của Hime (ひ め) có nghĩa là công chúa và Deredere (デ レ デ レ) có nghĩa là tình yêu của anh ta.",
+        "kamidere": "Loại Kamidere (か み デ レ) dùng để chỉ một nhân vật có tính chất thần linh.\n Họ rất kiêu ngạo và tự hào, và không ngại nói ra tư tưởng của họ và cho mọi người biết họ là đúng.\n Từ này là chữ viết tắt của Kami (か み) có nghĩa là Thiên Chúa và Deredere (デ レ デ レ) có nghĩa là tình yêu chim bồ câu.",
+        "kuudere": "Kuudere (ク ー デ レ), đôi khi được viết bằng Coodere hoặc Kūdere, kiểu đề cập đến một nhân vật thường lạnh lùng, cùn và hoài nghi.\n Họ có vẻ rất vô cảm ở bên ngoài, nhưng bên trong họ rất quan tâm - ít nhất là khi nói đến những gì họ yêu.\nTừ này là chữ viết tắt của Cool (ク ー ル) và Deredere (デ レ デ レ), có nghĩa là lovey dovey.",
+        "mayadere": "Loại Mayadere (ま や デ レ) đề cập đến một nhân vật thường là một đối thủ nguy hiểm của một loạt, nhưng chuyển sang một bên sau khi yêu một nhân vật khác.\n Nhân vật này có thể vẫn chết chóc và không thể đoán trước được đối với nhân vật chính hoặc nhân vật chính trong Anime hay Manga.",
+        "oujidere": "Loại Oujidere (お う じ デ レ) đề cập đến một nhân vật muốn được đối xử như một hoàng tử bởi người anh yêu, ngay cả khi họ không phải là hoàng gia trong thực tế.\nTừ này là chữ viết tắt của Ouji (お う じ), có nghĩa là hoàng tử và Deredere (デ レ デ レ) có nghĩa là tình yêu của bồ câu.",
+        "tsundere": "Loại Tsundere (ツ ン デ レ) có thể là một trong những loại nhân vật phổ biến nhất hoặc được sử dụng đơn giản nhất trong anime và manga.\n Loại này đề cập đến một nhân vật đối xử với người mà họ yêu kém.\nĐôi khi điều này là bởi vì họ bắt đầu ghét họ và cuối cùng yêu thương họ như loạt đi về, và đôi khi đó là bởi vì đó là cách duy nhất họ biết làm thế nào để phản ứng.\n Một ví dụ là nếu nhân vật chính gọi một nhân vật tsundere dễ thương.\n Nhân vật tsundere sẽ cảm thấy buồn và bối rối, có thể gây tổn thương cơ thể cho người mình yêu, và sau đó gọi họ là ngu ngốc.\nTừ này là viết tắt của Tsuntsun (ツ ン ツ ン) có nghĩa là nhìn chằm chằm vào sự ghê tởm và Deredere (デ レ デ レ) có nghĩa là doạ tình yêu.",
+        "undere": "Loại Undere (ウ ン デ レ) đề cập đến một nhân vật nói có với khá nhiều thứ mà họ yêu thích.\n Họ đồng ý càng nhiều càng tốt để trở nên gần gũi hơn với mối quan tâm của họ.\n Từ này là chữ viết tắt của chữ Un (ウ ン), đó là một cách ngắn mà người Nhật nói Vâng và Deredere (デ レ デ レ) có nghĩa là tình yêu của anh ta.",
+        "yandere": "Loại Yandere (ヤ ン デ レ) đề cập đến một nhân vật bắt đầu đẹp và ngọt ngào nhưng cuối cùng trở nên tối tăm và ám ảnh hơn người mình yêu.\n Họ trở thành những người rình rập và sử dụng bạo lực, thậm chí giết người, bất cứ ai gần gũi với mối quan tâm của họ - ngay cả khi họ quá nhút nhát để chỉ nói chuyện với người đó mà thôi.\n Từ này là chữ viết tắt của Yanderu (や ん で る) có nghĩa là bị bệnh tâm thần hoặc tình cảm và Deredere (デ レ デ レ) có nghĩa là tình yêu của chú chó.",
+        "yangire": "Loại Yangire (ヤ ン ギ レ) tương tự theo một số cách để Yandere.\n Đó là một nhân vật có thể bắt đầu tốt đẹp và ngọt ngào nhưng trở nên rất hung dữ và tâm thần.\n Tuy nhiên, không giống như Yandere, Yangire không trở nên bạo lực vì họ thu hút một nhân vật.\n Thay vào đó, họ có thể chỉ đơn giản vì họ đang bị kích thích bởi một nhân vật không liên quan gì đến mối quan tâm của họ.\n Từ này là viết tắt của Yanderu (や ん で る) có nghĩa là bị bệnh tâm thần hoặc tình cảm và Kire (き れ) có nghĩa là cắt hoặc nhét."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "Có ít nhất 3 bài hát trong hàng đợi cho tôi để shuffle chúng.",
+        "success": "Xáo trộn hàng đợi!"
+    },
+    "get-node": {
+        "success": "Nút cấp phép: `{{- node}}` Nút danh mục: `{{- category}}. '` Category: `{{- category}}`",
+        "not-found": "Lệnh này không tồn tại.",
+        "no-args": "Gõ một cmd mà không có tiền tố sau phần này để có được nút cho phép, nút category và category"
+    },
+    "ap": {
+        "type": {
+            "user": "người dùng",
+            "guild": "bang hội",
+            "role": "vai trò",
+            "channel": "kênh"
+        },
+        "success": "Ok, tôi chỉ thêm sự cho phép `{{- node}}` `{{- allowed`)` vào `{{- type}}` `{{- name}}`",
+        "wrong-node": "Node cho phép `{{- node}}` sẽ không hoạt động, vì nó không phải là nút cho phép hợp lệ. Để có được nút cho phép cho một kiểu lệnh `{{- tiền tố}} getNode` lệnh",
+        "target-not-found": "Tôi không thể tìm mục tiêu {{- target}} cho lệnh này",
+        "no-allowance-set": "Bạn đã không cho tôi biết nếu perm nên được phép hay không, thêm `đúng 'hoặc` sai `tùy thuộc vào sự lựa chọn của bạn",
+        "missing-args": "Cú pháp chính xác cho cmd này là `{{-prefix}} ap <node> [-u | -r | -c] [target] <allowed>`\n Thí dụ:\n`` `{{-prefix}} ap playlist * true -> cho phép tất cả các lệnh của danh mục thể loại trong máy chủ\n{{-prefix}} ap music.fskip -u @user true -> cho phép người dùng đã đề cập sử dụng {{- tiền tố}} fskip```"
+    },
+    "reset-perms": {
+        "nothing-found": "Bạn chưa đặt bất kỳ Quyền nào.",
+        "confirmation": "Bạn có chắc chắn muốn đặt lại quyền không? Gõ `yes` để đặt lại chúng và` no` để hủy lệnh này.",
+        "success": "Tôi chỉ đặt lại tất cả các quyền mà bạn đặt."
+    },
+    "choose": {
+        "empty-choose": ": No_entry_sign: Tôi không thể chọn bất cứ điều gì, nếu bạn nhập không có gì!",
+        "success": "Tôi chọn ** {{- choice}} **!"
+    },
+    "define": {
+        "empty-search": ": No_entry_sign: Tôi không thể tìm kiếm một định nghĩa, nếu bạn nhập không có gì!",
+        "no-result": "Tôi không thể tìm thấy bất cứ thứ gì có thuật ngữ `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Danh sách phát này không được hỗ trợ!"
+    }
 }
