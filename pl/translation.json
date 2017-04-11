@@ -165,7 +165,8 @@
         "pout": "Hmmpf :< Fochnij się na kogoś",
         "smug": "Rzuć komuś wywyższające się spojrzenie :^)",
         "lick": "Sprawdź, czy ktoś jest jadalny",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLISTA]",
+        "moe": "Streamuje Listen.moe ^^"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
