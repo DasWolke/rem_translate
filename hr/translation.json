@@ -165,7 +165,8 @@
         "pout": "Hmmpf :< Duri se na nekoga",
         "smug": "Pokaži nekome svoje samozadovoljstvo :^)",
         "lick": "Provjeri je li netko jestiv",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLISTA]",
+        "moe": "Streama Listen.moe ^^"
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
     "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
