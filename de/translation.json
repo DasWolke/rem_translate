@@ -2,7 +2,7 @@
     "generic": {
         "error": ":x: Ein Fehler ist aufgetreten!",
         "no-pm": ":no_entry: Dieser Befehl funktioniert nicht in privaten Kanälen\n!",
-        "whole-num": ":no_entry_sign: Bitte füge eine ganze Zahl an!",
+        "whole-num": ":no_entry_sing: Bitte füge eine ganze Zahl an!",
         "nan": ":no_entry_sing: Was auch immer du gerade gesendet hast, verwende bitte eine ganze Zahl. :)",
         "no-song-in-queue": "no_entry_sign: Momentan ist kein Lied in der Warteschlange, füge doch eins hinzu :musical_note: ?",
         "no-song-playing": ":musical_note: Zur Zeit spielt kein Lied!",
@@ -17,7 +17,7 @@
         "lib": "Bibliothek benutzt",
         "more": "{{number}} mehr",
         "abort": ":x: abgebrochen",
-        "cat-nope": ":no_entry_sign: Diese Katagorie exestiert nicht!",
+        "cat-nope": ":no_entry_sing: Diese Katagorie exestiert nicht!",
         "mention": "Bitte richte dies an einen Benutzer.",
         "cancelled-command": "Befehl abgebrochen",
         "donate": "Spenden",
@@ -165,7 +165,8 @@
         "pout": "Schmolle jemanden an hmmpf :<",
         "smug": "Sende jemandem ein süffisantes Grinsen :^)",
         "lick": "Überprüfe ob jemand gut schmeckt :P",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLIST]",
+        "moe": "Streams streams Von listen.moe "
     },
     "version": "Momentan verwende ich Version{{version}}",
     "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
