@@ -165,7 +165,8 @@
         "pout": "Hmmpf :< Boude quelqu'un",
         "smug": "Fait un sourire suffisant à quelqu'un :^)",
         "lick": "Vérifie si quelqu'un est comestible",
-        "playlist": "[PLAYLIST]"
+        "playlist": "[PLAYLIST]",
+        "moe": "Stream Listen.moe ^^"
     },
     "version": "Actuellement je suis en version {{version}}",
     "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
