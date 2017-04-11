@@ -1,3 +1,532 @@
 {
-  "awoo": "awoo"
+    "generic": {
+        "error": ":x: Si è verificato un errore",
+        "no-pm": ":no_entry : Questo comando non funziona nelle conversazioni private!",
+        "whole-num": ":no_entry_sign: Per favore usa un numero intero!",
+        "nan": ":no_entry_sign: Qualunque cosa hai appena inviato, è sufficiente aggiungere un numero intero. :)␣",
+        "no-song-in-queue": ":no_entry_sign: Non c'è nessuna canzone in coda, magari aggiungerne una :musical_note: ?",
+        "no-song-playing": ":musical_note: Non c'é nessuna canzone in questo momento!",
+        "no-permission": ":no_entry_sign: Non si ha il permesso di utilizzare questo comando, per favore, aggiungere l'autorizzazione `{{- node}} per utilizzarlo.",
+        "no-voice": ":no_entry_sign: Non sono collegato a nessun canale vocale su questo server!",
+        "level-update": ":tada: Hai raggiunto **il livello {{level}}** in **{{- server}}**",
+        "empty-search": ":no_entry_sign: Non hai inserito alcun termine di ricerca!",
+        "negative": ":no_entry_sign: Per favore, non usare numeri negativi!",
+        "cancel": "Annulla",
+        "version": "Versione",
+        "author": "Autore",
+        "lib": "Libreria usata",
+        "more": "{{number}} di più",
+        "abort": ":x: Cancellato",
+        "cat-nope": ":no_entry_sign: Questa categoria non esiste!",
+        "mention": "Per favore menziona un utente.",
+        "cancelled-command": "Comando cancellato.",
+        "donate": "Dona",
+        "support": "Supporto",
+        "invite": "Invita",
+        "language-name-en": "Inglese",
+        "native-name": "Inglese",
+        "empty-say": ":no_entry_sign: Non hai inserito il messaggio!",
+        "page": "Pagina"
+    },
+    "help": {
+        "intro": "Divertiamoci insieme qui su Discord (/^▽^)/ seleziona una categoria di comandi rispondendo con {{pre}}help numero del comando per saperne di più:",
+        "intro_2": "Hey, sono",
+        "support": "[ASSISTENZA]",
+        "bug": "Ottieni il link dell'assistenza Discord",
+        "help": "Il comando d'aiuto",
+        "add": "Ottieni il link per aggiungermi al tuo server",
+        "music": "[MUSICA]",
+        "voice": "Entro nel canale vocale in cui sei attualmente ( i comandi per la musica fanno entrare il bot nel tuo canale )",
+        "silent": "Mi disconnetto dal canale vocale in cui sono (Utilizzabile solamente con il ruolo WolkeBot)",
+        "play": "Suona qualcosa da Youtube/Soundcloud/Osu/Cerca",
+        "pause": "Metti in pausa la musica",
+        "resume": "Riprendi la musica messa in pausa",
+        "volume": "Imposta il volume del bot, da 1 a 200 (Utilizzabile solamente con il WolkeBot Role)",
+        "forever": "Ripete la stessa musica finchè altre non vengono aggiunte alla coda, utilizzabile solamente con il WolkeBot Role",
+        "search": "Cerca la canzone nel database del bot e mostra i 5 migliori risultati",
+        "skip": "Inizia un voto per saltare la musica corrente, più del 50% delle persone del canale devono votare, dopodichè verrà saltata.",
+        "voteskip": "Inizia un voto per saltare la musica corrente, più del 50% delle persone del canale devono votare, dopodichè verrà saltata.",
+        "qa": "Mette in coda una canzone da Youtube/Soundcloud/Osu/Cerca",
+        "qra": "Elimina tutte le canzoni eccetto quella riprodotta in questo momento, o un certo numero di suoni.",
+        "queue": "Mostra la coda di canzoni",
+        "np": "Mostra la canzone riprodotta in questo momento",
+        "rq": "Aggiunge una canzone casuale / un numero di canzoni casuali alla coda",
+        "stream": "Avvia lo streaming della radio internet selezionata, puoi cercare le radio o aggiungerle direttamente aggiungendo -u url al comando",
+        "youtube": "[YOUTUBE]",
+        "yts": "Cerca su youtube e restituisce il primo risultato",
+        "ytq": "Cerca su youtube e aggiunge il primo risultato alla coda",
+        "mod": "Pannello di controllo dei moderatori",
+        "mod-info": "Tutti questi comandi richiedono che l'utente appartenga al ruolo di Discord chiamato WolkeBot",
+        "info": "Restituisce alcune informazioni riguardanti il server",
+        "ban": "Bandisce un utente e ne elimina 7 giorni di messaggi",
+        "kick": "Caccia un utente",
+        "rm": "Rimuove i messaggi, puoi filtrare bots, utente, comandi/risposte da Rem o elimina fino a 100 messaggi. Filtri: -b bots; -r messaggi da Rem; -u @utente messaggi da un certo utente; -c messaggi che iniziano con il prefisso di Rem",
+        "noLevelServer": "Disabilita il sistema dei livelli per tutto il server, usa nuovamente il comando per riabilitarlo",
+        "noPmServer": "Disabilita le notifiche dei messaggi privati per tutto il server, usa nuovamente il comando per riabilitarlo",
+        "noChServer": "Disabilita le notifiche dei messaggi privati per tutto il server e abilita le notifiche dei canali, usa nuovamente il comando per disabilitare questa funzione",
+        "setLewd": "Aggiunge questo canale come un canale NSFW",
+        "remLewd": "Rimuove il canale corrente dalla lista dei canali NSFW",
+        "setPrefix": "Imposta il prefisso del bot, spazi e @menzioni non consentite!",
+        "other": "[Altro]",
+        "r34": "Cerca i tag in Rule34 e restituisce un'immagine, utilizzabile solamante con il ruolo WolkeBot o in un canale NSFW",
+        "kona": "Cerca i tag in Konachan e restituisce un'immagine, utilizzabile solamante con il ruolo WolkeBot o in un canale NSFW o da un amministratore",
+        "e621": "Cerca i tag in E621 e restituisce un'immagine, utilizzabile solamante con il ruolo WolkeBot o in un canale NSFW o da un amministratore",
+        "yandere": "Cerca i tag in Yande.re e restituisce un'immagine, utilizzabile solamante con il ruolo WolkeBot o in un canale NSFW o da un amministratore",
+        "level": "Il tuo livello e l'esperienza richiesta per il prossimo",
+        "rank": "Classifica del server",
+        "noLevel": "Disabilita il sistema dei livelli (solo per te). Utilizzalo di nuovo per riabilitarlo.",
+        "noPm": "Disabilita le notifiche dei messaggi privati (solo per te). Utilizzalo di nuovo per riabilitarle.",
+        "pp": "Calcola i PP della beatmap con precisione e mods ",
+        "cookie": "Dai un biscotto all'utente menzionato, o mostra i tuoi biscotti se non menzioni nessuno.",
+        "eatCookie": "Mangia un biscotto.",
+        "git": "Ricevi il link github di Rem",
+        "roll": "Sceglie un numero casuale tra zero e un numero, se non c'è un limite, questo verrà impostato a 10",
+        "8ball": "Ti dà la risposta della magica 8ball ad una domanda",
+        "garfield": "Ti dà un fumetto a caso di Garfield",
+        "cat": "Invia l'immagine di un gatto. Sono tutto ciò che ci serve!",
+        "hug": "Abbraccia qualcuno :>",
+        "slap": "Qualcuno ti sta antipatico? Schiaffeggialo!",
+        "setLang": "Imposta la lingua, scrivi !w.setLang senza niente dopo per avere la lista delle lingue",
+        "report": "Se sei timido per venire sul server Discord dell'assistenza, usa Segnala per inviare una segnalazione allo sviluppatore Wolke, ma non abusarne!",
+        "feedback": "Per dare un'opinione usa Discord, per favore ^^",
+        "talk": "Se vuoi parlarmi @menzionami con un messaggio :D",
+        "helpReply": "Ok, ti ho inviato la lista dei comandi come messaggio privato.",
+        "moderation": "[MODERAZIONE]",
+        "misc": "[VARIE]",
+        "stats": "[STATISTICHE]",
+        "user": "[UTENTE]",
+        "admin": "[AMMINISTRATORE]",
+        "nsfw": "[NSFW]",
+        "eastereggs": "[EASTEREGGS]",
+        "proxer": "[PROXER]",
+        "no-cat": "[SENZA CATEGORIA]",
+        "ping": "Restituisce il ping del bot, che NON E' il ping del server.",
+        "lewd": "Così osceno uwu",
+        "rem": "Restituisce un'immagine casuale di Rem",
+        "wip": "[IN CORSO]",
+        "gr": "Inserisci un messaggio di benvenuto con set greetingMessage, {{user}} verrà sostituito con l'utente appena entrato e {{guild}} con il nome del server.\nIl benvenuto sarà nel canale dove il comando è stato eseguito.",
+        "fw": "Inserisci un messaggio di arrivederci con set farewellMessage, {{user}} verrà sostituito con l'utente appena entrato e {{guild}} con il nome del server.\nL'arrivederci sarà nel canale dove il comando è stato eseguito.",
+        "s": "Comando del server, imposta cose come benvenuti e arrivederci",
+        "shrug": "¯\\_(ツ)_/¯",
+        "flip": "(╯°□°）╯︵ ┻━┻",
+        "eggplant": "Solamente una melanzana",
+        "gtn": "Restituisce un fumetto neko con tè verde, usabile solo in canali NSFW o da un amministratore.",
+        "cuddle": "Dai una carezza",
+        "trig": "TRIGGERED",
+        "bot": "Ti dà alcune informazioni su Rem, come il tempo online e dei link utili",
+        "top": "Mostra la top 10 delle gilde (ordinate per utente) nelle quali questo processo è connesso",
+        "about": "Fornisce alcune informazioni di base su di me, come la libreria e chi mi ha fatta.",
+        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lmg": "Fammi cercare su Google per te",
+        "fskip": "Salta la canzone in corso/un numero di canzoni/tutte le canzoni",
+        "leave": "Abbandono il canale a cui sono connessa.",
+        "say": "Fai dire qualcosa a Rem",
+        "ar": "Aggiungi un ruolo a te stesso o ad un utente",
+        "cr": "Crea un ruolo o aggiungine uno al bot, -d -> default, -l 2 -> Dà il ruolo all'utente quando raggiunge il livello 2, -s -> Rende il ruolo assegnabile a se stessi, esempio -> cr -l 20 nomeruolo, aggiunge un ruolo che viene assegnato ad un giocatore di livello 20 chiamato nomeruolo",
+        "lr": "Lista di ruoli attribuiti a Rem",
+        "rr": "Toglie un ruolo da te stesso, un altro utente o dal server",
+        "roles": "[RUOLI]",
+        "repeat": "Suona una canzona/la coda di continuo finchè non ne vengono aggiunte altre alla coda.",
+        "sayd": "Fai dire qualcosa a Rem ed elimina il comando",
+        "generic": "[GENERICO]",
+        "fun": "[SVAGO]",
+        "coin": "Tira una moneta",
+        "nyan": "Nya :3",
+        "uwu": "uwu",
+        "dere": "Cerca una definizione di un -dere o una a caso",
+        "love": "Dai all'utente menzionato un punto amore, aggiungi - per ridurre il numero di punti amore dell'utente di 1",
+        "sinfo": "Fornisce alcune informazioni sul server",
+        "uinfo": "Fornisce informazioni su di te/l'utente menzionato.",
+        "apq": "Aggiunge una playlist alla coda, al momento supporta solo playlist di Youtube, usa il link di una playlist",
+        "ap": "Il comando aggiungi permesso, una spiegazione migliore può essere trovata nel Discord del supporto (!w.bug per ricevere l'invito)",
+        "gp": "Il comando ottieni permesso, una spiegazione migliore può essere trovata nel Discord del supporto (!w.bug per ricevere l'invito)",
+        "rp": "Il comando rimuovi permesso, una spiegazione migliore può essere trovata nel Discord del supporto (!w.bug per ricevere l'invito)",
+        "cry": "Ti senti triste? Questo è il comando che fa per te.",
+        "ibsafe": "Cerca su ibsear.ch (solo immagini sfw)",
+        "iblewd": "Cerca su ibsearch.xxx (come ibsafe ma con immagini nsfw)",
+        "qr": "Puoi rimuovere una canzone con il suo songid, o di più con ` qr inizioid-fineid `, questo rimuove tutte le canzoni che iniziano da inizioid e finiscono con fineid, o elimina più di separati da virgole",
+        "shuffle": "Mischia la coda. Devono essere presenti almeno 3 canzoni.",
+        "owo": "Invia un OwO meme casuale, scelti a mano da Wolke",
+        "getNode": "Ricevi il nodo permesso, nodo categoria e categoria di un comando",
+        "resetPerms": "Reimposta tutti i permessi impostati fino ad ora, usalo con attenzione",
+        "pat": "Accarezza delicatamente chi è stato un buon ragazzo/ragazza/elicottero",
+        "triggered": "TRIGGERED",
+        "stare": "Ti fissssooooo...",
+        "nom": "Nom :>",
+        "potato": "Tutti vogliono una patata",
+        "choose": "Fai scegliere qualcosa a Rem, separa le scelte con `;`",
+        "tickle": "Tickle Tickle Tickle",
+        "image": "[COMANDI IMMAGINI]",
+        "define": "Ricevi la definizione di un termine da Urbandictionary",
+        "dog": "Ti piacciono più i cani dei gatti? Questo è il comando giusto per te",
+        "kiss": "Dai un bacio a qualcuno <3",
+        "setGreeting": "Imposta un benvenuto nel canale dove il comando è eseguito. Puoi usare %USER% e %GUILD% che saranno sostituiti con il nome utente e il nome del server.",
+        "setFarewell": "Imposta un arrivederci nel canale dove il comando è eseguito. Puoi usare %USER% e %GUILD% che saranno sostituiti con il nome utente e il nome del server.",
+        "pout": "Hmmpf :< Metti il broncio a qualcuno",
+        "smug": "Congratulati con qualcuno :^)",
+        "lick": "Controlla se qualcuno è commestibile",
+        "playlist": "[PLAYLIST]",
+        "moe": "Avvia lo stream di Listen.moe ^^"
+    },
+    "version": "Attualmente la mia versione è {{version}}",
+    "add": "Usa questo link per aggiungermi al tuo server: {{- link}}",
+    "bug": "Per favore, entra nel supporto su Discord: {{- link}} per segnalare un bug.",
+    "level": {
+        "result": "Attualmente sei di **livello {{level}}**, XP: **{{current}}XP/{{needed}}XP** Esperienza totale: **{{total}}**",
+        "disabled": "Il sistema di esperienza è disabilitato su questo server!"
+    },
+    "joinVoice": {
+        "join": "Ok, sto entrando nel tuo canale vocale.",
+        "error": "Si è verificato un errore nell'entrare nel tuo canale vocale!",
+        "permission": "Non hai i permessi! Hai bisogno del ruolo WolkeBot.",
+        "no-voice": "Non sei in un canale vocale!",
+        "already-voice": "Sono già in un canale vocale, spostami!"
+    },
+    "nsfw-images": {
+        "nothing-found": "Non sono state trovate immagini con tag: `{{tags}}`",
+        "no-nsfw-channel": "Per favore, imposta/aggiungi un canale NSFW con {{- prefix}} setLewd (in uno dei canali NSFW) per usare i comandi NSFW",
+        "error-body": "Errore nella risposta dell'API. Se questo errore persiste contatta Wolke#6746"
+    },
+    "8ball": {
+        "answers": [
+            "No.",
+            "Sì.",
+            "Forse.",
+            "Non penso.",
+            "Assolutamente no.",
+            "Fallo subito.",
+            "E' una grande idea.",
+            "Ne sei sicuro?"
+        ],
+        "no-message": "Non hai fatto alcuna domanda."
+    },
+    "ban": {
+        "success": "L'utente {{user}} è stato bandito",
+        "privilege": "Il mio ruolo non ha i permessi per bandire {{user}} !",
+        "err": "Si è verificato un errore nel bandire {{user}} !",
+        "perms": "Non puoi bandire il proprietario del server o chiunque con il ruolo WolkeBot",
+        "self": "Non puoi bandirmi con un mio comando.",
+        "no-mention": "Inserisci il nome dell'utente da bandire."
+    },
+    "kick": {
+        "success": "L'utente {{user}} è stato espulso",
+        "privilege": "Non ho i permessi per espellere {{user}} !",
+        "err": "Si è verificato un errore nell'espellere {{user}} !",
+        "perms": "Non puoi espellere il proprietario del server o chiunque con il ruolo WolkeBot.",
+        "self": "Non puoi espellermi con un mio comando.",
+        "no-mention": "Inserisci il nome dell'utente da espellere."
+    },
+    "roll": {
+        "whole-number": "Per favore, inserisci un numero intero!",
+        "negative": "Non posso lanciare un dado con un {{number}}",
+        "success": "E' uscito {{first}} su {{second}}"
+    },
+    "qa": {
+        "nothing-found": "Nessuna canzone trovata con il termine di ricerca `{{search}}`",
+        "empty-search": "Non hai inserito un link / termine di ricerca",
+        "started-download": "Inizio a scaricare `{{- url}}`",
+        "success": "Messo in coda **{{- song}}**"
+    },
+    "rq": {
+        "db-error": "Si è verificato un errore nel database!",
+        "success-multiple": "Aggiunte le seguenti canzoni: ```{{- table}}```",
+        "too-big": "Aggiunte {{number}} canzoni",
+        "no-songs-added": "Non posso aggiungere alcuna musica perchè sono già nella coda, riprova!",
+        "too-much": "Non puoi aggiungere più di {{number}} canzoni alla volta!"
+    },
+    "qra": {
+        "to-small": "Non puoi rimuovere {{number}} canzoni!",
+        "success": "Rimosse `{{number}}` canzoni",
+        "too-big": "Rimosse {{number}} canzoni",
+        "one-song": "Utilizza {{- prefix}}fskip per saltare questa canzone!",
+        "no-number": "Non hai specificato quante canzoni devo togliere dalla coda!",
+        "removed": "Rimossa `{{- title}}` dalla coda."
+    },
+    "cookie": {
+        "give": "Hai dato **1** biscotto a **{{- user}}**!",
+        "new-server": "Riprova.",
+        "arere": "Ahi ahi... qualcosa è andato storto...",
+        "perms": "Hai bisogno del ruolo WolkeBot per dare i biscotti!",
+        "one-user": "Per favore, menziona **1 utente**, nè più nè meno!",
+        "count": "Possiedi **{{number}} biscotti**."
+    },
+    "eastereggs": {
+        "jay": "Jay ti ama~ :heart:",
+        "magic": "xX_Cats_Xx è stato qui -10.10.2016"
+    },
+    "set-lang": {
+        "no-lang": "Non hai specificato alcuna lingua! Attualmente ci sono {{languages}} disponibili.",
+        "success": "Ok, ho impostato la lingua del server a {{- language}}",
+        "unsupported": "Questa lingua ancora non è implementata, ma puoi aiutarci inviando una richiesta con la tua lingua su github. Puoi trovare le lingue disponibili scrivendo questo comando senza specificare la lingua.",
+        "native-name": "Nome originale",
+        "english-name": "Nome inglese",
+        "shortcode": "Codice accorciato (shortcode)",
+        "available-languages": "Lista lingue disponibili\nNota che a setLang serve il codice accorciato (shortcode)"
+    },
+    "np": {
+        "song-duration": "Canzone in corso:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
+        "song": "Canzona in corso: `{{-title}} {{repeat}}`",
+        "repeat-on": "Ripetizione: attiva",
+        "repeat-single": "Ripeti: singolo",
+        "repeat-queue": "Ripeti: coda",
+        "emoji-repeat-single": ":repeat_one: Ripeti: canzone corrente",
+        "emoji-repeat-queue": ":repeat: Ripeti: coda",
+        "emoji-repeat-off": ":heavy_check_mark: Ripeti: off"
+    },
+    "queue": {
+        "queued": "In coda:"
+    },
+    "rem-lewd": {
+        "no-nsfw": "Non ci sono canali NSFW.",
+        "success": "Rimosso il canale {{- channel}} dalla lista NSFW!"
+    },
+    "no-level-server": {
+        "success-disable": "Ok, ho disabilitato il sistema dei livelli per questo server, riscrivi il comando per riattivarlo.",
+        "success-enable": "Ok, ho abilitato il sistema dei livelli per questo server, riscrivi il comando per disattivarlo."
+    },
+    "no-pm-server": {
+        "success-disable": "Ok, ho disabilitato le notifiche dei messaggi privati per questo server, riscrivi il comando per riattivarle.",
+        "success-enable": "Ok, ho abilitato le notifiche dei messaggi privati per questo server, riscrivi il comando per disattivarle."
+    },
+    "no-channel-server": {
+        "success-disable": "Ok, ho disabilitato le notifiche dei messaggi privati e attivato quelle dei canali, riscrivi il comando per annullare.",
+        "success-enable": "Ok, ho abilitato le notifiche dei messaggi privati e disattivato quelle dei canali, riscrivi il comando per annullare."
+    },
+    "no-level": {
+        "success-disable": "Ok, ho disattivato il sistema dei livelli (solo per te), riscrivi il comando per riattivarlo.",
+        "success-enable": "Ok, ho attivato il sistema dei livelli (solo per te), riscrivi il comando per disattivarlo."
+    },
+    "no-pm": {
+        "success-disable": "Ok, ho disattivato le notifiche dei messaggi privati (solo per te), riscrivi il comando per attivarle.",
+        "success-enable": "Ok, ho attivato le notifiche dei messaggi privati (solo per te), riscrivi il comando per disattivarle."
+    },
+    "eat-cookie": {
+        "success": "Hai mangiato {{number}} biscotto(i)!",
+        "failure": "Non hai biscotti da mangiare."
+    },
+    "bot-info": {
+        "uptime": "Tempo attivo",
+        "users": "Utenti",
+        "channels": "Canali",
+        "guilds": "Gilde",
+        "avg-channels": "Canali medi per gilda",
+        "avg-users": "Utenti medi per gilda",
+        "voice": "Voce",
+        "shard": "Processo",
+        "guilds-s": "Gilde (processo)",
+        "channels-s": "Canali (processo)",
+        "users-s": "Utenti su questo processo",
+        "made": "Creato da:",
+        "lib": "Libreria",
+        "voice_active": "AVC",
+        "voice_s": "VC (processo)",
+        "voice_active_s": "AVC (processo)"
+    },
+    "rank": "Puoi trovare la classifica del server qui: {{- link}}",
+    "pp": {
+        "err": {
+            "api-body": "Non ho potuto verificare la risposta dell'API!",
+            "osu-api": "L'API di osu sembra avere qualche problema.",
+            "no-link": "Non è un link di osu! valido!",
+            "unvalid-link": "Nessun link della mappa!"
+        },
+        "success": "PP per la mappa `{{- artist}} - {{- title}} [{{- version}}] con precisione {{- accuracy}}%` `{{- pp}}PP` `{{- mods}}`"
+    },
+    "server-info": {
+        "id": "ID",
+        "name": "Nome",
+        "member": "Membri",
+        "text": "Canali testuali",
+        "voice": "Canali vocali",
+        "roles": "Ruoli",
+        "creation": "Data creazione",
+        "region": "Regione",
+        "owner": "Proprietario"
+    },
+    "leave": "Ok, abbandono il canale vocale.",
+    "play": {
+        "no-result": "Nessuna canzone trovata!",
+        "playing": ":musical_note: Ora in ascolto **{{- song}}** ",
+        "success": ":musical_note: Canzone corrente: **{{- song}}**",
+        "next": ":musical_note: Canzone successiva: **{{- song}}**"
+    },
+    "prefix": {
+        "success": "Ok ho impostato il prefisso con {{- prefix}}, prova `{{- prefix}}ping` per verificarlo",
+        "no-prefix": "Per favore, aggiungi un prefisso!"
+    },
+    "voice": {
+        "in-queue": "**{{- song}}** è già in coda.",
+        "error-volume": "Errore nell'impostare il volume!",
+        "success-volume": "Impostato il volume a {{- volume}}",
+        "no-volume": "Nessun volume impostato!",
+        "repeat-start": "Inizio a ripetere **{{- song}}**",
+        "already-playing": "Questa canzone sta venendo riprodotta in questo momento!",
+        "blocked": "Questo video non è disponibile da scaricare. Forse è troppo lungo, o è stato bloccato/rimosso",
+        "dl-start": ":hourglass: caricamento canzone!",
+        "use-proxy": "Scaricamento attraverso il proxy, potrebbe richiedere un po'.",
+        "too-much": "Non puoi impostare un volume maggiore di 200!"
+    },
+    "yts": {
+        "success": "Canzone trovata: {{- link}}"
+    },
+    "skip": {
+        "success": ":track_next: Saltata la canzone {{- title}}.",
+        "stop": ":stop_button: Canzone interrotta.",
+        "all": ":stop_button: Saltate tutte le canzoni.",
+        "some": ":track_next: Saltate {{- amount}} canzoni."
+    },
+    "vskip": {
+        "user-no-voice": "Non puoi votare per saltare, non sei nello stesso canale!",
+        "same-voice": "Non sei nel mio stesso canale vocale!",
+        "dup": "Hai già votato!",
+        "success-add": "Voto aggiunto, percentuale dei voti a **{{current}}%/{{needed}}%**",
+        "success-skip": "Canzone da saltare: **{{- title}}**",
+        "vote": "Scrivi {{- prefix}}yes per saltare la canzone attuale. Percentuale voti corrente: {{- perct}}%/{{- needed}}\nVotanti:\n```{{- table}}```",
+        "in-prog": "Un voto per saltare la canzone è già in corso, usa {{- prefix}}yes per saltarla."
+    },
+    "rm": {
+        "less-2": "Non puoi eliminare meno di 2 messaggi!",
+        "over-100": "Non puoi eliminare più di 100 messaggi alla volta!",
+        "success": "Eliminati {{number}} messaggi.",
+        "error": "Si è verificato un errore nell'eliminare i messaggi!",
+        "over-limit": "Non puoi eliminare meno di 2 o più di 100 messaggi alla volta!",
+        "no-limit": "Non hai specificato quanti messaggi devo eliminare.",
+        "nothing-found": "Non ho trovato il messaggio filtrato!"
+    },
+    "search": {
+        "success": "Trovate le seguenti canzoni:"
+    },
+    "set-lewd": {
+        "success": "Aggiunto {{- channel}} ai canali NSFW."
+    },
+    "report": "Ok, ho inviato la tua segnalazione a Wolke, non abusarne poichè potresti non poter più utilizzare il bot!",
+    "greeting": {
+        "no-greeting": "Non hai aggiunto il benvenuto che devo usare!",
+        "no-add": "Puoi impostare o azzerare il benvenuto.",
+        "set-greeting": "```Benvenuto:{{- text}}\nCanale:{{- channel}}\nReimposta il benvenuto con {{- prefix}}setGreeting reset```",
+        "no-set-greeting": "Non c'è alcun messaggio di benvenuto impostato.\n\nPuoi impostare il messaggio con `{{- prefix}}setGreeting testo` e reimpostarlo con {{- prefix}}setGreeting reset`.",
+        "reset-greeting": "Ho reimpostato il benvenuto, non apparirà più.",
+        "success": "Ho impostato il messaggio di benvenuto con:\n```{{- text}}```"
+    },
+    "farewell": {
+        "no-farewell": "Non hai aggiunto l'arrivederci che dovrei usare!",
+        "no-add": "Puoi impostare o azzerare l'arrivederci.",
+        "set-farewell": "```Arrivederci:{{- text}}\nCanale:{{- channel}}\nReimposta l'arrivederci con {{- prefix}}setFarewell reset```",
+        "no-set-farewell": "Non c'è alcun messaggio di arrivederci.\n\nPuoi impostare il messaggio con `{{- prefix}}setFarewell testo` e reimpostalo con `{{- prefix}}setFarewell reset`.",
+        "reset-farewell": "Ho reimpostato l'arrivederci, non apparirà più.",
+        "success": "Ho impostato il messaggio d'arrivederci con:\n```{{- text}}```"
+    },
+    "add-role": {
+        "ok": "Ok, ho dato a {{- user}} il ruolo {{- role}}"
+    },
+    "create-role": {
+        "missing": "Il ruolo specificato non esiste.",
+        "new": "Dovrei creare il ruolo?",
+        "no-args": "Non hai aggiunto alcun parametro al comando",
+        "ok": "Ok, ho creato il ruolo {{- role}}",
+        "exists": "Il ruolo {{- role}} esiste già"
+    },
+    "remove-role": {
+        "ok": "Ok ho rimosso il ruolo {{- role}} da {{- user}}!"
+    },
+    "list-roles": {
+        "nr": "Nr.",
+        "id": "ID",
+        "name": "Nome",
+        "self": "Assegnabile a se stessi",
+        "lvl": "Disponibile al livello",
+        "default": "Default"
+    },
+    "user-info": {
+        "id": "$t(server-info.id)",
+        "name": "$t(server-info.name)",
+        "discriminator": "Discriminatore",
+        "nick": "Soprannome",
+        "join": "Entrato",
+        "created": "Creato",
+        "playing": "Giocando a",
+        "info": "Informazioni utente",
+        "bot": "Bot",
+        "status": "Stato",
+        "role": "Ruoli"
+    },
+    "flip": {
+        "head": "E' uscita testa {{- url}}",
+        "tail": "E' uscita croce {{- url}}"
+    },
+    "gp": {
+        "no-cat": "Non ho trovato alcun permesso con la categoria {{- cat}}",
+        "no-perms": "Non hai aggiunto nessun permesso.",
+        "table": {
+            "id": "$t(server-info.id)",
+            "name": "Nome",
+            "type": "Tipo",
+            "cat": "Categoria",
+            "perm": "Permesso",
+            "use": "Usa"
+        },
+        "page-does-not-exist": "Questa pagina non esiste. Prova un numero di pagina inferiore!"
+    },
+    "rp": {
+        "success": "Ho rimosso il permesso `{{- node}}` dal **{{- type}}** `{{- id}}`"
+    },
+    "love": {
+        "success": "Hai dato **{{- target}}** **{{- rep}}** :heart: Punti Amore. Usi rimanenti **{{uses}}**.",
+        "error-cd": "Puoi dare solo **2** :heart: Punti Amore giornalieri, prossimo utilizzo {{- time}}.",
+        "next": " Prossimo utilizzo {{- time}}",
+        "self": ":broken_heart: Non puoi dare Punti Amore a te stesso!",
+        "success-remove": "Hai rimosso **{{- rep}}**:heart: Punto Amore da **{{- target}}** Utilizzi rimanenti **{{uses}}**."
+    },
+    "dere": {
+        "no-dere": "Il tipo di -dere che hai cercato non esiste. Ecco una lista dei possibili -dere:",
+        "dandere": "Il Dandere (だんデレ) è un tipo di personaggio che è solitamente silenzioso e introverso.\nPuò essere per la timidezza o solo perchè non parla molto.\nPerò, se è solo con la persona che gli piace, esce fuori dal suo guscio e diventa più romantico.\nLa parola è un'abbreviazione di Danmari (だんまり) che significa silenzioso, e Deredere (デレデレ) che significa molto romantico.",
+        "deredere": "Il Deredere (デレデレ) è un tipo di personaggio che è molto gentile, felice ed energetico.\nNon importa cosa succede, tornerà di nuovo ad essere felice.\nQuesto è l'unico tipo di personaggio che non è un abbreviazione di Deredere (デレデレ), anche se la sua definizione non è solo molto romantico come gli altri.",
+        "himedere": "L'Himedere (ひめデレ) si riferisce ad un personaggio che vorrebbe essere trattata come una principessa dalla persona che ama, anche se non sono dei nobili.\nLa parola è un'abbreviazione di Hime (ひめ) che significa principessa, e Deredere (デレデレ) che significa molto romantico.",
+        "kamidere": "Il Kamidere (かみデレ) è un tipo di personaggio molto complesso.\nSono molto arroganti e fieri di se stessi, non hanno paura di esprimere le loro opinioni e di mostrare agli altri che sono nella parte del giusto.\nE' un'abbreviazione di Kami (かみ) che significa Dio, e Deredere (デレデレ) che significa molto romantico.",
+        "kuudere": "Il Kuudere (クーデレ), a volte scritto Coodere o Kūdere, è un personaggio spesso freddo, franco e cinico.\nPuò sembrare che non provi emozioni, ma dentro di sè tengono alle persone — almeno quando riguarda la persona amata.\nLa parola è un'abbreviazione di Cool (クール) e Deredere (デレデレ) che significa molto romantico.",
+        "mayadere": "Il Mayadere (まやデレ) è un tipo di personaggio che è spesso l'antagonista della serie, ma cambia posizione una volta innamorato di un'altro personaggio.\nPotrebbe rimanere letale e non prevedibile per il protagonista o per gli altri personaggi dell'Anime / Manga.",
+        "oujidere": "L'Oujidere (おうじデレ) è un tipo di personaggio che vorrebbe essere trattato come un principe dalla persona amata, anche se non sono nobili.\nLa parola è un'abbreviazione di Ouji (おうじ) che significa principe, e Deredere (デレデレ) che significa molto romantico.",
+        "tsundere": "Lo Tsundere (ツンデレ) è il tipo di personaggio più usato negli anime e manga.\nSi riferisce ad un personaggio che tratta male la persona amata.\nA volte è perchè iniziano con l'odiarla, per poi innamorarsene man mano che la serie prosegue, e a volte è perchè è l'unico modo che hanno per reagire.\nUn esempio è quando il protagonista chiama il personaggio tsundere \"carino/a\".\nLo Tsundere si irrita, agita e potrebbe causare dolore fisico alla persona amata, e chiamarla \"stupido\".\nLa parola è un'abbreviazione di Tsuntsun (ツンツン) che significa guardare con disprezzo, e Deredere (デレデレ) che significa molto romantico.",
+        "undere": "L'Undere (ウンデレ) è un tipo di personaggio che dice di sì a praticamente ogni cosa che dice la persona amata.\nApprovano più cose possibili per avere dei legami sempre più stretti con la persona interessata.\nLa parola è un'abbreviazione di Un (ウン) che è la forma contratta del Sì giapponese, e Deredere (デレデレ) che significa molto romantico.",
+        "yandere": "Lo Yandere (ヤンデレ) è un tipo di personaggio che inizia in modo simpatico e dolce, ma diventa ossessivo nei confronti della persona amata.\nDiventa stalker e usa la violenza, e forse anche l'omicidio, su qualunque persona che si avvicina alla persona interessata — anche se è troppo timido per parlare la persona di cui è innamorato.\nLa parola è un'abbreviazione di Yanderu (やんでる) che significa essere malati mentali/sentimentali e Deredere (デレデレ) che significa molto romantico.",
+        "yangire": "Lo Yangire (ヤンギレ) è un tipo di personaggio molto simile allo Yandere.\nE' un personaggio che inizia in modo simpatico e dolce ma diventa poi aggressivo e psicotico.\nPerò, a differenza dello Yandere, non diventa violento a causa della sua attrazione.\nInvece, potrebbe parlare in modo brusco perchè sono irritati con un personaggio che non c'entra niente con la persona interessata.\nLa parola è un'abbreviazione di Yanderu (やんでる) che significa essere malati mentali/sentimentali, e Kira (きれ) che significa rompere / parlare bruscamente."
+    },
+    "shuffle": {
+        "not-enough-shuffle": "Ci devono essere almeno 3 canzoni in coda per mischiarle.",
+        "success": "Coda mischiata!"
+    },
+    "get-node": {
+        "success": "Nodo permesso: `{{- node}}` Nodo categoria:`{{- category}}.*` Categoria:`{{- category}}`",
+        "not-found": "Il comando non esiste.",
+        "no-args": "Scrivi un comando senza prefisso per ottenere il suo nodo permesso, nodo categoria e categoria"
+    },
+    "ap": {
+        "type": {
+            "user": "Utente",
+            "guild": "Gilda",
+            "role": "Ruolo",
+            "channel": "Canale"
+        },
+        "success": "Ok ho aggiunto il permesso `{{- node}}` `{{- allowed}}` al `{{- type}}` `{{- name}}`",
+        "wrong-node": "Il nodo permesso `{{- node}}` non funzionerà, dato che non è un nodo permesso valido. Per ottenere il nodo permesso per un comando digita `{{- prefix}}getNode",
+        "target-not-found": "Non sono riuscita a trovare l'obiettivo {{- target}} per questo comando.",
+        "no-allowance-set": "Non mi hai detto se il permesso dovrebbe essere consentito o meno, aggiungi `true` o `false` per decidere",
+        "missing-args": "L'utilizzo corretto per il comando è `{{-prefix}}ap <nodo> [-u|-r|-c] [target] <consentito>`\nEsempio:\n```{{-prefix}}ap playlist.* true -> permette tutti i comandi della categoria playlist sul server\n{{-prefix}}ap music.fskip -u @user true -> permette all'utente menzionato di usare {{- prefix}}fskip```"
+    },
+    "reset-perms": {
+        "nothing-found": "Non hai impostato alcun permesso.",
+        "confirmation": "Sicuro di voler reimpostare i permessi? Scrivi `yes` per resettarli e `no` per cancellare il comando.",
+        "success": "Ho reimpostato tutti i permessi."
+    },
+    "choose": {
+        "empty-choose": ":no_entry_sign: Non posso scegliere nulla se non inserisci niente!",
+        "success": "Scelgo **{{- choice}}**!"
+    },
+    "define": {
+        "empty-search": ":no_entry_sign: Non posso cercare una definizione, se non inserisci niente!",
+        "no-result": "Non ho trovato nulla con il tag `{{- term}}`"
+    },
+    "apq": {
+        "unsupported": "Questa playlist non è supportata!"
+    }
 }
