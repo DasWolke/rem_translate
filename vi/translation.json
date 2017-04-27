@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Không tìm thấy ảnh có thẻ: `{{tags}}`",
         "no-nsfw-channel": "Vui lòng đặt / thêm kênh NSFW với {{- tiền tố}} setLewd (trong một trong các Kênh NSFW) để sử dụng các Lệnh NSFW",
-        "error-body": "Đã xảy ra lỗi khi phân tích phản hồi api. Vui lòng thử lại, nếu sự cố vẫn tiếp tục liên lạc với Wolke # 6746"
+        "error-body": "Đã xảy ra lỗi khi phân tích phản hồi api. Vui lòng thử lại, nếu sự cố vẫn tiếp tục liên lạc với Wolke # 6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
