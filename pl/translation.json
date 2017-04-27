@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Nie znaleziono obrazków z tagami: `{{tags}}`",
         "no-nsfw-channel": "Proszę ustaw/dodaj kanał NSFW używając komendy {{- prefix}}setLewd (w jednym z kanałów NSFW) aby używać komend NSFW",
-        "error-body": "Wystąpił błąd podczas przetwarzania odpowiedzi z api. Proszę spróbuj ponownie, jeżeli błąd nie ustępuje, proszę skontaktuj się z Wolke#6746"
+        "error-body": "Wystąpił błąd podczas przetwarzania odpowiedzi z api. Proszę spróbuj ponownie, jeżeli błąd nie ustępuje, proszę skontaktuj się z Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: Komendy NSFW można używać tylko w kanałach oznaczonych jako NSFW, w nawiązaniu do wytycznych Discord.\n\nWytyczne Discord można znaleźć na:\n<https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Te zapytanie jest zablokowane ze względu na konflikt z wytycznymi Discord.\n\nWytyczne Discord można znaleźć na:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
