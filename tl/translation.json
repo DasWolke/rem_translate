@@ -11,7 +11,7 @@
         "level-update": ":tada: Umabot ka sa **Level {{level}}** sa **{{- server}}*",
         "empty-search": ":no_entry_sign: Wala kang linagay na search Term!",
         "negative": ":no_entry_sign: Huwag gumamit ng negatibong numero!",
-        "cancel": "c-cancel",
+        "cancel": "i-cancel",
         "version": "Bersyon",
         "author": "Awtor",
         "lib": "ginamit na library",
@@ -19,12 +19,12 @@
         "abort": ":x: kinansela",
         "cat-nope": ":no_entry_sign: Ang kategoryang ito ay wala pa!",
         "mention": "Pakiusap magbanggit ng user.",
-        "cancelled-command": "Hindi itinuloy ang command.",
+        "cancelled-command": "Ipinatigil ang command.",
         "donate": "Donate",
         "support": "Supporta",
         "invite": "Ma-anyaya",
-        "language-name-en": "Ingles",
-        "native-name": "Ingles",
+        "language-name-en": "Filipino",
+        "native-name": "Filipino",
         "empty-say": ":no_entry_sign: Wala kang inilagay na mensahe!",
         "page": "Pahina"
     },
@@ -135,13 +135,13 @@
         "uwu": "uwu",
         "dere": "Maghahanap ng kahulugan ng dere o kumuha ng kahit ano",
         "love": "Magbibigay ng love point sa nabanggit na user, magdagdag ng - upang mabawasan ng 1 ang lovepoints ng user",
-        "sinfo": "magbibigay ng ilang impormasyon tungkol sa kasalukuyang server",
-        "uinfo": "magbibigay ng ilang impormasyon tungkol sa sarili/binanggit na User",
-        "apq": "Magdadagdag ng playlist sa queue, youtube-playlists lamang ang magagamit sa ngayon, gamitin lang ang link ng playlist",
+        "sinfo": "magbibigay sa iyo ng iilang impormasyon tungkol sa kasalukuyang server",
+        "uinfo": "magbibigay sa iyo ng iilang impormasyon tungkol sa sarili/binanggit na User",
+        "apq": "Magdadagdag ng playlist sa queue, youtube-playlists ang sinusupporta lamang ngayon, gamitin lamang ang link ng playlist",
         "ap": "Ang pagdagdag ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
         "gp": "Ang pagkuha ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
         "rp": "Ang pagtanggal ng permiso command, ang mas malawak na paliwanag ay matatagpuan sa support discord (!w.bug upang makuha ang imbitasyon)",
-        "cry": "Malungkot ba? Ito ang tamang command para sa'yo.",
+        "cry": "Malungkot ka ba? Ito ang tamang command para sa iyo.",
         "ibsafe": "Maghahanap sa ibsear.ch (sfw na larawan lamang)",
         "iblewd": "Maghahanap sa ibsearch.xxx (katulad ng ibsafe ngunit kasama ang mga nsfw na larawan)",
         "qr": "Maaaring tanggalin ang isang kanta gamit ang kanilang songid, o madaming kanta gamit ang `qr startid-stopid`, ito ay tatanggal ang lahat ng mga kanta simula sa startid hanggang sa stopid, o burahin ang ilang ids sa pamamagitan ng mga kuwit",
@@ -153,20 +153,20 @@
         "triggered": "NA-TRIGGER",
         "stare": "titiiiiig...",
         "nom": "Nom :>",
-        "potato": "Lahat ng tao may gusto sa patatas",
-        "choose": "Si Rem ang magpipili para sa iyo, hatiin ang pipiliin gamit ng `;`",
+        "potato": "Lahat ng mga tao gusto ay patatas",
+        "choose": "Ipapili mo si Rem para sa iyo, hatiin ang pagpipilian gamit ng `;`",
         "tickle": "Kiliti Kiliti Kiliti",
         "image": "[IMAGE COMMANDS]",
         "define": "Kukuha ng kahulugan ng salita galing sa Urbandictionary",
-        "dog": "Mas mahilig ka sa mga aso kaysa sa mga pusa ? Itong command ay tama para sa iyo",
+        "dog": "Mas mahilig ka ba sa mga aso kaysa sa mga pusa ? Itong command ay tama para sa iyo",
         "kiss": "Halikan ang isang tao <3",
         "setGreeting": "Magtatakda ng pagbati sa channel kung saan ang command ay ginamit. Maaaring gamitin ang %USER% at %GUILD% na mapapaltan ng username at ng pangalan ng guild.",
         "setFarewell": "Magtatakda ng pamamaalam sa channel kung saan ang command ay ginamit. Maaaring gamitin ang %USER% at %GUILD% na mapapaltan ng username at ng pangalan ng guild.",
         "pout": "Hmmpf :< Ngumuso sa isang tao",
         "smug": "Ngumisi sa isang tao :^)",
-        "lick": "Tingnan kung pwede s'yang kainin",
+        "lick": "Tingnan kung pwede silang kainin",
         "playlist": "[PLAYLIST]",
-        "moe": "Patugtugin ang Listen.moe ^^"
+        "moe": "Ipapalabas ang Listen.moe ^^"
     },
     "version": "Kasalukuyan akong gumagana sa bersyon {{version}}",
     "add": "Gamitin itong link upang idagdag ako sa iyong Server: {{- link}}",
@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Walang mga imaheng nahanap gamit ang tags: `{{tags}}`",
         "no-nsfw-channel": "Pakiusap magtakda/magdagdag ng NSFW channel na may {{- prefix}}setLewd (sa isa sa mga NSFW Channels) upang magamit ang NSFW Commands",
-        "error-body": "May mali sa pagsusuri ng api response. Subukan ulit, kung nagpatuloy ang problema kontakin si Wolke#6746"
+        "error-body": "May mali sa pagsusuri ng api response. Subukan ulit, kung nagpatuloy ang problema kontakin si Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -252,16 +254,16 @@
     },
     "eastereggs": {
         "jay": "Si Jay ay nagmamahal sa'yo~ :heart:",
-        "magic": "Si xX_Cats_Xx ay naparito -10.10.2016"
+        "magic": "Nandito si xX_Cats_Xx kanina -10.10.2016"
     },
     "set-lang": {
         "no-lang": "Hindi mo tinukoy ang lenggwahe! Kasalukuyang mayroong {{languages}} na magagamit.",
         "success": "Sige Itinakda ko ang lenggwahe para sa server na ito ang {{- language}}.",
         "unsupported": "Ang lenggwaheng ito ay hindi pa naipatutupad, ngunit maaari kang tumulong sa pamamagitan ng pagdadagdag ng aplikasyon ng iyong lenggwahe sa github. Maaari mong mahanap ang kasalukuyang magagamit na mga lenggwahe sa pamamagitan ng pagpapatakbo ng command na ito ng walang mga argumento.",
         "native-name": "Katutubong Pangalan",
-        "english-name": "Ingles na Pangalan",
-        "shortcode": "shortcode",
-        "available-languages": "Listahan ng lahat ng Lenggwahe\nPakitandaan na ang setLang ay kailangan ang shortcode"
+        "english-name": "Pangalang Ingles",
+        "shortcode": "ph",
+        "available-languages": "Listahan ng mga pwedeng Lenggwahe\nPakitandaan na ang setLang ay kailangan ng shortcode"
     },
     "np": {
         "song-duration": "Kasalukuyang pinatutugtog:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
@@ -348,7 +350,7 @@
         "no-result": "Walang kantang nahanap!",
         "playing": ":musical_note: Tumutugtog ngayon **{{- song}}**",
         "success": ":musical_note: Ang kanta ngayon ay **{{-song}}**",
-        "next": ":musical_note* Ang susunod na kanta ay **{{-song}}**"
+        "next": ":musical_note: Ang susunod na kanta ay **{{-song}}**"
     },
     "prefix": {
         "success": "Sige, itinakda ko ang prefix sa {{- prefix}}, subukan ang {{- prefix}}ping` upang siyasatin ito",
@@ -448,7 +450,7 @@
         "info": "Userinfo",
         "bot": "Bot",
         "status": "Istado",
-        "role": "Mga tungkulin"
+        "role": "Tungkulin"
     },
     "flip": {
         "head": "Ang barya ay pumilantik sa ulo {{- url}}",
@@ -468,14 +470,14 @@
         "page-does-not-exist": "Wala pa ang pahinang ito. Subukan ang mas mababang bilang ng pahina!"
     },
     "rp": {
-        "success": "Matagumpay na natanggal ang permisong `{{- node}}` mula sa **{{- type}}** `{{- id}}`"
+        "success": "Matagumpay kong itinanggal ang permisong `{{- node}}` mula sa **{{- type}}** `{{- id}}`"
     },
     "love": {
-        "success": "Nagbigay ka kay **{{- target}}** ng **{{- rep}}** :heart: Love Point. Natitirang gamit **{{uses}}**.",
-        "error-cd": "Maaari ka lamang magbigat ng **2** :heart: Love Points bawat araw, sunod na gamit {{- time}}.",
-        "next": " Sunod na gamit {{- time}}",
+        "success": "Nagbigay ka kay **{{- target}}** ng **{{- rep}}** :heart: Love Point. Natitirang paggamit **{{uses}}**.",
+        "error-cd": "Maaari ka lamang magbigay ng **2** :heart: Love Points bawat araw, sunod na paggamit {{- time}}.",
+        "next": " Sunod na paggamit {{- time}}",
         "self": ":broken_heart: Hindi maaaring magbigay ng Love Points sa iyong sarili.",
-        "success-remove": "Tinanggal mo ang **{{- rep}}**:heart: Love Point kay **{{- target}}** Natitirang gamit **{{uses}}**."
+        "success-remove": "Tinanggal mo ang **{{- rep}}**:heart: Love Point kay **{{- target}}** Natitirang paggamit **{{uses}}**."
     },
     "dere": {
         "no-dere": "Ang uri ng dere na hinanap mo ay wala.\nIto ang listahan ng mga posibleng dere:",
@@ -509,18 +511,18 @@
         },
         "success": "Sige, idinagdag na ang permisong `{{- node}}` `{{- allowed}}` sa `{{- type}}` `{{- name}}`",
         "wrong-node": "Ang permission node `{{- node}}` ay 'di gagana, dahil hindi ito balido. Para makuha ang permission node para sa isang uri ng command `{{- prefix}}getNode command`",
-        "target-not-found": "Hindi mahanap ang target na {{- target} para sa command",
-        "no-allowance-set": "Hindi mo sinabi kung ang permiso ay dapat bang payagan o hindi, idagdag ang `true` o `false` depende sa napili",
+        "target-not-found": "Hindi mahanap ang target na {{- target} para sa command na ito",
+        "no-allowance-set": "Hindi mo sinabi kung ang permiso ay dapat bang payagan o hindi, idagdag ang `true` o `false` depende sa pipiliin mo",
         "missing-args": "Ang tamang syntax para sa command ay `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Halimbawa:\n```{{-prefix}}ap playlist.* true -> pinapayagan ang lahat ng commands ng category playlist sa server\n{{-prefix}}ap music.fskip -u @user true -> pinapayagan ang binanggit na user na gamitin ang  {{- prefix}}fskip```"
     },
     "reset-perms": {
         "nothing-found": "Wala ka pang nalalagay na mga Permiso.",
-        "confirmation": "Sigurado ka bang gusto mong tanggalin ang Mga Permiso? Ilagay ang `yes` para tanggalin at `no` para hindi ituloy ang command.",
+        "confirmation": "Sigurado ka bang gusto mong tanggalin ang mga Permiso? Ilagay ang `yes` para tanggalin at `no` para hindi ituloy ang command.",
         "success": "Natanggal ko na ang lahat ng permisong nakalagay."
     },
     "choose": {
         "empty-choose": ":no_entry_sign: Wala akong pipiliing kahit ano, kung wala kang isinulat!",
-        "success": "Ang napili ko ay **{{-choice}}**!"
+        "success": "Ang pinili ko ay **{{-choice}}**!"
     },
     "define": {
         "empty-search": ":no_entry_sign: Hindi ako makapaghahanap ng kahulugan, kung wala kang isinulat!",
