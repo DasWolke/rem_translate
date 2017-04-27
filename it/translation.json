@@ -6,7 +6,7 @@
         "nan": ":no_entry_sign: Qualunque cosa hai appena inviato, è sufficiente aggiungere un numero intero. :)␣",
         "no-song-in-queue": ":no_entry_sign: Non c'è nessuna canzone in coda, magari aggiungerne una :musical_note: ?",
         "no-song-playing": ":musical_note: Non c'é nessuna canzone in questo momento!",
-        "no-permission": ":no_entry_sign: Non si ha il permesso di utilizzare questo comando, per favore, aggiungere l'autorizzazione `{{- node}} per utilizzarlo.",
+        "no-permission": ":no_entry_sign: Non hai il permesso per utilizzare questo comando, per favore aggiungi l'autorizzazione `{{- node}} per utilizzarlo.",
         "no-voice": ":no_entry_sign: Non sono collegato a nessun canale vocale su questo server!",
         "level-update": ":tada: Hai raggiunto **il livello {{level}}** in **{{- server}}**",
         "empty-search": ":no_entry_sign: Non hai inserito alcun termine di ricerca!",
@@ -23,8 +23,8 @@
         "donate": "Dona",
         "support": "Supporto",
         "invite": "Invita",
-        "language-name-en": "Inglese",
-        "native-name": "Inglese",
+        "language-name-en": "Italian",
+        "native-name": "Italiano",
         "empty-say": ":no_entry_sign: Non hai inserito il messaggio!",
         "page": "Pagina"
     },
@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Non sono state trovate immagini con tag: `{{tags}}`",
         "no-nsfw-channel": "Per favore, imposta/aggiungi un canale NSFW con {{- prefix}} setLewd (in uno dei canali NSFW) per usare i comandi NSFW",
-        "error-body": "Errore nella risposta dell'API. Se questo errore persiste contatta Wolke#6746"
+        "error-body": "Errore nella risposta dell'API. Se questo errore persiste contatta Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: I comandi NSFW possono essere usati solo in canali NSFW, in accordo con le regole di Discord.\n\nEsse possono essere trovate qui: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Questa ricerca non è consentita a causa di un conflitto con le regole di comunità di Discord.\n\nEsse possono essere trovate qui: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -346,8 +348,8 @@
     "leave": "Ok, abbandono il canale vocale.",
     "play": {
         "no-result": "Nessuna canzone trovata!",
-        "playing": ":musical_note: Ora in ascolto **{{- song}}** ",
-        "success": ":musical_note: Canzone corrente: **{{- song}}**",
+        "playing": ":musical_note: In riproduzione **{{- song}}** ",
+        "success": ":musical_note: In riproduzione: **{{- song}}**",
         "next": ":musical_note: Canzone successiva: **{{- song}}**"
     },
     "prefix": {
