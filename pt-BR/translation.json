@@ -83,9 +83,9 @@
         "roll": "Rola um número entre zero e um determinado número, se nenhum número for especificado, será 10",
         "8ball": "Te dá a opinião da Bola 8 Mágica para uma pergunta",
         "garfield": "Retorna uma tirinha aleatória do Garfield",
-        "cat": "Envia uma imagem aleatória de um gato",
-        "hug": "Retorna um gif de anime para Abraço",
-        "slap": "Retorna um gif de anime para Tapa",
+        "cat": "Envia uma imagem aleatória de um gato. Todos nós precisamos de gatos!",
+        "hug": "Abrace alguém :>",
+        "slap": "Alguém foi mal com você? Bata nele!",
         "setLang": "define o idioma, atualmente suportando {{languages}}",
         "report": "Se você é muito tímido para vir ao Discord de suporte, use 'report' para enviar um relatório ao Wolke, o desenvolvedor, mas não abuse!",
         "feedback": "Para feedback use o Discord de Suporte, por favor ^^",
@@ -156,12 +156,12 @@
         "potato": "Todo mundo quer uma batata",
         "choose": "Faça Rem escolher algo para você, separe as escolhas com `;`",
         "tickle": "Tickle Tickle Tickle",
-        "image": "[COMANDO DE IMAGENS]",
-        "define": "Pega uma definição de um termo no Urbandictionary",
+        "image": "[COMANDO DE IMAGEM]",
+        "define": "Busca uma definição de um termo no Urbandictionary",
         "dog": "Você gosta de cachorros mais do que de gatos? Esse é o comando certo para você",
         "kiss": "Dê um beijo em alguém <3",
-        "setGreeting": "Define uma saudação no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
-        "setFarewell": "Define uma despedida no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome da guilda.",
+        "setGreeting": "Define uma saudação no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome do Servidor.",
+        "setFarewell": "Define uma despedida no canal em que o comando é executado. Você pode usar %USER% e %GUILD% que será substituído com o nome de usuário e o nome do Servidor.",
         "pout": "Hmmph :< Faneca norueguesa a alguém",
         "smug": "dar alguém uma presunçosa :^)",
         "lick": "Verificar se alguém é comestível",
@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Não encontrei nenhuma imagem com as tags: `{{tags}}` ",
         "no-nsfw-channel": "Por favor defina/adicione um Canal NSDW com {{- prefix}}setLewd (em um dos canais NSFW) para usar comandos NSFW",
-        "error-body": "Houve um problema com a resposta da API, tente novamente. Se o problema persistir, contate Wolke#6746"
+        "error-body": "Houve um problema com a resposta da API, tente novamente. Se o problema persistir, contate Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -261,7 +263,7 @@
         "native-name": "Nome Nativo",
         "english-name": "Nome Inglês",
         "shortcode": "Shortcode",
-        "available-languages": "Lista de linguagens disponíveis\n"
+        "available-languages": "Lista de idiomas disponíveis\n"
     },
     "np": {
         "song-duration": "Tocando agora: ` {{- title}} {{current}}/{{duration}} {{repeat}} `",
@@ -527,6 +529,6 @@
         "no-result": "Eu nao consegui achar nada com o termo`{{- term}}` \n"
     },
     "apq": {
-        "unsupported": "This Playlist is not supported!"
+        "unsupported": "Essa Playlist não é suportada!"
     }
 }
