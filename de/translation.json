@@ -4,7 +4,7 @@
         "no-pm": ":no_entry: Dieser Befehl funktioniert nicht in privaten Kanälen\n!",
         "whole-num": ":no_entry_sign: Bitte füge eine ganze Zahl an!",
         "nan": ":no_entry_sign: Was auch immer du gerade gesendet hast, verwende bitte eine ganze Zahl. :)",
-        "no-song-in-queue": "no_entry_sign: Momentan ist kein Lied in der Warteschlange, füge doch eins hinzu :musical_note: ?",
+        "no-song-in-queue": ":no_entry_sign: Momentan ist kein Lied in der Warteschlange, füge doch eins hinzu :musical_note: ?",
         "no-song-playing": ":musical_note: Zur Zeit spielt kein Lied!",
         "no-permission": ":no_entry_sign: Dir fehlt die Berechtigung `{{- node}}`, weise sie dir zu um diesen Befehl zu verwenden.",
         "no-voice": ":no_entry_sign: Ich bin aktuell mit keinem Voicechannel auf diesem Server verbunden!",
@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Ich habe keine Bilder mit diesen Tags gefunden: `{{- tags}}`",
         "no-nsfw-channel": "Bitte füge einen NSFW-Channel hinzu. Dies geht mit {{- prefix}}setLewd in dem entsprechenden Channel.",
-        "error-body": "Es gab ein Problem, beim Versuch die Anfrage zu bearbeiten, wenn das Problem länger besteht, kontaktier bitte Wolke#6746"
+        "error-body": "Es gab ein Problem, beim Versuch die Anfrage zu bearbeiten, wenn das Problem länger besteht, kontaktier bitte Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW Befehle können nur in als NSFW gekennzeichneten Channeln genutzt werden. Dies wird von den Discord Community Guidelines gefordert.\n\nDiese findest du hier: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Diese Suche ist nicht erlaubt, da sie gegen die Discord Community Guidelines verstößt.\n\nWenn du mehr zu den Community Guidelines erfahren willst,\nfindest du sie hier: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
