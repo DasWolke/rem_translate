@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Изображений с тегами `{{tags}}` не найдено",
         "no-nsfw-channel": "Пожалуйста, настройте/добавьте NSFW-канал при помощи {{- prefix}}setLewd (в одном из NSFW-каналов) для использования NSFW-команд",
-        "error-body": "Ошибка при разборе ответа API. Если ошибка повторяется, свяжитесь с <@!128392910574977024>"
+        "error-body": "Ошибка при разборе ответа API. Если ошибка повторяется, свяжитесь с <@!128392910574977024>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
