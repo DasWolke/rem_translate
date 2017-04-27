@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Nema nađenih slika s tagom: `{{tags}}`",
         "no-nsfw-channel": "Molim postavi/dodaj NSFW kanal s {{- prefix}}setLewd (u jednom od NSFW kanala) da možeš koristiti NSFW naredbe.",
-        "error-body": "Dogodila se pogreška prilikom obrade api odgovor. Molimo pokušajte ponovo, ako se problem nastavi kontaktiraj Wolke#6746"
+        "error-body": "Dogodila se pogreška prilikom obrade api odgovor. Molimo pokušajte ponovo, ako se problem nastavi kontaktiraj Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW naredbe se mogu samo koristiti u kanalima koji su označeni kao NSFW u skladu s Discordovim pravilima.",
+        "error-discord-tos-conflict": ":x: Ovo nije dozvoljeno radi Discordovih pravila.\n\nDiscord pravila se mogu pronaći ovdje:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
