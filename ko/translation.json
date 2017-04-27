@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "다음 태그에 해당하는 이미지는 찾을 수 없었어요. : `{{tags}}`",
         "no-nsfw-channel": "NSFW 명령어를 사용하시려면 NSFW 채널을 다음 명령어로 설정해주세요. {{- prefix}}setLewd (NSFW 채널 안에서)",
-        "error-body": "API 응답을 해석하는데 오류가 있는 것 같아요. 이따가 다시 시도해 보시고, 그래도 문제가 계속 발생된다면 Wolke#6746으로 연락주세요."
+        "error-body": "API 응답을 해석하는데 오류가 있는 것 같아요. 이따가 다시 시도해 보시고, 그래도 문제가 계속 발생된다면 Wolke#6746으로 연락주세요.",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
