@@ -165,8 +165,8 @@
         "pout": "ฮึ่มฟ.. :< ทำหน้ามุ่ยใส่บางคน",
         "smug": "ใจแคบกับใครบางคน :^)",
         "lick": "ตรวจสอบถ้าใครกินได้",
-        "playlist": "[PLAYLIST]",
-        "moe": "Streams Listen.moe ^^"
+        "playlist": "[เพลย์ลิสต์]",
+        "moe": "สตรีม ฟัง.โมเอะ ^^"
     },
     "version": "ปัจจุบัน ฉันรุ่น {{version}} ",
     "add": "ใช้ลิงค์นี้เพื่อเพิ่มฉันเข้าเซิฟของคุณ: {{- link}} ",
@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "ไม่เจอภาพที่แท็ก: `{{tags}}` ",
         "no-nsfw-channel": "กรุณา ตั้ง/เพิ่ม ห้องNSFW ด้วย {{- prefix}}setLewd (หนึ่งในห้องNSFW) เพื่อใช้ คำสั่งNSFW",
-        "error-body": "เกิดข้อผิดพลาดของ api กรุณาลองอีกครั้ง, ถ้ามีปัญหาติดต่อ Wolke#6746"
+        "error-body": "เกิดข้อผิดพลาดของ api กรุณาลองอีกครั้ง, ถ้ามีปัญหาติดต่อ Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
