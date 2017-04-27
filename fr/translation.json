@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "Aucune image trouvée avec les tags: `{{tags}}`",
         "no-nsfw-channel": "S'il vous plaît définis/ajoute un salon NSFW avec {{- prefix}}setLewd (dans un des salons NSFW) pour utiliser les commandes NSFW",
-        "error-body": "Il y a eu une erreur lors de l'analyse de la réponse api. S'il te plaît réessaye, si le problème persiste contacte Wolke#6746"
+        "error-body": "Il y a eu une erreur lors de l'analyse de la réponse api. S'il te plaît réessaye, si le problème persiste contacte Wolke#6746",
+        "error-discord-not-nsfw-channel": ":x: Les commandes NSFW ne peuvent être utilisés que dans les salons désignés comme NSFW, en accord avec les règles de Discord.",
+        "error-discord-tos-conflict": ":x: Cette recherche n'est pas autorisés car elle est en conflit avec les règles de la communauté Discord."
     },
     "8ball": {
         "answers": [
