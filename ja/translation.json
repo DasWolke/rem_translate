@@ -185,7 +185,9 @@
     "nsfw-images": {
         "nothing-found": "'{{tags}}'のタグがついた画像は見つかりませんでした。",
         "no-nsfw-channel": "NSFW(閲覧注意)コマンドを使用するには {{- prefix}}setLewd を使用してNSFW(閲覧注意)チャンネルのリストにこのチャンネルを追加してください。",
-        "error-body": "API応答の解析中にエラーが発生しました。もう一度試してみてください。このメッセージが表示され続ける場合は Wolke#6746に連絡してください。"
+        "error-body": "API応答の解析中にエラーが発生しました。もう一度試してみてください。このメッセージが表示され続ける場合は Wolke#6746に連絡してください。",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -465,7 +467,7 @@
             "perm": "パーミッション",
             "use": "使用可能"
         },
-        "page-does-not-exist": "This page does not exist. Try a lower page number!"
+        "page-does-not-exist": "このページは存在しません。ページ番号を低くしてください！"
     },
     "rp": {
         "success": "**{{- type}}** `{{- id}}`から`{{- node}}`パーミッションを剥奪しました。"
