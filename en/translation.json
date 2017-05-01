@@ -26,7 +26,8 @@
     "language-name-en": "English",
     "native-name": "English",
     "empty-say": ":no_entry_sign: You did not enter a message!",
-    "page": "Page"
+    "page": "Page",
+    "unknown": "unknown"
   },
   "help": {
     "intro": "lets have fun together here on Discord (/^▽^)/ select a command category by responding with {{pre}}help number of command to know more:",
@@ -162,7 +163,9 @@
     "smug": "Give someone a smug :^)",
     "lick": "Check if somebody is eatable",
     "playlist": "[PLAYLIST]",
-    "moe": "Streams Listen.moe ^^"
+    "moe": "Streams Listen.moe ^^",
+    "anime": "Search for an anime",
+    "manga": "Search for a manga"
   },
   "version": "Currently I am running on version {{version}}",
   "add": "Use this link to add me to your Server: {{- link}}",
@@ -521,9 +524,18 @@
   },
   "define": {
     "empty-search": ":no_entry_sign: I can not search a definition, if you enter nothing!",
-    "no-result": "I could not find anything with the term `{{- term}}`"
+    "no-result": "I could not find anything with the searchterm `{{- term}}`"
   },
   "apq": {
     "unsupported": "This Playlist is not supported!"
+  },
+  "anime": {
+    "genres": "Genres",
+    "episodes": "Episodes",
+    "characters": "Main Characters",
+    "score": "Average Score"
+  },
+  "manga": {
+    "chapters": "Chapters"
   }
 }
