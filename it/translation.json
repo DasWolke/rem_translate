@@ -26,7 +26,8 @@
         "language-name-en": "Italian",
         "native-name": "Italiano",
         "empty-say": ":no_entry_sign: Non hai inserito il messaggio!",
-        "page": "Pagina"
+        "page": "Pagina",
+        "unknown": "Sconosciuto"
     },
     "help": {
         "intro": "Divertiamoci insieme qui su Discord (/^▽^)/ seleziona una categoria di comandi rispondendo con {{pre}}help numero del comando per saperne di più:",
@@ -166,7 +167,9 @@
         "smug": "Congratulati con qualcuno :^)",
         "lick": "Controlla se qualcuno è commestibile",
         "playlist": "[PLAYLIST]",
-        "moe": "Avvia lo stream di Listen.moe ^^"
+        "moe": "Avvia lo stream di Listen.moe ^^",
+        "anime": "Cerca un anime",
+        "manga": "Cerca un manga"
     },
     "version": "Attualmente la mia versione è {{version}}",
     "add": "Usa questo link per aggiungermi al tuo server: {{- link}}",
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Questa playlist non è supportata!"
+    },
+    "anime": {
+        "genres": "Generi",
+        "episodes": "Episodi",
+        "characters": "Personaggi principali",
+        "score": "Punteggio medio"
+    },
+    "manga": {
+        "chapters": "Capitoli"
     }
 }
