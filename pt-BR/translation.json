@@ -26,7 +26,8 @@
         "language-name-en": "Brazilian Portuguese",
         "native-name": "Português brasileiro",
         "empty-say": ";no_entry_sign: Você não escreveu uma mensagem",
-        "page": "Página"
+        "page": "Página",
+        "unknown": "unknown"
     },
     "help": {
         "intro": "vamos nos divertir juntos aqui no Discord (/^▽^)/ para escolher uma categoria de comando utilize {{pre}}help e o número do comando para saber mais:",
@@ -166,7 +167,9 @@
         "smug": "dar alguém uma presunçosa :^)",
         "lick": "Verificar se alguém é comestível",
         "playlist": "[PLAYLIST]",
-        "moe": "Streams Listen.moe ^^"
+        "moe": "Streams Listen.moe ^^",
+        "anime": "Search for an anime",
+        "manga": "Search for a manga"
     },
     "version": "No momento estou rodando na versão {{version}} ",
     "add": "Use este link para me colocar no seu Servidor: {{- link}} ",
@@ -186,7 +189,7 @@
         "nothing-found": "Não encontrei nenhuma imagem com as tags: `{{tags}}` ",
         "no-nsfw-channel": "Por favor defina/adicione um Canal NSDW com {{- prefix}}setLewd (em um dos canais NSFW) para usar comandos NSFW",
         "error-body": "Houve um problema com a resposta da API, tente novamente. Se o problema persistir, contate Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Essa Playlist não é suportada!"
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episodes",
+        "characters": "Main Characters",
+        "score": "Average Score"
+    },
+    "manga": {
+        "chapters": "Chapters"
     }
 }
