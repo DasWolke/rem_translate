@@ -26,7 +26,8 @@
         "language-name-en": "German",
         "native-name": "Deutsch",
         "empty-say": ":no_entry_sign: Du hast keine Nachricht angegeben!",
-        "page": "Seite"
+        "page": "Seite",
+        "unknown": "Unbekannt"
     },
     "help": {
         "intro": "lass uns zusammen viel Spass haben hier auf Discord (/^▽^)/ Hier ist eine Auflistung meiner Befehlskategorien, wähle eine von ihnen mit {{- pre}}help zahl aus.",
@@ -166,7 +167,9 @@
         "smug": "Sende jemandem ein süffisantes Grinsen :^)",
         "lick": "Überprüfe ob jemand gut schmeckt :P",
         "playlist": "[PLAYLIST]",
-        "moe": "Streams streams Von listen.moe "
+        "moe": "Streams streams Von listen.moe ",
+        "anime": "Suche nach einem Anime",
+        "manga": "Suche nach einem Manga"
     },
     "version": "Momentan verwende ich Version{{version}}",
     "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
@@ -526,9 +529,18 @@
     },
     "define": {
         "empty-search": ":no_entry_sign: Ich kann nicht nach einer Definition für einen Begriff suchen, wenn du mir keinen Begriff sagst!",
-        "no-result": "Ich konnte keine Definition zu dem Begriff `{{- term}}` finden."
+        "no-result": "Ich konnte keine Definition zu dem Suchbegriff `{{- term}}` finden."
     },
     "apq": {
         "unsupported": "Diese Playliste wird nicht unterstützt."
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episoden",
+        "characters": "Hauptcharaktere",
+        "score": "Durchschnittliche Bewertung"
+    },
+    "manga": {
+        "chapters": "Kapitel"
     }
 }
