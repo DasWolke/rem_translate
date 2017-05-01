@@ -26,7 +26,8 @@
         "language-name-en": "Anh",
         "native-name": "Anh",
         "empty-say": ": No_entry_sign: Bạn đã không nhập một tin nhắn!",
-        "page": "Trang"
+        "page": "Trang",
+        "unknown": "unknown"
     },
     "help": {
         "intro": "Hãy vui chơi cùng nhau ở đây Discord (/ ^ ▽ ^) / Chọn một thể loại lệnh bằng cách trả lời {{pre}} help số lệnh để biết thêm:",
@@ -166,7 +167,9 @@
         "smug": "Cho ai đó tự mãn: ^)",
         "lick": "Kiểm tra xem có ai ăn được không",
         "playlist": "[Danh sách phát]",
-        "moe": "dòng nghe.moe ^^"
+        "moe": "dòng nghe.moe ^^",
+        "anime": "Search for an anime",
+        "manga": "Search for a manga"
     },
     "version": "Hiện tại tôi đang chạy trên phiên bản {{version}}",
     "add": "Sử dụng liên kết này để thêm tôi vào Máy chủ của bạn: {{- link}}",
@@ -186,8 +189,8 @@
         "nothing-found": "Không tìm thấy ảnh có thẻ: `{{tags}}`",
         "no-nsfw-channel": "Vui lòng đặt / thêm kênh NSFW với {{- tiền tố}} setLewd (trong một trong các Kênh NSFW) để sử dụng các Lệnh NSFW",
         "error-body": "Đã xảy ra lỗi khi phân tích phản hồi api. Vui lòng thử lại, nếu sự cố vẫn tiếp tục liên lạc với Wolke # 6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ": X: Các lệnh NSFW chỉ có thể được sử dụng trong các kênh được gắn nhãn là NSFW, phù hợp với hướng dẫn của Discord.\n\nHướng dẫn Discord có thể được tìm thấy tại: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ": X: Tìm kiếm này không được phép do xung đột với hướng dẫn cộng đồng Discord.\n\nHướng dẫn Discord có thể được tìm thấy tại: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Danh sách phát này không được hỗ trợ!"
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episodes",
+        "characters": "Main Characters",
+        "score": "Average Score"
+    },
+    "manga": {
+        "chapters": "Chapters"
     }
 }
