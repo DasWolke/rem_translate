@@ -26,7 +26,8 @@
         "language-name-en": "Japanese",
         "native-name": "日本語",
         "empty-say": ":no_entry_sign: メッセージが入力されていません！",
-        "page": "頁\n"
+        "page": "頁\n",
+        "unknown": "unknown"
     },
     "help": {
         "intro": "一緒にディスコードを楽しみましょう(/^▽^)/\n詳しく知りたいカテゴリーの番号と一緒に{{pre}}helpコマンドを送信してください。",
@@ -166,7 +167,9 @@
         "smug": "Give someone a smug :^)",
         "lick": "誰かが食べられるか確かめる",
         "playlist": "[PLAYLIST]",
-        "moe": "Streams Listen.moe ^^"
+        "moe": "Streams Listen.moe ^^",
+        "anime": "Search for an anime",
+        "manga": "Search for a manga"
     },
     "version": "現在の私のバージョンは {{version}} です。",
     "add": "このリンクを使って私をあなたのサーバーに追加してください！\n{{- link}}",
@@ -186,7 +189,7 @@
         "nothing-found": "'{{tags}}'のタグがついた画像は見つかりませんでした。",
         "no-nsfw-channel": "NSFW(閲覧注意)コマンドを使用するには {{- prefix}}setLewd を使用してNSFW(閲覧注意)チャンネルのリストにこのチャンネルを追加してください。",
         "error-body": "API応答の解析中にエラーが発生しました。もう一度試してみてください。このメッセージが表示され続ける場合は Wolke#6746に連絡してください。",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "このプレイリストはサポートされていません！"
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episodes",
+        "characters": "Main Characters",
+        "score": "Average Score"
+    },
+    "manga": {
+        "chapters": "Chapters"
     }
 }
