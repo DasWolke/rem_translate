@@ -26,7 +26,8 @@
         "language-name-en": "Russian",
         "native-name": "Русский",
         "empty-say": ":no_entry_sign: Вы ввели пустое сообщение!",
-        "page": "Страница"
+        "page": "Страница",
+        "unknown": "неизвестно"
     },
     "help": {
         "intro": "Давайте веселиться в Discord вместе (/^▽^)/ Выберите категорию команд, путем написания сообщения с {{pre}}help номер для того чтобы узнать больше:",
@@ -166,7 +167,9 @@
         "smug": "\"Подарите\" кому-нибудь ехидную улыбку :^)",
         "lick": "«Интересно, а он съедобный?»",
         "playlist": "[ПЛЕЙЛИСТ]",
-        "moe": "Проигрывает Listen.moe ^^"
+        "moe": "Проигрывает Listen.moe ^^",
+        "anime": "Найти аниме",
+        "manga": "Найти мангу"
     },
     "version": "Сейчас я работаю на версии {{version}}",
     "add": "Используй эту ссылку для добавления меня на сервер: {{- link}}",
@@ -186,8 +189,8 @@
         "nothing-found": "Изображений с тегами `{{tags}}` не найдено",
         "no-nsfw-channel": "Пожалуйста, настройте/добавьте NSFW-канал при помощи {{- prefix}}setLewd (в одном из NSFW-каналов) для использования NSFW-команд",
         "error-body": "Ошибка при разборе ответа API. Если ошибка повторяется, свяжитесь с <@!128392910574977024>",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: NSFW команды могут быть использованы только в каналах помеченных как NSFW, в соответствии с рекомендациями Discord'а\n\nРекомендации можно просмотреть здесь:\n<https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Данный поисковой запрос запрещён, в связи с несоответствиями рекомендаций Discord.\n\nРекомендации можно просмотреть здесь:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Этот плейлист не поддерживается!"
+    },
+    "anime": {
+        "genres": "Жанры",
+        "episodes": "Эпизоды",
+        "characters": "Главные герои",
+        "score": "Средняя оценка"
+    },
+    "manga": {
+        "chapters": "Глав"
     }
 }
