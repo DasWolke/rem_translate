@@ -26,7 +26,8 @@
         "language-name-en": "Croatian",
         "native-name": "Hrvatski",
         "empty-say": ":no_entry_sign: Nisi napisao poruku!",
-        "page": "Stranica"
+        "page": "Stranica",
+        "unknown": "nepoznato"
     },
     "help": {
         "intro": "Idemo se zabavljati zajedno na ovome Discordu (/^▽^)/ odaberite kategoriju naredbi s {{pre}}help \"broj naredbe\" da saznate više:",
@@ -166,7 +167,9 @@
         "smug": "Pokaži nekome svoje samozadovoljstvo :^)",
         "lick": "Provjeri je li netko jestiv",
         "playlist": "[PLAYLISTA]",
-        "moe": "Streama Listen.moe ^^"
+        "moe": "Streama Listen.moe ^^",
+        "anime": "Potraži za jedan anime.",
+        "manga": "Potraži za mangu."
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
     "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Playlista nije podržana!"
+    },
+    "anime": {
+        "genres": "Žanri",
+        "episodes": "Epizode",
+        "characters": "Glavni Likovi",
+        "score": "Prosječni Rezultat"
+    },
+    "manga": {
+        "chapters": "Poglavlja"
     }
 }
