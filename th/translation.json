@@ -26,7 +26,8 @@
         "language-name-en": "Thai",
         "native-name": "ไทย",
         "empty-say": ":no_entry_sign: คุณยังไม่ได้ในข้อความ",
-        "page": "หน้า"
+        "page": "หน้า",
+        "unknown": "unknown"
     },
     "help": {
         "intro": "มาสนุกใน Discord ด้วยกันเถอะ (/^▽^)/ เลือกหมวดหมู่คำสั่งโดยใช้ {{pre}} ตัวเลขของคำสั่งช่วยเหลือเพื่อเรียนรู้เพิ่มเติม:",
@@ -166,7 +167,9 @@
         "smug": "ใจแคบกับใครบางคน :^)",
         "lick": "ตรวจสอบถ้าใครกินได้",
         "playlist": "[เพลย์ลิสต์]",
-        "moe": "สตรีม ฟัง.โมเอะ ^^"
+        "moe": "สตรีม ฟัง.โมเอะ ^^",
+        "anime": "Search for an anime",
+        "manga": "Search for a manga"
     },
     "version": "ปัจจุบัน ฉันรุ่น {{version}} ",
     "add": "ใช้ลิงค์นี้เพื่อเพิ่มฉันเข้าเซิฟของคุณ: {{- link}} ",
@@ -186,7 +189,7 @@
         "nothing-found": "ไม่เจอภาพที่แท็ก: `{{tags}}` ",
         "no-nsfw-channel": "กรุณา ตั้ง/เพิ่ม ห้องNSFW ด้วย {{- prefix}}setLewd (หนึ่งในห้องNSFW) เพื่อใช้ คำสั่งNSFW",
         "error-body": "เกิดข้อผิดพลาดของ api กรุณาลองอีกครั้ง, ถ้ามีปัญหาติดต่อ Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "เพลย์ลิสต์นี้ไม่ได้รับการสนับสนุน!"
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episodes",
+        "characters": "Main Characters",
+        "score": "Average Score"
+    },
+    "manga": {
+        "chapters": "Chapters"
     }
 }
