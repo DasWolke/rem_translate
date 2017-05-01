@@ -26,7 +26,8 @@
         "language-name-en": "Polish",
         "native-name": "Polski",
         "empty-say": ":no_entry_sign: Nie podałeś/łaś wiadomości! ",
-        "page": "Strona"
+        "page": "Strona",
+        "unknown": "brak informacji"
     },
     "help": {
         "intro": "bawmy sie razem tutaj na Discordzie (/^▽^)/ wybierz kategorię komend poprzez odpowiedź {{pre}}help numer kategorii:",
@@ -166,7 +167,9 @@
         "smug": "Rzuć komuś wywyższające się spojrzenie :^)",
         "lick": "Sprawdź, czy ktoś jest jadalny",
         "playlist": "[PLAYLISTA]",
-        "moe": "Streamuje Listen.moe ^^"
+        "moe": "Streamuje Listen.moe ^^",
+        "anime": "Szukaj anime",
+        "manga": "Szukaj mangi"
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Ta playlista nie jest wspierana!"
+    },
+    "anime": {
+        "genres": "Gatunki",
+        "episodes": "Odcinki",
+        "characters": "Główni bohaterowie",
+        "score": "Średnia ocena"
+    },
+    "manga": {
+        "chapters": "Rodziały"
     }
 }
