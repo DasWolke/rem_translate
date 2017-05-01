@@ -26,7 +26,8 @@
         "language-name-en": "Dutch",
         "native-name": "Nederlands\n",
         "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!",
-        "page": "Pagina"
+        "page": "Pagina",
+        "unknown": "unknown"
     },
     "help": {
         "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ Selecteer een command categorie door te reageren met {{pre}}help nummer van een command om meer te weten te komen:",
@@ -166,7 +167,9 @@
         "smug": "Geef iemand een zelfingenomen :^)",
         "lick": "Controleer of deze persoon eetbaar is",
         "playlist": "[AFSPEELLIJST]",
-        "moe": "Streamt Listen.moe ^^"
+        "moe": "Streamt Listen.moe ^^",
+        "anime": "Search for an anime",
+        "manga": "Search for a manga"
     },
     "version": "Op het moment werk ik op versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -186,7 +189,7 @@
         "nothing-found": "Geen afbeeldingen gevonden met de labels: `{{tags}}`",
         "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
         "error-body": "Er is een fout opgetreden bij het interpreteren van de API reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW, in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -530,5 +533,14 @@
     },
     "apq": {
         "unsupported": "Deze afspeellijst wordt niet ondersteund!"
+    },
+    "anime": {
+        "genres": "Genres",
+        "episodes": "Episodes",
+        "characters": "Main Characters",
+        "score": "Average Score"
+    },
+    "manga": {
+        "chapters": "Chapters"
     }
 }
