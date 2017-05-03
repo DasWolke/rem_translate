@@ -169,7 +169,9 @@
         "playlist": "[PLAYLIST]",
         "moe": "Stream Listen.moe ^^",
         "anime": "Recherche un anime",
-        "manga": "Recherche un manga"
+        "manga": "Recherche un manga",
+        "permission": "[PERMISSION]",
+        "radio": "[RADIO]"
     },
     "version": "Actuellement je suis en version {{version}}",
     "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
