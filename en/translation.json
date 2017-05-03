@@ -165,7 +165,9 @@
     "playlist": "[PLAYLIST]",
     "moe": "Streams Listen.moe ^^",
     "anime": "Search for an anime",
-    "manga": "Search for a manga"
+    "manga": "Search for a manga",
+    "permission": "[PERMISSION]",
+    "radio": "[RADIO]"
   },
   "version": "Currently I am running on version {{version}}",
   "add": "Use this link to add me to your Server: {{- link}}",
