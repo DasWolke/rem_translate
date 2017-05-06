@@ -169,7 +169,9 @@
         "playlist": "[PLAYLISTA]",
         "moe": "Streama Listen.moe ^^",
         "anime": "Potraži za jedan anime.",
-        "manga": "Potraži za mangu."
+        "manga": "Potraži za mangu.",
+        "permission": "[PERMISSION]",
+        "radio": "[RADIO]"
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
     "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",

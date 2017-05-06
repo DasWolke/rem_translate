@@ -169,7 +169,9 @@
         "playlist": "[PLAYLIST]",
         "moe": "Avvia lo stream di Listen.moe ^^",
         "anime": "Cerca un anime",
-        "manga": "Cerca un manga"
+        "manga": "Cerca un manga",
+        "permission": "[PERMESSO]",
+        "radio": "[RADIO]"
     },
     "version": "Attualmente la mia versione è {{version}}",
     "add": "Usa questo link per aggiungermi al tuo server: {{- link}}",
@@ -189,7 +191,7 @@
         "nothing-found": "Non sono state trovate immagini con tag: `{{tags}}`",
         "no-nsfw-channel": "Per favore, imposta/aggiungi un canale NSFW con {{- prefix}} setLewd (in uno dei canali NSFW) per usare i comandi NSFW",
         "error-body": "Errore nella risposta dell'API. Se questo errore persiste contatta Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: I comandi NSFW possono essere usati solo in canali NSFW, in accordo con le regole di Discord.\n\nEsse possono essere trovate qui: <https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: I comandi NSFW possono essere usati solo in canali NSFW, in accordo con le regole di Discord.\n\nLa lista delle regole essere trovata qui: <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: Questa ricerca non è consentita a causa di un conflitto con le regole di comunità di Discord.\n\nEsse possono essere trovate qui: <https://discordapp.com/guidelines>"
     },
     "8ball": {

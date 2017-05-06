@@ -27,7 +27,7 @@
         "native-name": "Filipino",
         "empty-say": ":no_entry_sign: Wala kang inilagay na mensahe!",
         "page": "Pahina",
-        "unknown": "unknown"
+        "unknown": "unkown"
     },
     "help": {
         "intro": "magsaya tayo dito sa Discord (/^▽^)/ pumili ng kategorya sa pamamagitan ng pagsagot ng numero ng {{pre}}help command para sa karagdagang impormasyon:",
@@ -168,8 +168,10 @@
         "lick": "Tingnan kung pwede silang kainin",
         "playlist": "[PLAYLIST]",
         "moe": "Ipapalabas ang Listen.moe ^^",
-        "anime": "Search for an anime",
-        "manga": "Search for a manga"
+        "anime": "Maghanap ng anime",
+        "manga": "Maghanap ng manga",
+        "permission": "[PERMISSION]",
+        "radio": "[RADIO]"
     },
     "version": "Kasalukuyan akong gumagana sa bersyon {{version}}",
     "add": "Gamitin itong link upang idagdag ako sa iyong Server: {{- link}}",
@@ -189,8 +191,8 @@
         "nothing-found": "Walang mga imaheng nahanap gamit ang tags: `{{tags}}`",
         "no-nsfw-channel": "Pakiusap magtakda/magdagdag ng NSFW channel na may {{- prefix}}setLewd (sa isa sa mga NSFW Channels) upang magamit ang NSFW Commands",
         "error-body": "May mali sa pagsusuri ng api response. Subukan ulit, kung nagpatuloy ang problema kontakin si Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: Ang NSFW commands ay magagamit lang sa channels na may pangalang NSFW, alinsunod sa mga alintuntunin ng Discord.\n\nAng mga alintuntunin ng Discord ay matatagpuan sa:\n<https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Ang paghahanap na ito ay hindi pinahihintulutan dahil sa di pagkakasundo sa mga alintuntunin ng komunidad ng Discord.\n\nAng mga alintuntunin ng Discord ay matatagpuan sa:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -265,7 +267,7 @@
         "unsupported": "Ang lenggwaheng ito ay hindi pa naipatutupad, ngunit maaari kang tumulong sa pamamagitan ng pagdadagdag ng aplikasyon ng iyong lenggwahe sa github. Maaari mong mahanap ang kasalukuyang magagamit na mga lenggwahe sa pamamagitan ng pagpapatakbo ng command na ito ng walang mga argumento.",
         "native-name": "Katutubong Pangalan",
         "english-name": "Pangalang Ingles",
-        "shortcode": "ph",
+        "shortcode": "shortcode",
         "available-languages": "Listahan ng mga pwedeng Lenggwahe\nPakitandaan na ang setLang ay kailangan ng shortcode"
     },
     "np": {
@@ -529,7 +531,7 @@
     },
     "define": {
         "empty-search": ":no_entry_sign: Hindi ako makapaghahanap ng kahulugan, kung wala kang isinulat!",
-        "no-result": "Wala akong mahanap na kahit ano sa salitang `{{-term}}`"
+        "no-result": "Wala akong mahanap na kahit ano sa searchterm `{{-term}}`"
     },
     "apq": {
         "unsupported": "Itong Playlist ay hindi supportado!"
@@ -537,7 +539,7 @@
     "anime": {
         "genres": "Genres",
         "episodes": "Episodes",
-        "characters": "Main Characters",
+        "characters": "Mga Pangunahing Karakter",
         "score": "Average Score"
     },
     "manga": {
