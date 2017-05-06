@@ -221,7 +221,7 @@
   "roll": {
     "whole-number": "Please add a whole number!",
     "negative": "I cant roll with a {{number}}",
-    "success": "Rolled a {{first}} out of {{second}}"
+    "success": "Rolled a **{{first}}** out of **{{second}}**"
   },
   "qa": {
     "nothing-found": "No Song found with Search Term `{{search}}` ",
