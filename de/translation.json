@@ -34,8 +34,15 @@
         "intro_2": "Hey, ich bin",
         "support": "[SUPPORT]",
         "bug": "sendet dir den Link des Support-Discords",
-        "help": "der Hilfsbefehl",
-        "add": "sendet dir einen Link um mich zu einem anderen Server hinzuzufügen",
+        "help": {
+            "short": "Erhalte Hilfe für einen einzelnen Befehl oder erhalte die Befehlsliste",
+            "usage": "{{prefix}}help [befehl]",
+            "example": "`{{prefix}}help` Sendet dir die Befehlsliste sortiert nach Kategorie\n`{{prefix}}help ping` Sendet dir Informationen über den `ping` Befehl"
+        },
+        "add": {
+            "short": "Sendet dir den Invite Link von Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUSIK]",
         "voice": "Ich trete dem Voicechannel bei in dem du dich gerade befindest (durch Musik-Befehle trete ich auch bei)",
         "silent": "Ich verlasse den Voicechannel. (Nur nutzbar mit der WolkeBot Rolle)",
@@ -101,7 +108,10 @@
         "eastereggs": "[OSTEREIER]",
         "proxer": "[PROXER]",
         "no-cat": "[KEINE KATEGORIE]",
-        "ping": "Sendet dir den Ping des Bots, bitte beachte, dass dies nicht der sprach-ping ist!",
+        "ping": {
+            "short": "Sendet dir den Ping des Bots, bitte beachte, dass dies **nicht** der Sprachping ist.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "So unanständig uwu",
         "rem": "Sendet dir ein zufälliges Bild von Rem",
         "wip": "[IN ARBEIT]",
@@ -171,10 +181,37 @@
         "anime": "Suche nach einem Anime",
         "manga": "Suche nach einem Manga",
         "permission": "[BERECHTIGUNGEN]",
-        "radio": "[RADIO]"
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: Der Befehl `{{cmd}}` existiert nicht. Benutze `{{prefix}}help` um eine Liste mit Befehlen zu erhalten.",
+        "command-no-detail": ":scream: Momentan gibt es keine aktualisierte Hilfe für diesen Befehl, daher ist hier fürs erste die alte Version:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Befehlshilfe für Befehl__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Aliase**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Kurzinfo**:",
+        "command-longhelp": ":book: **Details**:",
+        "command-usage": ":hammer_pick: **Anwendung**:",
+        "command-example": ":question: **Beispiele**:",
+        "categories": {
+            "list": "**Kategorien**",
+            "generic": "[ALLGEMEIN]",
+            "fun": "[SPAß]",
+            "music": "[MUSIK]",
+            "moderation": "[MODERATION]",
+            "misc": "[ANDERES]",
+            "user": "[BENUTZER]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[OSTEREIER]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLLEN]",
+            "permission": "[BERECHTIGUNGEN]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[BILDER]"
+        },
+        "introduction": "wave: **Hey, ich bin {{- name}}**, lass uns zusammen viel Spass haben hier auf Discord (/^▽^)/\n\nUm anzufangen sende `{{- prefix}}help [command]` um mehr Informationen über einen Befehl zu erhalten, beispielsweise: `{{- prefix}}help ping`"
     },
     "version": "Momentan verwende ich Version{{version}}",
-    "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: {{- link}}",
+    "add": "Benutze diesen Link um mich auf deinem Server hinzuzufügen: `{{- link}}`",
     "bug": "Bitte komm auf den Support Discord: {{- link}} um einen Fehler zu melden!",
     "level": {
         "result": "Momentan hast du **Level {{level}}** XP: **{{current}}XP**/**{{needed}}XP** XP Gesamt:**{{total}}**",
@@ -226,7 +263,7 @@
     "roll": {
         "whole-number": "Bitte sende eine ganze Zahl",
         "negative": "Ich kann leider nicht mit einer {{- number}} würfeln!(._.)",
-        "success": "Ich habe eine {{first}} aus {{second}} verschieden Möglichkeiten gewürfelt!"
+        "success": "Ich habe eine **{{first}}** aus **{{second}}** verschieden Möglichkeiten gewürfelt!"
     },
     "qa": {
         "nothing-found": "Ich habe kein Lied mit dem Begriff `{{- search}}` gefunden!",
