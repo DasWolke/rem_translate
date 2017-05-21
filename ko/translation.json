@@ -27,15 +27,22 @@
         "native-name": "한국어",
         "empty-say": ":no_entry_sign: 아무런 말도 입력하시지 않으셨어요!",
         "page": "페이지",
-        "unknown": "unknown"
+        "unknown": "알려지지 않았어요"
     },
     "help": {
         "intro": "Discord에서 저랑 같이 신나게 놀자구요! (/^▽^)/ 명령어 카테고리를 하나 골라 {{pre}}help <카테고리 이름>를 입력하면 해당 카테고리의 명령어들을 알아볼 수 있어요. :",
         "intro_2": "저는",
         "support": "[지원]",
         "bug": "지원을 받을 수 있는 Discord 채널 링크를 가져옵니다.",
-        "help": "명령어 도움말을 표시합니다.",
-        "add": "서버에 저를 추가할 수 있는 링크를 가져옵니다.",
+        "help": {
+            "short": "Get help for a single command or get a list of commands",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Gives you a list of commands sorted by category\n`{{prefix}}help ping` Gives you info about the `ping` command"
+        },
+        "add": {
+            "short": "Gives you the invite link of Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[음악]",
         "voice": "당신이 현재 연결하고 있는 보이스 채널에 접속합니다. (일반적인 음악 명령어들도 봇을 보이스 채널에 접속시킵니다.)",
         "silent": "제가 현재 연결되어 있는 음성 채널을 나갑니다. (WolkeBot 권한만 사용 할 수 있습니다.)",
@@ -101,7 +108,10 @@
         "eastereggs": "[이스터에그]",
         "proxer": "[PROXER]",
         "no-cat": "[카테고리가 없는 명령어]",
-        "ping": "봇 간의 핑 속도를 가져옵니다. 보이스 핑이 아님을 유의해주세요.",
+        "ping": {
+            "short": "Gives you the ping of the bot, be aware that this is **not** the voice ping.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "뭔가 음탕한 것 같은 이미지를 가져ㅇ... 으음",
         "rem": "무작위로 렘 일러스트를 가져와 드립니다.",
         "wip": "[개발 중인 명령어]",
@@ -167,9 +177,38 @@
         "smug": "누군가에게 자신의 당당함을 표출해보세요 :^)",
         "lick": "누가 먹을 수 있는지 알아보세요.",
         "playlist": "[플레이리스트]",
-        "moe": "Streams Listen.moe ^^",
-        "anime": "Search for an anime",
-        "manga": "Search for a manga"
+        "moe": "Listen.moe 를 스트리밍합니다 ^^",
+        "anime": "애니를 검색해요",
+        "manga": "망가를 검색해요",
+        "permission": "[허가됨]",
+        "radio": "[라디오]",
+        "command-not-exists": ":x: The command `{{cmd}}` does not exist. Use `{{prefix}}help` to get a list of commands.",
+        "command-no-detail": ":scream: At the moment, there is no detailed help available for this command, so here is the legacy help for now:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Command Help for command__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Aliases**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Short**:",
+        "command-longhelp": ":book: **Detailed**:",
+        "command-usage": ":hammer_pick: **Usage**:",
+        "command-example": ":question: **Examples**:",
+        "categories": {
+            "list": "**Categories**:",
+            "generic": "[GENERIC]",
+            "fun": "[FUN]",
+            "music": "[MUSIC]",
+            "moderation": "[MODERATION]",
+            "misc": "[MISCELLANEOUS]",
+            "user": "[USER]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLES]",
+            "permission": "[PERMISSION]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[IMAGE COMMANDS]"
+        },
+        "introduction": ":wave: **Hey I'm {{- name}}**, let's have fun together here on Discord (/^▽^)/\n\nTo get you started type `{{- prefix}}help [command]` to get more info about a command, for example: `{{- prefix}}help ping`"
     },
     "version": "제 현재 버전은 다음과 같아요. : {{version}}",
     "add": "이 링크로 당신의 서버에 저를 추가해 주세요. : {{- link}}",
@@ -189,8 +228,8 @@
         "nothing-found": "다음 태그에 해당하는 이미지는 찾을 수 없었어요. : `{{tags}}`",
         "no-nsfw-channel": "NSFW 명령어를 사용하시려면 NSFW 채널을 다음 명령어로 설정해주세요. {{- prefix}}setLewd (NSFW 채널 안에서)",
         "error-body": "API 응답을 해석하는데 오류가 있는 것 같아요. 이따가 다시 시도해 보시고, 그래도 문제가 계속 발생된다면 Wolke#6746으로 연락주세요.",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ": x : NSFW 명령은 Discord의 지침에 따라 NSFW로 표시된 채널에서만 사용할 수 있어요!\n\nDiscord 지침은 <https://discordapp.com/guidelines>에서 찾아보세요.",
+        "error-discord-tos-conflict": ": x :이 검색은 Discord 커뮤니티 가이드 라인과 충돌하여 허용되지 않았어요!\n\nDiscord 지침은 <https://discordapp.com/guidelines>에서 찾아보세요."
     },
     "8ball": {
         "answers": [
@@ -535,12 +574,12 @@
         "unsupported": "이 재생목록은 지원되지 않네요.."
     },
     "anime": {
-        "genres": "Genres",
-        "episodes": "Episodes",
-        "characters": "Main Characters",
-        "score": "Average Score"
+        "genres": "장르",
+        "episodes": "에피소드",
+        "characters": "메인 캐릭터",
+        "score": "평균 점수"
     },
     "manga": {
-        "chapters": "Chapters"
+        "chapters": "챕터"
     }
 }
