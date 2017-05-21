@@ -27,15 +27,22 @@
         "native-name": "ไทย",
         "empty-say": ":no_entry_sign: คุณยังไม่ได้ในข้อความ",
         "page": "หน้า",
-        "unknown": "unknown"
+        "unknown": "ไม่ทราบ"
     },
     "help": {
         "intro": "มาสนุกใน Discord ด้วยกันเถอะ (/^▽^)/ เลือกหมวดหมู่คำสั่งโดยใช้ {{pre}} ตัวเลขของคำสั่งช่วยเหลือเพื่อเรียนรู้เพิ่มเติม:",
         "intro_2": "ไง ฉันเร็ม",
         "support": "[สนับสนุน]",
         "bug": "เอาลิงค์สนับสนุน dicord",
-        "help": "คำสั่งช่วยเหลือ",
-        "add": "เอาลิงค์เพื่อจะเพิ่มฉันเข้าเซิฟเวอร์",
+        "help": {
+            "short": "Get help for a single command or get a list of commands",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Gives you a list of commands sorted by category\n`{{prefix}}help ping` Gives you info about the `ping` command"
+        },
+        "add": {
+            "short": "Gives you the invite link of Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[เพลง]",
         "voice": "ฉันเข้าห้องที่คุณอยู่ในขณะนี้ (คำสั่งเพลง ปกติทำให้บอทเข้าห้องด้วยเหมือนกัน)",
         "silent": "ฉันออกจากห้องแล้ว, ขณะนี้ฉันเชื่อมต่อกับ (ใช้ได้แค่กับ WolkeBot Role เท่านั้น)",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGS]",
         "proxer": "[PROXER]",
         "no-cat": "[หมวดหมู่]",
-        "ping": "ส่งค่าปิงของบอทให้คุณ, ระวังนี้ไม่ใช้ปิงเสียง",
+        "ping": {
+            "short": "Gives you the ping of the bot, be aware that this is **not** the voice ping.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "ลามก! uwu",
         "rem": "ส่งรูปภาพของเร็มแบบสุ่มให้คุณ",
         "wip": "[กำลังดำเนินการ]",
@@ -168,8 +178,37 @@
         "lick": "ตรวจสอบถ้าใครกินได้",
         "playlist": "[เพลย์ลิสต์]",
         "moe": "สตรีม ฟัง.โมเอะ ^^",
-        "anime": "Search for an anime",
-        "manga": "Search for a manga"
+        "anime": "ค้นหาอะนิเมะ",
+        "manga": "ค้นหามังงะ",
+        "permission": "[อนุญาต]",
+        "radio": "[วิทยุ]",
+        "command-not-exists": ":x: The command `{{cmd}}` does not exist. Use `{{prefix}}help` to get a list of commands.",
+        "command-no-detail": ":scream: At the moment, there is no detailed help available for this command, so here is the legacy help for now:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Command Help for command__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Aliases**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Short**:",
+        "command-longhelp": ":book: **Detailed**:",
+        "command-usage": ":hammer_pick: **Usage**:",
+        "command-example": ":question: **Examples**:",
+        "categories": {
+            "list": "**Categories**:",
+            "generic": "[GENERIC]",
+            "fun": "[FUN]",
+            "music": "[MUSIC]",
+            "moderation": "[MODERATION]",
+            "misc": "[MISCELLANEOUS]",
+            "user": "[USER]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLES]",
+            "permission": "[PERMISSION]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[IMAGE COMMANDS]"
+        },
+        "introduction": ":wave: **Hey I'm {{- name}}**, let's have fun together here on Discord (/^▽^)/\n\nTo get you started type `{{- prefix}}help [command]` to get more info about a command, for example: `{{- prefix}}help ping`"
     },
     "version": "ปัจจุบัน ฉันรุ่น {{version}} ",
     "add": "ใช้ลิงค์นี้เพื่อเพิ่มฉันเข้าเซิฟของคุณ: {{- link}} ",
@@ -189,8 +228,8 @@
         "nothing-found": "ไม่เจอภาพที่แท็ก: `{{tags}}` ",
         "no-nsfw-channel": "กรุณา ตั้ง/เพิ่ม ห้องNSFW ด้วย {{- prefix}}setLewd (หนึ่งในห้องNSFW) เพื่อใช้ คำสั่งNSFW",
         "error-body": "เกิดข้อผิดพลาดของ api กรุณาลองอีกครั้ง, ถ้ามีปัญหาติดต่อ Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: คำสั่ง NSFW สามารถใช้ได้แค่ในห้องที่กำกับว่าเป็น NSFW,ตามแนวทางของ Discord's guidelines.\n\nDiscord guidelines สามารถพบได้ที่: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: \nการค้นหานี้ไม่ได้รับอนุญาตเนื่องจากมีข้อขัดแย้งกับ Discord community guidelines.\n\nDiscord guidelines สามารถพบได้ที่: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -535,12 +574,12 @@
         "unsupported": "เพลย์ลิสต์นี้ไม่ได้รับการสนับสนุน!"
     },
     "anime": {
-        "genres": "Genres",
-        "episodes": "Episodes",
-        "characters": "Main Characters",
-        "score": "Average Score"
+        "genres": "ประเภท",
+        "episodes": "ตอน",
+        "characters": "ตัวละครหลัก",
+        "score": "คะแนนเฉลี่ย"
     },
     "manga": {
-        "chapters": "Chapters"
+        "chapters": "บท"
     }
 }
