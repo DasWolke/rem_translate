@@ -1,15 +1,15 @@
 {
     "generic": {
-        "error": ":x: Une erreur est survenue!",
-        "no-pm": ":no_entry: Cette commande ne fonctionne pas dans les salons privés!",
+        "error": ":x: Une erreur est survenue !",
+        "no-pm": ":no_entry: Cette commande ne fonctionne pas dans les salons privés !",
         "whole-num": ":no_entry_sign: S'il te plaît utilise un nombre entier",
         "nan": ":no_entry_sign: Peu importe ce que tu viens d'envoyer, s'il te plaît utilise un nombre entier. :) ",
         "no-song-in-queue": ":no_entry_sign: Il n'y a pas de chanson dans la file d'attente, ajoutes-en peut-être une :musical_note: ?",
-        "no-song-playing": ":musical_note: Il n'y a aucune chanson de jouée pour le moment!",
+        "no-song-playing": ":musical_note: Il n'y a pas de chanson jouée en ce moment !",
         "no-permission": ":no_entry_sign: Tu n'as pas la permissions d'utiliser cette commande, s'il te plaît ajoute la permission `{{- node}}` à toi-même pour l'utiliser.",
-        "no-voice": ":no_entry_sign: Je ne suis connectée à aucun salon vocal sur ce serveur!",
+        "no-voice": ":no_entry_sign: Je ne suis connectée à aucun salon vocal sur ce serveur !",
         "level-update": ":tada: Tu viens d'atteindre le **Niveau {{level}}** sur **{{- server}}**",
-        "empty-search": ":no_entry_sign: Tu n'as pas entré de terme de recherche!",
+        "empty-search": ":no_entry_sign: Tu n'as pas entré de terme de recherche !",
         "negative": ":no_entry_sign: S'il te plaît n'utilise pas de nombre négatif!",
         "cancel": "annuler",
         "version": "Version",
@@ -30,20 +30,27 @@
         "unknown": "Inconnu"
     },
     "help": {
-        "intro": "ayons du plaisir tous ensemble sur Discord (/^▽^)/  sélectionne une catégorie de commandes en répondant avec {{pre}}help \"numéro de la commande\" pour en apprendre plus:",
+        "intro": "ayons du plaisir tous ensemble sur Discord (/^▽^)/  sélectionne une catégorie de commandes en répondant avec {{pre}}help \"numéro de la commande\" pour en apprendre plus :",
         "intro_2": "Salut je suis",
         "support": "[SUPPORT]",
         "bug": "reçois le lien pour le Discord du Support",
-        "help": "La commande d'aide",
-        "add": "Reçois un lien pour m'ajouter sur ton serveur",
+        "help": {
+            "short": "Reçois de l'aide pour une seule commande ou reçois la liste des commandes",
+            "usage": "{{prefix}}help [commande]",
+            "example": "`{{prefix}}help` Te donnes une liste de commandes triée par catégories `{{prefix}}help ping` Te donnes l'info à propos de la commande `ping`"
+        },
+        "add": {
+            "short": "Te donnes le lien d'invitation de Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUSIQUE]",
-        "voice": "Je rejoins le salon vocal dans lequel tu es actuellement (les commandes normales de musique font que le bot rejoins le salon vocal également)",
+        "voice": "Je rejoins le salon vocal dans lequel tu es actuellement (le bot rejoins également le salon vocal si tu utilises des commandes de musique normale)",
         "silent": "je quitte le salon vocal auquel je suis actuellement connecté. (utilisable uniquement avec le rôle WolkeBot)",
         "play": "Joue quelque chose depuis /Youtube/Soundcloud/Osu/recherche",
-        "pause": "Met pause à la chanson actuelle",
-        "resume": "Reprend la chanson",
+        "pause": "Pause la chanson actuelle",
+        "resume": "Reprend la chanson en pause",
         "volume": "Définit le volume actuel du Bot, valeurs entre 1-200 (utilisable uniquement avec le rôle WolkeBot)",
-        "forever": "Joue une chanson de façon répétée jusqu'à ce que une nouvelle est ajoutée dans la file d'attente, uniquement utilisable avec le rôle WolkeBot",
+        "forever": "Joue une chanson de façon répétée jusqu'à ce que de nouvelles soient ajoutées dans la file d'attente, uniquement utilisable avec le rôle WolkeBot",
         "search": "Cherche pour une chanson dans la base de données du Bot et affiche les 5 meilleurs résultats",
         "skip": "Commence un vote pour passer la chanson actuelle, plus de 50% du salon dois voter, après quoi elle est passée.",
         "voteskip": "Commence un vote pour passer la chanson actuelle, plus de 50% du salon dois voter, après quoi elle est passée.",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGS]",
         "proxer": "[PROXER]",
         "no-cat": "[SANS CATEGORIES]",
-        "ping": "Te donnes le ping du bot (attention ce n'est pas le ping du vocale)",
+        "ping": {
+            "short": "Te donnes le ping du bot, saches que ce **n**'est **pas** le ping du vocal.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "tellement obscène uwu",
         "rem": "Te donnes une images aléatoire de Rem",
         "wip": "[TRAVAIL EN COURS]",
@@ -135,7 +145,7 @@
         "nyan": "Nya :3",
         "uwu": "uwu",
         "dere": "Recherche pour une définition de \"dere\" ou obtiens en une aléatoirement",
-        "love": "Donne à l'utilisateur mentionné un point d'amour, ajoute \"-\" pour réduire les points d'amour de l'utilisateur de 1",
+        "love": "Donne à l'utilisateur mentionné un Point d'Amour, ajoute \"-\" pour réduire les Points d'Amour de l'utilisateur de 1",
         "sinfo": "Te donne des informations à propos du serveur actuel",
         "uinfo": "Te donne des informations à propos de toi/de l'utilisateur mentionné",
         "apq": "Ajoute une playlist à la file d'attente, ne supporte uniquement les playlists YouTube pour le moment, utilise le lien de la playlist.",
@@ -155,7 +165,7 @@
         "stare": "stareeeee",
         "nom": "Nom :>",
         "potato": "Tout le monde veut une patate",
-        "choose": "Fait choisir Rem quelque chose pour vous, sépare les choix avec `;` ",
+        "choose": "Fait choisir Rem quelque chose pour toi, sépare les choix avec `;` ",
         "tickle": "Guili Guili Guili",
         "image": "[COMMANDES DES IMAGES]",
         "define": "Cherche une définition d'un terme sur Urbandictionary",
@@ -171,10 +181,37 @@
         "anime": "Recherche un anime",
         "manga": "Recherche un manga",
         "permission": "[PERMISSION]",
-        "radio": "[RADIO]"
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: La commande `{{cmd}}` n'existe pas. Utilise `{{prefix}}help` pour avoir une liste de commandes.",
+        "command-no-detail": ":scream: En ce moment, il n'y a pas d'aide détaillée disponible pour cette commande, alors voici l'aide existante pour maintenant :\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Commande d'aide pour la commande__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Alias**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Court**:",
+        "command-longhelp": ":book: **Détaillé**:",
+        "command-usage": ":hammer_pick: **Usage**:",
+        "command-example": ":question: **Exemples**:",
+        "categories": {
+            "list": "**Catégories**:",
+            "generic": "[GENERIQUE]",
+            "fun": "[FUN]",
+            "music": "[MUSIQUE]",
+            "moderation": "[MODERATION]",
+            "misc": "[DIVERS]",
+            "user": "[UTILISATEUR]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLES]",
+            "permission": "[PERMISSION]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[COMMANDES D'IMAGE]"
+        },
+        "introduction": ":wave: **Hey, Je suis {{- name}}**, ayons du plaisir tous ensemble ici sur Discord (/^▽^)/\n\nPour commencer tape `{{- prefix}}help [commande]` pour avoir encore plus d'info à propos d'une commande, par exemple: `{{- prefix}}help ping`"
     },
     "version": "Actuellement je suis en version {{version}}",
-    "add": "Utilise ce lien pour m'ajouter à ton serveur: {{- link}}",
+    "add": "Utilise ce lien pour m'ajouter à ton serveur: `{{- link}}`",
     "bug": "S'il te plaît rejoins le Discord du support: {{- link}} pour rapporter un bug.",
     "level": {
         "result": "Tu es **Niveau {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Total XP:**{{total}}**",
@@ -189,7 +226,7 @@
     },
     "nsfw-images": {
         "nothing-found": "Aucune image trouvée avec les tags: `{{tags}}`",
-        "no-nsfw-channel": "S'il vous plaît définis/ajoute un salon NSFW avec {{- prefix}}setLewd (dans un des salons NSFW) pour utiliser les commandes NSFW",
+        "no-nsfw-channel": "S'il te plaîtt définis/ajoute un salon NSFW avec {{- prefix}}setLewd (dans un des salons NSFW) pour utiliser les commandes NSFW",
         "error-body": "Il y a eu une erreur lors de l'analyse de la réponse api. S'il te plaît réessaye, si le problème persiste contacte Wolke#6746",
         "error-discord-not-nsfw-channel": ":x: Les commandes NSFW ne peuvent être utilisées que dans les salons désignés comme NSFW, en accord avec les règles de Discord.\n\nLes règles de Discord peuvent être trouvées ici :\n <https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: Cette recherche n'est pas autorisée car elle entre en conflit avec les règles de la communauté Discord.\n\nLes règles de Discord peuvent être trouvées ici :\n <https://discordapp.com/guidelines>"
@@ -226,7 +263,7 @@
     "roll": {
         "whole-number": "S'il te plaît ajoute un nombre entier!",
         "negative": "Je ne peux pas rouler avec un {{number}}",
-        "success": "sort un {{first}} de {{second}}"
+        "success": "Sort un **{{first}}** de **{{second}}**"
     },
     "qa": {
         "nothing-found": "Aucune chanson trouvé avec le terme de recherche `{{search}}` ",
@@ -264,7 +301,7 @@
     "set-lang": {
         "no-lang": "Tu n'as pas spécifié de langue! Actuellement il y a {{languages}} disponibles.",
         "success": "Ok je viens de définir la langue du serveur sur {{- language}}.",
-        "unsupported": "Cette langue n'est pas encore implémentée, mais tu peux aider en demandant de rajouter ta langue sur github. Vous pouvez voir les langues actuellement disponible en utilisant cette commande sans arguments.",
+        "unsupported": "Cette langue n'est pas encore implémentée, mais tu peux aider en demandant de rajouter ta langue sur github. Tu peux voir les langues actuellement disponible en utilisant cette commande sans arguments.",
         "native-name": "Nom Natal",
         "english-name": "Nom Anglais",
         "shortcode": "Abbréviation",
@@ -482,7 +519,7 @@
         "error-cd": "Tu ne peux donner uniquement **2** :heart: Point d'Amour par Jour, prochaine utilisation {{- time}}.",
         "next": " Prochaine utilisation {{- time}}",
         "self": ":broken_heart: Tu ne peux pas te donner de Points d'Amour.",
-        "success-remove": "Vous venez de supprimer **{{- rep}}**:heart: Love Point de **{{- target}}** Utilisations restantes **{{uses}}**. "
+        "success-remove": "Tu viens de supprimer **{{- rep}}**:heart: Point d'Amour de **{{- target}}** Utilisations restantes **{{uses}}**. "
     },
     "dere": {
         "no-dere": "Le type de \"dere\" que tu recherches n'existe pas. Voici une liste des \"dere\" possibles:",
@@ -517,12 +554,12 @@
         "success": "Ok, je viens d'ajouter la permission `{{- node}}` `{{- allowed}}` à `{{- type}}` `{{- name}}` ",
         "wrong-node": "Le noeud de permission `{{- node}}` ne va pas fonctionner puisque ce n'est pas un noeud de permission valide. Pour obtenir le noeud de permission pour une commande tape `{{- prefix}}getNode \"nom de la commande\"`",
         "target-not-found": "Je n'ai pas pû trouver la cible {{- target}} pour cette commande",
-        "no-allowance-set": "Vous ne m'avez pas dit si la permission devait être permise ou pas, ajoutez `true` ou `false` en fonction de votre choix",
+        "no-allowance-set": "Tu ne m'as pas dit si la permission devait être permise ou pas, ajoute `true` ou `false` en fonction de ton choix",
         "missing-args": "La bonne syntaxe pour cette commande est `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Exemple:\n```{{-prefix}}ap playlist.* true -> autorise toutes les commandes de la catégorie playlist sur le serveur\n{{-prefix}}ap music.fskip -u @user true -> autorise l'utilisateur mentionné d'utiliser {{- prefix}}fskip``` "
     },
     "reset-perms": {
-        "nothing-found": "Vous n'avez pas encore paramétré de Permissions.",
-        "confirmation": "Êtes-vous sûr de remettre à zéro les Permissions ? Saisissez `yes` pour les remettre à zéro `no` pour annuler cette commande.",
+        "nothing-found": "Tu n'as pas encore paramétré de Permissions.",
+        "confirmation": "Es-tu sûr de vouloir réinitialiser les permissions ? Tape `yes` pour les réinitialiser et `non` pour annuler cette commande.",
         "success": "Je viens de reset toutes les permissions."
     },
     "choose": {
