@@ -34,8 +34,15 @@
         "intro_2": "Hey, sono",
         "support": "[ASSISTENZA]",
         "bug": "Ottieni il link dell'assistenza Discord",
-        "help": "Il comando d'aiuto",
-        "add": "Ottieni il link per aggiungermi al tuo server",
+        "help": {
+            "short": "Ricevi aiuto per un comando singolo o ricevi una lista di comandi",
+            "usage": "{{- prefix}}help [comando]",
+            "example": "`{{prefix}}help` Ricevi la lista dei comandi divisi per categoria\n`{{prefix}}help ping` Ricevi informazioni riguardanti il comando `ping`"
+        },
+        "add": {
+            "short": "Ricevi il link per invitare Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUSICA]",
         "voice": "Entro nel canale vocale in cui sei attualmente ( i comandi per la musica fanno entrare il bot nel tuo canale )",
         "silent": "Mi disconnetto dal canale vocale in cui sono (Utilizzabile solamente con il ruolo WolkeBot)",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGS]",
         "proxer": "[PROXER]",
         "no-cat": "[SENZA CATEGORIA]",
-        "ping": "Restituisce il ping del bot, che NON E' il ping del server.",
+        "ping": {
+            "short": "Restituisce il ping del bot, che **NON** è il ping della voce.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Così osceno uwu",
         "rem": "Restituisce un'immagine casuale di Rem",
         "wip": "[IN CORSO]",
@@ -171,7 +181,34 @@
         "anime": "Cerca un anime",
         "manga": "Cerca un manga",
         "permission": "[PERMESSO]",
-        "radio": "[RADIO]"
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: Il comando `{{cmd}}` non esiste. Usa `{{prefix}}help` per vedere la lista dei comandi.",
+        "command-no-detail": ":scream: Al momento non c'è alcuna spiegazione dettagliata per questo comando, per ora c'è solo questo:\n```{{- legacy_help}}```",
+        "command-help-title": ":book::**__Aiuto per il comando__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Alias**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Abbreviazione**:",
+        "command-longhelp": ":book: **Dettagliato**:",
+        "command-usage": ":hammer_pick: **Utilizzo**:",
+        "command-example": ":question: **Esempi**:",
+        "categories": {
+            "list": "**Categorie**",
+            "generic": "[GENERICO]",
+            "fun": "[SVAGO]",
+            "music": "[MUSICA]",
+            "moderation": "[MODERAZIONE]",
+            "misc": "[VARI]",
+            "user": "[UTENTE]",
+            "admin": "[AMMINISTRATORE]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORTO]",
+            "roles": "[RUOLI]",
+            "permission": "[PERMESSI]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[COMANDI IMMAGINI]"
+        },
+        "introduction": ":wave: **Ciao, sono {{- name}}**, divertiamoci insieme su Discord (/^▽^)/\n\nPer iniziare, scrivi `{{- prefix}}help [comando]` per ricevere più informazioni riguardanti un comando, ad esempio: `{{- prefix}}help ping`"
     },
     "version": "Attualmente la mia versione è {{version}}",
     "add": "Usa questo link per aggiungermi al tuo server: {{- link}}",
