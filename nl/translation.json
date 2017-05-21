@@ -27,15 +27,22 @@
         "native-name": "Nederlands\n",
         "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!",
         "page": "Pagina",
-        "unknown": "unknown"
+        "unknown": "Onbekend"
     },
     "help": {
         "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ Selecteer een command categorie door te reageren met {{pre}}help nummer van een command om meer te weten te komen:",
         "intro_2": "Hoi ik ben",
         "support": "[SUPPORT]",
         "bug": "krijg de link naar de Rem support server",
-        "help": "het hulp command",
-        "add": "Krijg een link om mij aan je server toe te voegen",
+        "help": {
+            "short": "Krijg hulp van een enkel commando of krijg een lijst van commando's",
+            "usage": "{{prefix}}help [commando]",
+            "example": "`{{prefix}}help` Geeft je een lijst van commando's  gesorteerd op categorie\n`{{prefix}}help ping` Geeft je info over het 'ping' commando"
+        },
+        "add": {
+            "short": "Geeft je de uitnodigingslink voor Rem",
+            "usage": "{{- prefix}}toevoegen"
+        },
         "music": "[MUZIEK]",
         "voice": "Ik verbind met het spraakkanaal waar jij op dit moment in zit (Normale muziek commands zorgen ook dat de Rem bot met het spraakkanaal verbind)",
         "silent": "Ik verlaat het spraakkanaal waar ik nu mee verbonden ben. (Alleen te gebruiken met WolkeBot rol)",
@@ -82,7 +89,7 @@
         "eatCookie": "Eet een koekje.",
         "git": "Geeft je de Github link van Rem",
         "roll": "Rol een nummer tussen nul en het aangegeven getal, als er geen getal is aangegeven wordt 10 gebruikt.",
-        "8ball": "Geeft je de mening van de magische 8ball over een vraag",
+        "8ball": "Geeft je de mening van de magische 8bal over een vraag",
         "garfield": "Geeft je een willekeurige Garfield strip",
         "cat": "Stuurt je een willekeurige plaatje van een kat. Iedereen heeft katten nodig!",
         "hug": "Geef iemand een knuffel :>",
@@ -101,7 +108,10 @@
         "eastereggs": "[PAASEIEREN]",
         "proxer": "[PROXER]",
         "no-cat": "[ONGECATEGORISEERD]",
-        "ping": "Geeft je de ping van de bot, realiseer je dat dit niet de ping van een spraakkanaal is.",
+        "ping": {
+            "short": "Geeft je de ping van de bot, houdt in gedachte dat dit **niet** de ping van spraak is.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Zo obsceen uwu",
         "rem": "Geeft je een willekeurige foto van Rem.",
         "wip": "[WERKZAAMHEDEN IN UITVOERING]",
@@ -144,7 +154,7 @@
         "rp": "Het commando om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
         "cry": "Voel je je verdrietig? Dit is dit het juiste commando voor je.",
         "ibsafe": "Zoekt op ibsear.ch (alleen sfw pics)",
-        "iblewd": "Zoekt op ibsearch.xxx (hetzelfde als ibsave, maar met NSFW fotos)",
+        "iblewd": "Zoekt op ibsearch.xxx (hetzelfde als ibsafe, maar met NSFW fotos)",
         "qr": "Je kan enkele nummers weghalen met hun nummerid, of verschillende met 'qr startid-stopid', dit zou alle liederen tussen startid-stopid weghalen, of verwijder verschillende liederen door de id's te scheiden met kommas",
         "shuffle": "Husselt de afspeellijst door elkaar. Let op dat er ten minste 3 nummers in de wachtlijst moeten zijn om het commando te laten werken.",
         "owo": "Verstuurt willekeurige \"OwO What's this\" memes, uitgekozen door Wolke zelf.",
@@ -168,8 +178,37 @@
         "lick": "Controleer of deze persoon eetbaar is",
         "playlist": "[AFSPEELLIJST]",
         "moe": "Streamt Listen.moe ^^",
-        "anime": "Search for an anime",
-        "manga": "Search for a manga"
+        "anime": "Zoek een anime",
+        "manga": "Zoek een manga",
+        "permission": "[TOESTEMMING]",
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: Het commando `{{cmd}}` bestaat niet. Gebruik {{prefix}}help` om een lijst van commando's te krijgen.",
+        "command-no-detail": ":scream: Momenteel is er geen gedetaileerde hulp beschikbaar voor dit commando, dus voor nu is hier de oude help:\n```{{- legacy_help}}```",
+        "command-help-title": "\n:book: **__Command Help voor commando__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Alliases**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Kort**:",
+        "command-longhelp": ":book: **Gedetailleerd**:",
+        "command-usage": ":hammer_pick: **Gebruik**:",
+        "command-example": ":question: **Voorbeelden**:",
+        "categories": {
+            "list": "**Categorieën**",
+            "generic": "[ALGEMEEN]",
+            "fun": "[PLEZIER]",
+            "music": "[MUZIEK]",
+            "moderation": "[MODERATIE]",
+            "misc": "[DIVERSEN]",
+            "user": "[GEBRUIKER]",
+            "admin": "[ADMINISTRATOR]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[HULP]",
+            "roles": "[ROLLEN]",
+            "permission": "[PERMISSIE]",
+            "radio": "[RADIO]",
+            "playlist": "[AFSPEELLIJST]",
+            "image": "[AFBEELDING COMMANDO'S]"
+        },
+        "introduction": ":wave: **Hey ik ben {{- name}}**, laten we veel plezier hebben hier op Discord (/^▽^)/\n\nOm te beginnen, typ `{{- prefix}}help [commando]` om meer te leren over een commando, bijvoorbeeld: `{{- prefix}}help ping`"
     },
     "version": "Op het moment werk ik op versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -183,14 +222,14 @@
         "error": "Er is een fout opgetreden terwijl ik met je spraakkanaal probeerde te verbinden",
         "permission": "Geen toestemming! Je moet jezelf de WolkeBot rol geven om dit te gebruiken.",
         "no-voice": "Je zit niet in een spraakkanaal!",
-        "already-voice": "Ik zit al in een voice channel, verplaats me om dat te veranderen!"
+        "already-voice": "Ik zit al in een spraakkanaal, verplaats me om dat te veranderen!"
     },
     "nsfw-images": {
         "nothing-found": "Geen afbeeldingen gevonden met de labels: `{{tags}}`",
         "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
         "error-body": "Er is een fout opgetreden bij het interpreteren van de API reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: NSFW commandos kunnen alleen worden gebruikt in kanalen die gelabeld zijn als NSFW (Not Safe For Work, niet voor op het werk), volgende de richtlijnen van Discord.\n\nDe Discord richtlijnen kunnen worden gevonden op:\n<https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Deze zoekopdracht is niet toegestaan vanwege een conflict met de Discord richtlijnen. \n\nDe Discord richtlijnen kunnen worden gebonden op:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -224,7 +263,7 @@
     "roll": {
         "whole-number": "Voeg alsjeblieft een heel getal toe!",
         "negative": "Ik kan niet rollen met een {{number}}",
-        "success": "Rolde {{first}} uit {{second}}"
+        "success": "Rolde **{{first}}** uit **{{second}}**"
     },
     "qa": {
         "nothing-found": "Geen nummer gevonden met zoekterm '{{search}}'␣",
@@ -414,7 +453,7 @@
         "success": "Oke, ik heb de begroeting veranderd in:\n```{{- text}}```"
     },
     "farewell": {
-        "no-farewell": "Je hebt geen afscheidsbericht ingesteld dat ik moet gebruiken!",
+        "no-farewell": "Je hebt geen afscheidsbericht ingesteld!",
         "no-add": "Je kan het afscheidsbericht instellen of resetten.",
         "set-farewell": "```Afscheid:{{- text}}\nKanaal:{{- channel}}\nReset het afscheid met {{- prefix}}setFarewell reset```",
         "no-set-farewell": "Er is geen afscheidsbericht ingesteld op dit moment.\n\nJe kan een afscheid instellen met `{{- prefix}}setFarewell text` en resetten met `{{- prefix}}setFarewell reset`\n",
@@ -536,11 +575,11 @@
     },
     "anime": {
         "genres": "Genres",
-        "episodes": "Episodes",
-        "characters": "Main Characters",
-        "score": "Average Score"
+        "episodes": "Afleveringen",
+        "characters": "Hoofdpersonen",
+        "score": "Gemiddelde score"
     },
     "manga": {
-        "chapters": "Chapters"
+        "chapters": "Hoofdstukken"
     }
 }
