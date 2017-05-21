@@ -26,16 +26,23 @@
         "language-name-en": "Romanian",
         "native-name": "Romana",
         "empty-say": ":no_entry_sign: Nu ai introdus un mesaj!",
-        "page": "Page",
-        "unknown": "unknown"
+        "page": "Pagina",
+        "unknown": "necunosct"
     },
     "help": {
         "intro": "hai sa ne distram impreuna aici pe Discord (/^▽^)/ selecteaza o categorie de comenzi raspunzand cu {{pre}}numarul de ajutor al comenzii pentru a sti mai mult:",
         "intro_2": "Salut, eu sunt",
         "support": "[AJUTOR]",
         "bug": "fa rost de link-ul pentru serverul discord de suport",
-        "help": "comanda de ajutor",
-        "add": "Fa rost de link pentru a ma adauga pe server",
+        "help": {
+            "short": "Get help for a single command or get a list of commands",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Gives you a list of commands sorted by category\n`{{prefix}}help ping` Gives you info about the `ping` command"
+        },
+        "add": {
+            "short": "Gives you the invite link of Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUZICA]",
         "voice": "Eu intru pe canalul cu voce in care esti tu acum (comenzi de muzica normale fac deasemenea bot-ul sa intre in canalul cu voce)",
         "silent": "Eu ies din canalul cu voce in care sunt acum. (poate fi folosita cu ajutorul rolului WolkeBot)",
@@ -101,7 +108,10 @@
         "eastereggs": "[BONUS]",
         "proxer": "[PROXER]",
         "no-cat": "[FARA CATEGORIE]",
-        "ping": "Iti da tie pingul botului, ai grija deoarece acesta nu este pingul pentru voce.",
+        "ping": {
+            "short": "Gives you the ping of the bot, be aware that this is **not** the voice ping.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Asa indecent uwu",
         "rem": "Primesti o imagine aleatoare cu Rem",
         "wip": "[IN LUCRU]",
@@ -163,13 +173,42 @@
         "kiss": "Da cuiva un sarut <3",
         "setGreeting": "Seteaza un salut in canal unde comanda este executata.Poti folosi %USER% si %GUILD% care vor fi inlocuite de numele utilizatorului si numele breslei.",
         "setFarewell": "Seteaza un ramas bun in canal cand comanda este executata. Poti folosi %USER% si %GUILD%care vor fi inlocuite cu numele utilizatorului si numele breslei.",
-        "pout": "Hmmpf :< Pout at someone",
-        "smug": "Give someone a smug :^)",
-        "lick": "Check if somebody is eatable",
+        "pout": "Hmmpf :< supara-te pe cineva",
+        "smug": "Da la cineva un zambet ferches",
+        "lick": "Verifica daca cineva este comestibil",
         "playlist": "[PLAYLIST]",
-        "moe": "Streams Listen.moe ^^",
-        "anime": "Search for an anime",
-        "manga": "Search for a manga"
+        "moe": "Streamuri Listen.moe ^^",
+        "anime": "Cauta un anime",
+        "manga": "Cauta un manga",
+        "permission": "[PERMISSION]",
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: The command `{{cmd}}` does not exist. Use `{{prefix}}help` to get a list of commands.",
+        "command-no-detail": ":scream: At the moment, there is no detailed help available for this command, so here is the legacy help for now:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Command Help for command__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Aliases**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Short**:",
+        "command-longhelp": ":book: **Detailed**:",
+        "command-usage": ":hammer_pick: **Usage**:",
+        "command-example": ":question: **Examples**:",
+        "categories": {
+            "list": "**Categories**:",
+            "generic": "[GENERIC]",
+            "fun": "[FUN]",
+            "music": "[MUSIC]",
+            "moderation": "[MODERATION]",
+            "misc": "[MISCELLANEOUS]",
+            "user": "[USER]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLES]",
+            "permission": "[PERMISSION]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[IMAGE COMMANDS]"
+        },
+        "introduction": ":wave: **Hey I'm {{- name}}**, let's have fun together here on Discord (/^▽^)/\n\nTo get you started type `{{- prefix}}help [command]` to get more info about a command, for example: `{{- prefix}}help ping`"
     },
     "version": "In momentul de fata rulez versiunea {{version}}",
     "add": "Foloseste acest lnk pentru a ma adauga serverului tau: {{-link}}",
@@ -189,8 +228,8 @@
         "nothing-found": "Nicio imagine gasita cu etichetele: `{{tags}}`",
         "no-nsfw-channel": "Te rog seteaza/adauga un Canal NSFW cu {{- prefix}}setLewd (inr-un Canal NSFW) pentru a folosi comenzi NSFW",
         "error-body": "A fost o eroare la analiza raspunului apiului. Te rog incearca dinnou , daca problema persista contacteaza Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands can only be used in channels labelled as NSFW,in accordance with Discord's guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: This search is not allowed due to a conflict with the Discord community guidelines.\n\nThe Discord guidelines can be found at: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: comenzi NSFW pot fi folosite doar in canale marcate ca NSFW, in concordanta cu regulile Discord.\nRegulile Discord pot fi gasite pe : \n<https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Aceasta cautare nu este permisa deoarece este in conflict cu regulile Discord.\nRegulile Discord pot fi gasite pe : \n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
@@ -469,7 +508,7 @@
             "perm": "Drept",
             "use": "Permisiune"
         },
-        "page-does-not-exist": "This page does not exist. Try a lower page number!"
+        "page-does-not-exist": "Aceasta pagina nu exista.Incearca un numar mai mic!"
     },
     "rp": {
         "success": "Am sters cu succes dreptul pentru `{{- node}}` de la **{{- type}}** `{{- id}}`"
@@ -531,15 +570,15 @@
         "no-result": "Nu am putut sa gasesc nimic pentru termenul `{{- term}}` "
     },
     "apq": {
-        "unsupported": "This Playlist is not supported!"
+        "unsupported": "Playlistul nu este suportat!"
     },
     "anime": {
-        "genres": "Genres",
-        "episodes": "Episodes",
-        "characters": "Main Characters",
-        "score": "Average Score"
+        "genres": "Genuri",
+        "episodes": "Episoade",
+        "characters": "Caractere Prinicipale",
+        "score": "Scor in medie"
     },
     "manga": {
-        "chapters": "Chapters"
+        "chapters": "Capitole"
     }
 }
