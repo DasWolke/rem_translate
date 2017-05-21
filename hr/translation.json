@@ -34,8 +34,15 @@
         "intro_2": "Bok, ja sam",
         "support": "[PODRŠKA]",
         "bug": "dobi link za \"support Discord\"",
-        "help": "naredba za pomoć",
-        "add": "Nabavi link da me dodaš u svoj server",
+        "help": {
+            "short": "Dobij pomoć za jednu naredbu ili listu naredbi",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Ti da listu naredbi poredanih po kategoriji\n`{{prefix}}help ping` Ti da informacije o `ping` naredbi"
+        },
+        "add": {
+            "short": "Da ti poziv od Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUZIKA]",
         "voice": "Pridružim ti se u Glasovnom Kanalu u kojem si trenutno (uobičajene naredbe za glazbu natjeraju Bota da dođe u vašu Glasovnu Sobu također)",
         "silent": "Ja ću izaći iz Glasovnog Kanala u kojoj sam trenutno spojena. (samo se može koristiti s ulogom WolkeBot)",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGOVI]",
         "proxer": "[PROXER]",
         "no-cat": "[NEKATEGORIZIRANO]",
-        "ping": "Daje ti ping od Bota, ali imaj na umu da ovo nije glasovni ping.",
+        "ping": {
+            "short": "Da ti ping bota, ali to **nije** ping voice-a.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Jako nepristojno uwu",
         "rem": "Da ti slučajnu sliku Rem.",
         "wip": "[U IZRADI]",
@@ -170,8 +180,35 @@
         "moe": "Streama Listen.moe ^^",
         "anime": "Potraži za jedan anime.",
         "manga": "Potraži za mangu.",
-        "permission": "[PERMISSION]",
-        "radio": "[RADIO]"
+        "permission": "[DOZVOLA]",
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: Naredba `{{cmd}}` ne postoji. Koristi `{{prefix}}help` da dobiješ listu naredbi.",
+        "command-no-detail": ":scream: U trenutku ne postoji nikakva detaljna pomoć za ovu naredbu pa zato koristi pomoć legata za sad:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Naredba pomoć za naredbu__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Nadimci**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Kratko**:",
+        "command-longhelp": ":book: **Detaljno**:",
+        "command-usage": ":hammer_pick: **Upotreba**",
+        "command-example": ":question: **Primjer**:",
+        "categories": {
+            "list": "**Kategorije**:",
+            "generic": "[GENERIČNO]",
+            "fun": "[ZABAVA]",
+            "music": "[MUZIKA]",
+            "moderation": "[MODERACIJA]",
+            "misc": "[RAZNO]",
+            "user": "[KORISNIK]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[POMOĆ]",
+            "roles": "[ULOGE]",
+            "permission": "[DOZVOLE]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLISTA]",
+            "image": "[NAREDBE ZA SLIKE]"
+        },
+        "introduction": ":wave: **Hej, ja sam {{- name}}**, hajmo se zajedno zabaviti na Discord-u (/^▽^)/"
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
     "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
