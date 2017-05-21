@@ -34,8 +34,15 @@
         "intro_2": "Cześć, jestem",
         "support": "[WSPARCIE]",
         "bug": "wyświetl link serwera wsparcia",
-        "help": "komenda pomocy",
-        "add": "Wyświetl link aby dodać mnie do Twojego serwera",
+        "help": {
+            "short": "Pomoc dla pojedynczych komend, lub całej jej listy",
+            "usage": "{{prefix}}help [komenda]",
+            "example": "`{{prefix}}help` Wyświetla listę komend posortowaną kategoriami\n`{{prefix}}help ping` Wyświetla informacje o komendzie `ping`"
+        },
+        "add": {
+            "short": "Daje ci link zapraszający do Rem`a",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUZYKA]",
         "voice": "Dołączyłam do Twojego kanału głosowego (podstawowe komendy muzyczne także dołączają bota do kanału głosowego)",
         "silent": "Wychodzę z kanału głosowego, w którym aktualnie jestem. (można używać tylko z rolą WolkeBot)",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGS]",
         "proxer": "[PROXER]",
         "no-cat": "[BEZ KATEGORII]",
-        "ping": "Wyświetla czas reakcji bota (to nie jest czas reakcji głosu).",
+        "ping": {
+            "short": "Wyświetla ci ping bota, lecz uświadom sobie że to **nie** jest ping głosowy.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Jakie zboczone uwu",
         "rem": "Wyświetla losowe zdjęcie Rem",
         "wip": "[W TRAKCIE PRACY]",
@@ -171,10 +181,37 @@
         "anime": "Szukaj anime",
         "manga": "Szukaj mangi",
         "permission": "[UPRAWNIENIA]",
-        "radio": "[RADIO]"
+        "radio": "[RADIO]",
+        "command-not-exists": ":x: Komenda `{{cmd}}` nie istnieje. Wpisz `{{prefix}}help` by dostać listę komend.",
+        "command-no-detail": ":scream: Obecnie nie ma szczegółowej pomocy tej komendy, poprzednia wersja:\n```{{- legacy_help}}```",
+        "command-help-title": ":book: **__Komenda pomocy dla komendy__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Aliasy**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Krótka**:",
+        "command-longhelp": ":book: **Szczegółowa**:",
+        "command-usage": ":hammer_pick: **Użycie**:",
+        "command-example": ":question: **Przykłady**:",
+        "categories": {
+            "list": "**Kategorie**:",
+            "generic": "[GŁÓWNE]",
+            "fun": "[ROZRYWKA]",
+            "music": "[MUZYKA]",
+            "moderation": "[MODERACJA]",
+            "misc": "[RÓŻNE]",
+            "user": "[UŻYTKOWNIK]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGG'I]",
+            "support": "[POMOC]",
+            "roles": "[ROLE]",
+            "permission": "[UPRAWNIENIA]",
+            "radio": "[RADIO]",
+            "playlist": "[PLAYLISTA]",
+            "image": "[KOMENDY OBRAZKOWE]"
+        },
+        "introduction": ":wave: **Hej nazywam się {{- name}}**, bawmy się razem na Discord (/^▽^)/\n\nNa początek wpisz `{{- prefix}}help [command]` aby uzyskać pomoc o komendach, na przykład: `{{- prefix}}help ping`"
     },
     "version": "Obecnie używam wersji {{version}}",
-    "add": "Użyj ten link, aby dodać mnie do Twojego serwera: {{- link}}",
+    "add": "Użyj tego linku, aby dodać mnie do Twojego serwera: {{- link}}",
     "bug": "Proszę dołącz do serwera wsparcia: {{- link}} aby zgłosić bug.",
     "level": {
         "result": "Masz **{{level}} Poziom** XP: **{{current}}XP**/**{{needed}}XP** Łącznie:**{{total}}** XP",
