@@ -34,8 +34,15 @@
         "intro_2": "Kamusta, ako si",
         "support": "[SUPORTA]",
         "bug": "kunin ang Link ng support discord",
-        "help": "ang help command",
-        "add": "Kumuha ng link para idagdag ako sa iyong server",
+        "help": {
+            "short": "Kunin ang help para sa isang command o kunin ang listahan ng commands",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Ibibigay ang listahan ng commands na nakaayos ayon sa kategorya\n`{{prefix}}help ping` Magbibigay ng impormasyaon tungkol sa `ping` command"
+        },
+        "add": {
+            "short": "Magbibigay ng invite link ni Rem",
+            "usage": "{{- prefix}}add"
+        },
         "music": "[MUSIKA]",
         "voice": "Ako ay sasali sa Voice Channel na kasalukuyan kang naroon (ang mga music commands ay gumagana rin para sumali ang bot)",
         "silent": "Ako ay aalis ng Voice Channel na ako ay kasalukuyang nakakonekta. (magagamit lamang ng WolkeBot Role)",
@@ -101,7 +108,10 @@
         "eastereggs": "[EASTEREGGS]",
         "proxer": "[PROXER]",
         "no-cat": "[WALANG KATEGORYA]",
-        "ping": "Magbibigay sa'yo ng ping ng bot, mabatid na ito ay hindi ng voice ping.",
+        "ping": {
+            "short": "Ibibigay ang ping ng bot, ito ay **hindi** ang voice ping.",
+            "usage": "{{- prefix}}ping"
+        },
         "lewd": "Masyadong mahalay uwu",
         "rem": "Magbibigay ng larawan ni rem",
         "wip": "[WORK IN PROGRESS]",
@@ -170,11 +180,38 @@
         "moe": "Ipapalabas ang Listen.moe ^^",
         "anime": "Maghanap ng anime",
         "manga": "Maghanap ng manga",
-        "permission": "[PERMISSION]",
-        "radio": "[RADIO]"
+        "permission": "[PERMISO]",
+        "radio": "[RADYO]",
+        "command-not-exists": ":x: Ang command na `{{cmd}}` ay wala pa. Gamitin ang `{{prefix}}help` upang makuha ang listahan ng commands.",
+        "command-no-detail": ":scream: Sa ngayon, wala pang detalyadong impormasyon para sa command na ito, kaya heto ang legacy help:\n```{{- legacy_help}}```",
+        "command-help-title": "book: **__Command Help para sa command__**: `{{- prefix}}{{- command}}`",
+        "command-aliases": ":gear: **Alyas**: {{- aliases}}",
+        "command-shorthelp": ":notepad_spiral: **Pinaikli**:",
+        "command-longhelp": ":book: **Detalye**:",
+        "command-usage": ":hammer_pick: **Gamit**:",
+        "command-example": ":question: **Halimbawa**:",
+        "categories": {
+            "list": "**Katergorya**:",
+            "generic": "[GENERIC]",
+            "fun": "[KATUWAAN]",
+            "music": "[MUSIKA]",
+            "moderation": "[MODERASYON]",
+            "misc": "[MISC]",
+            "user": "[USER]",
+            "admin": "[ADMIN]",
+            "nsfw": "[NSFW]",
+            "eastereggs": "[EASTEREGGS]",
+            "support": "[SUPPORT]",
+            "roles": "[ROLES]",
+            "permission": "[PERMISO]",
+            "radio": "[RADYO]",
+            "playlist": "[PLAYLIST]",
+            "image": "[IMAGE COMMANDS]"
+        },
+        "introduction": ":wave: **Kumusta Ako si {{- name}}**, magsaya tayo dito sa Discord (/^▽^)/\n\nBilang panimula, i-type ang `{{- prefix}}help [command]` upang makakuha ng impormasyon tungkol sa command, halimbawa: `{{- prefix}}help ping`"
     },
     "version": "Kasalukuyan akong gumagana sa bersyon {{version}}",
-    "add": "Gamitin itong link upang idagdag ako sa iyong Server: {{- link}}",
+    "add": "Gamitin itong link upang idagdag ako sa iyong Server: `{{- link}}`",
     "bug": "Pakiusap sumali sa support discord: {{- link}} upang mag-ulat ng bug.",
     "level": {
         "result": "Ikaw ay **Level {{level}}** XP: **{{current}}XP**/** {{needed}}XP** Kabuuang XP:**{{total}}**",
@@ -226,7 +263,7 @@
     "roll": {
         "whole-number": "Pakiusap magdagdag ng buong numero!",
         "negative": "Hindi ako makakapagpagulong gamit ang {{number}}",
-        "success": "Nagpagulong ng {{first}} mula sa {{second}}"
+        "success": "Nagpagulong ng **{{first}}** mula sa **{{second}}**"
     },
     "qa": {
         "nothing-found": "Walang Kantang nahanap gamit ang salitang `{{search}}`",
