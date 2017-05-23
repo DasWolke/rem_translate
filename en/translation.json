@@ -254,7 +254,7 @@
     "nothing-found": "No Song found with Search Term `{{search}}` ",
     "empty-search": "You did not enter a link/searchterm.",
     "started-download": "Started download of `{{- url}}` ",
-    "success": "Queued **{{- song}}**"
+    "success": "Queued **{{- song}}** requested by: **{{- user}}**"
   },
   "rq": {
     "db-error": "A database error occured!",
@@ -293,8 +293,8 @@
     "available-languages": "List of available Languages\nPlease note that setLang needs the shortcode"
   },
   "np": {
-    "song-duration": "Currently playing:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
-    "song": "Currently playing: `{{-title}} {{repeat}}`",
+    "song-duration": "Currently playing:` {{- title}} {{current}}/{{duration}} {{repeat}}` requested by: **{{- user}}**",
+    "song": "Currently playing: `{{-title}} {{repeat}}` requested by: **{{- user}}**",
     "repeat-on": "repeat:on",
     "repeat-single": "repeat: single",
     "repeat-queue": "repeat: queue",
@@ -303,7 +303,8 @@
     "emoji-repeat-off": ":heavy_check_mark: Repeat: off"
   },
   "queue": {
-    "queued": "Queued:"
+    "queued": "Queued:",
+    "by": "requested by: {{- user}}"
   },
   "rem-lewd": {
     "no-nsfw": "There are no NSFW Channels yet.",
@@ -375,9 +376,9 @@
   "leave": "Ok I left the voice channel.",
   "play": {
     "no-result": "No song found!",
-    "playing": ":musical_note: Now playing **{{- song}}**",
-    "success": ":musical_note: Now playing **{{- song}}**",
-    "next": ":musical_note: Playing next **{{- song}}**"
+    "playing": ":musical_note: Now playing **{{- song}}** requested by: **{{- user}}**",
+    "success": ":musical_note: Now playing **{{- song}}** requested by: **{{- user}}**",
+    "next": ":musical_note: Playing next **{{- song}}** requested by: **{{- user}}**"
   },
   "prefix": {
     "success": "Ok I just set the prefix to {{- prefix}}, try `{{- prefix}}ping` to check it",
