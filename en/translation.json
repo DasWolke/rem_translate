@@ -19,7 +19,7 @@
     "abort": ":x: canceled",
     "cat-nope": ":no_entry_sign: This category does not exist!",
     "mention": "Please mention a user.",
-    "cancelled-command": "Cancelled the command.",
+    "cancelled-command": ":x: Cancelled the command.",
     "donate": "Donate",
     "support": "Support",
     "invite": "Invite",
@@ -28,6 +28,16 @@
     "empty-say": ":no_entry_sign: You did not enter a message!",
     "page": "Page",
     "unknown": "unknown"
+  },
+  "menu": {
+    "guide": "Respond with the number of the option you want to pick",
+    "disclaimer": "Type 'c' or any rem command to exit this menu, it will autoclose in 5 minutes."
+  },
+  "search": {
+    "user": ":mag: **Usersearch**",
+    "role": ":mag: **Rolesearch**",
+    "channel": ":mag: **Channelsearch**",
+    "no-results": ":mag: Your search did not return any results"
   },
   "help": {
     "command-not-exists": ":x: The command `{{cmd}}` does not exist. Use `{{prefix}}help` to get a list of commands.",
@@ -79,7 +89,6 @@
     "play": "Play something from /Youtube/Soundcloud/Osu/search",
     "pause": "Pause the Current Song",
     "resume": "Resume the pause Song",
-    "search": "Searches for a Song in the Bot Database and shows the 5 best Results",
     "skip": "Starts a Voteskip for the current Song, more than 50% of the channel have to vote, then it is skipped.",
     "qa": "Queues a song from Youtube/Soundcloud/Osu/search",
     "qra": "removes either all Songs except the one that is playing right now or a certain number of songs.",
@@ -422,9 +431,6 @@
     "over-limit": "You can not delete less than 2 messages or more than 100 Messages at once!",
     "no-limit": "You did not specify how many messages I should delete.",
     "nothing-found": "I did not find a message that matched the filter!"
-  },
-  "search": {
-    "success": "Found the following Songs:"
   },
   "set-lewd": {
     "success": "Successfully added {{- channel}} to the NSFW Channels!"
