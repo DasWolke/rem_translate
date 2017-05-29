@@ -359,7 +359,8 @@
     "lib": "Library",
     "voice_active": "AVC",
     "voice_s": "VC(shard)",
-    "voice_active_s": "AVC (shard)"
+    "voice_active_s": "AVC (shard)",
+    "top_donators": "Top Donators:"
   },
   "rank": "You can find the Leaderboard for this Server here: {{- link}}",
   "pp": {
@@ -544,7 +545,7 @@
       "channel": "channel"
     },
     "success": "Ok, I just added the permission `{{- node}}` `{{- allowed}}` to the `{{- type}}` `{{- name}}`",
-    "wrong-node": "The permission node `{{- node}}` will not work, as it is not a valid permission node. To get the permission node for a command type `{{- prefix}}getNode command`",
+    "wrong-node": "The permission node `{{- node}}` will not work, as it is not a valid permission node. To get the permission node for a command type `{{- prefix}}getNode <command>`",
     "target-not-found": "I could not find the target {{- target}} for this command",
     "no-allowance-set": "You did not tell me if the perm should be allowed or not, add `true` or `false` depending on your choice",
     "missing-args": "The correct syntax for this cmd is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Example:\n```{{-prefix}}ap playlist.* true -> allows all commands of the category playlist in the server\n{{-prefix}}ap music.fskip -u @user true -> allows the mentioned user to use {{- prefix}}fskip```"
