@@ -19,7 +19,7 @@
         "abort": ":x: geannuleerd",
         "cat-nope": ":no_entry_sign: Deze categorie bestaat niet!",
         "mention": "Noem alsjeblieft een gebruiker.",
-        "cancelled-command": "Het commando is geannuleerd.",
+        "cancelled-command": "Het command is geannuleerd.",
         "donate": "Doneer",
         "support": "Ondersteuning",
         "invite": "Uitnodigen",
@@ -35,9 +35,9 @@
         "support": "[SUPPORT]",
         "bug": "krijg de link naar de Rem support server",
         "help": {
-            "short": "Krijg hulp van een enkel commando of krijg een lijst van commando's",
-            "usage": "{{prefix}}help [commando]",
-            "example": "`{{prefix}}help` Geeft je een lijst van commando's  gesorteerd op categorie\n`{{prefix}}help ping` Geeft je info over het 'ping' commando"
+            "short": "Krijg hulp van een enkel command of krijg een lijst van commands",
+            "usage": "{{prefix}}help [command]",
+            "example": "`{{prefix}}help` Geeft je een lijst van commands  gesorteerd op categorie\n`{{prefix}}help ping` Geeft je info over het 'ping' command"
         },
         "add": {
             "short": "Geeft je de uitnodigingslink voor Rem",
@@ -115,9 +115,9 @@
         "lewd": "Zo obsceen uwu",
         "rem": "Geeft je een willekeurige foto van Rem.",
         "wip": "[WERKZAAMHEDEN IN UITVOERING]",
-        "gr": "Stel een begroeting in met set greetingMessage,{{user}} zal worden vervangen door de naam van het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het commando is toegepast",
-        "fw": "Stel een afscheidsbericht in met set farewellMessage, {{user}} zal worden vervangen door de naam van het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het commando is toegepast",
-        "s": "Het server commando, stel dingen zoals begroetingen en afscheidsberichten in.",
+        "gr": "Stel een begroeting in met set greetingMessage,{{user}} zal worden vervangen door de naam van het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het command is toegepast",
+        "fw": "Stel een afscheidsbericht in met set farewellMessage, {{user}} zal worden vervangen door de naam van het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het command is toegepast",
+        "s": "Het server command, stel dingen zoals begroetingen en afscheidsberichten in.",
         "shrug": "¯\\_(ツ)_/¯",
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "slechts een aubergine",
@@ -138,7 +138,7 @@
         "rr": "Verwijdert een rol van jezelf, een andere gebruiker of van de server",
         "roles": "[ROLLEN]",
         "repeat": "Herhaalt een nummer/de wachtlijst tot er nieuwe nummers worden toegevoegd aan de wachtlijst.",
-        "sayd": "Laat Rem iets zeggen en verwijdert jouw commando",
+        "sayd": "Laat Rem iets zeggen en verwijdert jouw command",
         "generic": "[ALGEMEEN]",
         "fun": "[PRET]",
         "coin": "gooit een munt voor je op",
@@ -149,16 +149,16 @@
         "sinfo": "geeft je wat info over de huidige server",
         "uinfo": "geeft je wat info over jezelf/het genoemde lid",
         "apq": "voegt een afspeellijst toe aan de wachtlijst, ondersteund alleen youtube afspeellijsten en heeft alleen het id nodig. NIET HET ADRES!!",
-        "ap": "Het commando om permissies toe te voegen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
-        "gp": "Het commando om permissies te bezichtigen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
-        "rp": "Het commando om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
-        "cry": "Voel je je verdrietig? Dit is dit het juiste commando voor je.",
+        "ap": "Het command om permissies toe te voegen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "gp": "Het command om permissies te bezichtigen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "rp": "Het command om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
+        "cry": "Voel je je verdrietig? Dit is dit het juiste command voor je.",
         "ibsafe": "Zoekt op ibsear.ch (alleen sfw pics)",
         "iblewd": "Zoekt op ibsearch.xxx (hetzelfde als ibsafe, maar met NSFW fotos)",
         "qr": "Je kan enkele nummers weghalen met hun nummerid, of verschillende met 'qr startid-stopid', dit zou alle liederen tussen startid-stopid weghalen, of verwijder verschillende liederen door de id's te scheiden met kommas",
-        "shuffle": "Husselt de afspeellijst door elkaar. Let op dat er ten minste 3 nummers in de wachtlijst moeten zijn om het commando te laten werken.",
+        "shuffle": "Husselt de afspeellijst door elkaar. Let op dat er ten minste 3 nummers in de wachtlijst moeten zijn om het command te laten werken.",
         "owo": "Verstuurt willekeurige \"OwO What's this\" memes, uitgekozen door Wolke zelf.",
-        "getNode": "Geeft jou het knooppunt, het categorie knooppunt en de categorie van een commando",
+        "getNode": "Geeft je het knooppunt, het categorie knooppunt en de categorie van een command",
         "resetPerms": "Reset alle toestemmingen die gezet zijn, wees voorzichtig met het gebruiken hiervan.",
         "pat": "Geef iemand die een goede jongen/meisje/helikopter is geweest een aai over de bol.",
         "triggered": "GETRIGGERED",
@@ -167,12 +167,12 @@
         "potato": "Iedereen wilt een aardappel",
         "choose": "Laat Rem iets kiezen voor je, scheid keuzes met `;`",
         "tickle": "Kietel Kietel Kietel",
-        "image": "[AFBEELDING COMMANDOS]",
+        "image": "[AFBEELDING COMMANDS]",
         "define": "Haal de definitie van een term van Urbandictionary",
-        "dog": "Vind je honden leuker dan katten? Dan is dit commando het juiste voor jou",
+        "dog": "Vind je honden leuker dan katten? Dan is dit command het juiste voor jou",
         "kiss": "Geef iemand een kus <3",
-        "setGreeting": "Stel een begroeting in in het kanaal waar het commando is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
-        "setFarewell": "Stel een afscheidsbericht in in het kanaal waar het commando is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
+        "setGreeting": "Stel een begroeting in in het kanaal waar het command is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
+        "setFarewell": "Stel een afscheidsbericht in in het kanaal waar het command is uitgevoerd. Je kan %USER% en %GUILD% gebruiken, wat wordt vervangen door de gebruikersnaam en servernaam.",
         "pout": "Hmmph :< pruilt naar iemand",
         "smug": "Geef iemand een zelfingenomen :^)",
         "lick": "Controleer of deze persoon eetbaar is",
@@ -182,9 +182,9 @@
         "manga": "Zoek een manga",
         "permission": "[TOESTEMMING]",
         "radio": "[RADIO]",
-        "command-not-exists": ":x: Het commando `{{cmd}}` bestaat niet. Gebruik {{prefix}}help` om een lijst van commando's te krijgen.",
-        "command-no-detail": ":scream: Momenteel is er geen gedetaileerde hulp beschikbaar voor dit commando, dus voor nu is hier de oude help:\n```{{- legacy_help}}```",
-        "command-help-title": "\n:book: **__Command Help voor commando__**: `{{- prefix}}{{- command}}`",
+        "command-not-exists": ":x: Het command `{{cmd}}` bestaat niet. Gebruik {{prefix}}help` om een lijst van commands te krijgen.",
+        "command-no-detail": ":scream: Momenteel is er geen gedetailleerde hulp beschikbaar voor dit command, dus voor nu is hier de oude help:\n```{{- legacy_help}}```",
+        "command-help-title": "\n:book: **__Command Help voor command__**: `{{- prefix}}{{- command}}`",
         "command-aliases": ":gear: **Alliases**: {{- aliases}}",
         "command-shorthelp": ":notepad_spiral: **Kort**:",
         "command-longhelp": ":book: **Gedetailleerd**:",
@@ -206,9 +206,9 @@
             "permission": "[PERMISSIE]",
             "radio": "[RADIO]",
             "playlist": "[AFSPEELLIJST]",
-            "image": "[AFBEELDING COMMANDO'S]"
+            "image": "[AFBEELDING COMMANDS]"
         },
-        "introduction": ":wave: **Hey ik ben {{- name}}**, laten we veel plezier hebben hier op Discord (/^▽^)/\n\nOm te beginnen, typ `{{- prefix}}help [commando]` om meer te leren over een commando, bijvoorbeeld: `{{- prefix}}help ping`"
+        "introduction": ":wave: **Hey ik ben {{- name}}**, laten we veel plezier hebben hier op Discord (/^▽^)/\n\nOm te beginnen, typ `{{- prefix}}help [command]` om meer te leren over een command, bijvoorbeeld: `{{- prefix}}help ping`"
     },
     "version": "Op het moment werk ik op versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -228,7 +228,7 @@
         "nothing-found": "Geen afbeeldingen gevonden met de labels: `{{tags}}`",
         "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
         "error-body": "Er is een fout opgetreden bij het interpreteren van de API reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commandos kunnen alleen worden gebruikt in kanalen die gelabeld zijn als NSFW (Not Safe For Work, niet voor op het werk), volgende de richtlijnen van Discord.\n\nDe Discord richtlijnen kunnen worden gevonden op:\n<https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commands kunnen alleen worden gebruikt in kanalen die gelabeld zijn als NSFW (Not Safe For Work, niet voor op het werk), volgende de richtlijnen van Discord.\n\nDe Discord richtlijnen kunnen worden gevonden op:\n<https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: Deze zoekopdracht is niet toegestaan vanwege een conflict met de Discord richtlijnen. \n\nDe Discord richtlijnen kunnen worden gebonden op:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -301,7 +301,7 @@
     "set-lang": {
         "no-lang": "Je hebt geen specifieke taal uitgekozen! Op dit moment zijn er {{languages}} beschikbaar.",
         "success": "Oke ik heb net de taal van de server veranderd in {{- language}}.",
-        "unsupported": "Deze taal is nog niet in het systeem, maar je kan helpen door een pull request met jouw taal op GitHub aan te vragen. Je kan de momenteel beschikbare talen vinden door dit commando zonder toevoegingen te gebruiken.",
+        "unsupported": "Deze taal is nog niet in het systeem, maar je kan helpen door een pull request met jouw taal op GitHub aan te vragen. Je kan de momenteel beschikbare talen vinden door dit command zonder toevoegingen te gebruiken.",
         "native-name": "Oorspronkelijke naam",
         "english-name": "Engelse naam\n",
         "shortcode": "Kleine code",
@@ -325,24 +325,24 @@
         "success": "{{- channel}} succesvol verwijderd van de NSFW kanalen!"
     },
     "no-level-server": {
-        "success-disable": "Ok ik heb zojuist het level systeem uitgezet voor deze server, gebruik dit  commando nog een keer om het weer aan te zetten.",
-        "success-enable": "Ok ik heb zojuist het level systeem aangezet voor deze server, gebruik dit commando nog een keer om het uit te zetten."
+        "success-disable": "Ok ik heb zojuist het level systeem uitgezet voor deze server, gebruik dit  command nog een keer om het weer aan te zetten.",
+        "success-enable": "Ok ik heb zojuist het level systeem aangezet voor deze server, gebruik dit command nog een keer om het uit te zetten."
     },
     "no-pm-server": {
-        "success-disable": "Ok ik heb zojuist pm notificaties voor deze server uitgeschakeld, gebruik dit  commando nog een keer om het in te schakelen.",
-        "success-enable": "Ok ik heb zojuist pm notificaties voor deze server ingeschakeld, typ dit commando opnieuw om ze uit te schakelen."
+        "success-disable": "Ok ik heb zojuist pm notificaties voor deze server uitgeschakeld, gebruik dit  command nog een keer om het in te schakelen.",
+        "success-enable": "Ok ik heb zojuist pm notificaties voor deze server ingeschakeld, typ dit command opnieuw om ze uit te schakelen."
     },
     "no-channel-server": {
-        "success-disable": "Ok ik heb zojuist pm notificaties uitgeschakeld voor deze server en kanaal notificaties ingeschakeld, gebruik dit commando opnieuw om het omgekeerde te doen.",
-        "success-enable": "Ok ik heb zojuist pm notificaties ingeschakeld voor deze server en kanaal notificaties uitgeschakeld, gebruik dit commando opnieuw om het omgekeerde te doen."
+        "success-disable": "Ok ik heb zojuist pm notificaties uitgeschakeld voor deze server en kanaal notificaties ingeschakeld, gebruik dit command opnieuw om het omgekeerde te doen.",
+        "success-enable": "Ok ik heb zojuist pm notificaties ingeschakeld voor deze server en kanaal notificaties uitgeschakeld, gebruik dit command opnieuw om het omgekeerde te doen."
     },
     "no-level": {
-        "success-disable": "Oke, ik heb het level systeem uitgeschakeld voor je, gebruik dit commando nog een keer om het weer in te schakelen.",
-        "success-enable": "Oke, ik heb het level systeem ingeschakeld voor je, gebruik dit commando nog een keer om het uit te schakelen."
+        "success-disable": "Oke, ik heb het level systeem uitgeschakeld voor je, gebruik dit command nog een keer om het weer in te schakelen.",
+        "success-enable": "Oke, ik heb het level systeem ingeschakeld voor je, gebruik dit command nog een keer om het uit te schakelen."
     },
     "no-pm": {
-        "success-disable": "Oke, ik heb PM notificaties uitgeschakeld voor je, typ dit commando nog een keer in om het weer in te schakelen.",
-        "success-enable": "Oke, ik heb PM notificaties ingeschakeld voor je, gebruik dit commando nog een keer om het weer uit te schakelen."
+        "success-disable": "Oke, ik heb PM notificaties uitgeschakeld voor je, typ dit command nog een keer in om het weer in te schakelen.",
+        "success-enable": "Oke, ik heb PM notificaties ingeschakeld voor je, gebruik dit command nog een keer om het weer uit te schakelen."
     },
     "eat-cookie": {
         "success": "Je at net {{number}} Koekje(s)!",
@@ -466,7 +466,7 @@
     "create-role": {
         "missing": "De rol die je hebt gespecificeerd bestaat niet op deze server.",
         "new": "Zal ik de rol voor je creëren?",
-        "no-args": "Je hebt geen toevoegingen gebruikt voor het commando",
+        "no-args": "Je hebt geen toevoegingen gebruikt voor het command",
         "ok": "Ok, ik heb de {{- role}} rol gecreëerd.",
         "exists": "De {{- role}} bestaat al in de database."
     },
@@ -541,8 +541,8 @@
     },
     "get-node": {
         "success": "Toestemmings-knooppunt: `{{- node}}` Categorie node:{{- category}}.*` Categorie:`{{-category}}`",
-        "not-found": "Dit commando bestaat niet.",
-        "no-args": "Typ een commando zonder voorvoegsel hierna om het toestemmings-knooppunt, het categorie-knooppunt en de categorie te krijgen"
+        "not-found": "Dit command bestaat niet.",
+        "no-args": "Typ een command zonder voorvoegsel hierna om het toestemmings-knooppunt, het categorie-knooppunt en de categorie te krijgen"
     },
     "ap": {
         "type": {
@@ -553,13 +553,13 @@
         },
         "success": "Oke, Ik heb net de toestemming `{{- node}}` `{{- allowed}}` aan `{{type}}` `{{- name}}` toegevoegd",
         "wrong-node": "Het toestemmings-knooppunt `{{- node}}` zal niet werken omdat het geen geldig toestemmings-knooppunt is. Om een geldige toestemmings-knooppunt te krijgen type `{{- prefix}}getNodecommand`",
-        "target-not-found": "Ik kon het doelwit {{- target}} niet vinden voor dit commando",
+        "target-not-found": "Ik kon het doelwit {{- target}} niet vinden voor dit command",
         "no-allowance-set": "Je hebt me niet verteld of de permissie toegestaan is of niet, voeg `true` of `false` toe afhankelijk van je keuze",
         "missing-args": "De correcte syntaxis for deze opdracht is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nVoorbeeld:\n```{{-prefix}}ap playlist.* true -> Geeft alle opdrachten toestemming in deze categorie-lijst in de server\n{{-prefix}}ap music.fskip -u @user true -> staat de genoemde persoon toe om gebruik te maken van {{-prefix}}fskip```"
     },
     "reset-perms": {
         "nothing-found": "Je hebt nog geen toestemmingen gezet.",
-        "confirmation": "Weet je zeker dat je alle toestemmingen wilt resetten? Typ \"yes\" om ze te resetten en \"no\" om het commando te annuleren.",
+        "confirmation": "Weet je zeker dat je alle toestemmingen wilt resetten? Typ \"yes\" om ze te resetten en \"no\" om het command te annuleren.",
         "success": "Ik heb zojuist alle toestemmingen gereset."
     },
     "choose": {
