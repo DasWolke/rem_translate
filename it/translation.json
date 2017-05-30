@@ -263,7 +263,7 @@
     "roll": {
         "whole-number": "Per favore, inserisci un numero intero!",
         "negative": "Non posso lanciare un dado con un {{number}}",
-        "success": "E' uscito {{first}} su {{second}}"
+        "success": "E' uscito un **{{first}}** su **{{second}}**"
     },
     "qa": {
         "nothing-found": "Nessuna canzone trovata con il termine di ricerca `{{search}}`",
