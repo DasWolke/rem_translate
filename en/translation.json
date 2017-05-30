@@ -302,7 +302,7 @@
     "available-languages": "List of available Languages\nPlease note that setLang needs the shortcode"
   },
   "np": {
-    "song-duration": "Currently playing:` {{- title}} {{current}}/{{duration}} {{repeat}}` requested by: **{{- user}}**",
+    "song-duration": "Currently playing: `{{- title}} {{current}}/{{duration}} {{repeat}}` requested by: **{{- user}}**",
     "song": "Currently playing: `{{-title}} {{repeat}}` requested by: **{{- user}}**",
     "repeat-on": "repeat:on",
     "repeat-single": "repeat: single",
