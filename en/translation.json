@@ -31,7 +31,8 @@
   },
   "menu": {
     "guide": "Respond with the number of the option you want to pick",
-    "disclaimer": "Type 'c' or any rem command to exit this menu, it will autoclose in 5 minutes."
+    "disclaimer": "Type 'c' or any rem command to exit this menu, it will autoclose in 5 minutes.",
+    "yes-no-question": "Answer either 'yes' or 'no' depending on your choice, type 'c' or any rem command to cancel this command, it will autoclose in 5 minutes."
   },
   "search": {
     "user": ":mag: **Usersearch**",
@@ -248,11 +249,14 @@
   },
   "kick": {
     "success": "Kicked User {{user}}",
-    "privilege": "My role does not have the right to kick {{user}} !",
+    "privilege_self": "My role does not have the right to kick {{user}} !",
+    "privilege": "Your role is in a lower position than the role of the user you are trying to kick or you are missing the `kick members` permission",
     "err": "An error occurred while trying to kick {{user}} !",
     "perms": "You can not kick the Owner or anyone with the WolkeBot Role.",
     "self": "You can not kick me with my own command.",
-    "no-mention": "Please mention a user you want to kick."
+    "no-mention": "Please mention a user you want to kick.",
+    "default-reason": "User {{- user}} was kicked by {{- mod}}",
+    "reason": "User {{- user}} was kicked by {{- mod}} with reason {{- reason}}"
   },
   "roll": {
     "whole-number": "Please add a whole number!",
@@ -544,7 +548,9 @@
       "role": "role",
       "channel": "channel"
     },
-    "success": "Ok, I just added the permission `{{- node}}` `{{- allowed}}` to the `{{- type}}` `{{- name}}`",
+    "add-defaults": ":eyes: I just noticed that you did not add any permissions so far, since this is your first permission, would you like to keep the default permissions activated ?\nThis would include the following permissions:\n ```{{perm_list}}```",
+    "success": ":ok_hand: Ok, I just added the permission `{{- node}}` `{{- allowed}}` to the `{{- type}}` `{{- name}}`",
+    "success-defaults": ":ok_hand: Ok, I just added the permission `{{- node}}` `{{- allowed}}` to the `{{- type}}` `{{- name}}`\nYou told me to keep the defaults, so I kept them",
     "wrong-node": "The permission node `{{- node}}` will not work, as it is not a valid permission node. To get the permission node for a command type `{{- prefix}}getNode <command>`",
     "target-not-found": "I could not find the target {{- target}} for this command",
     "no-allowance-set": "You did not tell me if the perm should be allowed or not, add `true` or `false` depending on your choice",
