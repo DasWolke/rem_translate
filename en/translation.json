@@ -3,11 +3,13 @@
     "error": ":x: An error occured!",
     "no-pm": ":no_entry: This Command does not work in private channels!",
     "whole-num": ":no_entry_sign: Please use a whole number!",
-    "nan": ":no_entry_sign: Whatever you just send, please just add a whole number. :) ",
+    "nan": ":no_entry_sign: Whatever you just send, please just send a whole number. :) ",
     "no-song-in-queue": ":no_entry_sign: There is no song in the queue, maybe add one :musical_note: ?",
     "no-song-playing": ":musical_note: There is no song playing at the moment!",
     "no-permission": ":no_entry_sign: You dont have the permission to use this command, please add the permission `{{- node}}` to yourself to use it.",
     "no-voice": ":no_entry_sign: I am not connected to any voice channel on this Server!",
+    "modify-playing-song": ":x: You can't modify the currently playing song",
+    "song-no-exist": "There is no song at the position `{{- position}}`",
     "level-update": ":tada: You just reached **Level  {{level}}** on **{{- server}}**",
     "empty-search": ":no_entry_sign: You did not enter a search Term!",
     "negative": ":no_entry_sign: Please dont use a negative number!",
@@ -38,6 +40,7 @@
     "user": ":mag: **Usersearch**",
     "role": ":mag: **Rolesearch**",
     "channel": ":mag: **Channelsearch**",
+    "anime": ":mag: **Animesearch**",
     "no-results": ":mag: Your search did not return any results"
   },
   "help": {
@@ -228,32 +231,59 @@
   },
   "8ball": {
     "answers": [
-      "No.",
-      "Yes.",
-      "Maybe.",
-      "I do not think so.",
-      "Definitely no.",
-      "Just do it.",
-      "That is a great idea.",
-      "Are you sure about that ?"
+      "It is certain",
+      "It is decidedly so",
+      "Without a doubt",
+      "Yes definitely",
+      "You may rely on it",
+      "As I see it, yes",
+      "Most likely",
+      "Outlook good",
+      "Yes",
+      "Signs point to yes",
+      "Reply hazy try again",
+      "Ask again later",
+      "Better not tell you now",
+      "Cannot predict now",
+      "Concentrate and ask again",
+      "Don't count on it",
+      "My reply is no",
+      "My sources say no",
+      "Outlook not so good",
+      "Very doubtful"
     ],
     "no-message": "You did not enter a question."
   },
   "ban": {
-    "success": "Banned User {{user}}",
-    "privilege": "My role does not have the right to ban {{user}} !",
-    "err": "An error occurred while trying to ban {{user}} !",
-    "perms": "You can not ban the Owner or anyone with the WolkeBot Role.",
-    "self": "You can not ban me with my own command.",
-    "no-mention": "Please mention a user you want to ban."
+    "success": ":white_check_mark: Banned User {{user}}",
+    "privilege_self": ":no_entry_sign: My role does not have the right to ban `{{user}}`",
+    "privilege_self_discord": ":x: I dont have the ban members permission",
+    "privilege_owner": ":no_entry_sign: I can not ban the Owner",
+    "privilege": ":no_entry_sign: Your role is in a lower position than the role of the user you are trying to ban or you are missing the `ban members` permission",
+    "error": ":x: An error occurred while trying to ban {{user}} !",
+    "self": ":sweat_smile: You can not ban me with my own command.",
+    "self-user": ":sweat_smile: You can not ban yourself",
+    "no-mention": "Please mention a user you want to ban.",
+    "default-reason": "User {{- user}} was banned by {{- mod}}",
+    "reason": "User {{- user}} was banned by {{- mod}} with reason {{- reason}}"
+  },
+  "softban": {
+    "success": ":white_check_mark: Softbanned User {{user}}",
+    "error": ":x: An error occurred while trying to ban {{user}} !",
+    "error-unban": ":x: An error occurred while trying to unban {{user}} !",
+    "default-reason": "User {{- user}} was softbanned by {{- mod}}",
+    "reason": "User {{- user}} was softbanned by {{- mod}} with reason {{- reason}}",
+    "auto-unban": "Automatically unbanned {{- user}}"
   },
   "kick": {
-    "success": "Kicked User {{user}}",
-    "privilege_self": "My role does not have the right to kick {{user}} !",
-    "privilege": "Your role is in a lower position than the role of the user you are trying to kick or you are missing the `kick members` permission",
-    "err": "An error occurred while trying to kick {{user}} !",
-    "perms": "You can not kick the Owner or anyone with the WolkeBot Role.",
-    "self": "You can not kick me with my own command.",
+    "success": ":white_check_mark: Kicked User {{user}}",
+    "privilege_self": ":no_entry_sign: My role does not have the right to kick `{{user}}`",
+    "privilege_self_discord": ":x: I dont have the kick members permission",
+    "privilege_owner": ":no_entry_sign: I can not kick the Owner",
+    "privilege": ":no_entry_sign: Your role is in a lower position than the role of the user you are trying to kick or you are missing the `kick members` permission",
+    "error": ":x: An error occurred while trying to kick {{user}} !",
+    "self": ":sweat_smile: You can not kick me with my own command.",
+    "self-user": ":sweat_smile: You can not kick yourself",
     "no-mention": "Please mention a user you want to kick.",
     "default-reason": "User {{- user}} was kicked by {{- mod}}",
     "reason": "User {{- user}} was kicked by {{- mod}} with reason {{- reason}}"
@@ -269,13 +299,6 @@
     "started-download": "Started download of `{{- url}}` ",
     "success": "Queued **{{- song}}** requested by: **{{- user}}**"
   },
-  "rq": {
-    "db-error": "A database error occured!",
-    "success-multiple": "Added the following Songs:\n```{{- table}}```",
-    "too-big": "Added {{number}} songs",
-    "no-songs-added": "I could not add any songs as they are already in the queue, try again!",
-    "too-much": "You can not add more than {{number}} songs at once!"
-  },
   "qra": {
     "to-small": "You cant remove {{number}} songs!",
     "success": "Removed `{{number}}` songs",
@@ -288,7 +311,6 @@
     "give": "Gave user **{{- user}}** **1** cookie!",
     "new-server": "Try again please.",
     "arere": "Arere... something went wrong...",
-    "perms": "You need a discord role called WolkeBot to give cookies!",
     "one-user": "Please mention **1 User**, not more, not less!",
     "count": "You have **{{number}} Cookies** right now."
   },
@@ -404,14 +426,7 @@
     "success-volume": "Set volume to {{- volume}}",
     "no-volume": "No volume set!",
     "repeat-start": "Started repeat for **{{- song}}**",
-    "already-playing": "This Song is already playing!",
-    "blocked": "This Video is not available to download. Maybe it is too long or blocked/removed",
-    "dl-start": ":hourglass: loading song!",
-    "use-proxy": "Trying to download over the proxy, this could take a bit.",
-    "too-much": "You can not set the volume higher than 200!"
-  },
-  "yts": {
-    "success": "Found the following song: {{- link}}"
+    "blocked": "This Video is not available to download. Maybe it is too long or blocked/removed"
   },
   "skip": {
     "success": ":track_next: Skipped song {{- title}}.",
@@ -554,7 +569,7 @@
     "wrong-node": "The permission node `{{- node}}` will not work, as it is not a valid permission node. To get the permission node for a command type `{{- prefix}}getNode <command>`",
     "target-not-found": "I could not find the target {{- target}} for this command",
     "no-allowance-set": "You did not tell me if the perm should be allowed or not, add `true` or `false` depending on your choice",
-    "missing-args": "The correct syntax for this cmd is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Example:\n```{{-prefix}}ap playlist.* true -> allows all commands of the category playlist in the server\n{{-prefix}}ap music.fskip -u @user true -> allows the mentioned user to use {{- prefix}}fskip```"
+    "missing-args": "Please run `{{- prefix}}help ap` to get more information on how to run this command correctly"
   },
   "reset-perms": {
     "nothing-found": "You did not set any Permissions yet.",
@@ -580,5 +595,14 @@
   },
   "manga": {
     "chapters": "Chapters"
+  },
+  "ship": {
+    "single": "Sorry to see you alone {{- user}} :<",
+    "success": "Lovely Shipping~ Your shipname is **{{- shipname}}**"
+  },
+  "qm": {
+    "missing-args": "You need to tell me which song I should move where, to get the correct usage for this command run `{{- prefix}}help qm`",
+    "current": "You can not move the current song :<",
+    "success": "Moved song `{{- song}}` from position `{{- start}}` to position `{{- end}}`"
   }
 }
