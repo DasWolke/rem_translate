@@ -79,15 +79,72 @@
       "usage": "{{prefix}}help [command]",
       "example": "`{{prefix}}help` Gives you a list of commands sorted by category\n`{{prefix}}help ping` Gives you info about the `ping` command"
     },
-    "add": {
+    "invite": {
       "short": "Gives you the invite link of Rem",
       "usage": "{{- prefix}}add"
+    },
+    "8ball": {
+      "short": "Gives you the opinion of the magic 8ball to a question",
+      "usage": "{{- prefix}}8ball [your question]",
+      "example": "`{{- prefix}}8ball Chicken or no chicken ?`"
+    },
+    "support": {
+      "short": "Gives you the invite link to the support server",
+      "usage": "{{- prefix}}support"
+    },
+    "choose": {
+      "short": "Make Rem choose something for you",
+      "usage": "{{- prefix}}choose <choice 1>;<choice 2>[;][choice 3]...",
+      "example": "`{{- prefix}}choose rem; ram` Make rem choose either `rem` or `ram`"
+    },
+    "say": {
+      "short": "Makes Rem say something",
+      "usage": "{{- prefix}}say <message>",
+      "example": "`{{- prefix}}say Rem is best girl`"
+    },
+    "roll": {
+      "short": "Rolls a number between zero and the given number, if there is no number provided it will be rolled out of 10",
+      "usage": "{{- prefix}roll [number]",
+      "example": "`{{- prefix}roll` Rolls a random number between 0 and 10\n`{{- prefix}roll 100` Rolls a random number between 0 and 100"
+    },
+    "lenny": {
+      "short": "Gives you a lenny face ( ͡° ͜ʖ ͡°) with an optional message in front of it",
+      "usage": "{{- prefix}}lenny [message]",
+      "example": "`{{- prefix}}lenny` Rem sends `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny hey there` Rem sends `hey there ( ͡° ͜ʖ ͡°)`"
+    },
+    "sayd": {
+      "short": "Makes Rem say something which you decide and deletes your command",
+      "usage": "{{- prefix}}sayd <message>",
+      "example": "`{{- prefix}}sayd Subaru ? I don't know any subaru ¯\\_(ツ)_/¯`"
+    },
+    "shrug": {
+      "short": "Gives you a shrug ¯\\_(ツ)_/¯ with an optional message in front of it",
+      "usage": "{{- prefix}}shrug [message]",
+      "example": "`{{- prefix}}shrug` Rem sends `¯\\_(ツ)_/¯ `\n`{{- prefix}}shrug meh` Rem sends `meh ¯\\_(ツ)_/¯`"
+    },
+    "ban": {
+      "short": "Bans a user",
+      "usage": "{{- prefix}}ban <user> [-t daysToDelete] [-r auditLogReason]",
+      "example": "`{{- prefix}}ban @peter -t 2d -r Spam` bans peter and deletes the last 2 days of messages, reason 'Spam' will be visible in audit logs\n`{{- prefix}}ban subaru -t 7d -r wrong girl boy` bans subaru and deletes the last 7 days of messages, reason 'wrong girl boy' will be visible in audit logs"
+    },
+    "kick": {
+      "short": "Kick a user",
+      "usage": "{{- prefix}}kick <user> [-r auditLogReason]",
+      "example": "`{{- prefix}}kick @peter -r Spam` kicks peter and puts the reason 'Spam' into the audit logs"
+    },
+    "softban": {
+      "short": "Ban and instantly unban a user, useful for pruning days of messages of a spammer or similar",
+      "usage": "{{- prefix}}softban <user> [-t daysToDelete] [-r auditLogReason]",
+      "example": "`{{- prefix}}softban @peter -t 2d -r Spam` bans peter deletes the last 2 days of messages and unbans him, reason 'Spam' will be visible in audit logs"
+    },
+    "char": {
+      "short": "Get information about anime/manga characters",
+      "usage": "{{- prefix}}char <charactername>",
+      "example": "`{{- prefix}}char eren jaeger`"
     },
     "introduction": ":wave: **Hey I'm {{- name}}**, let's have fun together here on Discord (/^▽^)/\n\nTo get you started type `{{- prefix}}help [command]` to get more info about a command, for example: `{{- prefix}}help ping`",
     "intro": "lets have fun together here on Discord (/^▽^)/ select a command category by responding with {{pre}}help number of command to know more:",
     "intro_2": "Hey I'm",
-    "support": "[SUPPORT]",
-    "bug": "get the Link of the support discord",
     "music": "[MUSIC]",
     "voice": "I join the Voice Channel you are currently in (normal music commands make the bot join the voice channel too)",
     "play": "Play something from /Youtube/Soundcloud/Osu/search",
@@ -101,8 +158,6 @@
     "rq": "Adds a random Song/a number of songs to the Queue",
     "stream": "Streams the selected Internet radio, you can search for radios or directly add them by appending -u url to the command",
     "info": "gives you some information about the current server",
-    "ban": "Bans a User and deletes 7 Days of his/her messages",
-    "kick": "Kicks a User",
     "rm": "removes messages, you can filter for bots, users, commands/responses of rem or just delete up to 100 messages. Filters: -b -> bots| -r -> messages from rem| -u @user -> messages from a certain user| -c -> messages that start with the prefix of rem.",
     "noLevelServer": "Disables the level system for the entire server, use the command again to re-enable it",
     "noPmServer": "Disables the pm notifications for the entire server, use the command again to re-enable it",
@@ -121,8 +176,6 @@
     "cookie": "Gives a cookie to the mentioned user or shows your cookies if no one is mentioned.",
     "eatCookie": "Eats a Cookie.",
     "git": "Gives you the github link of Rem",
-    "roll": "Rolls a number between zero and number, if there is no number it will be out of 10",
-    "8ball": "Gives you the Opinion of the magic 8ball to a question",
     "garfield": "Gives you a random garfield comic",
     "cat": "Sends you a random cat image. We all need cats!",
     "hug": "Hug someone :>",
@@ -142,9 +195,6 @@
     "lewd": "So lewd uwu",
     "rem": "Gives you a random pic of rem",
     "wip": "[WORK IN PROGRESS]",
-    "gr": "Set a greeting with set greetingMessage,{{user}} will be replaced with the user that just joined and {{guild}} with the name of the server.\nThe greeting will be in the Channel, where the cmd was executed",
-    "fw": "Set a farewell with set farewellMessage,{{user}} will be replaced with the user that just joined and {{guild}} with the name of the server\nThe farewell will be in the channel, where the cmd was executed",
-    "shrug": "¯\\_(ツ)_/¯",
     "flip": "(╯°□°）╯︵ ┻━┻",
     "eggplant": "just an eggplant",
     "gtn": "Gives you a random green tea neko comic, only usable with a configured NSFW Channel or Admin.",
@@ -153,18 +203,15 @@
     "bot": "Gives you some information about Rem, the uptime and some useful links.",
     "top": "Shows the top 10 guilds (sorted by users) that this shard is connected to",
     "about": "Shows you basic information about me, like the library and who made me.",
-    "lenny": "( ͡° ͜ʖ ͡°)",
     "lmg": "Let me google that for you",
     "fskip": "Skips the Current Song/a number of songs/all songs",
     "leave": "I leave the Voice Channel I am currently connected to.",
-    "say": "Make Rem say something",
     "ar": "Add a role to yourself or a user",
     "cr": "Create a role or add a role to the bot, -d -> default, -l 2 -> gives the role to the user once he reaches level 2, -s -> make the role self assignable, example -> cr -l 20 rolename, adds a role a user gets with level 20 called rolename",
     "lr": "Lists all roles that are linked with Rem at the moment",
     "rr": "Removes a Role from yourself, another user or the server",
     "roles": "[ROLES]",
     "repeat": "Plays a song/the queue on Repeat until new ones are added to the queue.",
-    "sayd": "Make Rem say something and delete your cmd",
     "generic": "[GENERIC]",
     "fun": "[FUN]",
     "coin": "flips a coin for you",
@@ -191,7 +238,6 @@
     "stare": "stareeeee...",
     "nom": "Nom :>",
     "potato": "Everyone wants a potato",
-    "choose": "Make Rem choose something for you, seperate the choices with `;`",
     "tickle": "Tickle Tickle Tickle",
     "image": "[IMAGE COMMANDS]",
     "define": "Get a definition of a term from Urbandictionary",
