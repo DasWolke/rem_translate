@@ -71,7 +71,7 @@
       "image": "[IMAGE COMMANDS]"
     },
     "ping": {
-      "short": "Gives you the ping of the bot, be aware that this is **not** the voice ping.",
+      "short": "Gives you the ping of the bot, be aware that this is not the voice ping.",
       "usage": "{{- prefix}}ping"
     },
     "help": {
