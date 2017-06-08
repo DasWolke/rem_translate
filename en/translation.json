@@ -142,6 +142,11 @@
       "usage": "{{- prefix}}char <charactername>",
       "example": "`{{- prefix}}char eren jaeger`"
     },
+    "qm": {
+      "short": "Move a song in the queue",
+      "usage": "{{- prefix}}qm <oldPosition> <newPosition>",
+      "example": "`{{- prefix}}qm 4 2` Moves the 4th song in the queue to the 2nd position"
+    },
     "introduction": ":wave: **Hey I'm {{- name}}**, let's have fun together here on Discord (/^▽^)/\n\nTo get you started type `{{- prefix}}help [command]` to get more info about a command, for example: `{{- prefix}}help ping`",
     "intro": "lets have fun together here on Discord (/^▽^)/ select a command category by responding with {{pre}}help number of command to know more:",
     "intro_2": "Hey I'm",
