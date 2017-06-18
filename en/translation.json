@@ -273,7 +273,8 @@
     "disabled": "The XP system is disabled on this server!"
   },
   "joinVoice": {
-    "join": "Ok, joining your voice channel now",
+    "join": ":microphone: Ok, joining your voice channel now",
+    "join_region": ":microphone: I am now connected to your voicechannel, using voice node `{{- node}}`",
     "error": "An error occured while trying to join your voicechannel!",
     "permission": "No permission! You need to give yourself the WolkeBot role to use this.",
     "no-voice": "You are not in a voice channel!",
