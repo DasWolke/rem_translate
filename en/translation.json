@@ -125,7 +125,7 @@
     "ban": {
       "short": "Bans a user",
       "usage": "{{- prefix}}ban <user> [-t daysToDelete] [-r auditLogReason]",
-      "example": "`{{- prefix}}ban @peter -t 2d -r Spam` bans peter and deletes the last 2 days of messages, reason 'Spam' will be visible in audit logs\n`{{- prefix}}ban subaru -t 7d -r wrong girl boy` bans subaru and deletes the last 7 days of messages, reason 'wrong girl boy' will be visible in audit logs"
+      "example": "`{{- prefix}}ban @peter -t 2d -r Spam` bans peter and deletes the last 2 days of messages, reason 'Spam' will be visible in audit logs\n`{{- prefix}}ban subaru -t 7d -r bad choice` bans subaru and deletes the last 7 days of messages, reason 'bad choice' will be visible in audit logs"
     },
     "kick": {
       "short": "Kick a user",
