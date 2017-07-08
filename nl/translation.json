@@ -19,7 +19,7 @@
         "abort": ":x: geannuleerd",
         "cat-nope": ":no_entry_sign: Deze categorie bestaat niet!",
         "mention": "Noem alsjeblieft een gebruiker.",
-        "cancelled-command": "Het command is geannuleerd.",
+        "cancelled-command": ":x: Het command is geannuleerd.",
         "donate": "Doneer",
         "support": "Ondersteuning",
         "invite": "Uitnodigen",
@@ -27,24 +27,29 @@
         "native-name": "Nederlands\n",
         "empty-say": ":no_entry_sign: Je hebt geen bericht ingevoerd!",
         "page": "Pagina",
-        "unknown": "Onbekend"
+        "unknown": "Onbekend",
+        "modify-playing-song": ":x: Je kan het huidige nummer niet aanpassen",
+        "song-no-exist": "Er is geen nummer in positie `{{position}}`"
     },
     "help": {
         "intro": "Laten we plezier hebben hier op Discord. (/^▽^)/ Selecteer een command categorie door te reageren met {{pre}}help nummer van een command om meer te weten te komen:",
         "intro_2": "Hoi ik ben",
-        "support": "[SUPPORT]",
+        "support": {
+            "short": "Geeft je de uitnodiging voor de supportserver",
+            "usage": "{{- prefix}}support"
+        },
         "bug": "krijg de link naar de Rem support server",
         "help": {
-            "short": "Krijg hulp van een enkel command of krijg een lijst van commands",
+            "short": "Krijg hulp van een enkel command of krijg een lijst die bestaat uit commandos",
             "usage": "{{prefix}}help [command]",
-            "example": "`{{prefix}}help` Geeft je een lijst van commands  gesorteerd op categorie\n`{{prefix}}help ping` Geeft je info over het 'ping' command"
+            "example": "`{{prefix}}help` Geeft je een lijst met commandos gesorteerd op categorie\n`{{prefix}}help ping` Geeft je info over het 'ping' command"
         },
         "add": {
             "short": "Geeft je de uitnodigingslink voor Rem",
             "usage": "{{- prefix}}toevoegen"
         },
         "music": "[MUZIEK]",
-        "voice": "Ik verbind met het spraakkanaal waar jij op dit moment in zit (Normale muziek commands zorgen ook dat de Rem bot met het spraakkanaal verbind)",
+        "voice": "Ik verbind met het spraakkanaal waar jij op dit moment in zit (Normale muziek bevelen zorgen ook dat de Rem bot met het spraakkanaal verbind)",
         "silent": "Ik verlaat het spraakkanaal waar ik nu mee verbonden ben. (Alleen te gebruiken met WolkeBot rol)",
         "play": "Speel iets af van /Youtube/Soundcloud/Osu/zoekopdracht\n",
         "pause": "Pauzeer het huidige nummer",
@@ -64,11 +69,19 @@
         "yts": "Zoekt op Youtube en geeft je het eerste resultaat",
         "ytq": "Zoekt op Youtube en voegt het eerste resultaat aan de wachtrij toe",
         "mod": "De Mod cp",
-        "mod-info": "Deze commands vereisen allemaal dat de gebruiker de Discord rol genaamd WolkeBot heeft",
+        "mod-info": "Deze commandos vereisen allemaal dat de gebruiker de Discord rol genaamd WolkeBot heeft",
         "info": "Geeft je informatie over de huidige server",
-        "ban": "Verbant de gebruiker en verwijdert 7 dagen van zijn/haar berichten",
-        "kick": "Verwijdert een gebruiker",
-        "rm": "verwijdert berichten, je kunt filteren voor bots, gebruikers, commands/reacties van Rem of gewoon tot 100 berichten deleten.\nFilters: -b -> bots| -r -> berichten van rem| -u @user -> berichten van een bepaalde gebruiker| -c -> Bericht wat start met het voorvoegsel van Rem",
+        "ban": {
+            "short": "Verbant een gebruiker",
+            "usage": "{{- prefix}}ban <gebruiker> [t- dagen om te verwijderen] [-r audit logboek reden]",
+            "example": "`{{- prefix}}ban @peter -t 2d -r Spam` verbant peter en verwijdert de berichten van de laatste twee dagen, met de reden 'Spam' terug te vinden in de audit logboeken \n`{{- prefix}}ban subaru -t 7d -r Verkeerde meisje, jongen` verbant subaru en verwijdert de berichten van de laatste zeven dagen, met de reden 'Verkeerde meisje, jongen' terug te vinden in de audit logboeken"
+        },
+        "kick": {
+            "short": "Verwijdert een gebruiker.",
+            "usage": "{{- prefix}}kick <gebruiker> [-r audit logboek reden]",
+            "example": "`{{- prefix}}kick @peter -r Spam` verwijdert peter en voegt de reden 'Spam' aan de audit logboeken toe"
+        },
+        "rm": "verwijdert berichten, je kunt filteren voor bots, gebruikers, commandos/reacties van Rem of gewoon tot 100 berichten deleten.\nFilters: -b -> bots| -r -> berichten van rem| -u @user -> berichten van een bepaalde gebruiker| -c -> Bericht die beginnen met het voorvoegsel van Rem",
         "noLevelServer": "Schakelt het level systeem uit voor de hele server, gebruik het command opnieuw om dit weer in te schakelen",
         "noPmServer": "Schakelt PM notificaties uit voor de hele server, gebruik de command opnieuw om dit weer in te schakelen",
         "noChServer": "Schakelt de PM notificaties voor de hele server uit en schakelt in plaats daarvan kanaal notificaties in, gebruik de command opnieuw om dit weer om te draaien",
@@ -88,8 +101,16 @@
         "cookie": "Geeft een koekje aan de genoemde gebruiker of laat jouw koekjes zien als je niemand benoemt. (Koekjes geven is alleen mogelijk met WolkeBot rol)",
         "eatCookie": "Eet een koekje.",
         "git": "Geeft je de Github link van Rem",
-        "roll": "Rol een nummer tussen nul en het aangegeven getal, als er geen getal is aangegeven wordt 10 gebruikt.",
-        "8ball": "Geeft je de mening van de magische 8bal over een vraag",
+        "roll": {
+            "short": "Rolt een nummer tussen nul en het ingevoerde nummer, als er geen nummer is ingevoerd is het tussen nul en tien",
+            "usage": "{{- prefix}}roll [nummer]",
+            "example": "`{{- prefix}}roll` Rolt een willekeurig nummer tussen nul en tien\n`{{- prefix}}roll 100` Rolt een willekeurig nummer tussen nul en 100"
+        },
+        "8ball": {
+            "short": "Geeft je de mening van de magische 8ball over een vraag",
+            "usage": "{{-prefix}}8ball [jouw vraag]",
+            "example": "`{{- prefix}}8ball Kip of geen kip?`"
+        },
         "garfield": "Geeft je een willekeurige Garfield strip",
         "cat": "Stuurt je een willekeurige plaatje van een kat. Iedereen heeft katten nodig!",
         "hug": "Geef iemand een knuffel :>",
@@ -98,7 +119,7 @@
         "report": "Als je te verlegen bent om naar de support Discord te komen, gebruik report dan om een verslag te sturen naar de ontwikkelaar Wolke, maak hier geen misbruik van!",
         "feedback": "Gebruik voor feedback alsjeblieft de support server ^^",
         "talk": "Als je met me wilt praten @mention me met een bericht :D",
-        "helpReply": "OK, ik heb je een lijst met commands gestuurd via PM.",
+        "helpReply": "OK, ik heb je een lijst met commandos gestuurd via PM.",
         "moderation": "[MODERATIE]",
         "misc": "[DIVERS]",
         "stats": "[STATISTIEKEN]",
@@ -118,7 +139,11 @@
         "gr": "Stel een begroeting in met set greetingMessage,{{user}} zal worden vervangen door de naam van het lid dat zojuist is aangetreden en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het command is toegepast",
         "fw": "Stel een afscheidsbericht in met set farewellMessage, {{user}} zal worden vervangen door de naam van het lid dat zojuist de server heeft verlaten en {{guild}} met de naam van de server. \nDe groet zal plaatsvinden in het kanaal waar het command is toegepast",
         "s": "Het server command, stel dingen zoals begroetingen en afscheidsberichten in.",
-        "shrug": "¯\\_(ツ)_/¯",
+        "shrug": {
+            "short": "Laat je je schouders ophalen ¯\\_(ツ)_/¯ met eventueel een bericht er voor",
+            "usage": "{{- prefix}}shrug [bericht]",
+            "example": "`{{- prefix}}shrug` Rem stuurt `¯\\_(ツ)_/¯`\n`{{- prefix}}shrug meh` Rem stuurt `meh ¯\\_(ツ)_/¯`"
+        },
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "slechts een aubergine",
         "gtn": "Geeft je een willekeurige Green Tea Neko strip, alleen bruikbaar in een geconfigureerd NSFW kanaal of door een admin.",
@@ -127,18 +152,30 @@
         "bot": "Geeft je wat informatie over Rem, de tijd online en een aantal bruikbare links.",
         "top": "Geeft de top 10 guilds (gesorteerd op gebruikers) die aangesloten zijn op dit fragment",
         "about": "Geeft je basis informatie over mij, zoals de bibliotheek en wie mij gecreëerd heeft.",
-        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lenny": {
+            "short": "Geeft je een lenny gezicht ( ͡° ͜ʖ ͡°) met eventueel een bericht er voor",
+            "usage": "{{- prefix}}lenny [bericht]",
+            "example": "`{{- prefix}}lenny` Rem stuurt `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny hey there` Rem stuurt`hey there ( ͡° ͜ʖ ͡°)`"
+        },
         "lmg": "Laat mij dat voor je opzoeken",
         "fskip": "Slaat het huidige nummer/een aantal nummers/alle nummers over",
         "leave": "Ik verlaat het spraakkanaal waar ik momenteel in zit.",
-        "say": "Laat Rem iets zeggen",
+        "say": {
+            "short": "Laat Rem iets zeggen",
+            "usage": "{{- prefix}}say <bericht>",
+            "example": "`{{- prefix}}say Rem is best girl`"
+        },
         "ar": "Voeg een rol toe aan jezelf of aan een gebruiker",
         "cr": "Creëer een rol of voeg een rol toe aan de bot, -d -> standaard, -l 2 -> geeft de rol aan de gebruiker wanneer hij level 2 berijkt, -s -> maakt de rol zelf toewijsbaar, bijvoorbeeld -> cr -l 20 rolnaam creëert een rol genaamd rolnaam die toegewezen wordt aan een gebruiker die lvl 20 berijkt",
         "lr": "Toont een lijst met alle rollen die gelinkt zijn aan Rem op dit moment",
         "rr": "Verwijdert een rol van jezelf, een andere gebruiker of van de server",
         "roles": "[ROLLEN]",
         "repeat": "Herhaalt een nummer/de wachtlijst tot er nieuwe nummers worden toegevoegd aan de wachtlijst.",
-        "sayd": "Laat Rem iets zeggen en verwijdert jouw command",
+        "sayd": {
+            "short": "Laat Rem iets wat jij bepaalt zeggen en verwijdert je commando",
+            "usage": "{{- prefix}}sayd <bericht>",
+            "example": "`{{- prefix}}sayd Subaru? Ik ken geen subaru ¯\\_(ツ)_/¯`"
+        },
         "generic": "[ALGEMEEN]",
         "fun": "[PRET]",
         "coin": "gooit een munt voor je op",
@@ -148,7 +185,7 @@
         "love": "Geeft het genoemde lid een liefdespunt, voeg - toe om 1 liefdespunt af te trekken.",
         "sinfo": "geeft je wat info over de huidige server",
         "uinfo": "geeft je wat info over jezelf/het genoemde lid",
-        "apq": "voegt een afspeellijst toe aan de wachtlijst, ondersteund alleen youtube afspeellijsten en heeft alleen het id nodig. NIET HET ADRES!!",
+        "apq": "voegt een afspeellijst toe aan de wachtlijst, ondersteunt alleen youtube afspeellijsten, gebruik gewoon de link van de afspeellijst",
         "ap": "Het command om permissies toe te voegen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
         "gp": "Het command om permissies te bezichtigen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
         "rp": "Het command om permissies te verwijderen, een uitgebreide uitleg kan gevonden worden op de Rem server (!w.bug om een invitatie te krijgen)",
@@ -165,9 +202,13 @@
         "stare": "staaaaaaar............",
         "nom": "Nom :>",
         "potato": "Iedereen wilt een aardappel",
-        "choose": "Laat Rem iets kiezen voor je, scheid keuzes met `;`",
+        "choose": {
+            "short": "Laat Rem een keuze voor je maken",
+            "usage": "{{- prefix}}choose <keuze 1>;<keuze 2>[;][keuze 3]...",
+            "example": "`{{- prefix}}choose rem; ram` Laat rem een keuze maken tussen 'rem' en 'ram'"
+        },
         "tickle": "Kietel Kietel Kietel",
-        "image": "[AFBEELDING COMMANDS]",
+        "image": "[AFBEELDING COMMANDOS]",
         "define": "Haal de definitie van een term van Urbandictionary",
         "dog": "Vind je honden leuker dan katten? Dan is dit command het juiste voor jou",
         "kiss": "Geef iemand een kus <3",
@@ -182,7 +223,7 @@
         "manga": "Zoek een manga",
         "permission": "[TOESTEMMING]",
         "radio": "[RADIO]",
-        "command-not-exists": ":x: Het command `{{cmd}}` bestaat niet. Gebruik {{prefix}}help` om een lijst van commands te krijgen.",
+        "command-not-exists": ":x: Het command `{{cmd}}` bestaat niet. Gebruik {{prefix}}help` om een lijst van commandos te krijgen.",
         "command-no-detail": ":scream: Momenteel is er geen gedetailleerde hulp beschikbaar voor dit command, dus voor nu is hier de oude help:\n```{{- legacy_help}}```",
         "command-help-title": "\n:book: **__Command Help voor command__**: `{{- prefix}}{{- command}}`",
         "command-aliases": ":gear: **Alliases**: {{- aliases}}",
@@ -206,9 +247,33 @@
             "permission": "[PERMISSIE]",
             "radio": "[RADIO]",
             "playlist": "[AFSPEELLIJST]",
-            "image": "[AFBEELDING COMMANDS]"
+            "image": "[AFBEELDING COMMANDOS]"
         },
-        "introduction": ":wave: **Hey ik ben {{- name}}**, laten we veel plezier hebben hier op Discord (/^▽^)/\n\nOm te beginnen, typ `{{- prefix}}help [command]` om meer te leren over een command, bijvoorbeeld: `{{- prefix}}help ping`"
+        "introduction": ":wave: **Hey ik ben {{- name}}**, laten we veel plezier hebben hier op Discord (/^▽^)/\n\nOm te beginnen, type `{{- prefix}}help [command]` om meer te leren over een command, bijvoorbeeld: `{{- prefix}}help ping`",
+        "invite": {
+            "short": "Geeft je de link om Rem uit te nodigen",
+            "usage": "{{- prefix}}add"
+        },
+        "softban": {
+            "short": "Ban en trek onmiddellijk de ban weer in, handig om berichten van een spammer of dergelijken snel te verwijderen",
+            "usage": "{{- prefix}}softban <gebruiker> [t- dagen om te verwijderen] [-r audit logboek reden]",
+            "example": "`{{- prefix}}softban @peter -t 2d -r Spam` verbant peter en trekt de ban in, verwijderd peter's berichten van de laatste twee dagen, en geeft als reden `Spam` in de audit logboeken"
+        },
+        "char": {
+            "short": "Zoek informatie over anime/manga karakters",
+            "usage": "{{- prefix}}char <karakternaam>",
+            "example": "`{{- prefix}}char eren jaeger`"
+        },
+        "qm": {
+            "short": "Verplaatst een nummer in de wachtrij",
+            "usage": "{{- prefix}}qm <oude plek> <nieuwe plek>",
+            "example": "`{{- prefix}}qm 4 2` Verplaatst het vierde nummer in de wachtrij naar de tweede plek"
+        },
+        "ship": {
+            "short": "Bij elkaar versieren van twee mensen",
+            "usage": "{{-prefix}}versier <gebruikersnaam1> <gebruikersnaam2>",
+            "example": "`{{-prefix}versier Rem Subaru versiert een gebruiker me genaamd Rem met een ander gebruiker genaamd Subaru."
+        }
     },
     "version": "Op het moment werk ik op versie {{version}}",
     "add": "Gebruik deze link om mij aan je server toe te voegen: {{- link}}",
@@ -222,13 +287,14 @@
         "error": "Er is een fout opgetreden terwijl ik met je spraakkanaal probeerde te verbinden",
         "permission": "Geen toestemming! Je moet jezelf de WolkeBot rol geven om dit te gebruiken.",
         "no-voice": "Je zit niet in een spraakkanaal!",
-        "already-voice": "Ik zit al in een spraakkanaal, verplaats me om dat te veranderen!"
+        "already-voice": "Ik zit al in een spraakkanaal, verplaats me om dat te veranderen!",
+        "join_region": ":microphone: Ik ben nu verbonden aan jouw spreek kanaal, door het gebruiken geluids node `{{-node}}"
     },
     "nsfw-images": {
         "nothing-found": "Geen afbeeldingen gevonden met de labels: `{{tags}}`",
-        "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commands te gebruiken",
+        "no-nsfw-channel": "Voeg alsjeblieft een NSFW channel toe met {{- prefix}}setLewd (in een van de NSFW kanalen) om NSFW commandos te gebruiken",
         "error-body": "Er is een fout opgetreden bij het interpreteren van de API reactie. Probeer het AUB opnieuw, als het probleem blijft optreden, contact Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW commands kunnen alleen worden gebruikt in kanalen die gelabeld zijn als NSFW (Not Safe For Work, niet voor op het werk), volgende de richtlijnen van Discord.\n\nDe Discord richtlijnen kunnen worden gevonden op:\n<https://discordapp.com/guidelines>",
+        "error-discord-not-nsfw-channel": ":x: NSFW commandos kunnen alleen worden gebruikt in kanalen die gelabeld zijn als NSFW (Not Safe For Work, niet voor op het werk), volgende de richtlijnen van Discord.\n\nDe Discord richtlijnen kunnen worden gevonden op:\n<https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: Deze zoekopdracht is niet toegestaan vanwege een conflict met de Discord richtlijnen. \n\nDe Discord richtlijnen kunnen worden gebonden op:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
@@ -246,19 +312,33 @@
     },
     "ban": {
         "success": "Gebruiker {{user}} verbannen",
-        "privilege": "Mijn rol heeft niet de benodigde rechten om {{user}} te verbannen!",
+        "privilege": ":no_entry_sign: Je rol heeft een lagere positie dan de rol van de persoon die je wil verbannen, of je mist de toestemming om leden te verbannen",
         "err": "Er is een fout opgetreden terwijl ik {{user}} probeerde te verbannen!",
         "perms": "Je kan de server eigenaar of iemand met de WolkeBot rol niet verbannen.",
         "self": "Je kan mij niet verbannen met mijn eigen command.",
-        "no-mention": "Vermeld alsjeblieft de persoon die je wilt verbannen."
+        "no-mention": "Vermeld alsjeblieft de persoon die je wilt verbannen.",
+        "privilege_self": ":no_entry_sign: Mijn rol heeft het recht niet om `{{user}}` te verbannen",
+        "privilege_self_discord": ":x: Ik heb de leden verbannen permissie niet",
+        "privilege_owner": ":no_entry_sign: Ik kan de Eigenaar niet verbannen",
+        "error": ":x: Er is een fout opgetreden bij het verbannen van {{user}} !",
+        "self-user": ":sweat_smile: Je kan jezelf niet verbannen",
+        "default-reason": "Gebruiker {{- user}} werd verbannen door {{- mod}}",
+        "reason": "Gebruiker {{- user}} werd verbannen door {{- mod}} met als reden {{- reason}}"
     },
     "kick": {
         "success": "Gebruiker {{user}} eruit geschopt",
-        "privilege": "Mijn rol heeft niet de benodigde rechten om {{user}} eruit te schoppen!",
+        "privilege": ":no_entry_sign: Je rol heeft een lagere positie dan de rol van de persoon die je wil verwijderen, of je mist de toestemming om leden te verwijderen",
         "err": "Er is een fout opgetreden bij het eruitschoppen van {{user}}",
         "perms": "Je kan de eigenaar of iemand met de WolkeBot rol er niet uitschoppen.",
         "self": "Je kan me er niet uitschoppen met mijn eigen command.",
-        "no-mention": "Vermeld alsjeblieft een gebruiker die je eruit wilt schoppen."
+        "no-mention": "Vermeld alsjeblieft een gebruiker die je eruit wilt schoppen.",
+        "privilege_self": ":no_entry_sign: Mijn rol heeft het recht niet om `{{user}}` te verwijderen",
+        "privilege_self_discord": ":x: Ik heb de permissie niet om leden te verwijderen",
+        "privilege_owner": ":no_entry_sign: Ik kan de Eigenaar niet verwijderen",
+        "error": ":x: Er is een fout opgetreden bij het verwijderen van {{user}} !",
+        "self-user": ":sweat_smile: Je kan jezelf niet verwijderen",
+        "default-reason": "Gebruiker {{- user}} was verwijderd door {{- mod}}",
+        "reason": "Gebruiker {{- user}} was verwijderd door {{- mod}} met als reden {{- reason}}"
     },
     "roll": {
         "whole-number": "Voeg alsjeblieft een heel getal toe!",
@@ -269,7 +349,7 @@
         "nothing-found": "Geen nummer gevonden met zoekterm '{{search}}'␣",
         "empty-search": "Je hebt geen link/zoekterm vermeld!",
         "started-download": "Download van '{{- url}}'␣ gestart",
-        "success": "**{{- song}}** in de afspeellijst geplaatst"
+        "success": "**{{- song}}** in de afspeellijst geplaatst op verzoek van: **{{- user}}**"
     },
     "rq": {
         "db-error": "Een databank fout heeft plaatsgevonden!",
@@ -308,8 +388,8 @@
         "available-languages": "Lijst van beschikbare talen.\nHou in gedachte dat setLang de kleine code nodig heeft"
     },
     "np": {
-        "song-duration": "Huidige nummer:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
-        "song": "Huidige nummer: `{{--title}} {{repeat}}`",
+        "song-duration": "Huidige nummer:` {{- title}} {{current}}/{{duration}} {{repeat}} ` verzocht door: **{{- user}}**",
+        "song": "Huidige nummer: `{{--title}} {{repeat}}` verzocht door: **{{- user}}**",
         "repeat-on": "Herhaal:aan",
         "repeat-single": "Herhaal: enkel nummer",
         "repeat-queue": "Herhaal: wachtlijst",
@@ -318,7 +398,8 @@
         "emoji-repeat-off": ":heavy_check_mark: Herhalen: uit"
     },
     "queue": {
-        "queued": "In de wachtlijst:"
+        "queued": "In de wachtlijst:",
+        "by": "Aangevraagd door: {{- user}}"
     },
     "rem-lewd": {
         "no-nsfw": "Er zijn nog geen NSFW kanalen.",
@@ -364,7 +445,8 @@
         "lib": "Bibliotheek",
         "voice_active": "Actieve Spraakkanaal",
         "voice_s": "Spraakkanaal (fragment)",
-        "voice_active_s": "Actieve Spraakkanaal (fragment)"
+        "voice_active_s": "Actieve Spraakkanaal (fragment)",
+        "top_donators": "Top donateurs"
     },
     "rank": "Je kan het scorebord voor de server hier vinden: {{- link}}",
     "pp": {
@@ -390,9 +472,9 @@
     "leave": "OK, ik heb het spraakkanaal verlaten.",
     "play": {
         "no-result": "Geen nummer gevonden!",
-        "playing": ":musical_note: Nu aan het afspelen: **{{- song}}**",
-        "success": ":musical_note: Nu aan het afspelen:  **{{- song}}**",
-        "next": ":musical_note: Volgend nummer: **{{- song}}**"
+        "playing": ":musical_note: Nu aan het afspelen: **{{- song}}** verzocht door: **{{- user}}**",
+        "success": ":musical_note: Nu aan het afspelen:  **{{- song}}** verzocht door: **{{- user}}**",
+        "next": ":musical_note: Volgend nummer: **{{- song}}** verzocht door: **{{- user}}**"
     },
     "prefix": {
         "success": "OK, ik heb het voorvoegsel veranderd naar {{- prefix}}, probeer `{{- prefix}}ping` om het te controleren.",
@@ -438,7 +520,12 @@
         "nothing-found": "Ik vond geen bericht dat overeenkomt met de filter!"
     },
     "search": {
-        "success": "De volgende nummers zijn gevonden:"
+        "success": "De volgende nummers zijn gevonden:",
+        "user": ":mag: **Gebruikerzoekopdracht**",
+        "role": ":mag: **Rolzoekopdracht**",
+        "channel": ":mag: **Kanaalzoekopdracht**",
+        "no-results": ":mag: Je zoekopdracht heeft geen resultaten opgeleverd",
+        "anime": ":mag: **Anime zoekopdracht**"
     },
     "set-lewd": {
         "success": "Succesvol {{- channel}} toegevoegd aan de NSFW kanalen!"
@@ -552,10 +639,12 @@
             "channel": "kanaal"
         },
         "success": "Oke, Ik heb net de toestemming `{{- node}}` `{{- allowed}}` aan `{{type}}` `{{- name}}` toegevoegd",
-        "wrong-node": "Het toestemmings-knooppunt `{{- node}}` zal niet werken omdat het geen geldig toestemmings-knooppunt is. Om een geldige toestemmings-knooppunt te krijgen type `{{- prefix}}getNodecommand`",
+        "wrong-node": "Het toestemmings-knooppunt `{{- node}}` zal niet werken omdat het geen geldig toestemmings-knooppunt is. Om een geldige toestemmings-knooppunt te krijgen type `{{- prefix}}getNode <command`>",
         "target-not-found": "Ik kon het doelwit {{- target}} niet vinden voor dit command",
         "no-allowance-set": "Je hebt me niet verteld of de permissie toegestaan is of niet, voeg `true` of `false` toe afhankelijk van je keuze",
-        "missing-args": "De correcte syntaxis for deze opdracht is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nVoorbeeld:\n```{{-prefix}}ap playlist.* true -> Geeft alle opdrachten toestemming in deze categorie-lijst in de server\n{{-prefix}}ap music.fskip -u @user true -> staat de genoemde persoon toe om gebruik te maken van {{-prefix}}fskip```"
+        "missing-args": "De correcte syntaxis for deze opdracht is `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nVoorbeeld:\n```{{-prefix}}ap playlist.* true -> Geeft alle opdrachten toestemming in deze categorie-lijst in de server\n{{-prefix}}ap music.fskip -u @user true -> staat de genoemde persoon toe om gebruik te maken van {{-prefix}}fskip```",
+        "add-defaults": ":eyes: Het viel me net op dat je nog geen permissies hebt toegevoegd, zou je omdat dit je eerste permissie is de standaard permissies geactiveerd willen houden?\nDat zou je de volgende permissies geven:\n```{{perm_list}}```",
+        "success-defaults": ":ok_hand: Oke, ik heb net de permissie `{{- node}}` `{{- allowed}}` toegevoegd aan `{{- type}}` `{{- name}}`\nJe vroeg om de standaard instellingen te houden dus dat heb ik gedaan"
     },
     "reset-perms": {
         "nothing-found": "Je hebt nog geen toestemmingen gezet.",
@@ -581,5 +670,27 @@
     },
     "manga": {
         "chapters": "Hoofdstukken"
+    },
+    "menu": {
+        "guide": "Reageer met het nummer van je keuze",
+        "disclaimer": "Type 'c' of een Rem commando dit menu te verlaten, het zal automatisch sluiten over 5 minuten",
+        "yes-no-question": "Antwoord 'ja' of 'nee' op basis van je keuze, type 'c' of een willekeurig rem commando om dit commando te sluiten, het zal zichzelf sluiten in 5 minuten."
+    },
+    "softban": {
+        "success": ":white_check_mark: Gebruiker {{user}} ontving een softban",
+        "error": ":x: Er is een fout opgetreden bij het verbannen van {{user}} !",
+        "error-unban": ":x: Er is een fout opgetreden bij het opheffen van de ban van {{user}} !",
+        "default-reason": "Gebruiker {{- user}} heeft een softban ontvangen van {{- mod}}",
+        "reason": "Gebruiker {{- user}} heeft een softban ontvangen van {{- mod}} met als reden {{- reason}}",
+        "auto-unban": "De ban van {{- user}} is automatisch opgeheven"
+    },
+    "ship": {
+        "single": "Sorry om je alleen te zien {{- user}} :<",
+        "success": "Geweldige ship~ Jullie 'shipname' is **{{- shipname}}**"
+    },
+    "qm": {
+        "missing-args": "Je zal me moeten vertellen welk nummer ik waar naar moet verplaatsen, voor het correcte gebruik kan je het commando `{{- prefix}}help qm` gebruiken",
+        "current": "Je kan het huidige nummer niet verplaatsen :<",
+        "success": "Het nummer `{{- song}}` is verplaatst van `{{- start}}` naar `{{- end}}`"
     }
 }
