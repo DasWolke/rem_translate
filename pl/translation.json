@@ -19,7 +19,7 @@
         "abort": ":x: anulowano",
         "cat-nope": ":no_entry_sign: Ta kategoria nie istnieje!",
         "mention": "Proszę wspomnij użytkownika.",
-        "cancelled-command": "Anulowano komendę.",
+        "cancelled-command": ":x: Anulowano komendę.",
         "donate": "Dotacje",
         "support": "Wsparcie",
         "invite": "Zaproszenie",
@@ -27,12 +27,17 @@
         "native-name": "Polski",
         "empty-say": ":no_entry_sign: Nie podałeś/łaś wiadomości! ",
         "page": "Strona",
-        "unknown": "brak informacji"
+        "unknown": "brak informacji",
+        "modify-playing-song": ":x: Nie możesz zmodyfikować obecnie granej piosenki",
+        "song-no-exist": "Nie ma żadnej piosenki w pozycji `{{- position}}`"
     },
     "help": {
         "intro": "bawmy sie razem tutaj na Discordzie (/^▽^)/ wybierz kategorię komend poprzez odpowiedź {{pre}}help numer kategorii:",
         "intro_2": "Cześć, jestem",
-        "support": "[WSPARCIE]",
+        "support": {
+            "short": "Wyświetla link z zaproszeniem do serwera wsparcia",
+            "usage": "{{- prefix}}wsparcie"
+        },
         "bug": "wyświetl link serwera wsparcia",
         "help": {
             "short": "Pomoc dla pojedynczych komend, lub całej jej listy",
@@ -40,7 +45,7 @@
             "example": "`{{prefix}}help` Wyświetla listę komend posortowaną kategoriami\n`{{prefix}}help ping` Wyświetla informacje o komendzie `ping`"
         },
         "add": {
-            "short": "Daje ci link zapraszający do Rem`a",
+            "short": "Wyświetla link do zaproszenia Rem",
             "usage": "{{- prefix}}add"
         },
         "music": "[MUZYKA]",
@@ -66,8 +71,16 @@
         "mod": "Panel kontrolny moderacji",
         "mod-info": "Te wszystkie komendy wymagają aby użytkownik posiadał rolę WolkeBot",
         "info": "wyświetla informacje o serwerze",
-        "ban": "Banuje użytkownika i usuwa 7dni jego/jej wiadomości",
-        "kick": "Wyrzuca użytkownika",
+        "ban": {
+            "short": "Banuje użytkownika",
+            "usage": "{{- prefix}}ban <użytkownik> [-t liczbaDniDoSkasowania] [-r powódDoAuditLog]",
+            "example": "`{{- prefix}}ban @piotr -t 2d -r Spam` banuje Piotra i usuwa jego ostatnie wiadomości w przeciągu dwóch dni. Powód `Spam` będzie widoczny w liście banów\n`{{- prefix}}ban subaru -t 7d -r zły wybór' banuje Subaru i usuwa jego ostatnie wiadomości w przeciągu siedmiu dni. Powód 'zły wybór' będzie widoczny w liście banów"
+        },
+        "kick": {
+            "short": "Wyrzuć użytkownika",
+            "usage": "{{- prefix}}kick <użytkownik> [-r powód]",
+            "example": "`{{- prefix}}kick @piotr -r Spam` wyrzuca Piotra i wstawia powód `Spam` do listy banów"
+        },
         "rm": "usuwa wiadomości, możesz filtrować boty, użytkowników, komendy/odpowiedzi Rem lub po prostu do 100 ostatnich wiadomości. Filtry: -b -> boty | -r -> wiadomości Rem | -u @user -> wiadomości danego użytkownika | -c -> wiadomości zaczynające się z prefiksem Rem.",
         "noLevelServer": "Wyłącza system poziomów dla całego serwera, użyj ponownie aby włączyć",
         "noPmServer": "Wyłącza prywatne powiadomienia dla całego serwera, użyj ponownie aby włączyć",
@@ -87,9 +100,17 @@
         "pp": "Oblicza PP dla bitmapy z opcjonalną dokładnością i modami",
         "cookie": "Daje ciastko dla wspomnianego użytkownika lub pokazuje Twoje ciasteczka.",
         "eatCookie": "Zjada ciastko.",
-        "git": "Pokazuje link github'a Rem",
-        "roll": "Losuje numer od 0 do podanej liczby, lub do 10 jeżeli jej nie podano",
-        "8ball": "Wyświetla opinię magicznej 8ball do zadanego pytania",
+        "git": "Wyświetla link github'a Rem",
+        "roll": {
+            "short": "Losuje numer pomiędzy zero a wybranym numerem. Jeżeli nie ma żadnej wybranej liczby, zostanie ona wylosowana z 10.",
+            "usage": "{{- prefix}}losuj [numer]",
+            "example": "`{{- prefix}losuj` Losuje losowy numer pomiędzy 0 a 10\n`{{- prefix}losuj 100` Losuje losowy numer pomiędzy 0 a 100"
+        },
+        "8ball": {
+            "short": "Daje ci opinię magicznej kuli o pytanie",
+            "usage": "{{- prefix}}8ball [twoje pytanie]",
+            "example": "`{{- prefix}}8ball kurczak czy nie kurczak ?`"
+        },
         "garfield": "Wyświetla losowy komiks z garfieldem",
         "cat": "Wyświetla losowy obrazek z kotem. Wszyscy potrzebujemy kotów!",
         "hug": "Przytul kogoś :>",
@@ -118,7 +139,11 @@
         "gr": "Ustaw wiadomość powitalną używając set wiadomośćPowitalna, {{user}} będzie zamienione z nazwą użytkownika, który właśnie dołączył, {{guild}} z nazwą serwera.\nTo powitanie będzie wyświetlać się na kanale, w którym komenda została wykonana.",
         "fw": "Ustaw wiadomość pożegnalną używając set wiadomośćPożegnalna, {{user}} będzie zamienione z nazwą użytkownika, który właśnie dołączył, {{guild}} z nazwą serwera.\nTo pożegnanie będzie wyświetlać się na kanale, w którym komenda została wykonana.",
         "s": "Komenda serwerowa, ustawia rzeczy takie jak powitania i pożegnania",
-        "shrug": "¯\\_(ツ)_/¯",
+        "shrug": {
+            "short": "Wzrusza ramionami ¯\\_(ツ)_/¯ z opcjonalną wiadomością przez tym",
+            "usage": "{{- prefix}}shrug [wiadomość]",
+            "example": "`{{prefix}}shrug` Rem wysyła `¯\\_(ツ)_/¯`\n`{{prefix}}shrug meh` Rem wysyła `meh ¯\\_(ツ)_/¯`"
+        },
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "tylko bakłażan",
         "gtn": "Wyświetla losowy komiks GreenTeaNeko, działa tylko ze skonfigurowanym kanałem NSFW lub Adminem.",
@@ -127,18 +152,30 @@
         "bot": "Wyświetla informacje o czasie online Rem, połączeniach głosowych, liczbie użytkowników i ilości gildii",
         "top": "Wyświetla top 10 gildii (użytkowników w gildii), które są połączone do tego shard'u",
         "about": "Wyświetla podstawowe informacje o mnie, takie jak biblioteka i kto mnie stworzył.",
-        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lenny": {
+            "short": "Wyświetla lenny face ( ͡° ͜ʖ ͡°) z opcjonalną wiadomością na początku",
+            "usage": "{{- prefix}}lenny [wiadomość]",
+            "example": "`{{- prefix}}lenny` Rem wysyła `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny Siemka` Rem wysyła `Siemka ( ͡° ͜ʖ ͡°)`"
+        },
         "lmg": "Pozwól mi to wygooglować dla Ciebie",
         "fskip": "Pomija obecną piosenkę/liczbę piosenek",
         "leave": "Opuszczam kanał głosowy, w którym obecnie się znajduję.",
-        "say": "Zmuś Rem aby coś powiedziała",
+        "say": {
+            "short": "Spraw, aby Rem coś powiedziała",
+            "usage": "{{- prefix}}say <wiadomość>",
+            "example": "`{{- prefix}}mówi że Rem to najlepsza dziewczyna`"
+        },
         "ar": "Dodaj rolę dla siebie lub użytkownika",
         "cr": "Stwórz rolę lub dodaj ją dla bota -d -> standardowa, -l 2 -> przydziela rolę użytkownikowi po osiągnięciu 2 poziomu, -s -> ustaw rolę jako samo przyznawalną, przykład -> cr -l 20 nazwaRoli, dodaje rolę, którą użytkownik dostaje z poziomem 20",
         "lr": "Podaje listę ról, które sa połączone z Rem",
         "rr": "Usuwa rolę Tobie, innemu uzytkownikowi lub z serwera",
         "roles": "[ROLE]",
         "repeat": "Odtwarzanie piosenki/kolejki w pętli, dopóki nowe nie zostaną dodane do kolejki.",
-        "sayd": "Zmuś Rem do powiedzenia czegoś i usunięcia Twojej komedy",
+        "sayd": {
+            "short": "Spraw, aby Rem powiedziała to co chcesz oraz skasowała Twoją komendę",
+            "usage": "{{- prefix}}sayd <wiadomość>",
+            "example": "`{{prefix}}sayd Subaru? Nie znam żadnego subaru ¯\\_(ツ)_/¯`"
+        },
         "generic": "[PODSTAWOWE]",
         "fun": "[ZABAWA]",
         "coin": "Rzuca monetą",
@@ -165,7 +202,11 @@
         "stare": "gapienie się",
         "nom": "Nom nom nom :>",
         "potato": "Wszyscy chcą ziemniaka",
-        "choose": "Poproś Rem, aby wybrała coś za Ciebie, oddziel opcje średnikami `;`",
+        "choose": {
+            "short": "Niech Rem wybierze coś dla ciebie",
+            "usage": "{{- prefix}}choose <wybór 1>; <wybór 2>[;][wybór 3]...",
+            "example": "`{{- prefix}}choose Rem; Ram` Pozwól wybrać Rem pomiędzy `Rem` i `Ram`"
+        },
         "tickle": "Gili gili gili",
         "image": "[KOMENDY OBRAZKOWE]",
         "define": "Wyświetl definicję ze słownika Urbandictionary",
@@ -208,7 +249,31 @@
             "playlist": "[PLAYLISTA]",
             "image": "[KOMENDY OBRAZKOWE]"
         },
-        "introduction": ":wave: **Hej nazywam się {{- name}}**, bawmy się razem na Discord (/^▽^)/\n\nNa początek wpisz `{{- prefix}}help [command]` aby uzyskać pomoc o komendach, na przykład: `{{- prefix}}help ping`"
+        "introduction": ":wave: **Hej nazywam się {{- name}}**, bawmy się razem na Discordzie (/^▽^)/\n\nNa początek wpisz `{{- prefix}}help [command]` aby uzyskać pomoc o komendach, na przykład: `{{- prefix}}help ping`",
+        "invite": {
+            "short": "Daje ci link zapraszający Rem.",
+            "usage": "{{- prefix}}dodaj"
+        },
+        "softban": {
+            "short": "Banuje i natychmiastowo odbanowywuje użytkownika.",
+            "usage": "{{- prefix}}softban <użytkownik> [-t liczbaDniDoUsunięcia] [-r powód]",
+            "example": "`{{- prefix}}softban @piotr -t 2d -r Spam` banuje Piotra, usuwa jego ostatnie wiadomości w przeciągu dwóch dni i odbanowywuje go. Powód `Spam` będzie widoczny w liście banów"
+        },
+        "char": {
+            "short": "Daje ci informacje na temat bohaterów anime/manga",
+            "usage": "{{- prefix}}char <nazwapostaci>",
+            "example": "`{{- prefix}}char eren jaeger`"
+        },
+        "qm": {
+            "short": "Przesuń piosenkę w kolejce",
+            "usage": "`{{- prefix}}qm <staraPozycja> <nowaPozycja>",
+            "example": "`{{- prefix}}qm 4 2` Przenosi czwartą piosenkę w kolejce na drugą pozycję"
+        },
+        "ship": {
+            "short": "Zeswataj ze sobą dwóch ludzi",
+            "usage": "{{- prefix}}ship <użytkownik1> <użytkownik2>",
+            "example": "`{{- prefix}}ship Rem Subaru` Swata użytkownika Rem z użytkownikiem Subaru"
+        }
     },
     "version": "Obecnie używam wersji {{version}}",
     "add": "Użyj tego linku, aby dodać mnie do Twojego serwera: {{- link}}",
@@ -218,11 +283,12 @@
         "disabled": "System XP jest wyłączony na tym serwerze!"
     },
     "joinVoice": {
-        "join": "OK, dołączam do Twojego kanału głosowego",
+        "join": ":microphone: OK, dołączam do Twojego kanału głosowego",
         "error": "Wystąpił błąd podczas próby dołączenia do kanału głosowego!",
         "permission": "Brak Uprawnień! Musisz dodać rolę WolkeBot aby tego używać.",
         "no-voice": "Nie znajdujesz się w żadnym kanale głosowym!",
-        "already-voice": "Już jestem w kanale głosowym, przesuń mnie aby go zmienić!"
+        "already-voice": "Już jestem w kanale głosowym, przesuń mnie aby go zmienić!",
+        "join_region": ":microphone: Jestem połączona z twoim kanałem głosowym używając węzła głosowego `{{- node}}`"
     },
     "nsfw-images": {
         "nothing-found": "Nie znaleziono obrazków z tagami: `{{tags}}`",
@@ -240,7 +306,11 @@
             "Zdecydowanie nie.",
             "Po prostu to zrób.",
             "To jest świetny pomysł.",
-            "Czy jesteś tego pewny?"
+            "Czy jesteś tego pewny?",
+            "Zdecydowanie.",
+            "Zapytaj później.",
+            "Lepiej ci nie powiem.",
+            "Nie licz na to."
         ],
         "no-message": "Nie podałeś/aś pytania."
     },
@@ -249,16 +319,30 @@
         "privilege": "Moja rola nie ma uprawnień aby zbanować {{user}} !",
         "err": "Wystąpił błąd podczas próby zbanowania {{user}} !",
         "perms": "Nie możesz zbanować właściciela, ani nikogo z rolą WolkeBot.",
-        "self": "Nie możesz zbanować mnie moją własną komendą.",
-        "no-mention": "Wspomnij użytkownika, którego chcesz zbanować."
+        "self": ":sweat_smile: Nie możesz zbanować mnie moją własną komendą.",
+        "no-mention": "Wspomnij użytkownika, którego chcesz zbanować.",
+        "privilege_self": ":no_entry_sign: Moja rola nie pozwala zbanować użytkownika `{{user}}`",
+        "privilege_self_discord": ":x: Nie mam uprawnień do banowania",
+        "privilege_owner": ":no_entry_sign: Nie mogę zbanować Właściciela",
+        "error": ":x: Wystąpił błąd podczas banowania użytkownika {{user}} !",
+        "self-user": ":sweat_smile: Nie możesz sam siebie zbanować",
+        "default-reason": "Użytkownik {{- user}} został zbanowany przez {{- mod}}",
+        "reason": "Użytkownik {{- user}} został zbanowany przez {{- mod}} z powodem: {{- reason}}"
     },
     "kick": {
-        "success": "Wyrzucono użytkownika {{user}}",
-        "privilege": "Moja rola nie ma uprawnień aby wyrzucić {{user}} !",
+        "success": ":white_check_mark: Wyrzucono użytkownika {{user}}",
+        "privilege": ":no_entry_sign: Moja rola nie ma uprawnień aby wyrzucić {{user}} !",
         "err": "Wystąpił błąd podczas próby wyrzucenia {{user}} !",
         "perms": "Nie możesz wyrzucić właściciela, ani nikogo z rolą WolkeBot.",
-        "self": "Nie możesz wyrzucić mnie moją własną komendą.",
-        "no-mention": "Wspomnij użytkownika którego chcesz wykopać."
+        "self": ":sweat_smileL Nie możesz wyrzucić mnie moją własną komendą.",
+        "no-mention": "Wspomnij użytkownika którego chcesz wykopać.",
+        "privilege_self": ":no_entry_sign: Moja rola nie ma praw by wyrzucić `{{user}}`",
+        "privilege_self_discord": ":x: Nie mam uprawnień do wyrzucania",
+        "privilege_owner": ":no_entry_sign: Nie mogę wyrzucić Właściciela",
+        "error": ":x: Wystąpił błąd podczas wyrzucania {{user}} !",
+        "self-user": ":sweat_smile: Nie możesz wyrzucić samego siebie",
+        "default-reason": "Użytkownik {{- user}} został wyrzucony przez {{- mod}}",
+        "reason": "Użytkownik {{- user}} został wyrzucony przez {{- mod} z powodem: {{- reason}}"
     },
     "roll": {
         "whole-number": "Proszę podaj cały numer!",
@@ -269,7 +353,7 @@
         "nothing-found": "Nie znaleziono piosenki używając `{{search}}` ",
         "empty-search": "Nie wpisałeś niczego do wyszukania!",
         "started-download": "Zaczęto pobieranie `{{- url}}` ",
-        "success": "Dodano do kolejki **{{- song}}**"
+        "success": "Dodano do kolejki **{{- song}}** zaproponowaną przez: **{{- user}}**"
     },
     "rq": {
         "db-error": "Wystąpił błąd bazy danych!",
@@ -308,8 +392,8 @@
         "available-languages": "Lista dostępnych języków\nProszę, zwróć uwagę, że setLang wymaga kodu ISO"
     },
     "np": {
-        "song-duration": "Odtwarzanie:` {{- title}} {{current}}/{{duration}} {{repeat}} ` ",
-        "song": "Odtwarzanie: `{{-title}} {{repeat}}` ",
+        "song-duration": "Odtwarzanie:` {{- title}} {{current}}/{{duration}} {{repeat}} ` zaproponowane przez: **{{- user}}**",
+        "song": "Odtwarzanie: `{{-title}} {{repeat}}` zaproponowane przez: **{{- user}}**",
         "repeat-on": "powtarzanie:włączone",
         "repeat-single": "powtórz: pojedyncze",
         "repeat-queue": "powtórz: kolejkę\n",
@@ -318,7 +402,8 @@
         "emoji-repeat-off": ":heavy_check_mark: Powtórz: wyłączono"
     },
     "queue": {
-        "queued": "Kolejka:"
+        "queued": "Kolejka:",
+        "by": "zaproponowane przez: {{- user}}"
     },
     "rem-lewd": {
         "no-nsfw": "Jeszcze nie ma kanałów NSFW.",
@@ -364,7 +449,8 @@
         "lib": "Biblioteka",
         "voice_active": "AKG",
         "voice_s": "KG(shard)",
-        "voice_active_s": "AKG (shard)"
+        "voice_active_s": "AKG (shard)",
+        "top_donators": "Najlepsi darczyńcy:"
     },
     "rank": "Możesz znaleźć ranking tego servera tutaj: {{- link}}",
     "pp": {
@@ -390,9 +476,9 @@
     "leave": "Ok, opuściłam kanał głosowy.",
     "play": {
         "no-result": "Nie znaleziono piosenki!",
-        "playing": ":musical_note: Odtwarzanie **{{- song}}**",
-        "success": ":musical_note: Odtwarzanie **{{- song}}**",
-        "next": ":musical_note: Następna pozycja **{{- song}}**"
+        "playing": ":musical_note: Odtwarzanie **{{- song}}** zaproponowane przez: **{{- user}}**",
+        "success": ":musical_note: Odtwarzanie **{{- song}}** zaproponowane przez: **{{- user}}**",
+        "next": ":musical_note: Następna pozycja **{{- song}}** zaproponowane przez: **{{- user}}**"
     },
     "prefix": {
         "success": "Ok, właśnie ustawiłam prefiks na {{- prefix}}, spróbuj `{{- prefix}}ping` aby to sprawdzić",
@@ -438,7 +524,12 @@
         "nothing-found": "Nie znalazłam niczego co podałeś/aś w filtrze!"
     },
     "search": {
-        "success": "Znaleziono następujące Piosenki:"
+        "success": "Znaleziono następujące Piosenki:",
+        "user": ":mag: **Szukanie użytkownika**",
+        "role": ":mag: **Szukanie roli**",
+        "channel": ":mag: **Szukanie kanału**",
+        "no-results": ":mag: Brak wyników dla Twojego zapytania",
+        "anime": ":mag: **Wyniki szukania Anime**"
     },
     "set-lewd": {
         "success": "Pomyślnie dodano {{- channel}} do kanałów NSFW!"
@@ -551,11 +642,13 @@
             "role": "rola",
             "channel": "kanał"
         },
-        "success": "Ok, właśnie dodałam uprawnienie  `{{- node}}` `{{- allowed}}` do `{{- type}}` `{{- name}}` ",
-        "wrong-node": "Węzeł uprawnień `{{- node}}` nie będzie działał, ponieważ jest niepoprawny. Aby wyświetlić węzeł komendy wpisz `{{- prefix}}getNode komenda` ",
+        "success": ":ok_hand: Ok, właśnie dodałam uprawnienie `{{- node}}` `{{- allowed}}` do `{{- type}}` `{{- name}}`",
+        "wrong-node": "Węzeł uprawnień `{{- node}}` nie będzie działał, ponieważ jest niepoprawny. Aby wyświetlić węzeł komendy wpisz `{{- prefix}}getNode <command>` ",
         "target-not-found": "Nie mogłam znaleźć celu {{- target}} tej komendy",
         "no-allowance-set": "Nie określiłeś czy uprawnienie powinno być dozwolone czy zakazane, dodaj `true` lub `false` w zależności od Twojego wyboru.",
-        "missing-args": "Poprawna składnia tej komendy to `{{-prefix}}ap <węzel> [-u|-r|-c] [cel] <zezwolenie>`\n Przykład:\n```{{-prefix}}ap playlist.* true -> zezwala wszystkie komendy z kategorii playlist na serwerze\n{{-prefix}}ap music.fskip -u @użytkownik true -> zezwala wspomnianemu użytkownikowi na używanie {{- prefix}}fskip```"
+        "missing-args": "Proszę wpisz `{{- prefix}}help ap` aby uzyskać szczegółowe informacje jak poprawnie używać tę komendę",
+        "add-defaults": ":eyes: Właśnie zauważyłam że nie dodałeś żadnych pozwoleń. Skoro są to twoje pierwsze pozwolenia, czy chciałbyś pozostawić domyślne pozwolenia włączone?\nTymi pozwoleniami byłyby:\n```{{perm_list}}}```",
+        "success-defaults": ":ok_hand: Okej, właśnie dodałam pozwolenie `{{- node}}` `{{- allowed}}` do `{{- type}}` `{{-name}}`\nPowiedziałeś mi aby zachować domyślne, więc je zostawiłam"
     },
     "reset-perms": {
         "nothing-found": "Nie ustawiłeś jeszcze żadnych uprawnień.",
@@ -581,5 +674,27 @@
     },
     "manga": {
         "chapters": "Rodziały"
+    },
+    "menu": {
+        "guide": "Odpowiedz numerem opcji, którą chcesz wybrać.",
+        "disclaimer": "Wpisz 'c' lub dowolną komendę Rem aby wyjść z tego menu, zamknie się ono automatycznie za 5 minut.",
+        "yes-no-question": "Odpowiedz 'yes' lub 'no' w zależności od wyboru, wpisz 'c' lub dowolną komendę rem aby anulować tę komendę, to okno zamknie się automatycznie za 5 minut."
+    },
+    "softban": {
+        "success": ":white_check_mark: Łagodnie zbanowano użytkownika {{user}}",
+        "error": ":x: Wystąpił błąd podczas banowania {{user}} !",
+        "error-unban": ":x: Wystąpił błąd podczas odbanowywania użytkownika {{user}} !",
+        "default-reason": "Użytkownik {{- user}} został łagodnie zbanowany przez {{- mod}}",
+        "reason": "Użytkownik {{- user}} został łagodnie zbanowany przez {{- mod}} z powodem: {{- reason}}",
+        "auto-unban": "Automatycznie odbanowano {{- user}}"
+    },
+    "ship": {
+        "single": "Przykro mi widzieć Ciebie samego {{- user}} :<",
+        "success": "Piękny związek~ nazwa waszego związku to **{{- shipname}}**"
+    },
+    "qm": {
+        "missing-args": "Musisz mi powiedzieć którą piosenkę gdzie przesunąć. By otrzymać pomoc dla tej komendy wpisz `{{- prefix}}help qm`",
+        "current": "Nie możesz przesunąć aktualnej piosenki :<",
+        "success": "Przesunięto piosenkę `{{- song}}` z miejsca `{{- start}}` do miejsca `{{- end}}`"
     }
 }
