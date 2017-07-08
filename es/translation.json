@@ -19,7 +19,7 @@
         "abort": ":x: cancelado",
         "cat-nope": ":no_entry_sign: ¡Esa categoría no existe!",
         "mention": "Por favor menciona a un usuario.",
-        "cancelled-command": "Comando cancelado.",
+        "cancelled-command": ":x: Comando cancelado.",
         "donate": "Donaciones",
         "support": "Soporte",
         "invite": "Invita a Rem",
@@ -27,12 +27,17 @@
         "native-name": "Español",
         "empty-say": ":no_entry_sign: ¡No has introducido ningún mensaje!",
         "page": "Página",
-        "unknown": "desconocido"
+        "unknown": "desconocido",
+        "modify-playing-song": ":x: No puedes modificar la canción que se está reproduciendo.",
+        "song-no-exist": "No hay una canción en la posición `{{- position}}`"
     },
     "help": {
         "intro": "¡Vamos a pasarlo bien en Discord (/^▽^)/!, selecciona una categoría del listado respondiendo con {{pre}}help y el número de la categoría que quieras seleccionar para conocer más acerca de los comandos:",
         "intro_2": "Hola soy",
-        "support": "[SOPORTE]",
+        "support": {
+            "short": "Da el enlace de invitación al servidor de soporte",
+            "usage": "{{- prefix}}support"
+        },
         "bug": "Obtén un enlace de ayuda del servidor de soporte en Discord",
         "help": {
             "short": "Obtén ayuda por un simple comando o una lista de ellos.",
@@ -66,9 +71,17 @@
         "mod": "Panel de Moderación",
         "mod-info": "Estos comandos requieren que el usuario tenga un rol en Discord llamado \"WolkeBot\"",
         "info": "Ofrece información sobre el servidor actual",
-        "ban": "Banea un usuario y elimina los mensajes enviados por él en los últimos 7 días",
-        "kick": "Expulsar a un usuario.",
-        "rm": "Eliminas mensajes, puedes filtrar estos según su emisor en bots, usuarios o comandos/respuestas de Rem o simplemente eliminar hasta 100 mensajes. Filtros: -b > bots | -r > mensajes de Rem | -u @usuario > mensajes de un usuario específico | -c > mensajes que inician con el prefijo de Rem.",
+        "ban": {
+            "short": "Bloquea un usuario.",
+            "usage": "{{- prefix}}ban <usuario> [-t mensajes a eliminar] [-r razón del bloqueo]",
+            "example": "`{{- prefix}}ban @peter -t 2d -r Spam` bloquea a Peter y borra sus mensajes de los últimos 2 días, la razón 'Spam' será visible en el audit logs.\n`{{- prefix}}ban subaru -t 7d -r mala opción` bloquea a Subaru y borra sus mensajes de los últimos 7 días, la razón 'mala opción' será visible en el audit logs."
+        },
+        "kick": {
+            "short": "Expulsa un usuario.",
+            "usage": "{{- prefix}}kick <usuario> [-r Razón]",
+            "example": "`{{- prefix}}kick @peter -r Spam` expulsa a Peter y muestra la razón 'Spam' en el audit logs."
+        },
+        "rm": "Eliminas mensajes, puedes filtrar estos según su emisor en bots, usuarios o comandos/respuestas de Rem o simplemente eliminar hasta 100 mensajes.\nFiltros: -b > bots | -r > mensajes de Rem | -u @usuario > mensajes de un usuario específico | -c > mensajes que inician con el prefijo de Rem.",
         "noLevelServer": "Deshabilita el sistema de niveles en el servidor, utiliza el comando nuevamente para rehabilitarlo.",
         "noPmServer": "Deshabilita las notificaciones de mensajes privados en el servidor, utiliza el comando nuevamente para rehabilitarlo.",
         "noChServer": "Deshabilita las notificaciones de mensajes privados en el servidor y habilita las notificaciones en los canales, utiliza el comando nuevamente para revertir la acción.",
@@ -88,8 +101,16 @@
         "cookie": "Das una galleta al usuario mencionado o muestra tus galletas si nadie es mencionado.",
         "eatCookie": "Comes una galleta.",
         "git": "Proporciona el enlace del bot en github",
-        "roll": "Lanza un número entre cero y el número asignado, si no especificas ningún número por defecto será el 10.",
-        "8ball": "Muestra la opinión de la bola 8 mágica con respecto a tu pregunta",
+        "roll": {
+            "short": "Rueda un número entre cero y el número dado, si no se asigna un número se tomará el 10.",
+            "usage": "{{- prefix}}roll [número]",
+            "example": "`{{- prefix}}roll` Toma un número aleatorio entre 0 y 10.\n`{{- prefix roll 100` Toma un número entre 0 y 100."
+        },
+        "8ball": {
+            "short": "Da la opinión de la bola 8 mágica a tu pregunta.",
+            "usage": "{{- prefix}}8ball [tu pregunta]",
+            "example": "`{{- prefix}}8ball ¿Debería comer pollo?`"
+        },
         "garfield": "Muestra un comic de garfield aleatorio",
         "cat": "Envía una imagen aleatoria con gatos. ¡Todos necesitamos gatos!",
         "hug": "Abraza a alguien :>",
@@ -118,27 +139,43 @@
         "gr": "Establece un saludo con set greetingMessage, {{user}} será reemplazado con el usuario que acaba de entrar y {{guild}} con el nombre del servidor.\nEl saludo se realiza en el canal donde ejecutaste el comando.",
         "fw": "Establece una despedida con set farewellMessage, {{user}} será reemplazado con el usuario que acaba de salir y {{guild}} con el nombre del servidor.\nLa despedida se realiza en el canal donde ejecutaste el comando.",
         "s": "Los comandos del servidor, estos establecen cosas como saludos y despedidas.",
-        "shrug": "¯\\_(ツ)_/¯",
+        "shrug": {
+            "short": "Devuelve un shrug ( ¯\\_(ツ)_/¯) con un mensaje opcional frente a él.",
+            "usage": "{{- prefix}}shrug [mensaje]",
+            "example": "`{{- prefix}}shrug` Rem envía `¯\\_(ツ)_/¯ `\n`{{- prefix}}shrug meh` Rem envía `meh ¯\\_(ツ)_/¯ `"
+        },
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "solo una berenjena",
         "gtn": "Muestra un comic aleatorio de green tea neko, solo puede ser usado en un canal configurado como NSFW o por un Administrador.",
         "cuddle": "Da una acaricia",
         "trig": "TRIGGERED",
         "bot": "Da información sobre el tiempo de actividad de Rem, el tiempo activo y enlaces útiles.",
-        "top": "Muestra el top 10 de gremios (según la cantidad de usuarios) en el que está conectado esta sección",
+        "top": "Muestra el top 10 de gremios (según la cantidad de usuarios) conectados en esta partición.",
         "about": "Muestra la información básica sobre mi, como la librería que utilizo y quien me creó.",
-        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lenny": {
+            "short": "Devuelve un lanny face ( ͡° ͜ʖ ͡°) con un mensaje opcional frente a él.",
+            "usage": "{{- prefix}}lenny [mensaje]",
+            "example": "`{{- prefix}}lenny` Rem envía `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny hey chicos` Rem envía `hey chicos ( ͡° ͜ʖ ͡°)`"
+        },
         "lmg": "Déjame googlearlo por ti",
         "fskip": "Salta la canción actual/un número de canciones/todas las canciones",
         "leave": "Me salgo del canal de voz donde me encuentro actualmente.",
-        "say": "Haz que Rem diga algo",
+        "say": {
+            "short": "Haz que Rem diga algo",
+            "usage": "`{{- prefix}}say <mensaje>`",
+            "example": "`{{- prefix}}say Rem es la mejor chica`"
+        },
         "ar": "Añade un rol para ti o para un usuario",
         "cr": "Crea un rol o añade un rol para el bot, -d -> por defecto, -l 2 -> le da el rol al usuario cuando sobrepase el nivel 2, -s -> hace el rol auto-asignable-, ejemplo -> cr -l 20 'nombredelrol', añade un rol llamado 'nombredelrol' a un usuario cuando este sobrepase el nivel 20",
         "lr": "Lista de todos los roles que están enlazados con Rem ahora mismo",
         "rr": "Elimina tu rol, el de otro usuario o del servidor",
         "roles": "[ROLES]",
         "repeat": "Reproduce una cancion/la cola en repetición hasta que una nueva se añada a la cola",
-        "sayd": "Haz que Rem diga algo y elimine tu comando",
+        "sayd": {
+            "short": "Haz que Rem diga algo que desees y borra tu comentario.",
+            "usage": "{{- prefix}}sayd <mensaje>",
+            "example": "`{{- prefix}}sayd ¿Subaru?, no conozco a ningún Subaru ¯\\_(ツ)_/¯`"
+        },
         "generic": "[GENÉRICO]",
         "fun": "[DIVERSIÓN]",
         "coin": "Lanza una moneda por ti",
@@ -165,7 +202,11 @@
         "stare": "Mira fijamente...",
         "nom": "Ñom :>",
         "potato": "Todos quieren una patata",
-        "choose": "Haz que Rem elija algo por ti, separa las opciones con `;`",
+        "choose": {
+            "short": "Haz que Rem seleccione algo por ti",
+            "usage": "{{- prefix}}choose <elección 1>;<elección 2>[;][elección 3]...",
+            "example": "`{{- prefix}}choose Rem; Ram` Hace que Rem elija entre `Rem` o `Ram`"
+        },
         "tickle": "Cosquillas, Cosquillas, Cosquillas",
         "image": "[COMANDOS DE IMÁGENES]",
         "define": "Obtén la definición de un término de Urbandictionary",
@@ -208,68 +249,119 @@
             "playlist": "[LISTA DE REPRODUCCIÓN]",
             "image": "[IMÁGENES]"
         },
-        "introduction": ":wave: **Hey soy {{- name}}**, vamos a divertirnos juntos en Discord (/^▽^)/\n\nPara empezar escribe `{{- prefix}}help [comando]` para obtener más información acerca de un comando, por ejemplo: `{{- prefix}}help ping`"
+        "introduction": ":wave: **¡Hola, soy {{- name}}!** Divirtámonos juntos en Discord (/^▽^)/\n\nPuedes empezar escribiendo `{{- prefix}}help [comando]` para obtener más información acerca de un comando, por ejemplo: `{{- prefix}}help ping`",
+        "invite": {
+            "short": "Da el enlace de invitación de Rem",
+            "usage": "{{- prefix}}add"
+        },
+        "softban": {
+            "short": "Bloquea e instantáneamente desbloquea a un usuario, útil para limpiar los mensajes de un spammer o similar.",
+            "usage": "{{- prefix}}softban <usuario> [-t mensajes a eliminar] [-r razón del bloqueo]",
+            "example": "`{{- prefix}}softban @peter -t 2d -r Spam` bloquea a Peter, eliminando sus mensajes de los últimos 2 días y desbaneandolo luego, la razón 'Spam' será visible en el audit logs."
+        },
+        "char": {
+            "short": "Obtén información acerca de un personaje de anime/manga",
+            "usage": "{{- prefix}}char <nombre del personaje>",
+            "example": "`{{- prefix}}char eren jaeger`"
+        },
+        "qm": {
+            "short": "Mueve una canción en cola",
+            "usage": "{{- prefix}}qm <Posición anterior> <Nueva posición>",
+            "example": "`{{- prefix}}qm 4 2` Mueve la 4ta canción en la cola a la 2da posición."
+        },
+        "ship": {
+            "short": "Empareja a dos personas",
+            "usage": "{{- prefix}}ship <usuario1> <usuario2>",
+            "example": "`{{- prefix}}ship Rem Subaru` Empareja a un usuario llamado Rem con un usuario llamado Subaru"
+        }
     },
     "version": "Actualmente me encuentro en la versión {{version}}",
-    "add": "Utiliza este enlace para añadirme a tu servidor: {{- link}}",
+    "add": "Utiliza este enlace para añadirme a tu servidor: `{{- link}}`",
     "bug": "Por favor, únete al servidor de soporte para reportar algún error: {{- link}}",
     "level": {
         "result": "Eres **Nivel {{level}}**, experiencia actual: **{{current}}EXP**/**{{needed}}EXP**,  experiencia total:**{{total}}**",
         "disabled": "¡El sistema de experiencia esta deshabilitado en este servidor!"
     },
     "joinVoice": {
-        "join": "Vale, he entrado al canal de voz.",
+        "join": ":microphone: Ok, entraré a tu canal de voz.",
         "error": "¡Un error ocurrió al intentar ingresar a tu canal de voz!",
         "permission": "¡No tienes permisos!, necesitas poseer el rol WolkeBot para usar este comando.",
         "no-voice": "¡No te encuentras en ningún canal de voz!",
-        "already-voice": "Ya estoy en un canal de voz, ¡muéveme para cambiarme!"
+        "already-voice": "Ya estoy en un canal de voz, ¡muéveme para cambiarme!",
+        "join_region": ":microphone: Me he conectado a tu canal de voz, se está haciendo uso del nodo `{{- node}}`"
     },
     "nsfw-images": {
         "nothing-found": "No se han encontrado imágenes con la etiqueta: `{{tags}}`",
         "no-nsfw-channel": "Por favor establece un canal a la lista NSFW (+18) con !w.setLewd (en uno de los canales donde desees establecerlo) para poder utilizar los comandos NSFW",
         "error-body": "Ocurrió un error codificando la respuesta de la api. Intenta de nuevo, si el problema persiste contacta a Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: Los comandos NSFW sólo pueden utilizarse en canales etiquetados como NSFW, de acuerdo con las pautas de Discord.\n\nLas pautas de Discord se pueden encontrar en: <https://discordapp.com/guidelines>",
-        "error-discord-tos-conflict": ":x: Esta búsqueda no está permitida debido a un conflicto con las pautas de la comunidad de Discord.\n\nLas pautas de Discord se pueden encontrar en: <https://discordapp.com/guidelines>"
+        "error-discord-not-nsfw-channel": ":x: Los comandos NSFW sólo pueden utilizarse en canales etiquetados como NSFW, de acuerdo con las directivas de Discord.\n\nLas directivas de Discord se pueden encontrar en: <https://discordapp.com/guidelines>",
+        "error-discord-tos-conflict": ":x: Esta búsqueda no está permitida debido a un conflicto con las directivas de la comunidad de Discord.\n\nLas directivas de Discord se pueden encontrar en: <https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
-            "No.",
-            "Si.",
-            "Quizás.",
-            "No lo creo.",
-            "Definitivamente no.",
-            "Solo hazlo.",
-            "Esa es una buena idea.",
-            "¿Estás seguro de eso?"
+            "Es cierto",
+            "Es decididamente así",
+            "Sin duda alguna",
+            "Definitivamente sí",
+            "Puedes confiar en ello",
+            "Como yo lo veo, sí",
+            "Es muy probable",
+            "Tengo una buena perspectiva",
+            "Sí",
+            "Las señales apuntan a que sí",
+            "Respuesta confusa, intenta otra vez",
+            "Pregúntame luego",
+            "Prefiero no contártelo ahora",
+            "No puedo predecirlo ahora",
+            "Concéntrate, y pregunta de nuevo",
+            "No cuentes con eso",
+            "Mi respuesta es no",
+            "Mis fuentes dicen que no",
+            "La perspectiva... no es tan buena",
+            "Dudosamente"
         ],
         "no-message": "No has introducido ninguna pregunta."
     },
     "ban": {
-        "success": "Usuario baneado {{user}}",
-        "privilege": "¡Mi rol no posee los permisos para banear a {{user}}!",
-        "err": "¡Ha ocurrido un error intentando banear a {{user}}!",
+        "success": ":white_check_mark: El usuario {{user}} fue bloqueado",
+        "privilege": ":no_entry_sign: Tu rol está en una posición inferior al rol del miembro al que quieres expulsar, o no posees el permiso `bloquear miembros`",
+        "err": "¡Ha ocurrido un error intentando bloquear a {{user}}!",
         "perms": "No puedes banear al propietario o a una persona que posea el rol WolkeBot.",
-        "self": "No puedes banearme con mi propio comando, ¿Estás loco?.",
-        "no-mention": "Por favor, menciona al usuario que deseas banear."
+        "self": ":sweat_smile: No puedes bloquearme con mi propio comando.",
+        "no-mention": "Por favor, menciona al usuario que deseas banear.",
+        "privilege_self": ":no_entry_sign: Mi rol no tiene permisos para bloquear a `{{user}}`",
+        "privilege_self_discord": ":x: No poseo el permiso 'bloquear miembros'.",
+        "privilege_owner": ":no_entry_sign: No puedo bloquear al dueño",
+        "error": ":x: ¡Ocurrió un error mientras intentaba bloquear a {{user}}!",
+        "self-user": ":sweat_smile: No te puedes bloquear tu mismo",
+        "default-reason": "El usuario {{- user}} fue bloqueado por {{- mod}}",
+        "reason": "El usuario {{- user}} fue bloqueado por {{- mod}}, razón: {{- reason}}"
     },
     "kick": {
-        "success": "Has expulsado al usuario {{user}}",
-        "privilege": "¡Mi rol no posee los permisos necesarios para expulsar a {{user}}!",
+        "success": ":white_check_mark: El usuario {{user}} fue expulsado",
+        "privilege": ":no_entry_sign: Tu rol está una posición inferior al rol del usuario al que intentas expulsar, o probablemente no posees el permiso `expulsar miembros`",
         "err": "¡Ha ocurrido un error mientras expulsaba a {{user}}!",
         "perms": "No puedes expulsar al propietario o a una cualquier persona que posea el rol WolkeBot.",
-        "self": "No puedes expulsarme con mi propio comando, ¿Estás loco?.",
-        "no-mention": "Por favor, menciona al usuario que deseas expulsar."
+        "self": ":sweat_smile: No puedes expulsarme con mi propio comando.",
+        "no-mention": "Por favor, menciona al usuario que deseas expulsar.",
+        "privilege_self": ":no_entry_sign: Mi rol no posee el permiso para expulsar a `{{user}}`",
+        "privilege_self_discord": ":x: No tengo el permiso 'expulsar miembros'",
+        "privilege_owner": ":no_entry_sign: No puedo expulsar al dueño",
+        "error": ":x: ¡Ocurrió un error mientras intentaba expulsar a {{user}}!",
+        "self-user": ":sweat_smile: No puedes expulsarte tu mismo",
+        "default-reason": "El usuario {{- user}} fue expulsado por {{- mod}}",
+        "reason": "El usuario {{- user}} fue expulsado por {{- mod}}, razón: {{- reason}}"
     },
     "roll": {
         "whole-number": "¡Por favor añade un número entero!",
         "negative": "No puedo lanzar con un {{number}}",
-        "success": "Saca un {{first}} de {{second}}"
+        "success": "Se obtuvo un **{{first}}** de {{second}}"
     },
     "qa": {
         "nothing-found": "No se han encontrado canciones con el término `{{search}}` ",
         "empty-search": "No has introducido un enlace o término de búsqueda.",
         "started-download": "Empieza la descarga de `{{- url}}`␣",
-        "success": "Añadido a la cola **{{- song}}**"
+        "success": "Añadido a la cola **{{- song}}** pedido por: **{{- user}}**"
     },
     "rq": {
         "db-error": "¡Ocurrió un error en la base de datos!",
@@ -308,8 +400,8 @@
         "available-languages": "Lista de idiomas disponibles\nTen en cuenta que el comando setLang necesita los nombres de la columna `código`"
     },
     "np": {
-        "song-duration": "Está sonando ahora mismo: `{{- title}} {{current}}/{{duration}} {{repeat}}`",
-        "song": "Está sonando ahora mismo: `{{-title}} {{repeat}}`",
+        "song-duration": "Reproduciendo ahora: `{{- title}} {{current}}/{{duration}} {{repeat}}` pedido por: **{{- user}}**",
+        "song": "Reproduciendo ahora: `{{-title}} {{repeat}}` pedido por: **{{- user}}**",
         "repeat-on": "repetir:activado",
         "repeat-single": "repetir: canción actual",
         "repeat-queue": "repetir: cola",
@@ -318,7 +410,8 @@
         "emoji-repeat-off": ":heavy_check_mark: Repetir: desactivado"
     },
     "queue": {
-        "queued": "En cola:"
+        "queued": "En cola:",
+        "by": "pedido por: {{- user}}"
     },
     "rem-lewd": {
         "no-nsfw": "No hay canales en la lista NSFW (+18) aún.",
@@ -356,15 +449,16 @@
         "avg-channels": "Promedio de canales por gremio.",
         "avg-users": "Promedio de usuarios por gremio.",
         "voice": "CV",
-        "shard": "Sección",
-        "guilds-s": "Gremios (sección)",
-        "channels-s": "Canales (sección)",
-        "users-s": "Usuarios en esta sección",
+        "shard": "Partición",
+        "guilds-s": "Gremios (partición)",
+        "channels-s": "Canales (partición)",
+        "users-s": "Usuarios en la partición",
         "made": "Hecho por:",
         "lib": "Libreria",
         "voice_active": "CVA",
-        "voice_s": "CV (sección)",
-        "voice_active_s": "CVA (sección)"
+        "voice_s": "CV (partición)",
+        "voice_active_s": "CVA (partición)",
+        "top_donators": "Top Donadores:"
     },
     "rank": "Puedes encontrar la clasificación de este servidor aquí: {{- link}}",
     "pp": {
@@ -390,9 +484,9 @@
     "leave": "Vale, he abandonado el canal de voz.",
     "play": {
         "no-result": "Ninguna canción fue encontrada.",
-        "playing": ":musical_note: Actualmente se está reproduciendo **{{- song}}**",
-        "success": ":musical_note: Actualmente se está reproduciendo **{{- song}}**",
-        "next": ":musical_note: Se reproducirá a continuación **{{- song}}**"
+        "playing": ":musical_note: Actualmente se está reproduciendo **{{- song}}** pedido por: **{{- user}}**",
+        "success": ":musical_note: Actualmente reproduciendo **{{- song}}** pedido por: **{{- user}}**",
+        "next": ":musical_note: Se reproducirá a continuación **{{- song}}** pedido por: **{{- user}}**"
     },
     "prefix": {
         "success": "Vale, he establecido el prefijo {{- prefix}}, utiliza `{{- prefix}}ping` para comprobarlo.",
@@ -438,7 +532,12 @@
         "nothing-found": "¡No he encontrado ningún mensaje acorde al filtro!"
     },
     "search": {
-        "success": "Las siguientes canciones fuero encontradas:"
+        "success": "Las siguientes canciones fuero encontradas:",
+        "user": ":mag: **Búsqueda de usuario**",
+        "role": ":mag: **Búsqueda de rol**",
+        "channel": ":mag: **Búsqueda de canal**",
+        "no-results": ":mag: Tu búsqueda no regresó algún resultado",
+        "anime": ":mag: **Buscador de anime**"
     },
     "set-lewd": {
         "success": "Se ha añadido el canal {{- channel}} a la lista de canales NSFW (+18)"
@@ -484,7 +583,7 @@
     "user-info": {
         "id": "$t(server-info.id)",
         "name": "$t(server-info.name)",
-        "discriminator": "discriminador",
+        "discriminator": "Discriminador",
         "nick": "Nombre de usuario",
         "join": "Ingresó",
         "created": "Creado",
@@ -551,11 +650,13 @@
             "role": "rol",
             "channel": "canal"
         },
-        "success": "Ok, acabo de agregar el permiso `{{- node}}` `{{- allowed}}` a `{{- type}}` `{{- name}}`",
+        "success": ":ok_hand: Ok, acabo de agregar el permiso `{{- node}}` `{{- allowed}}` a `{{- type}}` `{{- name}}`",
         "wrong-node": "El nodo del permiso `{{- node}}` no funcionará, ya que no este no es válido. Para obtener el nodo del permiso de un comando escribe `{{- prefix}}getNode comando`",
         "target-not-found": "No he podido encontrar el destino {{-target}} de este comando",
         "no-allowance-set": "No me has indicado si el permiso se debe permitir o no, escribe `true` para permitirlo o `false` para denegarlo según tu elección.",
-        "missing-args": "La sintaxis correcta para este comando es `{{- prefix}}ap <permiso> [-u|-r|-c] [objetivo] <elección>`\nEjemplo:\n```{{- prefix}}ap playlist.* true -> permite todos los comandos de la categoría playlist en el servidor\n{{- prefix}}ap music.fskip -u @usuario true -> permite al usuario mencionado usar {{- prefix}}fskip```"
+        "missing-args": "Por favor usa `{{- prefix}}help ap` para obtener más información de como usar este comando apropiadamente.",
+        "add-defaults": ":eyes: Acabo de notar que no ha añadido ningún permiso hasta el momento. Ya que este es su primer permiso, ¿le gustaría mantener los permisos predeterminados activados?\nEsto incluiría los siguientes permisos:\n```{{perm_list}}```",
+        "success-defaults": ":ok_hand: Ok, acabo de agregar el permiso `{{- node}}` `{{- allowed}}` a `{{- type}}` `{{- name}}`\nComo quiere mantener los permisos por defecto, los mantendré"
     },
     "reset-perms": {
         "nothing-found": "Todavía no has establecido ningún permiso.",
@@ -581,5 +682,27 @@
     },
     "manga": {
         "chapters": "Capítulos"
+    },
+    "menu": {
+        "guide": "Responde con el número de la opción que quieras escoger",
+        "disclaimer": "Escribe 'c' o cualquier comando de Rem para salir de este menú, se autocerrará en 5 minutos.",
+        "yes-no-question": "Responde 'yes' o 'no' dependiendo de tu elección, escribe 'c' o cualquier otro comando de Rem para cancelar este. El comando se cancelará automáticamente en 5 minutos."
+    },
+    "softban": {
+        "success": ":white_check_mark: Bloqueo flexible aplicado a {{user}}",
+        "error": ":x: ¡Ocurrió un error mientras intentaba bloquear a {{user}}!",
+        "error-unban": ":x: ¡Ocurrió un error mientras intentaba desbloquear a {{user}}!",
+        "default-reason": "El usuario {{- user}} fue bloqueado por {{- mod}}",
+        "reason": "El usuario {{- user}} fue bloqueado por {{- mod}}, razón: {{- reason}}",
+        "auto-unban": "El usuario {{- user}} fue desbloqueado automáticamente"
+    },
+    "ship": {
+        "single": "Lamento verte tan solo {{- user}} :<",
+        "success": "¡Una pareja encantadora!~ Su nombre de pareja será **{{- shipname}}**"
+    },
+    "qm": {
+        "missing-args": "Debes decir decir que canción debo de a mover y a donde. Para obtener el correcto uso del comando usa `{{- prefix}}help qm`",
+        "current": "No puedo mover la canción actual :<.",
+        "success": "Se movió la canción `{{- song}}` de la posición `{{- start}}` a la posición `{{- end}}`"
     }
 }
