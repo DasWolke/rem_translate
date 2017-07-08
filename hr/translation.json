@@ -2,15 +2,15 @@
     "generic": {
         "error": ":x: Dogodila se pogreška!",
         "no-pm": ":no_entry: Ova naredba ne radi u privatnim kanalima!",
-        "whole-num": ":no_entry_sign: Molim upotrijebi cijeli broj.",
-        "nan": ":no_entry_sign:  Što god si upravo sada poslao, molim dodajte cijeli broj. :) ",
-        "no-song-in-queue": ":no_entry_sign: Nema pjesme u redu čekanja, možda da dodaš jednu :musical_note:",
-        "no-song-playing": ":musical_note: Trenutrno niti jedna pjesma nije puštena.",
-        "no-permission": "no_entry_sign: Nemaš dozvole da koristite ovu naredbu, molimo dodaj si dozvolu `{{- node}}` da bi mogli tu naredbu koristiti.",
-        "no-voice": ":no_entry_sign: Nisam spojena u nikoji kanal za pričanje na ovome Serveru!",
+        "whole-num": ":no_entry_sign: Molim vas upotrijebi cijeli broj.",
+        "nan": ":no_entry_sign:  Što god ste upravo poslali, molim vas pošaljite cijeli broj. :) ",
+        "no-song-in-queue": ":no_entry_sign: Nema pjesme u redu čekanja, možda da dodaš jednu :musical_note:?",
+        "no-song-playing": ":musical_note: Trenutno niti jedna pjesma nije puštena.\n",
+        "no-permission": "no_entry_sign: Nemaš dozvolu koristiti ovu naredbu, molimo dodaj si dozvolu `{{- node}}` da je koristiš.",
+        "no-voice": ":no_entry_sign: Nisam spojen u ikoji kanal za pričanje na ovome Serveru!",
         "level-update": ":tada: Upravo si postigao *{{level}}. razinu** na **{{- server}}**",
-        "empty-search": ":no_entry_sign: Nisi ukucao pojam za traženje!",
-        "negative": ":no_entry_sign: Molim ne koristiti negativne brojeve!",
+        "empty-search": ":no_entry_sign: Nisi upisao pojam za traženje!",
+        "negative": ":no_entry_sign: Molim te ne koristiti negativne brojeve!",
         "cancel": "otkaži",
         "version": "Verzija",
         "author": "autor",
@@ -19,7 +19,7 @@
         "abort": ":x: otkazano",
         "cat-nope": ":no_entry_sign: Ova kategorija ne postoji!",
         "mention": "Molim spomeni korisnika.",
-        "cancelled-command": "Otkazana naredba",
+        "cancelled-command": ":x: Otkazana naredba.",
         "donate": "Doniraj",
         "support": "Pomoć",
         "invite": "Pozovi",
@@ -27,12 +27,17 @@
         "native-name": "Hrvatski",
         "empty-say": ":no_entry_sign: Nisi napisao poruku!",
         "page": "Stranica",
-        "unknown": "nepoznato"
+        "unknown": "nepoznato",
+        "modify-playing-song": ":x: Ne možeš izmijeniti trenutnu pjesmu.",
+        "song-no-exist": "Nema pjesme na poziciji `{{- position}}`"
     },
     "help": {
         "intro": "Idemo se zabavljati zajedno na ovome Discordu (/^▽^)/ odaberite kategoriju naredbi s {{pre}}help \"broj naredbe\" da saznate više:",
         "intro_2": "Bok, ja sam",
-        "support": "[PODRŠKA]",
+        "support": {
+            "short": "Da ti link u support server",
+            "usage": "{{- prefix}}support"
+        },
         "bug": "dobi link za \"support Discord\"",
         "help": {
             "short": "Dobij pomoć za jednu naredbu ili listu naredbi",
@@ -45,10 +50,10 @@
         },
         "music": "[MUZIKA]",
         "voice": "Pridružim ti se u Glasovnom Kanalu u kojem si trenutno (uobičajene naredbe za glazbu natjeraju Bota da dođe u vašu Glasovnu Sobu također)",
-        "silent": "Ja ću izaći iz Glasovnog Kanala u kojoj sam trenutno spojena. (samo se može koristiti s ulogom WolkeBot)",
-        "play": "Pusti neku pjesmu s Youtube-a/Soundcloud-a/Osu-a/tražilicom",
+        "silent": "Ja ću izaći iz Glasovnog Kanala u kojem sam trenutno spojena. (samo iskoristivo s WolkeBot rankom)",
+        "play": "Pusti nešto s Youtube-a/Soundcloud-a/Osu-a/tražilice",
         "pause": "Pauziraj trenutnu pjesmu.",
-        "resume": "Odustavi pauziranu pjesmu.",
+        "resume": "Nastavi pauziranu pjesmu.",
         "volume": "Postavi zvuk Bota između 1 i 200 (samo se može koristiti s WolkeBot ulogom)",
         "forever": "Pusti pjesmu da svira na ponavljanju dok se ne doda nova, samo se može koristiti s ulogom WolkeBot.",
         "search": "Potraži pjesmu u databazi Bota i pokaži najboljih 5 rezultata.",
@@ -66,8 +71,16 @@
         "mod": "Mod cp.",
         "mod-info": "Ovim naredbama je potrebno da korisnik ima Discord ulogu zvanom WolkeBot.",
         "info": "Daje informacije o trenutnom serveru.",
-        "ban": "Zabrani pristup korisniku i briše poruke 7 dana od njihovih poruka.",
-        "kick": "Izbacuje korisnika.",
+        "ban": {
+            "short": "Bana korisnika",
+            "usage": "{{- prefix}}ban <korisnik> [-t danDoBrisanja] [-r auditLogRazlog]",
+            "example": "`{{- prefix}}ban @peter -t 2d -r Spam` bana Petra i briše njegove poruke u zadnjih 2 dana koje je pisao, razlog 'Spam' će biti vidljiv u audit logovima\n`{{- prefix}}ban subaru -t 7d -r wrong girl boy` bana Subara i briše poruke koje je pisao u zadnjih 7 dana, razlog 'wrong girl boy' će biti vidljiv u audit logovima"
+        },
+        "kick": {
+            "short": "Kicka korisnika",
+            "usage": "{{- prefix}}kick <korisnikr> [-r auditLogRazlog]",
+            "example": "`{{- prefix}}kick @peter -r Spam` kicka Petra i stavlja razlog 'Spam' u audit logove"
+        },
         "rm": "Miče poruku, možete filtrirati za botove, korisnike, naredbe/odgovore od Rem ili samo briše do 100 poruka.\nFiltri: -b -> Botovi| -r -> Poruke od Rem| -u @korisnik -> Poruke određenog korisnika| -c -> Poruke koje počinju s Reminim prefixom.",
         "noLevelServer": "Onemogućuje sistem razina za cijeli server, upotrijebi ovu naredbu opet da se ponovo uspostavi.",
         "noPmServer": "Onemogućuje PM obavijesti za cijeli server, upotrijebi ovu naredbu opet da se ponovo uspostavi.",
@@ -88,8 +101,16 @@
         "cookie": "Daje keks spomenutoj osobi ili pokazuje tvoje kekse ako nitko nije spomenut.",
         "eatCookie": "Pojedeš kekes.",
         "git": "Da ti link od github-a od Rem.",
-        "roll": "Baci broj između nula i broja, ako nema broj onda će biti 10.",
-        "8ball": "Magična 8ball loptica ti da mišljenje o tvojem pitanju.",
+        "roll": {
+            "short": "Baci broj između 0 i odabranog broja, ako nema danog broja onda će biti baćeno do 10",
+            "usage": "{{- prefix}roll [broj]",
+            "example": "`{{- prefix}roll` Baca broj izemeđu 0 i 10\n`{{- prefix}roll 100` Baca broj između 0 i 100"
+        },
+        "8ball": {
+            "short": "Da ti odgovori magične 8ball loptice",
+            "usage": "{{- prefix}}8ball [tvoje pitanje]",
+            "example": "`{{- prefix}}8ball Za il' ne?`"
+        },
         "garfield": "Da ti slučajni Garfield strip.",
         "cat": "Da ti slučajnu sliku mačke. Svkome od nas treba mačka!",
         "hug": "Zagrli nekoga :>",
@@ -109,7 +130,7 @@
         "proxer": "[PROXER]",
         "no-cat": "[NEKATEGORIZIRANO]",
         "ping": {
-            "short": "Da ti ping bota, ali to **nije** ping voice-a.",
+            "short": "Da ti ping bota, ali to nije ping voice-a.",
             "usage": "{{- prefix}}ping"
         },
         "lewd": "Jako nepristojno uwu",
@@ -118,7 +139,11 @@
         "gr": "Postavi pozdrav sa set greetingMessage,{{user}} će biti zamijenjeno s korisnikom koji se pridružo i {{guild}} uz naziv servera.\nPozdrav će biti u kanalu gjde je cmd bio izvršen.",
         "fw": "Postavi oproštaj sa set greetingMessage,{{user}} će biti zamijenjeno s korisnikom koji se pridružo i {{guild}} uz naziv servera.\nOproštaj će biti u kanalu gjde je cmd bio izvršen.",
         "s": "Naredba servera, postavlja stvari kao npr. pozdrave i oproštaje.",
-        "shrug": "¯\\_(ツ)_/¯ ",
+        "shrug": {
+            "short": "Da ti shrug ¯\\_(ツ)_/¯ s odabranom poruku ispred",
+            "usage": "{{- prefix}}shrug [poruka]",
+            "example": "`{{- prefix}}shrug` Rem šalje `¯\\_(ツ)_/¯ `\n`{{- prefix}}shrug meh` Rem šalje `meh ¯\\_(ツ)_/¯`"
+        },
         "flip": "\n(╯°□°）╯︵ ┻━┻ ",
         "eggplant": "Samo patlidžan",
         "gtn": "Daje ti slučajan strip od Green Tea Neko-a, samo se može koristiti u NSFW konfiguriranim kanalima ili Admin.",
@@ -127,18 +152,30 @@
         "bot": "Da ti neke informacije o Rem, uptime i neke korisne linkove.",
         "top": "Prikazuje prvih 10 cehova (razvrstani po korisnicima) krhotinom povezano.",
         "about": "Prikazuje ti osnovne informacije o meni, kao knjižnica i tko me je napravio.",
-        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lenny": {
+            "short": "Da lenny face ( ͡° ͜ʖ ͡°) s odabranom porukom ispred nje",
+            "usage": "{{- prefix}}lenny [poruka]",
+            "example": "`{{- prefix}}lenny` Rem šalje `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny hey there` Rem šalje `hey there ( ͡° ͜ʖ ͡°)`"
+        },
         "lmg": "\"Let me google that for you\"",
         "fskip": "Preskače trenutnu pjesmu/broj pjesme/sve pjesme",
         "leave": "Izađem is glasovnog kanala u kojem sam trenutno povezana.",
-        "say": "Natjeraj Rem da kaže nešto.",
+        "say": {
+            "short": "Natjeraj Rem da nešto kaže",
+            "usage": "{{- prefix}}say <poruka>",
+            "example": "`{{- prefix}}say Rem je najbolja cura`"
+        },
         "ar": "Dodaj ulogu sebi ili korisniku.",
         "cr": "Izradi ulogu ili doda ulogu Botu, -d -> zadano, -l 2 -> daje ulogu korisniku nakon što je dostigao razinu 2, -s -> napravi ulogu samododjeljivu, npr. -> cr -l 20 \"ime uloge\", doda ulogu koju korisnik dobije s razinom 20 zvanom \"ime uloge\".",
         "lr": "Prikaže sve uloge koje su povezane s Rem u tom trenutku.",
         "rr": "Briše uloga s tebe, drugoga korisnika ili sa Servera.",
         "roles": "[ULOGE]",
         "repeat": "Reproducira pjesmu/red da se ponavlja dok se nove pjesme ne dodaju u red.",
-        "sayd": "Natjeraj Rem da kaže nešto i da izbriše tvoju naredbu.",
+        "sayd": {
+            "short": "Natjeraj da Rem kae nešto što si odlučio i onda briše tvoju naredbu",
+            "usage": "{{- prefix}}sayd <poruka>",
+            "example": "`{{- prefix}}sayd Subaru ? Ne znam nikakvog Subaru-a ¯\\_(ツ)_/¯`"
+        },
         "generic": "[GENERIČNO]",
         "fun": "[ZABAVA]",
         "coin": "okrene novčić za tebe",
@@ -165,7 +202,11 @@
         "stare": "*buljenje...*",
         "nom": "Njam :>",
         "potato": "Svatko hoće krupmir.",
-        "choose": "Natjeraj Rem da izabere nešto za tebe, razdvoji izbore s `;`",
+        "choose": {
+            "short": "Rem će nešto učiniti za tebe",
+            "usage": "{{- prefix}}choose <odabir 1>;<odabir 2>[;][odabir 3]...",
+            "example": "`{{- prefix}}choose rem; ram` Rem će odabrati `rem` ili `˛ram`"
+        },
         "tickle": "*Škakljanje*",
         "image": "[NAREDBE ZA SLIKE]",
         "define": "Da ti definiciju pojma s Urbandictionary",
@@ -208,10 +249,34 @@
             "playlist": "[PLAYLISTA]",
             "image": "[NAREDBE ZA SLIKE]"
         },
-        "introduction": ":wave: **Hej, ja sam {{- name}}**, hajmo se zajedno zabaviti na Discord-u (/^▽^)/"
+        "introduction": ":wave: **Hej, ja sam {{- name}}**, hajmo se zajedno zabaviti na Discord-u (/^▽^)/",
+        "invite": {
+            "short": "Da ti link u Rem server",
+            "usage": "{{- prefix}}add"
+        },
+        "softban": {
+            "short": "Bana i odmah unbana, korisno za dane pruninga poruka spammera ili slično",
+            "usage": "{{- prefix}}softban <korisnik> [-t daniDoBrisanja] [-r auditLogRazlog]",
+            "example": "`{{- prefix}}softban @peter -t 2d -r Spam` bana Petra i briše poruke koje je pisao u zadnjih 2 dana i unbana ga, stavlja razlog 'Spam' u audit logove"
+        },
+        "char": {
+            "short": "Da ti informacije o anime/manga liku",
+            "usage": "{{- prefix}}char <imelika>",
+            "example": "`{{- prefix}}char eren jaeger`"
+        },
+        "qm": {
+            "short": "Pomakne pjesmu u redu",
+            "usage": "{{- prefix}}qm <oldPosition> <newPosition>",
+            "example": "`{{- prefix}}qm 4 2` Pomakne 4. pjesmu u redu na 2. mjesto na poziciji."
+        },
+        "ship": {
+            "short": "Ship two people together",
+            "usage": "{{- prefix}}ship <korisnik1> <korisnik2>",
+            "example": "`{{- prefix}}ship Rem Subaru` Shippa korisnika nazvanim Rem i korisnika nazvanim Subaru"
+        }
     },
     "version": "Trenutno poslužujem na verziji {{version}}",
-    "add": "Koristi ovaj link da me dodaš na svoj Server: {{- link}} ",
+    "add": "Koristi ovaj link da me dodaš na svoj Server: `{{- link}}`",
     "bug": "Molim prodruži se Support Discordu: prijavi greške na {{- link}}",
     "level": {
         "result": "Ti si **razina {{level}}** XP: **{{current}}XP**/**{{needed}}XP** Ukupni XP:**{{total}}** ",
@@ -222,43 +287,70 @@
         "error": "Dogodila se pogreška dok sam se pokušavala spojit na tvoj glasovni kanal.",
         "permission": "Nema dozvola! Moraš dati sebi ulogu WolkeBot da možeš to koristiti.",
         "no-voice": "Nisi u nikojem glasovnom kanalu.",
-        "already-voice": "Već sam spojena u glasovni kanal, pomakni me da to promijeniš!"
+        "already-voice": "Već sam spojena u glasovni kanal, pomakni me da to promijeniš!",
+        "join_region": ":microphone: Upravo sam se povezala na tvoj voice channel koristeći voice node `{{- node}}`"
     },
     "nsfw-images": {
         "nothing-found": "Nema nađenih slika s tagom: `{{tags}}`",
         "no-nsfw-channel": "Molim postavi/dodaj NSFW kanal s {{- prefix}}setLewd (u jednom od NSFW kanala) da možeš koristiti NSFW naredbe.",
         "error-body": "Dogodila se pogreška prilikom obrade api odgovor. Molimo pokušajte ponovo, ako se problem nastavi kontaktiraj Wolke#6746",
-        "error-discord-not-nsfw-channel": ":x: NSFW naredbe se mogu samo koristiti u kanalima koji su označeni kao NSFW u skladu s Discordovim pravilima.",
+        "error-discord-not-nsfw-channel": ":x: NSFW naredbe se mogu samo koristiti u kanalima koji su označeni kao NSFW u skladu s Discordovim pravilima.\n\nDiscord pravila:\n<https://discordapp.com/guidelines>",
         "error-discord-tos-conflict": ":x: Ovo nije dozvoljeno radi Discordovih pravila.\n\nDiscord pravila se mogu pronaći ovdje:\n<https://discordapp.com/guidelines>"
     },
     "8ball": {
         "answers": [
-            "Ne.",
-            "Da.",
-            "Možda.",
-            "Ne mislim da je tako.",
-            "Totalno ne.",
-            "Samo učini to.",
-            "To je odlična ideja.",
-            "Jesi li siguran u to?"
+            "Sigurno",
+            "Očito",
+            "Bez sumlje",
+            "Da naravno",
+            "Možeš računati na to",
+            "A vidim to, da",
+            "Vjerojatno",
+            "Izgleda dobro",
+            "Da",
+            "Znak pokazuje na da",
+            "Odgovor mutan, probaj opet",
+            "Pitaj ponovo kasnije",
+            "Bolje da ti ne kažem",
+            "Ne mogu predvidjeti sada",
+            "Koncentriraj se i pitaj ponovo",
+            "Ne računaj na to",
+            "Moj odgovor je ne",
+            "Moji izvori kažu ne",
+            "Izgleda loše",
+            "Jako sumljivo"
         ],
         "no-message": "Nisi ukucao pitanje."
     },
     "ban": {
-        "success": "Zabranjen pristup korisniku {{user}}",
-        "privilege": "Moja uloga mi ne daje pravo da zabranjujem pristup {{user}} !",
+        "success": ":white_check_mark: Banan korisnik {{user}}",
+        "privilege": ":no_entry_sign: Tvoja uloga je u nižoj poziciji nego uloga korisnika kojeg si pokušao kickat ili ti fali `ban members` dozvola",
         "err": "Pogrešk se dogodila dok si pokušavao zabranitt pristup {{user}} !",
         "perms": "Ne možeš zabranit pristup vlasniku ili ikome tko ima WolkeBot ulogu.",
-        "self": "Ne možeš mi zabraniti pristup s mojom vlastitom naredbom.",
-        "no-mention": "Molim spomeni osobu kojoj želiš zabranit pristup."
+        "self": ":sweat_smile: Ne možeš me banat s mojom vlastitom naredbom.",
+        "no-mention": "Molim spomeni osobu kojoj želiš zabranit pristup.",
+        "privilege_self": ":no_entry_sign: Moja uloga nema pravo da banam `{{user}}`",
+        "privilege_self_discord": ":x: Nemam dozvolu da banam članove",
+        "privilege_owner": ":no_entry_sign: ne mogu banat vlasnika",
+        "error": ":x: Pogreška se dogoli pri bananju {{user}} !",
+        "self-user": ":sweat_smile: ne možeš sebe banat",
+        "default-reason": "Korisnik {{- user}} je dobio ban od {{- mod}}",
+        "reason": "Korisnik {{- user}} je dobio ban od {{- mod}} s razlogom: {{- reason}}"
     },
     "kick": {
-        "success": "Izbačeni korisnik {{user}}",
-        "privilege": "Moja uloga mi ne daje pravo da izbacujem {{user}} !",
+        "success": ":white_check_mark: Izbačeni korisnik {{user}}",
+        "privilege": ":no_entry_sign: Tvoja uloga je u nižoj poziciji nego uloga korisnika kojeg si pokušao kickat ili ti fali `kick members` dozvola",
         "err": "Pogreška se dogolia pri pokušavanju izbačenja {{user}} !",
         "perms": "Ne možeš izbaciti vlasnika ili ikoga s WolkeBot ulogom.",
-        "self": "Ne možeš me izbaciti s mojom vlastitom narednom.",
-        "no-mention": "Molim spomeni osobu koju želiš izbaciti."
+        "self": ":sweat_smile: Ne možeš me izbaciti s mojom vlastitom narednom.",
+        "no-mention": "Molim spomeni osobu koju želiš izbaciti.",
+        "privilege_self": ":x: Nemam dozvolu za kickanje",
+        "privilege_self_discord": ":x: Nemam dozvolu za kickanje članova",
+        "privilege_owner": ":no_entry_sign: Ne mogu kickat vlasnika",
+        "error": ":x: Dogodila se pogreška pri pokušavanju kickanja {{user}} !",
+        "self-user": ":sweat_smile: Ne možeš kickat sebe",
+        "default-reason": "Korisnik {{- user}} je dobio kick od {{- mod}}",
+        "reason": "Korisnik {{- user}} je dobio kick od {{- mod}} s razlogom: {{- reason}}"
     },
     "roll": {
         "whole-number": "Molim dodaj cijeli broj!",
@@ -269,7 +361,7 @@
         "nothing-found": "Niti jedna pjesma pronačeno s ovim pojmom za pretraživanje `{{search}}`",
         "empty-search": "Nisi ukucao link/pojam za traženje",
         "started-download": "Pokrenuto skidanje `{{- url}}`",
-        "success": "Postavljeno u red: **{{- song}}** "
+        "success": "Postavljeno u red: **{{- song}}** zahtjev od: **{{- user}}**"
     },
     "rq": {
         "db-error": "Pogreška u databazi se dogodila.",
@@ -308,8 +400,8 @@
         "available-languages": "Lista dostupnih jezika\nMolim pazi da setLang treba shortcode"
     },
     "np": {
-        "song-duration": "Trenutno reproducira: ` {{- title}} {{current}}/{{duration}} {{repeat}} `",
-        "song": "Trenutno reproducira: `{{-title}} {{repeat}}`",
+        "song-duration": "Trenutno reproducira: ` {{- title}} {{current}}/{{duration}} {{repeat}} `\nzahtjev od: {{- user}}",
+        "song": "Trenutno reproducira: `{{-title}} {{repeat}}` zahtjev od: **{{-user}}**",
         "repeat-on": "ponavljanje:uključeno",
         "repeat-single": "ponavljanje: jedan put",
         "repeat-queue": "ponavljanje: red",
@@ -318,7 +410,8 @@
         "emoji-repeat-off": ":heavy_check_mark: Ponavljanje: isključeno"
     },
     "queue": {
-        "queued": "U redu:"
+        "queued": "U redu:",
+        "by": "zahtjev od: {{- user}}"
     },
     "rem-lewd": {
         "no-nsfw": "Nema još NSFW kanala.",
@@ -364,7 +457,8 @@
         "lib": "Knjižnica",
         "voice_active": "AVC",
         "voice_s": "VC (krhotina)",
-        "voice_active_s": "AVC (krhotina)"
+        "voice_active_s": "AVC (krhotina)",
+        "top_donators": "Top Donatori:"
     },
     "rank": "Možeš nači Leaderboard za ovaj Server ovdje: {{- link}}",
     "pp": {
@@ -390,9 +484,9 @@
     "leave": "Ok, izašla sam iz glasovnog kanala.",
     "play": {
         "no-result": "Pjesma nije nađena!",
-        "playing": ":musical_note: Reproducira se **{{- song}}** ",
-        "success": ":musical_note: Trenutno reproduciranje **{{- song}}** ",
-        "next": ":musical_note: Reproducira sljedeće **{{- song}}**"
+        "playing": ":musical_note: Reproducira se **{{- song}}** zahtjev od: **{{- user}}**",
+        "success": ":musical_note: Trenutno reproduciranje **{{- song}}** zahtjev od: **{{- user}}**",
+        "next": ":musical_note: Reproducira sljedeće **{{- song}}** zahtjev od: **{{- user}}**"
     },
     "prefix": {
         "success": "Ok, upravo sam postavila prefix na {{- prefix}}, pokušaj `{{- prefix}}ping` da provjeriš.",
@@ -438,7 +532,12 @@
         "nothing-found": "Nisam mogla naći poruku koja odgovara filtru"
     },
     "search": {
-        "success": "Pronađene sljedeće pjesme:"
+        "success": "Pronađene sljedeće pjesme:",
+        "user": ":mag: **Traženje korisnika**",
+        "role": ":mag: **Traženje uloga**",
+        "channel": ":mag: **Traženje kanala**",
+        "no-results": ":mag: Tvoja potraga nije dala nikakav rezultat.",
+        "anime": ":mag: **Animesearch**"
     },
     "set-lewd": {
         "success": "Uspješno dodan {{- channel}} u NSFW kanale!"
@@ -551,11 +650,13 @@
             "role": "uloga",
             "channel": "kanal"
         },
-        "success": "Ok, upravo sam dodala dozvolu `{{- node}}` `{{- allowed}}` u `{{- type}}` `{{- name}}`",
-        "wrong-node": "Taj čvor dozvola `{{- node}}` neće raditi, zato što nije valjan čvor dozvola. Da dobiješ čvor dozvola za tip naredbe koristi `{{- prefix}}getNode naredba`",
+        "success": ":ok_hand: Ok, upravo sam dodala dozvolu `{{- node}}` `{{- allowed}}` u `{{- type}}` `{{- name}}`",
+        "wrong-node": "Taj čvor dozvola `{{- node}}` neće raditi, zato što nije valjan čvor dozvola. Da dobiješ čvor dozvola za tip naredbe koristi ``{{- prefix}}getNode <naredba>``",
         "target-not-found": "Nisa mogla naći cilj {{- target}} za ovu naredbu.",
         "no-allowance-set": "Nisi mi rekao je li se dozvola može dopustiti ili ne, dodaj `true` ili `false` ovisno o tvom izboru.",
-        "missing-args": "Pravilna sintaksa za ovu naredbu je `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\nPrimjer:\n```{{-prefix}}ap playlist.* true -> dopušta sve naredbe u kategoriji playliste u serveru\n{{-prefix}}ap music.fskip -u @user true -> dupošta spomenutoj osobi da koristi {{- prefix}}fskip``` "
+        "missing-args": "Molim pokreni `{{- prefix}}help ap` da se više informiraš o načinu kako pokrenuti ovu naredbu točno",
+        "add-defaults": ":eyes: Upravo sam skužila da nisi dodao nikakve dozvole do sada, budući da ti je ovo prva dozvola hoćeš li zadržati zadane dozvole?\nTo uključuje sljedeće dozvole:\n```{{perm_list}}```",
+        "success-defaults": ":ok_hand: Ok, upravo sam dodala dozvolu `{{- node}}` `{{- allowed}}` u `{{- type}}` `{{- name}}`\nRekao si mi da zadržim zadano pa sam to i učinila"
     },
     "reset-perms": {
         "nothing-found": "Nemaš dozvola još.",
@@ -581,5 +682,27 @@
     },
     "manga": {
         "chapters": "Poglavlja"
+    },
+    "menu": {
+        "guide": "Odgovori s brojem opcije koju želiš odabrati.",
+        "disclaimer": "Napiši 'c' ili bilo koju naredbu za Rem da izađeš iz ovog menu-a, automatski će se zatvoriti za 5 minuta.",
+        "yes-no-question": "Odgovori s 'yes' ili 'no' ovisno o odabiru, upiši 'c' ili bilo koju drugu Rem naredbu da bi odkazao ovu naredbu, automatski će se zatvoriti za 5 minuta."
+    },
+    "softban": {
+        "success": ":white_check_mark: Softbanan korisnik {{user}}",
+        "error": ":x: Pogreška se dogodila pri pokušavanja bananja {{user}} !",
+        "error-unban": ":x: Pogreška se dogodila pri pokušaju unbananja {{user}} !",
+        "default-reason": "Korisnik {{- user}} je dobio softban od {{- mod}}",
+        "reason": "Korisnik {{- user}} je dobio softban od {{- mod}} s razlogom: {{- reason}}",
+        "auto-unban": "Automatski unbanan {{- user}}"
+    },
+    "ship": {
+        "single": "Žao mi je da te vidim samog {{- user}} :<",
+        "success": "Lovely Shipping~ Your shipname is **{{- shipname}}**"
+    },
+    "qm": {
+        "missing-args": "Trebaš mi reći koje pjesme da pomaknem kamo, da dobiješ točan način korištenja za ovu naredbu pokreni `{{- prefix}}help qm`",
+        "current": "Ne možeš pomaknuti trenutnu pjesmu :<",
+        "success": "Pomjerena pjesma `{{- song}}` s pozicije `{{- start}}` na poziciju `{{- end}}`"
     }
 }
