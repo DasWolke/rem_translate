@@ -3,7 +3,7 @@
         "error": ":x: May maling naganap!",
         "no-pm": ":no_entry: Ang Command na ito ay hindi gagana sa mga pribadong channel!",
         "whole-num": ":no_entry_sign: Gumamit ng buo na numero!",
-        "nan": ":no_entry_sign: Kung ano man ang ipinadala mo, lagyan mo lamang ng buong numero :) ",
+        "nan": ":no_entry_sign: Kung ano man ang ipinadala mo, lagyan mo lamang ng buong numero. :) ",
         "no-song-in-queue": ":no_entry_sign: Walang kantang nakapila, siguro magdagdag ka :musical_note:?",
         "no-song-playing": ":musical_note: Walang kantang gumagana sa ngayon!",
         "no-permission": ":no_entry_sign: Wala kang permiso para gamitin ang command, pakiusap idagdag ang permisong `{{- node}}` sa sarili upang magamit ito.",
@@ -19,7 +19,7 @@
         "abort": ":x: kinansela",
         "cat-nope": ":no_entry_sign: Ang kategoryang ito ay wala pa!",
         "mention": "Pakiusap magbanggit ng user.",
-        "cancelled-command": "Ipinatigil ang command.",
+        "cancelled-command": ":x: Ipinatigil ang command.",
         "donate": "Donate",
         "support": "Supporta",
         "invite": "Ma-anyaya",
@@ -27,17 +27,22 @@
         "native-name": "Filipino",
         "empty-say": ":no_entry_sign: Wala kang inilagay na mensahe!",
         "page": "Pahina",
-        "unknown": "unkown"
+        "unknown": "unkown",
+        "modify-playing-song": ":x: Hindi maaaring baguhin ang kasalukuyang tumutugtog na kanta",
+        "song-no-exist": "Walang kanta sa posisyon na `{{- position}}`"
     },
     "help": {
         "intro": "magsaya tayo dito sa Discord (/^▽^)/ pumili ng kategorya sa pamamagitan ng pagsagot ng numero ng {{pre}}help command para sa karagdagang impormasyon:",
         "intro_2": "Kamusta, ako si",
-        "support": "[SUPORTA]",
+        "support": {
+            "short": "Magbibigay ng invite link ng support server",
+            "usage": "{{- prefix}}support"
+        },
         "bug": "kunin ang Link ng support discord",
         "help": {
             "short": "Kunin ang help para sa isang command o kunin ang listahan ng commands",
             "usage": "{{prefix}}help [command]",
-            "example": "`{{prefix}}help` Ibibigay ang listahan ng commands na nakaayos ayon sa kategorya\n`{{prefix}}help ping` Magbibigay ng impormasyaon tungkol sa `ping` command"
+            "example": "`{{prefix}}help` Magbibigay ng listahan ng commands na nakaayos ayon sa kategorya\n`{{prefix}}help ping` Magbibigay ng impormasyon tungkol sa `ping` command"
         },
         "add": {
             "short": "Magbibigay ng invite link ni Rem",
@@ -61,13 +66,21 @@
         "rq": "Magdadagdag ng Kanta/ilang mga kanta sa Pila",
         "stream": "Magsi-stream ang napiling Internet radio, maaaring maghanap ng mga radyo o diretsong idagdag sa pamamagitan ng pagdagdag ng -u url sa command",
         "youtube": "[YOUTUBE]",
-        "yts": "Hahanapin sa Youtube at ibibigay sayo ang Unang Resulta",
+        "yts": "Hahanapin sa Youtube at ibibigay ang Unang Resulta",
         "ytq": "Hahanapin sa Youtube at idadagdag sa Unang Resulta ng Pila",
         "mod": "Ang Mod cp",
         "mod-info": "Ang mga Commands na ito ay nangangailangan na ang manggagamit ay may Discord Role pangalang WolkeBot",
         "info": "magbibigay ng ilang impormasyon tungkol sa kasalukuyang samahan",
-        "ban": "Permanenteng Paaalisin ang Mangagamit at buburahin ang 7 Araw ng kanyang mga mensahe",
-        "kick": "Magpapaalis ng User",
+        "ban": {
+            "short": "Magba-ban ng user",
+            "usage": "{{- prefix}}ban <user> [-t daysToDelete] [-r auditLogReason]",
+            "example": "`{{- prefix}}ban @peter -t 2d -r Spam` ay magba-ban kay peter at buburahin ang huling 2 araw ng mga mensahe, ang dahilang 'Spam' ay makikita sa audit logs\n`{{- prefix}}ban subaru -t 7d -r wrong girl boy` ay magba-ban kay subaru at buburahin ang huling pitong araw ng mga mensahe, ang dahilang 'wrong girl boy' ay makikita sa audit logs"
+        },
+        "kick": {
+            "short": "Magpatalsik ng user",
+            "usage": "{{- prefix}}kick <user> [-r auditLogReason]",
+            "example": "`{{- prefix}}kick @peter -r Spam` ay magpapatalsik kay peter at ilalagay ang rason na 'Spam' sa audit logs"
+        },
         "rm": "Magtatanggal ng mga mensahe, maaaring salain ang bots, users, commands/tugon ni rem o burahin hanggang 100 ng mga mensahe.\nMga Pagsasala:\n-b -> bots|\n-r -> mga mensahe mula kay rem|\n-u @user -> mga mensahe mula sa isang user|\n-c -> mga mensahe na nagsisimula sa prefix ni rem.",
         "noLevelServer": "Papatigilin ang level system para sa buong server, gamitin ulit ang command upang muling paganahin ito",
         "noPmServer": "Papatigilin ang pm notifications para sa buong server, gamitin ulit ang command upang muling paganahin ito",
@@ -88,8 +101,16 @@
         "cookie": "Magbibigay ng biskwit sa nabanggit na user o ipapakita ang iyong mga biskwit kung walang taong nabanggit.",
         "eatCookie": "Kumain ng Biskwit",
         "git": "Magbibigay ng github link ni Rem",
-        "roll": "Magpapagulong ng numero sa pagitan ng zero at numero, kung walang numero ito ay mula sa 10",
-        "8ball": "Magbibigay ng Opinyon ng magic 8ball sa katanungan",
+        "roll": {
+            "short": "Magpapagulong ng numero sa pagitan ng zero at ng ibinigay na numero, kapag walang numero na ibinigay, ito ay pagugulungin ",
+            "usage": "{{- prefix}roll [numero]",
+            "example": "`{{- prefix}roll` Magpapagulong ng numero sa pagitan ng 0 at 10\n`{{- prefix}roll 100` Magpapagulong ng numero sa pagitan ng 0 at 100"
+        },
+        "8ball": {
+            "short": "Magbibigay ng opinyon ng magic 8ball sa isang katanungan",
+            "usage": "{{- prefix}}8ball [ang iyong katanungan]",
+            "example": "`{{- prefix}}8ball Manok o walang manok ?`"
+        },
         "garfield": "Magbibigay ng garfield comic",
         "cat": "Magpapadala ng imahe ng pusa. Lahat tayo't kailangan ng mga pusa!",
         "hug": "Yakapin ang isang tao :>",
@@ -109,7 +130,7 @@
         "proxer": "[PROXER]",
         "no-cat": "[WALANG KATEGORYA]",
         "ping": {
-            "short": "Ibibigay ang ping ng bot, ito ay **hindi** ang voice ping.",
+            "short": "Magbibigay ng ping ng bot, ito ay hindi ang voice ping.",
             "usage": "{{- prefix}}ping"
         },
         "lewd": "Masyadong mahalay uwu",
@@ -118,7 +139,11 @@
         "gr": "Itakda ang pagbati sa pamamagitan ng set greetingMessage, {{user}} ay mapapalitan ng user sumali at {{guild}} ng pangalan ng server. Ang pagbati ay nasa Channel, kung saan ang command ay isinagawa.",
         "fw": "Itakda ang pamamaalam sa pamamagitan ng set farewellMessage,{{user}} ay mapapalitan ng user na umalis at {{guild}} ng pangalan ng server. Ang pamamaalam ay nasa channel, kung saan ang command ay isinagawa.",
         "s": "Ang server command, pagtatakda ng mga bagay tulad ng pagbati at pamamaalam",
-        "shrug": "¯\\_(ツ)_/¯",
+        "shrug": {
+            "short": "Magbibigay ang shrug ¯\\_(ツ)_/¯ na may kasamang opsyonal na mensahe sa unahan nito",
+            "usage": "{{- prefix}}shrug [mensahe]",
+            "example": "`{{- prefix}}shrug` Si Rem ay magpapadala ng `¯\\_(ツ)_/¯ `\n`{{- prefix}}shrug meh` Si Rem ay magpapadala ng `meh ¯\\_(ツ)_/¯`"
+        },
         "flip": "(╯°□°）╯︵ ┻━┻",
         "eggplant": "isang talong lamang",
         "gtn": "Magbibigay ng green tea neko comic, magagamit lamang ng naisaayos na NSFW Channel o ng Admin.",
@@ -127,18 +152,30 @@
         "bot": "Magbibigay ng ilang impormasyon tungkol kay Rem, ang uptime at ilang magagamit na links.",
         "top": "Ipapakita ang 10 pinakamataas na guilds (nakasalansan ayon sa users) na ang shard na ito ay konektado",
         "about": "Ipapakita ang pangunahing impormasyon tungkol sa akin, katulad ng library at kung sinong gumawa sa akin.",
-        "lenny": "( ͡° ͜ʖ ͡°)",
+        "lenny": {
+            "short": "Magbibigay ng lenny face ( ͡° ͜ʖ ͡°) na may kasamang opsyonal na mensahe sa unahan nito",
+            "usage": "{{- prefix}}lenny [mensahe]",
+            "example": "`{{- prefix}}lenny` Si Rem ay magpapadala ng  `( ͡° ͜ʖ ͡°)`\n`{{- prefix}}lenny hey there` Si Rem ay magpapadala ng `hey there ( ͡° ͜ʖ ͡°)`"
+        },
         "lmg": "Igu-google ko 'yan para sa'yo",
         "fskip": "Lalaktawan ang Kasalukuyang Kanta/ ilang mga kanta/ lahat ng mga kanta",
         "leave": "Aalis ako sa Voice Channel na ako ay kasalukuyang nakakonekta.",
-        "say": "Gawing si Rem ay magsabi ng kung ano",
+        "say": {
+            "short": "Gawing si Rem ay magsabi ng kahit ano",
+            "usage": "{{- prefix}}say <message>",
+            "example": "`{{- prefix}}say Si Rem ang pinakamahusay`"
+        },
         "ar": "Magdagdag ng tungkulin sa iyong sarili o sa user",
         "cr": "Lumikha ng tungkulin o magdagdag ng tungkulin sa bot, -d -> default, -l 2 -> magbibigay ng tungkulin sa user pag naabot nya ang level 2, -s -> gawing ang tungkulin ay sariling maitalaga, halimbawa -> cr -l 20 rolename, magdagdag ng tungkuling makukuha ng user sa level 20 na matatawag na rolename",
         "lr": "Ililista ang lahat ng tungkulin na nakadugtong kay Rem sa ngayon",
         "rr": "Magtatanggal ng tungkulin mula sa iyong sarili, sa ibang user o sa server",
         "roles": "[MGA TUNGKULIN]",
         "repeat": "Magpapatugtog ng kanta/ng queue ng paulit-ulit hanggang may mga bagong maidagdag sa queue",
-        "sayd": "Gawing si Rem ay may sabihin at burahin ang iyong command",
+        "sayd": {
+            "short": "Gawing si Rem ay magsabi ng kahit anong gusto mo at burahin ang iyong command",
+            "usage": "{{- prefix}}sayd <mensahe>",
+            "example": "`{{- prefix}}sayd Subaru? Wala akong alam na kahit sinong Subaru ¯\\_(ツ)_/¯`"
+        },
         "generic": "[PANGKARANIWAN]",
         "fun": "[KATUWAAN]",
         "coin": "magpapapilantik ng barya para sa'yo",
@@ -165,7 +202,11 @@
         "stare": "titiiiiig...",
         "nom": "Nom :>",
         "potato": "Lahat ng mga tao gusto ay patatas",
-        "choose": "Ipapili mo si Rem para sa iyo, hatiin ang pagpipilian gamit ng `;`",
+        "choose": {
+            "short": "Gawing si Rem ang papiliin para sayo",
+            "usage": "{{- prefix}}choose <choice 1>;<choice 2>[;][choice 3]...",
+            "example": "`{{- prefix}}choose rem; ram` Papiliin si rem kung `rem` o `ram`"
+        },
         "tickle": "Kiliti Kiliti Kiliti",
         "image": "[IMAGE COMMANDS]",
         "define": "Kukuha ng kahulugan ng salita galing sa Urbandictionary",
@@ -208,7 +249,31 @@
             "playlist": "[PLAYLIST]",
             "image": "[IMAGE COMMANDS]"
         },
-        "introduction": ":wave: **Kumusta Ako si {{- name}}**, magsaya tayo dito sa Discord (/^▽^)/\n\nBilang panimula, i-type ang `{{- prefix}}help [command]` upang makakuha ng impormasyon tungkol sa command, halimbawa: `{{- prefix}}help ping`"
+        "introduction": ":wave: **Kumusta Ako si {{- name}}**, magsaya tayo dito sa Discord (/^▽^)/\n\nBilang panimula, i-type ang `{{- prefix}}help [command]` upang makakuha ng impormasyon tungkol sa command, halimbawa: `{{- prefix}}help ping`",
+        "invite": {
+            "short": "Magbibigay ng invite link ni Rem",
+            "usage": "{{- prefix}}add"
+        },
+        "softban": {
+            "short": "Magba-ban at agad na tatanggalin mula sa pagkakaban ng user, magagamit para sa pruning days ng mga mensahe ng spammer o kahalintulad",
+            "usage": "{{- prefix}}softban <user> [-t daysToDelete] [-r auditLogReason]",
+            "example": "`{{- prefix}}softban @peter -t 2d -r Spam` ay magba-ban kay peter at buburahin ang huling 2 araw ng mga mensahe at tatanggalin mula sa pagkaka-ban, ang dahilang 'Spam' ay makikita sa audit logs"
+        },
+        "char": {
+            "short": "Kukuha ng inpormasyon tungkol sa anime/manga characters",
+            "usage": "{{- prefix}}char <charactername>",
+            "example": "`{{- prefix}}char eren jaeger`"
+        },
+        "qm": {
+            "short": "Maglilipat ng kanta sa queue",
+            "usage": "{{- prefix}}qm <lumangPosisyon> <bagongPosisyon>",
+            "example": "`{{- prefix}}qm 4 2` ay maglilipat ng ika-4 na kanta sa queue sa ika-2 posisyon"
+        },
+        "ship": {
+            "short": "I-ship ang dalawang tao",
+            "usage": "{{- prefix}}ship <user1> <user2>",
+            "example": "`{{- prefix}}ship Rem Subaru` I-ship si user Rem kay user Subaru"
+        }
     },
     "version": "Kasalukuyan akong gumagana sa bersyon {{version}}",
     "add": "Gamitin itong link upang idagdag ako sa iyong Server: `{{- link}}`",
@@ -222,7 +287,8 @@
         "error": "May maling naganap habang sinusubukang sumali sa'yong voicechannel!",
         "permission": "Walang permiso! Kailangan mong bigyan ang iyong sarili ng WolkeBot role upang magamit ito.",
         "no-voice": "Ikaw ay wala sa voice channel!",
-        "already-voice": "Ako ay nasa voice channel na, ilipat mo ako upang mabago ito!"
+        "already-voice": "Ako ay nasa voice channel na, ilipat mo ako upang mabago ito!",
+        "join_region": ":microphone: Ako ay nakakonekta na sa iyong voicechannel, gamit ang voice node `{{- node}}`"
     },
     "nsfw-images": {
         "nothing-found": "Walang mga imaheng nahanap gamit ang tags: `{{tags}}`",
@@ -233,32 +299,58 @@
     },
     "8ball": {
         "answers": [
-            "Hindi.",
-            "Oo.",
-            "Baka.",
-            "Hindi sa tingin ko.",
-            "Talagang hindi.",
-            "Gawin mo na lang.",
-            "Yan ay mahusay na ideya.",
-            "Sigurado ka ba d'yan?"
+            "Ito ay tiyak",
+            "Ito ay napagpasyahan na",
+            "Walang duda",
+            "Oo sigurado",
+            "Makakaasa ka",
+            "Sa tingin ko, oo",
+            "Malamang",
+            "Ang ipinapakita ay maganda",
+            "Oo",
+            "Palantandaan tumuturo sa oo",
+            "Malabo ang sagot, subukan ulit",
+            "Tanungin ulit mamaya",
+            "Mabuting wag na lang sabihin",
+            "Hindi mahulaan ngayon",
+            "Isiping mabuti at tanungin ulit",
+            "Wag mo ng asahan",
+            "Ang sagot ko ay hindi",
+            "Ang aking mga kinukunan ay humihindi",
+            "Ang ipinapakita ay di kagandahan",
+            "Higit na walang katiyakan"
         ],
         "no-message": "Hindi ka naglagay ng tanong."
     },
     "ban": {
-        "success": "Permanenteng Pinatalsik na User {{user}}",
-        "privilege": "Ang tungkulin ko ay walang karapatan na permanenteng magpatalsik {{user}} !",
+        "success": ":white_check_mark: Pinagbawalan ang User na si {{user}}",
+        "privilege": ":no_entry_sign: Ang role mo ay nasa mas mababang posisyon kaysa sa role ng user na sinusubukan mong pagbawalan o kaya naman ay wala kang `ban members` na permiso",
         "err": "May maling naganap habang sinusubukang permanenteng patalsikin si {{user}} !",
         "perms": "Hindi mo maaaring permanenteng patalsikin ang May-ari o sinumang may tungkuling WolkeBot.",
-        "self": "Hindi mo ako maaaring permanenteng patalsikin gamit ang sarili kong command.",
-        "no-mention": "Pakiusap magbanggit ng user na gusto mong permanenteng patalsikin."
+        "self": ":sweat_smile: Hindi mo ako maaaring pagbawalan gamit ang sarili kong command.",
+        "no-mention": "Pakiusap magbanggit ng user na gusto mong permanenteng patalsikin.",
+        "privilege_self": ":no_entry_sign: Ang role ko ay walang karapatang i-ban si `{{user}}`",
+        "privilege_self_discord": ":x: Wala akong ban members na permiso",
+        "privilege_owner": ":no_entry_sign: Hindi ko maaaring i-ban ang Owner",
+        "error": ":x: May maling naganap habang sinusubukang i-ban si {{user}} !",
+        "self-user": ":sweat_smile: Hindi mo maaaring i-ban ang iyong sarili",
+        "default-reason": "Si {{- user}} ay na-ban ni {{- mod}}",
+        "reason": "Si {{- user}} ay na-ban ni {{- mod}} dahil sa {{- reason}}"
     },
     "kick": {
-        "success": "Pinatalsik ang User na si {{user}}",
-        "privilege": "Ang tungkulin ko ay walang karapatang magpatalsik kay {{user}} !",
+        "success": ":white_check_mark: Pinatalsik ang User na si {{user}}",
+        "privilege": ":no_entry_sign: Ang role mo ay nasa mas mababang posisyon kaysa sa role ng user na sinusubukan mong patalsikin o kaya naman ay wala kang `kick members` na permiso",
         "err": "May maling naganap habang sinusubukang patalsikin si {{user}} !",
         "perms": "Hindi mo maaaring patalsikin ang May-ari o sinumang may tungkuling WolkeBot.",
-        "self": "Hindi mo ako maaaring patalsikin gamit ang sarili kong command",
-        "no-mention": "Pakiusap magbanggit ng user na gusto mong patalsikin."
+        "self": ":sweat_smile: Hindi mo ako maaaring patalsikin gamit ang sarili kong command.",
+        "no-mention": "Pakiusap magbanggit ng user na gusto mong patalsikin.",
+        "privilege_self": ":no_entry_sign: Ang role ko ay walang karapatan upang patalsikin si `{{user}}`",
+        "privilege_self_discord": ":x: Ako ay walang permisong magpatalsik ng mga miyembro",
+        "privilege_owner": ":no_entry_sign: Hindi ko maaaring patalsikin ang Owner",
+        "error": ":x: May maling naganap habang sinusubukang patalsikin si {{user}} !",
+        "self-user": ":sweat_smile: Hindi mo maaaring patalsikin ang iyong sarili",
+        "default-reason": "Si {{- user}} ay pinatalsik ni {{- mod}}",
+        "reason": "Si {{- user}} ay pinatalsik ng {{- mod}} dahil sa {{- reason}}"
     },
     "roll": {
         "whole-number": "Pakiusap magdagdag ng buong numero!",
@@ -269,7 +361,7 @@
         "nothing-found": "Walang Kantang nahanap gamit ang salitang `{{search}}`",
         "empty-search": "Hindi ka naglagay ng link/searchterm.",
         "started-download": "Nagsimulang i-download ang `{{- url}}`",
-        "success": "Ipinila ang **{{- song}}**"
+        "success": "Ipinila ang **{{- song}}** ini-request ni: **{{- user}}**"
     },
     "rq": {
         "db-error": "May pagkakamali sa database na naganap!",
@@ -308,8 +400,8 @@
         "available-languages": "Listahan ng mga pwedeng Lenggwahe\nPakitandaan na ang setLang ay kailangan ng shortcode"
     },
     "np": {
-        "song-duration": "Kasalukuyang pinatutugtog:` {{- title}} {{current}}/{{duration}} {{repeat}} `",
-        "song": "Kasalukuyang pinatutugtog: `{{-title}} {{repeat}}`",
+        "song-duration": "Kasalukuyang pinatutugtog: `{{- title}} {{current}}/{{duration}} {{repeat}}` ini-request ni: **{{- user}}**",
+        "song": "Kasalukuyang pinatutugtog: `{{-title}} {{repeat}}` ini-request ni: **{{- user}}**",
         "repeat-on": "Ulitin:on",
         "repeat-single": "Ulitin: Isa",
         "repeat-queue": "Ulitin: Nakapila",
@@ -318,7 +410,8 @@
         "emoji-repeat-off": ":heavy_check_mark: Ulitin: off"
     },
     "queue": {
-        "queued": "Naipila:"
+        "queued": "Naipila:",
+        "by": "ini-request ni: {{- user}}"
     },
     "rem-lewd": {
         "no-nsfw": "Walang pang NSFW Channels.",
@@ -364,7 +457,8 @@
         "lib": "Library",
         "voice_active": "AVC",
         "voice_s": "VC(shard)",
-        "voice_active_s": "AVC (shard)"
+        "voice_active_s": "AVC (shard)",
+        "top_donators": "Top Donators:"
     },
     "rank": "Mahahanap ang Leaderboard para sa Server na ito: {{- link}}",
     "pp": {
@@ -390,9 +484,9 @@
     "leave": "Sige, ako'y umalis ng voice channel.",
     "play": {
         "no-result": "Walang kantang nahanap!",
-        "playing": ":musical_note: Tumutugtog ngayon **{{- song}}**",
-        "success": ":musical_note: Ang kanta ngayon ay **{{-song}}**",
-        "next": ":musical_note: Ang susunod na kanta ay **{{-song}}**"
+        "playing": ":musical_note: Tumutugtog ngayon **{{- song}}** ini-request ni: **{{- user}}**",
+        "success": ":musical_note: Ang kanta ngayon ay **{{-song}}** ini-request ni: **{{- user}}**",
+        "next": ":musical_note: Ang susunod na kanta ay **{{-song}}** ini-request ni: **{{- user}}**"
     },
     "prefix": {
         "success": "Sige, itinakda ko ang prefix sa {{- prefix}}, subukan ang {{- prefix}}ping` upang siyasatin ito",
@@ -438,7 +532,12 @@
         "nothing-found": "Walang nahanap na mensahe na tumugma sa pagsasala!"
     },
     "search": {
-        "success": "Nahanap ang mga sumusunod na mga Kanta:"
+        "success": "Nahanap ang mga sumusunod na mga Kanta:",
+        "user": ":mag: **Usersearch**",
+        "role": ":mag: **Rolesearch**",
+        "channel": ":mag: **Channelsearch**",
+        "no-results": ":mag: Ang iyong paghahanap ay hindi nagbalik ng anumang resulta",
+        "anime": ":mag: **Animesearch**"
     },
     "set-lewd": {
         "success": "Matagumpay na naidagdag ang {{- channel}} sa mga NSFW Channels!"
@@ -551,11 +650,13 @@
             "role": "Tungkulin",
             "channel": "channel"
         },
-        "success": "Sige, idinagdag na ang permisong `{{- node}}` `{{- allowed}}` sa `{{- type}}` `{{- name}}`",
-        "wrong-node": "Ang permission node `{{- node}}` ay 'di gagana, dahil hindi ito balido. Para makuha ang permission node para sa isang uri ng command `{{- prefix}}getNode command`",
+        "success": ":ok_hand: Sige, idinagdag na ang permisong `{{- node}}` `{{- allowed}}` sa `{{- type}}` `{{- name}}`",
+        "wrong-node": "Ang permission node `{{- node}}` ay 'di gagana, dahil hindi ito balido. Para makuha ang permission node para sa isang uri ng command `{{- prefix}}getNode <command>`",
         "target-not-found": "Hindi mahanap ang target na {{- target} para sa command na ito",
         "no-allowance-set": "Hindi mo sinabi kung ang permiso ay dapat bang payagan o hindi, idagdag ang `true` o `false` depende sa pipiliin mo",
-        "missing-args": "Ang tamang syntax para sa command ay `{{-prefix}}ap <node> [-u|-r|-c] [target] <allowed>`\n Halimbawa:\n```{{-prefix}}ap playlist.* true -> pinapayagan ang lahat ng commands ng category playlist sa server\n{{-prefix}}ap music.fskip -u @user true -> pinapayagan ang binanggit na user na gamitin ang  {{- prefix}}fskip```"
+        "missing-args": "I-type ang `{{- prefix}}help ap` upang makakuha ng karagdagang inpormasyon kung paano paganahin ang command na ito ng tama",
+        "add-defaults": ":eyes: Napansin ko lang na hindi ka pa nagdadagdag ng kahit anong permiso, dahil ito ang iyong unang permiso, gusto mo bang panatilihing gumagana ang mga default na permiso?\nIto ay ang mga sumusunod na mga permiso:\n ```{{perm_list}}```",
+        "success-defaults": ":ok_hand: Sige, idinagdag ko na ang permisong `{{- node}}` `{{- allowed}}` sa `{{- type}}` `{{- name}}`\nNais mong panatilihin ang defaults, kaya pinanatili ko ang mga ito"
     },
     "reset-perms": {
         "nothing-found": "Wala ka pang nalalagay na mga Permiso.",
@@ -581,5 +682,27 @@
     },
     "manga": {
         "chapters": "Chapters"
+    },
+    "menu": {
+        "guide": "Rumesponde gamit ang numero ng option na iyong nais piliin",
+        "disclaimer": "Mag-type ng 'c' o anumang rem command upang umalis sa menu, ito ay kusang magsasara paglipas ng 5 minuto.",
+        "yes-no-question": "Sumagot ng 'yes' o 'no' depende sa pinili, type 'c' o kahit anong rem command upang kanselahin ang command na ito, ito ay kusang magsasara paglipas ng 5 minuto."
+    },
+    "softban": {
+        "success": ":white_check_mark: Softbanned User {{user}}",
+        "error": ":x: May maling naganap habang sinusubukang i-ban si {{user}} !",
+        "error-unban": ":x: May maling naganap habang sinusubukang tanggalin sa pagkaka-ban si {{user}} !",
+        "default-reason": "Si {{- user}} ay na-softban ni {{- mod}}",
+        "reason": "Si {{- user}} ay na-softban ni {{- mod}} dahil sa {{- reason}}",
+        "auto-unban": "Kusang tinanggal sa pagkaka-ban si {{- user}}"
+    },
+    "ship": {
+        "single": "Ikinalulungkot kong makita kang mag-isa, {{- user}} :<",
+        "success": "Lovely Shipping~ Ang shipname nyo ay **{{- shipname}}**"
+    },
+    "qm": {
+        "missing-args": "Kailangang ilagay kung anong kanta ang ililipat kung saan, upang makuha ang tamang paggamit ng command, ilagay ang `{{- prefix}}help qm`",
+        "current": "Hindi maaaring ilipat ang kasalukuyang kanta :<",
+        "success": "Linipat ang kantang `{{- song}}` mula posisyong `{{- start}}` papuntang posisyong `{{- end}}`"
     }
 }
